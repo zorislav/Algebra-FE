@@ -1,2 +1,2 @@
 # Algebra-FE
-Algebra Front-End Developer tečaj
+Materijali za Algebra Front-End Developer tečaj
