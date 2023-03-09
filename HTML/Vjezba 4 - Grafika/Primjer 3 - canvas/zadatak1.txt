@@ -1,0 +1,12 @@
+Vjezba 4 - Grafika - Primjer 3 - canvas 1 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+  
+3. Postaviti naslov dokumenta "Canvas"
+
+4. U dokumentu kreirati canvas područja sirine 600 i visine 200 i u njemu nacrtati četverokut omedjen koordinatama 10, 10, 100, 100
