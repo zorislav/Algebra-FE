@@ -1,0 +1,13 @@
+Vjezba 2 - Tekst - Zadatak 2
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+3. Postaviti naslov dokumenta "Uvod u HTML"
+
+4. U dokumentu kreirati proizvoljan sadrzaj uz upotrebu:
+	- elementa <p>, <h1>, <h2>, <strong>, <i> i <br>
+	- atributa title
