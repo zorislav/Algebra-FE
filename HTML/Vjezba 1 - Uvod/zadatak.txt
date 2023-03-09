@@ -1,0 +1,8 @@
+
+Vjezba 1 - Uvod
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. Postaviti Vjezba 1 u naslov dokumenta
+
+3. Kreirati komentar u tijelu dokumenta
