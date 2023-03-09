@@ -1,0 +1,24 @@
+
+Vjezba 3 - Liste 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+  
+3. Postaviti naslov dokumenta "HTML liste"
+
+4. U dokumentu kreirati slijedece liste proizvoljnog sadrzaja:
+	- redna <ol>
+	- redna <ol> type 1
+	- redna <ol> type I
+	- redna <ol> type i
+	- redna <ol> type A
+	- redna <ol> type a
+	- redna <ol> type a start 3
+	- redna <ol> type a reversed
+	- simbolička <ul>
+	- opisna <dl>
+	- ugnijezdzena <ol> unutar <ol> unutar <li>
