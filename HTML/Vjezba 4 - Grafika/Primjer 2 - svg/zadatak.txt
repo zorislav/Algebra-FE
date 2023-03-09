@@ -1,1 +1,20 @@
+Vjezba 4 - Grafika - Primjer 2 - svg 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+  
+3. Postaviti naslov dokumenta "SVG"
+
+4. U dokumentu kreirati svg područja sirine 400 i visine 200 sa slijedecim elementima:
+	- rectangle
+	- circle
+	- ellipse
+	- line
+	- polygon
+	- polyline
+	- text i line
 
