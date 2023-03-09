@@ -1,0 +1,14 @@
+Vjezba 2 - Tekst - Primjer 4 - atributi
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+  
+3. Postaviti naslov dokumenta "HTML atributi"
+
+4. U dokumentu kreirati proizvoljan sadrzaj uz upotrebu:
+	- elementa <p>
+	- atributa lang, title, hidden
