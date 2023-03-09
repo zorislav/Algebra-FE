@@ -1,0 +1,12 @@
+Vjezba 2 - Tekst - Primjer 1 - meta
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- author
+	- description
+	- viewport
+	- http-equiv
+  
+3. Postaviti naslov dokumenta "Meta"
