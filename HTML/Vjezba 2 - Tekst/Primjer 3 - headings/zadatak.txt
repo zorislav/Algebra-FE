@@ -1,0 +1,18 @@
+Vjezba 2 - Tekst - Primjer 3 - headings
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+  
+3. Postaviti naslov dokumenta "Elementi za uređivanje teksta-naslovi"
+
+4. U dokumentu kreirati slijedece naslove:
+	- h1 Naslov 1. razine
+	- h2 Naslov 2. razine
+	- h3 Naslov 3. razine
+	- h4 Naslov 4. razine
+	- h5 Naslov 5. razine
+	- h6 Naslov 6. razine
