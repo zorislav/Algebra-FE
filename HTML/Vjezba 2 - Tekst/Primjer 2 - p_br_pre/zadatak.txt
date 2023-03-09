@@ -1,0 +1,11 @@
+Vjezba 2 - Tekst - Primjer 2 - p_br_pre
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+3. Postaviti naslov dokumenta "Elementi za označavanje teksta"
+
+4. U dokumentu kreirati proizvoljni sadrzaj koristeci elemente <p>, <br> i <pre>
