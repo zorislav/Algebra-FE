@@ -1,0 +1,22 @@
+Vjezba 6 - Linkovi - Primjer 1 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Povezivanje dokumenata"
+
+4. Umetnuti link na dokument linkovi.html
+
+5. Umetnuti link na Algebra web
+
+6. Umetnuti link na vremensku prognozu
+
+7. U dokumentu kreirati tri poglavlja teksta, svaki sa svojim id-jem
+
+8. U na pocetku dokumenta kreirati linkove na svako poglavlje
+
+9. U na kraju svakog poglavlja kreirati link na pocetak dokumenta
