@@ -1,0 +1,14 @@
+Vjezba 6 - Linkovi - Zadatak 1 
+
+1. Za tri grada London, Pariz i Rim Kreirati html5 dokument osnovne strukture imena prema imenu grada
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta prema imenu grada
+
+4. Umetnuti sliku odgovarajuceg grada
+
+5. Umetnuti linkove na sve tri stranice
