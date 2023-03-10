@@ -1,0 +1,12 @@
+Vjezba 9 - Strukturiranje - Primjer 2 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Strukuriranje sadrzaja"
+
+4. U dokumentu kreirati header, body i footer dio pomocu <header>, <body> i <footer> elemenata
