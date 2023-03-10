@@ -11,4 +11,6 @@ Vjezba 6 - Linkovi - Zadatak 1
 
 4. Umetnuti sliku odgovarajuceg grada
 
-5. Umetnuti linkove na sve tri stranice
+5. Klikom na sliku grada otvara se wiki stranica odgovarajuceg grad au novom prozoru
+
+6. Umetnuti linkove na sve tri stranice
