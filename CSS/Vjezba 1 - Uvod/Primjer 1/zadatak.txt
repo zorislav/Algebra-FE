@@ -7,7 +7,7 @@ Vjezba 1 - Uvod - Primjer 1
 	- viewport
 	- http-equiv
 
-3. Postaviti naslov dokumenta "Elementi za označavanje teksta"
+3. Postaviti naslov dokumenta "Inline CSS"
 
 4. U dokumentu kreirati <h1> element
 	- pomocu linijskog CSS-a postaviti boju teksta u crvenu
