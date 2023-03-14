@@ -7,7 +7,7 @@ Vjezba 4 - Selektori - Primjer 5
 	- viewport
 	- http-equiv
 
-3. Postaviti naslov dokumenta "Selektori HTML elemenata"
+3. Postaviti naslov dokumenta "Pseudo-klase"
 
 4. Pomocu internog CSS-a definirati slijedeća pravila
 
