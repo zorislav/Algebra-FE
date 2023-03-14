@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo-klase</title>
+    <style>
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        header {
+            color: red
+        }
+
+        footer {
+            color: orange;
+        }
+
+        p:first-child {
+            text-decoration: underline wavy red;
+        }
+
+        p:last-child {
+            font-size: 14px;
+        }
+
+        p:nth-child(2) {
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        p:first-of-type {
+            font-weight: bold;
+        }
+
+        p:last-of-type {
+            text-transform: uppercase;
+        }
+
+        p:nth-of-type(2) {
+            color: darkturquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zaglavlje</h1>
+        <p>Odlomak</p>
+    </header>
+    <section>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+    </section>
+    <section>
+        <h1>Naslov sekcije</h1>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+    </section>
+    <footer>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+    </footer>
+</body>
+
+</html>
