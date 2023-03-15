@@ -9,9 +9,7 @@ Vjezba 2 - Tekst - Primjer 2
 
 3. Postaviti naslov dokumenta "Svojstva za uređivanje fontova"
 
-4. Ukljuciti Google fonts fontove Lacquer, Raleway 
-
-5. Pomocu internog CSS-a definirati slijedeća pravila
+4. Pomocu internog CSS-a definirati slijedeća pravila
 
         h1 
             font-size: 48px;
@@ -52,9 +50,7 @@ Vjezba 2 - Tekst - Primjer 2
 
 8. Postaviti naslov dokumenta "Svojstva za uređivanje fontova"
 
-8. Ukljuciti Google fonts fontove Lacquer, Raleway 
-
-10. Pomocu internog CSS-a definirati slijedeća pravila
+9. Pomocu internog CSS-a definirati slijedeća pravila
 
         h1 
             font-size: 2em;
@@ -81,7 +77,7 @@ Vjezba 2 - Tekst - Primjer 2
             /* 0.67 * 16px = 10.72px */
       
 
-5. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom 
+10. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom 
 	- <h1>
 	- <h2>
 	- <h3>
