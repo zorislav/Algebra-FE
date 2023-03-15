@@ -9,9 +9,7 @@ Vjezba 2 - Tekst - Primjer 3
 
 3. Postaviti naslov dokumenta "Svojstva za uređivanje fontova"
 
-4. Ukljuciti Google fonts fontove Lacquer, Raleway 
-
-5. Pomocu internog CSS-a definirati slijedeća pravila
+4. Pomocu internog CSS-a definirati slijedeća pravila
 
         h1 
             font-style: italic;
@@ -23,7 +21,7 @@ Vjezba 2 - Tekst - Primjer 3
             font-weight: bold;
         
 
-6. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom 
+5. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom 
 	- <h1>
 	- <h2>
 	- <p>
