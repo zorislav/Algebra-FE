@@ -1,0 +1,36 @@
+Vjezba 7 - Display - Zadatak 1
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Display"
+
+4. U dokumentu kreirati slijedece elemente proizvoljnog sadrzaja:
+	- <p>
+	- <p>
+	- <p>
+	- <p>
+
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+	body 
+  		font-family: Tahoma, sans-serif;
+  		font-size: 16px;
+  		color: #333;
+	p 
+  		background-color: #eee;
+  		border: 1px solid #666;
+  		box-sizing: border-box;
+  		display: inline-block;
+  		margin-left: -4px;
+  		padding: 1em;
+  		width: 33.33%;
+
+
+6. Ukljuciti datoteku style.css u index.html
