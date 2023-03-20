@@ -14,7 +14,8 @@ Vjezba 7 - Display - Zadatak 1
 	- <p>
 	- <p>
 	- <p>
-
+	- <p>
+	- <p>
 
 
 5. Kreirati datoteku style.css sa slijedećim pravilima
