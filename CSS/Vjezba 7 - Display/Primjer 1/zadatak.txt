@@ -1,34 +1,62 @@
-body {
-  font-family: Tahoma, sans-serif;
-  font-size: 16px;
-  color: #333;
-}
-h1 {
-  text-align: center;
-}
+Vjezba 7 - Display - Primjer 1
 
-p {
-  background-color: #f93;
-}
-em {
-  background-color: #ccf;
-}
+1. Kreirati html5 dokument osnovne strukture imena index.html
 
-.block {
-  display: block;
-}
-.inline {
-  display: inline;
-}
-.inline-block {
-  display: inline-block;
-}
-.none {
-  display: none;
-}
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
 
-.box {
-  width: 300px;
-  height: 100px;
-  margin: 20px;
-}
+3. Postaviti naslov dokumenta "Display"
+
+4. U dokumentu kreirati slijedece elemente:
+	- <h1>Svojstvo: display</h1>
+	- <h2>Elementi bloka</h2>
+    	- <p>Proizvoljni tekst</p>
+    	- <p class="inline">Proizvoljni tekst</p>
+    	- <p class="inline-block">Proizvoljni tekst</p>
+    	- <p class="box inline-block">Proizvoljni tekst</p>
+    	- <p class="none">Proizvoljni tekst</p>
+    	- <em>Proizvoljni tekst</em>
+    	- <em class="block">Proizvoljni tekst</em>
+    	- <em class="inline-block">Proizvoljni tekst</em>
+    	- <em class="box">Proizvoljni tekst</em>
+    	- <em class="box inline-block">Proizvoljni tekst</em>
+
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+	body 
+  		font-family: Tahoma, sans-serif;
+  		font-size: 16px;
+  		color: #333;
+
+	h1 
+  		text-align: center;
+	
+	p 
+  		background-color: #f93;
+
+	em 
+  		background-color: #ccf;
+
+	.block  
+		display: block;
+
+	.inline 
+  		display: inline;
+
+	.inline-block 
+  		display: inline-block;
+
+	.none 
+  		display: none;
+
+	.box 
+  		width: 300px;
+  		height: 100px;
+  		margin: 20px;
+
+
+6. Ukljuciti datoteku style.css u index.html
