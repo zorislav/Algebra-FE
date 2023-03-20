@@ -7,7 +7,7 @@ Vjezba 8 - Pozicioniranje - Primjer 1
 	- viewport
 	- http-equiv
 
-3. Postaviti naslov dokumenta "Selektori HTML elemenata"
+3. Postaviti naslov dokumenta "Position"
 
 4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
 	- <div class="box1">
