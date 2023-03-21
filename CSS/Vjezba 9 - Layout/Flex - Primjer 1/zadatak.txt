@@ -7,7 +7,7 @@ Vjezba 9 - Layout - Flex - Primjer 1
 	- viewport
 	- http-equiv
 
-3. Postaviti naslov dokumenta "CSS Box Model"
+3. Postaviti naslov dokumenta "Flexbox"
 
 4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
 	- <div class="wrapper flex-container">
