@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* position: static|absolute|fixed|relative|sticky */
+
+        .box1 {
+            background: cadetblue;
+        }
+
+        .box2 {
+            background: orange;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+
+        .container {
+            border: 4px solid #666;
+            width: 600px;
+            height: 600px;
+            margin: 2em auto;
+            position: relative;
+        }
+
+        .box3 {
+            background: orchid;
+        }
+
+        .box4 {
+            background: seagreen;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <div class="container">
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+
+</html>
