@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+
+        /* position: static|absolute|fixed|relative|sticky */
+
+        .box1 {
+            background: cadetblue;
+            z-index: 4
+        }
+
+        .box2 {
+            background: orange;
+            left: 50px;
+            top: 50px;
+            z-index: 3
+        }
+
+        .box3 {
+            background: orchid;
+            left: 100px;
+            top: 100px;
+            z-index: 2
+        }
+
+        .box4 {
+            background: seagreen;
+            left: 150px;
+            top: 150px;
+            z-index: 1
+        }
+
+        .box5 {
+            background: tomato;
+            width: 400px;
+            height: 400px;
+            z-index: 5;
+            position: static;
+            /* ne primjenjuje se na nepozicionirane elemente tj. na one koji imaju poziciju static (default) */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+
+</body>
+
+</html>
