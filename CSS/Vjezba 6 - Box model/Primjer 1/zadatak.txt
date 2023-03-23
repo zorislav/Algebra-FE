@@ -1,0 +1,113 @@
+Vjezba 6 - Box model - Primjer 1
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "CSS Box Model"
+
+4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
+	- <div class="width1">
+	- <div class="width2">
+	- <div class="width3">
+	- <div class="height1">
+	- <div class="height2">
+		- <div class="height1 blue">
+	- <div class="height2">
+	- <div class="height3">
+	- <div class="border width2 height2">
+	- <div class="border-width width2 height2">
+	- <div class="border-style width2 height2">
+	- <div class="border-color width2 height2">
+	- <div class="border2 width2 height2">
+	- <div class="padding border width2 height2">
+	- <div class="padding2 border width2">
+	- <div class="margin padding border width2 height2">
+	- <div class="margin2 padding border width2 height2">
+	- <div class="margin-auto padding border width2 height2">
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+	body 
+  		font-family: Tahoma, sans-serif;
+  		font-size: 16px;
+  		color: #333;
+
+	h1 
+  		text-align: center;
+	
+	div 
+  		background-color: #f93;
+
+	.width1 
+  		width: 50%;
+
+	.width2 
+  		width: 500px;
+
+	.width3 
+  		width: 25em;
+
+
+	.height1
+  		height: 50%;
+
+	.height2 
+  		height: 150px;
+
+	.height3 
+  		height: 5em;
+
+
+	.blue 
+  		background-color: #ccf;
+
+	.border 
+  		border: 2px solid #333;
+
+	.border-width 
+  		border: 6px solid #333;
+
+	.border-style 
+  		border: 6px dashed #333;
+
+	.border-color 	
+  		border: 6px solid rgb(0, 0, 255);
+	
+
+	.border2 
+  		border-top: 6px solid #333;
+  		border-right: 10px double #f33;
+  		border-bottom: 4px dashed #33f;
+  		border-left: 8px dotted #3f3;
+
+	.padding 
+  		padding: 20px;
+
+	.padding2 
+  		padding-top: 20px;
+  		padding-right: 30px;
+  		padding-bottom: 50px;
+  		padding-left: 5px;
+  		text-align: justify; /* da bi se naglasio padding-right */
+
+
+	margin 
+  		margin: 20px;
+
+	.margin2 
+  		margin-top: 20px;
+  		margin-right: 30px;
+  		margin-bottom: 50px;
+  		margin-left: 200px;
+
+
+	.margin-auto 
+  		margin: 20px auto;
+
+
+6. Ukljuciti datoteku style.css u index.html
