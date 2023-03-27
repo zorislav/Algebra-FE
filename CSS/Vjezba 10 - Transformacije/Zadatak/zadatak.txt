@@ -1,0 +1,89 @@
+Vjezba 10 - Transformacije - Zadatak
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Flexbox-layout"
+
+4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
+    
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </section>
+</body>
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+* 
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+body 
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+
+h1 
+  text-align: center;
+
+section 
+  border: 1px solid #ccc;
+  margin: auto;
+  width: 400px;
+
+
+div 
+  background-color: #f93;
+  border: 1px solid #333;
+  font-size: 2em;
+  line-height: 150px;
+  width: 300px;
+  height: 150px;
+  margin: 4em auto;
+  text-align: center;
+
+
+/* transformacije */
+
+div:first-child 
+  -webkit-transform: translate(-400px, 0);
+  transform: translate(-400px, 0);
+
+
+div:nth-child(2) 
+  -webkit-transform: translate(0, -278px);
+  transform: translate(0, -278px); /* margin-top + margin-bottom + height = 278  */
+
+div:nth-child(3) 
+  -webkit-transform: translate(400px, -556px);
+          transform: translate(400px, -556px);
+
+
+div:nth-child(4) 
+  -webkit-transform: rotate(180deg) translate(400px, 556px);
+          transform: rotate(180deg) translate(400px, 556px);
+
+
+div:nth-child(5) 
+  -webkit-transform: translate(0, -834px) skew(15deg, 10deg);
+          transform: translate(0, -834px) skew(15deg, 10deg);
+
+
+div:nth-child(6) 
+  -webkit-transform: translate(400px, -1112px) rotate(45deg) skew(45deg, 5deg);
+          transform: translate(400px, -1112px) rotate(45deg) skew(45deg, 5deg);
+
+
+6. Ukljuciti datoteku style.css u index.html

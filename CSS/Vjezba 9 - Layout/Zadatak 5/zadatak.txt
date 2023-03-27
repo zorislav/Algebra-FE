@@ -1,0 +1,86 @@
+Vjezba 9 - Layout - Zadatak 5
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Flexbox-layout"
+
+4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
+    
+<body>
+    <div class="wrapper flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+        <div class="flex-item">11</div>
+        <div class="flex-item">12</div>
+        <div class="flex-item">13</div>
+        <div class="flex-item">14</div>
+        <div class="flex-item">15</div>
+        <div class="flex-item">16</div>
+    </div>
+</body>
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+* 
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+body 
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+.wrapper 
+  border: 1px dashed #666;
+  min-height: 100vh;
+  padding: 1em;
+
+
+.wrapper div 
+  background: #eee;
+  border: 1px solid #666;
+  padding: 1em;
+  text-align: center;
+
+
+.flex-container 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+.flex-item 
+  /* flex-grow:0;
+  flex-basis:24%;*/
+  -webkit-box-flex: 0;
+      -ms-flex: 0 24%;
+          flex: 0 24%;
+  height: 100px;
+  margin-bottom: 2%; /* (100-24*4)/2 */
+
+6. Ukljuciti datoteku style.css u index.html
