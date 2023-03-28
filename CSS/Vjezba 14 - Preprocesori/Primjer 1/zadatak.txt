@@ -1,0 +1,117 @@
+Vjezba 14 - Preprocesori - Zadatak 1
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "SCSS"
+
+4. U dokumentu kreirati slijedece elemente:
+
+    <header>
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore amet, dolore deleniti vero consectetur
+            suscipit impedit, nobis magnam nesciunt blanditiis, obcaecati illo. Nemo, quae? Assumenda suscipit impedit
+            sint voluptas.</p>
+        <a href="#">Lorem ipsum</a>
+    </header>
+    <section>
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam provident doloribus et quos rem corporis
+            adipisci minus eligendi excepturi dolor sequi, asperiores sunt nostrum eos tempore temporibus minima
+            delectus repudiandae?</p>
+        <a href="#">Lorem ipsum</a>
+        <article>
+            <h2>Lorem psum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsa illum atque totam? Officia,
+                nisi fugiat natus totam eaque vel eius obcaecati nemo tempora delectus, consequuntur ducimus facere
+                provident reprehenderit.</p>
+            <a href="#">Lorem ipsum</a>
+        </article>
+        <article>
+            <h2>Lorem psum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsa illum atque totam? Officia,
+                nisi fugiat natus totam eaque vel eius obcaecati nemo tempora delectus, consequuntur ducimus facere
+                provident reprehenderit.</p>
+            <a href="#">Lorem ipsum</a>
+        </article>
+    </section>
+    <footer>
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore amet, dolore deleniti vero consectetur
+            suscipit impedit, nobis magnam nesciunt blanditiis, obcaecati illo. Nemo, quae? Assumenda suscipit impedit
+            sint voluptas.</p>
+        <a href="#">Lorem ipsum</a>
+    </footer>
+
+
+5. Kreirati datoteku style.scss sa slijedećim pravilima
+
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #eee;
+}
+
+// nesting
+
+header {
+  text-align: center;
+  h1 {
+    color: #800;
+  }
+  p {
+    font-size: 20px;
+  }
+  a {
+    color: #ff6;
+  }
+}
+
+section {
+  h1 {
+    font-family: "Courier New", Courier, monospace;
+  }
+  p {
+    text-align: justify;
+  }
+  a {
+    color: #800;
+  }
+  article {
+    background-color: #800;
+    p {
+      color: #eee;
+    }
+    a {
+      color: #fff;
+    }
+  }
+}
+
+footer {
+  h1 {
+    color: #ff6;
+  }
+  p {
+    font-size: 12px;
+  }
+  a {
+    color: #0f0;
+    font-size: 20px;
+  }
+}
+
+
+
+6. U VS Code pomocu Live SASS kompajlirati style.sass u style.css
