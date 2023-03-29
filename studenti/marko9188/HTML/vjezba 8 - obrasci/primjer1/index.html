@@ -25,6 +25,58 @@
             <input id="pwd" name="password" type="password" size="30" maxlength="20" placeholder="Zaporka" required>
         </p>
         <p>
+            <label for="color">Boja</label>
+            <input id="boja" type="color" name="boja">
+        </p>
+        <p>
+            <label for="obavijesti">Želim primati obavijesti</label>
+            <input type="checkbox" name="newsletter" id="obavijesti" checked>
+        </p>
+        <p>
+            Ocijenite usluge naše tvrtke: <br>
+            <label for="o1">1</label>
+            <input type="radio" name="ocjena" id="o1" value="1">
+            <label for="o2">2</label>
+            <input type="radio" name="ocjena" id="o2" value="2">
+            <label for="o3">3</label>
+            <input type="radio" name="ocjena" id="o3" value="3">
+            <label for="o4">4</label>
+            <input type="radio" name="ocjena" id="o4" value="4">
+            <label for="o5">5</label>
+            <input type="radio" name="ocjena" id="o5" value="5">
+        </p>
+        <p>
+            <label for="dokumenti">Odaberite dokument</label><br>
+            <input type="file" name="dokument" id="dokument">
+        </p>
+        <p>
+            <label for="comment">Upišite vaš komentar</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10" maxlength="4"></textarea>
+            <!--max length opcija omogućava samo upis broja znakova koji se mogu upisati-->
+        </p>
+        <p>
+            <label for="grad">Odaberite grad</label><br>
+            <select name="grad" id="grad">
+                <option value="london">London</option>
+                <option value="pariz">Pariz</option>
+                <option value="rim" selected>Rim</option>
+
+            </select>
+        </p>
+        <p>
+            <label for="datum">Odaberite datum</label><br>
+            <input type="date" name="datum" id="datum">
+        </p>
+        <p>
+            <label for="grad2">Odaberite ili upišite grad</label><br>
+            <input type="text" id="grad2" name="grad2" list="gradovi">
+                <datalist id="gradovi">
+                    <option value="London"></option>
+                    <option value="Pariz"></option>
+                    <option value="Rim"></option>
+                </datalist>
+        </p>
+        <p>
             <input name="reset_btm" type="reset" value="Poništi obrazac">
             <input name="submit_btm" type="submit" value="Pošalji podatke">
 
