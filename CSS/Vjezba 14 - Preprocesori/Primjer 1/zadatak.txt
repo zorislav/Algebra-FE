@@ -1,4 +1,4 @@
-Vjezba 14 - Preprocesori - Zadatak 1
+Vjezba 14 - Preprocesori - Primjer 1
 
 1. Kreirati html5 dokument osnovne strukture imena index.html
 
