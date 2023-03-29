@@ -1,0 +1,71 @@
+$color1: rgb(150, 0, 0);
+$color2: rgb(150, 150, 0);
+// mixin - animacije
+@mixin keyframes($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  animation: #{$str};
+}
+
+//mixin -tranzicije
+
+@mixin transition($args...) {
+  transition: $args;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+div {
+  background-color: $color2;
+  margin: 1em auto;
+  padding: 1em;
+  width: 25%;
+  // animacija
+  &:first-child {
+    @include animation("fade 2s ease-in-out infinite");
+  }
+  &:nth-child(2) {
+    @include animation("fade 4s linear 2s infinite ");
+  }
+  &:nth-child(3) {
+    @include animation("fade 0.5s ease-in  infinite");
+  }
+  //tranzicija
+  &:nth-child(4) {
+    @include transition(background-color 0.5s ease);
+    &:hover {
+      background-color: $color1;
+    }
+  }
+  &:nth-child(5) {
+    @include transition(width 1s ease);
+    &:hover {
+      width: 80%;
+    }
+  }
+  &:nth-child(6) {
+    @include transition(transform 1s ease-out);
+    &:hover {
+      transform: translate(150px, 0);
+    }
+  }
+}
+
+@include keyframes(fade) {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
