@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Obrasci</title>
+	</head>
+	<body>
+		<form action="" method="post" enctype="multipart/form-data">
+			<p>
+				<label for="name">Ime i prezime *</label>
+				<input
+					type="text"
+					name="name"
+					id="name"
+					placeholder="Vaše ime i prezime"
+					required
+				/>
+			</p>
+
+			<p>
+				<label for="email">E-mail adresa *</label> <br />
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="Upišite valjanu e-mail adresu"
+					required
+				/>
+			</p>
+
+			<p>
+				<label for="phoneNum">Kontakt broj telefona</label><br />
+				<input type="tel" name="phoneNum" id="phoneNum" />
+			</p>
+
+			<p>
+				<label for="dateOfBirth">Datum rođenja</label><br />
+				<input type="date" name="dateOfBirth" id="dateOfBirth" />
+			</p>
+
+			<fieldset style="border: none; padding-left: 0">
+				<legend>Koje jezike govorite?</legend>
+
+				<label for="english">Engleski</label>
+				<input type="checkbox" name="language" id="english" />
+
+				<label for="italian">Talijanski</label>
+				<input type="checkbox" name="language" id="italian" />
+
+				<label for="german">Njemački</label>
+				<input type="checkbox" name="language" id="german" />
+
+				<label for="french">Francuski</label>
+				<input type="checkbox" name="language" id="french" />
+
+				<label for="spanish">Španjolski</label>
+				<input type="checkbox" name="language" id="spanish" />
+			</fieldset>
+
+			<fieldset style="border: none; padding-left: 0">
+				<legend>Da li ste do sada koristili naše usluge?</legend>
+
+				<label for="yes">Da</label>
+				<input type="radio" name="servicesUsed" id="yes" />
+
+				<label for="no">Ne</label>
+				<input type="radio" name="servicesUsed" id="no" />
+			</fieldset>
+
+			<p>
+				<label for="resume">Priložite svoj životopis</label><br />
+				<input type="file" name="resume" id="resume" />
+			</p>
+
+			<button type="reset">Poništi</button>
+			<button type="submit">Prijavi se</button>
+		</form>
+	</body>
+</html>
