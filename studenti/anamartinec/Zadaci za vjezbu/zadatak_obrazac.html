@@ -8,22 +8,27 @@
 </head>
 <body>
     <form action="#" method="POST" enctype="multipart/form-data">
+    <p>
       <label for="name">Ime i prezime</label>
       <br>
       <input type="text" id="name" name="name" placeholder="Vaše ime i prezime" required><br><br>
-      
+    </p>
+    <p>
       <label for="email">E-mail adresa</label>
       <br>
       <input type="email" id="email" name="email" placeholder="Upišite valjanu e-mail adresu" required><br><br>
-      
+    </p>
+    <p>
       <label for="phone">Kontakt broj telefona</label>
       <br>
-      <input type="tel" id="phone" name="phone" required><br><br>
-      
+      <input type="tel" id="phone" name="phone" required>
+    </p>
+    <p>
       <label for="date">Datum:</label>
       <br>
-      <input type="date" id="date" name="date" required><br><br>
-      
+      <input type="date" id="date" name="date" required>
+    </p> 
+    <p>
       <label for="checkbox1">Koje jezike govorite?
         <br>
         <input type="checkbox" id="checkbox5" name="checkbox1"> Talijanski
@@ -32,9 +37,8 @@
         <input type="checkbox" id="checkbox5" name="checkbox1"> Francuski
         <input type="checkbox" id="checkbox5" name="checkbox1"> Njemački
       </label>
-      <br>
-
-      <p>Jeste li do sada koristili usluge naše tvrtke?</p>
+    </p>
+    <p>Jeste li do sada koristili usluge naše tvrtke?<br>
       <label>
         <input type="radio" name="usluge" value="da">
          Da
@@ -43,16 +47,16 @@
         <input type="radio" name="usluge" value="ne">
          Ne
       </label>
-      <br>
-      <br>
-
+    </p>
+    <p>
       <label for="resume">Priložite životopis:</label>
       <br>
       <input type="file" id="resume" name="resume">
-      <br>
-      <br>
+    </p>
+    <p>
       <button type="button">Poništi</button>
       <button type="submit">Prijavi se</button>
+    </p>
 </body>
 </html>
     
