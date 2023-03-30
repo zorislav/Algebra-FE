@@ -1,0 +1,30 @@
+// variables
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+body {
+  background-color: $color1;
+  color: $color2;
+  font-family: $font1;
+}
+
+.borders {
+  border: 2px solid $color2;
+}
+
+// Placeholder selectors
+%spaces {
+  padding: 1em;
+  margin: 1em;
+}
+
+// @extend
+header,
+footer,
+article {
+  @extend .borders;
+  @extend %spaces;
+}
