@@ -9,7 +9,7 @@
 	<body>
 		<form action="" method="post" enctype="multipart/form-data">
 			<p>
-				<label for="name">Ime i prezime *</label>
+				<label for="name">Ime i prezime <strong>*</strong></label>
 				<input
 					type="text"
 					name="name"
@@ -20,7 +20,7 @@
 			</p>
 
 			<p>
-				<label for="email">E-mail adresa *</label> <br />
+				<label for="email">E-mail adresa <strong>*</strong></label> <br />
 				<input
 					type="email"
 					name="email"
@@ -40,33 +40,33 @@
 				<input type="date" name="dateOfBirth" id="dateOfBirth" />
 			</p>
 
-			<fieldset style="border: none; padding-left: 0">
+			<fieldset name="languages" style="border: none; padding-left: 0">
 				<legend>Koje jezike govorite?</legend>
 
 				<label for="english">Engleski</label>
-				<input type="checkbox" name="language" id="english" />
+				<input type="checkbox" name="language" id="english" value="english" />
 
 				<label for="italian">Talijanski</label>
-				<input type="checkbox" name="language" id="italian" />
+				<input type="checkbox" name="language" id="italian" value="italian" />
 
 				<label for="german">Njemački</label>
-				<input type="checkbox" name="language" id="german" />
+				<input type="checkbox" name="language" id="german" value="german" />
 
 				<label for="french">Francuski</label>
-				<input type="checkbox" name="language" id="french" />
+				<input type="checkbox" name="language" id="french" value="french" />
 
 				<label for="spanish">Španjolski</label>
-				<input type="checkbox" name="language" id="spanish" />
+				<input type="checkbox" name="language" id="spanish" value="spanish" />
 			</fieldset>
 
-			<fieldset style="border: none; padding-left: 0">
+			<fieldset name="servicesUsed" style="border: none; padding-left: 0">
 				<legend>Da li ste do sada koristili naše usluge?</legend>
 
 				<label for="yes">Da</label>
-				<input type="radio" name="servicesUsed" id="yes" />
+				<input type="radio" name="servicesUsed" id="yes" value="yes" />
 
 				<label for="no">Ne</label>
-				<input type="radio" name="servicesUsed" id="no" />
+				<input type="radio" name="servicesUsed" id="no" value="no" />
 			</fieldset>
 
 			<p>
