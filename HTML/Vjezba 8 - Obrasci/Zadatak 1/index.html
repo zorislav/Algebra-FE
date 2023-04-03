@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrasci</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <p>
+        <label for="ime">Ime i Prezime*</label><br />
+        <input
+          type="text"
+          name="ime"
+          id="ime"
+          placeholder="Vase Ime i Prezime"
+          required
+        />
+      </p>
+      <p>
+        <label for="email">Upisite valjanu adresu*</label><br />
+        <input
+          for="email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Upisite valjanu e-mail adresu"
+          required
+        />
+      </p>
+      <p>
+        <label for="tel">Kontakt broj telefona</label><br />
+        <input type="tel" name="tel" id="tel" />
+      </p>
+      <p>
+        <label for="date">Datum rodjenja</label><br />
+        <input type="date" name="date" id="date" />
+      </p>
+     
+        <label for="engleski">Engleski jezik</label>
+        <input type="checkbox" name="jezik" id="engleski" value="engleski"> 
+        <label for="talijanski">Talijanski jezik</label>
+        <input type="checkbox" name="jezik" id="talijanski" value="talijanski"> 
+        <label for="njemacki">Njemacki jezik</label>
+        <input type="checkbox" name="jezik" id="njemacki" value="njemacki">
+        <label for="francuski">Francuski jezik</label>
+        <input type="checkbox" name="jezik" id="francuski" value="francuski">  
+        <label for="spanjolski">Spanjolski jezik</label>
+        <input type="checkbox" name="jezik" id="spanjolski" value="spanjolski">  
+      </p>
+      <br>
+      <p>Dali ste do sada koristili usluge nase tvrtke</p><br>
+      <label for="">Da</label>
+      <input type="radio" name="usluge" id="usluge-da" value="da">
+      <label for="">Ne</label>
+      <input type="radio" name="usluge" id="usluge-ne" value="ne">
+      </p>
+      <p>  
+        <label for="cv">Prilozite datoteku</label><br>  
+        <input type="file" id="cv" name="cv">
+      </p>
+      <p>
+        <input type="reset" name="reset_btn" value="Ponisti">
+        <input type="submit" name="submit_btn" value="Prijavi se">
+      </p>
+    </form>
+
+  </body>
+</html>
