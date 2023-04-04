@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0,auto;
+    
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    background: skyblue;
+    height:100vh;
+    width:100%;
+    display:flex;
+}
+.calculator{
+    align-items: center;
+    font-size:26px;
+    padding:20px;
+    
+}
+.calculator form input{
+    border:0;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    outline:0;
+    margin:10px;
+    outline: 0;
+}
+form .display input{
+    flex: 1;
+    text-align: right;
+    font-size: 45px;
+    box-shadow:none;
+}
+form .display{
+    display:flex;
+    justify-content: flex-end;
+    margin:20,0;
+}

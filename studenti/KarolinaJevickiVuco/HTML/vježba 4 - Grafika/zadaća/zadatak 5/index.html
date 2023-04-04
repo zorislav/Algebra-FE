@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Canvas</title>
+</head>
+<body>
+   <canvas id="Canvas1" width="200" height="200"></canvas>
+   <script>
+      var c=document.getElementById("Canvas1");
+      var ctx=c.getContext("2d");
+      ctx.beginPath();
+      ctx.rect(10,10,180,180);
+      ctx.fillStyle="#F1f158";
+      ctx.fill();
+      ctx.strokeStyle="#F00";
+      ctx.lineWidth= 3;
+      ctx.stroke();
+   
+      var cx=c.width/2;
+      var cy=c.height/2;
+      var radius=60;
+      ctx.beginPath();
+      ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
+      ctx.fillStyle="#4307f9";
+      ctx.fill();
+      ctx.strokeStyle="#020008";
+      ctx.lineWidth= 3;
+      ctx.stroke();
+   
+       ctx.beginPath();
+       ctx.fillStyle="#Fafaff";
+       ctx.fillRect(65,65,70,70);
+       ctx.stroke();
+    </script>
+   
+</body>
+</html>
