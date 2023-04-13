@@ -1,7 +1,7 @@
 //1.
 const names = ['John', 'Jane', 'Bob',, 'Mike'];
 
-for (element of names) {
+for (const element of names) {
     console.log(element);
 }
 
@@ -9,7 +9,7 @@ for (element of names) {
 names.push('Zorislav');
 
 //3.
-for (element of names) {
+for (const element of names) {
     if (element === 'Jane') break;
 }
 
