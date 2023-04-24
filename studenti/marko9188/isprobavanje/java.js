@@ -6,6 +6,6 @@
 // window.alert("daj mi jesti")
 
 let z,x,y;
-x=1;y=2;
+x=1;y=100;
 z = y+x;
 console.log(z);
