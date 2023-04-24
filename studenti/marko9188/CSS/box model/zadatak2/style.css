@@ -4,18 +4,20 @@ body {
     color: #333;
     margin: 0;
 }
-.div {
+div {
     background-color: #eee;
     border: 20px solid #999;
     height: 800px;
     margin: 2em 2em auto;
     width: 800px; 
 }
-div > .div:last-child {
+.div:last-child {
     background: #69f;
     margin-left: auto;
     margin-right: 0;
 }
-div > .div:first-child {
+.div:first-child {
     background: #f66;
+    margin-right: auto;
+    margin-left: 0;
 } 
