@@ -1,0 +1,35 @@
+body {
+   font-family: Tahoma, sans-serif;
+   font-size: 16px;
+   color: #333;
+   margin: 0;
+}
+div {
+   background-color: #eee;
+   text-align: justify;
+}
+.center {
+   border: 6px solid #666;
+   padding: 30px;
+   margin: 20px auto;
+   width: 300px;
+}
+.right {
+   border: 6px dashed #666;
+   padding: 30px 50px 30px  50px;
+   margin: 20px 0px 20px auto;
+   width: 500px;
+}
+.left {
+   border-right: 10px double #666;
+   padding: 5px 15px 30px 40px;
+   margin: 20px auto 20px 0px;
+   width: 500px;
+}
+.bottom {
+   border-top: 6px dashed rgb(137, 149, 161);
+   border-bottom: 7px dotted black;
+   padding: 10px 5px 10px 5px;
+   margin: 30px auto;
+   width: 1500px;
+}
