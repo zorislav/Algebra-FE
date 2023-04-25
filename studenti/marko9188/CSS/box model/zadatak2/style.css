@@ -1,8 +1,8 @@
 body {
-    font-family: Tahoma, sans-serif;
+    /* font-family: Tahoma, sans-serif;
     font-size: 16px;
     color: #333;
-    margin: 0;
+    margin: 0; */
   }
   
 body > div:first-of-type {      /* ovaj dio s first of type, sigurno postoji bolje rješenje*/
