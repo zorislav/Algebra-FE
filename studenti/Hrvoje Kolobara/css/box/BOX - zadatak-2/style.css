@@ -1,0 +1,33 @@
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+div.div-1 {
+  background-color: #eee;
+  border: 20px solid #999;
+  height: 800px;
+  width: 800px;
+  position: relative;
+  margin: 2em auto;
+}
+
+div.div-2 {
+  background-color: #f66;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+}
+
+div.div-3 {
+  background-color: #69f;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+/* Zadatak-2 */
