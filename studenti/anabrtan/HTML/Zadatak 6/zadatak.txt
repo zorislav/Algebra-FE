@@ -1,0 +1,51 @@
+Vjezba 9 - Strukturiranje - Zadatak 1 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Strukuriranje sadrzaja"
+
+4. U dokumentu kreirati header dio koristeci <header> element
+
+5. U header dijelu kreirati:
+	- neuredjenu listu sa tri linka: Naslovnica, O nama i Kontakt koji pokazuju na dokument
+	- logo
+
+6. U dokumentu kreirati glavni dio koristeci <main> element
+
+5. Unutar glavnog dijela kreirati pomocu <section> elemenata slijedeci sadrzaj:
+	- O nama
+		- Nasa misija
+		- Vlasnicka struktura tvrtke
+	- Nase djelatnosti
+		- Web dizajn
+			- dodati link "saznajte vise"
+		- Internetski markenting
+			- dodati link "saznajte vise"
+	- Nas strucni tim
+		- Web developers
+			- Slika
+			- "Ana Anic"
+			- Slika
+			- "Pero Peric"
+		- QA and testing specialists
+			- Slika
+			- "Jura Jupiter"
+			- Slika
+			- "Maja Majic"
+	- Korisni linkovi
+		- staviti cetiri proizvoljna linka
+
+	- Tvrtka XYZ
+		- Kontakt
+			- Ilica 242 10000 Zagreb
+			- email kontakt kao link
+			- + 385 1 789456123
+
+		- Pratite nas na drustvenim mrezama
+			- Facebook logo, klik vodi na facebook
+			- Twitter logo, klik vodi na twitter
