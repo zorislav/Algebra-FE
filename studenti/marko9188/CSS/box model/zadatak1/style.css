@@ -7,6 +7,7 @@ body {
 
 div > div {
     background-color: #eee;
+    text-align: justify;
 }
 .div1 {
     border: 5px solid #666;

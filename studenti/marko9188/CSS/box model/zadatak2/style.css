@@ -1,24 +1,24 @@
-body {
-    /* font-family: Tahoma, sans-serif;
+/* body {
+    font-family: Tahoma, sans-serif;
     font-size: 16px;
     color: #333;
-    margin: 0; */
-  }
+    margin: 0; 
+  } */
   
-body > div:first-of-type {      /* ovaj dio s first of type, sigurno postoji bolje rješenje*/
+body > div {     
     background-color: #eee;
     border: 20px solid #999;
     height: 800px;
     margin: 2em auto;
     width: 800px;
   }
-div:last-child {
+ div > div:last-child {
     background: #69f;
     height: 50%;
     width: 50%;
     margin-left: 50%;
   }
-div:first-child {
+div > div:first-child {
     background: #f66;
     margin-right: 50%;
     height: 50%;
