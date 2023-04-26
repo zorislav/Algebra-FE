@@ -1,0 +1,29 @@
+body {
+   margin: 40px auto;
+   color: white
+}
+div {
+   background-color: rgb(234, 230, 230);
+   border: 10px solid lightslategray;
+   padding: 20px auto;
+   width: 500px;
+   height: 500px;
+   margin: auto;
+}
+.red {
+   height: 250px;
+   width: 250px;
+   margin-top: 0px;
+   margin-right: auto;
+   margin-left: 0px;
+   background-color: rgb(235, 102, 102);
+   border: none;
+}
+.blue {
+   height: 250px;
+   width: 250px;
+   margin-right: 0px;
+   margin-left: auto;
+   background-color: rgb(50, 124, 244);
+   border: none;
+}
