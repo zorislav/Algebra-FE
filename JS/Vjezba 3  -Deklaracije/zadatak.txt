@@ -1,0 +1,9 @@
+1. Ispravite sve greške u:
+	 - imenovanju
+	 - deklaraciji
+	 - inicijalizaciji varijabli
+	 - komentarima u kodu.
+
+2. console.log izjave moraju ispisati postojeće varijable i ne rezultirati sa undefined tipom.
+
+3. Pročitajte poglavlja JavaScript Patterns: Essentials - Writing Maintainable Code, Coding Conventions, Naming Conventions, Writing Comments

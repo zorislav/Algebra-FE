@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nasljeđivanje CSS svojstava</title>
+    <style>
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        p {
+            color: #060;
+        }
+        em {
+            color: aqua;
+        }
+        strong {
+            text-decoration: underline wavy red;
+        }
+        span {
+            font-weight: normal;
+        }
+        div {
+            width: 300px;
+            height: 300px;
+            /* padding-top: 10px;
+            padding-right: 20px;
+            padding-left: 30px;
+            padding-bottom: 40xp; */
+            /* padding: 10px 20px 20px 20px; */
+            padding: 20px; /*u smjeru kazaljke na satu ako ne definiramo svaku stranu posebno*/
+            background-color: brown;
+            border: 2px solid black;
+            /* margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px; */
+            margin: 40px;
+            box-sizing: content+-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <h1>Lorem ipsum dolor</h1>
+    <h2>Lorem ipsum dolor dolor sit amet</h2>
+    <h3>Lorem ipsum dolor dolor sit amet</h3>
+    <h4>Lorem ipsum dolor dolor sit amet consectetur</h4>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown <strong>printer took a galley of type and scrambled it
+            to make
+            a type specimen book. <span> It has survived not only five centuries,</span> but also the </strong> leap
+        into electronic typesetting,
+        remaining essentially unchanged. <em>It was popularised in the 1960s with the release of Letraset</em> sheets
+        containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+    </p>
+</body>
+
+</html>
