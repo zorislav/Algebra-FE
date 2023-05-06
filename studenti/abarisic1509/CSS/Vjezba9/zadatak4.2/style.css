@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+}
+
+.wrapper {
+	border: 1px dashed #666;
+	height: 50vh;
+	padding: 1em;
+}
+
+.flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-line-pack: justify;
+	align-content: space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex-item {
+	background-color: #eee;
+	text-align: center;
+	border: 1px solid black;
+	-webkit-box-flex: 0;
+	-ms-flex-positive: 0;
+	flex-grow: 0;
+	-ms-flex-preferred-size: 32%;
+	flex-basis: 32%;
+	width: 24%;
+	padding: 1em;
+	margin: 0.25em;
+}
