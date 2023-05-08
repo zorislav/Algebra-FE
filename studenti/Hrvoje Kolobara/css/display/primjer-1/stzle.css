@@ -1,0 +1,41 @@
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  background-color: orange;
+}
+
+em {
+  background-color: rgb(223, 204, 223);
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline;
+}
+
+.box {
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+

@@ -1,3 +1,4 @@
+/*
 body {
   font-family: Tahoma, sans-serif;
   font-size: 16px;
@@ -29,5 +30,25 @@ div.div-3 {
   bottom: 0;
   left: 50%;
 }
+*/
 
-/* Zadatak-2 */
+body > div {
+  background-color: #eee;
+  border: 20px solid #999;
+  height: 800px;
+  width: 800px;
+  margin: 2em auto;
+}
+
+div > div {
+  width: 50%;
+  height: 50%;
+}
+
+div > div:first-child {
+  background-color: #f66;
+}
+
+div > div:last-child {
+  background-color: #6f6;
+}

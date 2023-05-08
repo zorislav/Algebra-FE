@@ -1,0 +1,12 @@
+body {
+  font-size: 16px;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 25%;
+  margin: 5em auto;
+  border: 2px solid #999;
+  padding: 20px;
+}
