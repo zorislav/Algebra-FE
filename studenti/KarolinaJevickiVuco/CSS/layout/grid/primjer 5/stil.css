@@ -40,3 +40,13 @@ article {
    flex-basis: 24%;   /*jer imaa 4 reda*/
    width: 49%;  /*jer zauzima pola section containera*/
 }
+
+@media (max-width: 500px) {   /*media query - kad je širina ekrana 500px ili manje, ovo se pravilo primjenjuje, npr. na displayu mobitela 'aside' dio ide ispod 'articles' u prikazu*/
+   main {
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+   article {
+      width: 99%;
+   }
+}
