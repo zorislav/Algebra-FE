@@ -50,4 +50,15 @@ article {
   text-align: left;
 }
 
-/* Pitanje, na koji nacin mozemo napraviti da kada smanjujemo prozor da se aside pomakne ispod section-a  da se prilagodjava mobilnom uredjaju ili do tog jos nismo dosli lo */
+/* Pitanje i odg od profesora, na koji nacin mozemo napraviti da kada smanjujemo prozor da se aside pomakne ispod section-a  da se prilagodjava mobilnom uredjaju ili do tog jos nismo dosli lo */
+
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  article {
+    width: 99%;
+  }
+}
