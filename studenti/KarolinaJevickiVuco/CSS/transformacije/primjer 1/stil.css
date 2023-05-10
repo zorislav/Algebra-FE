@@ -1,0 +1,53 @@
+* {
+   box-sizing: border-box;
+}
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 16px;
+   color: #333;
+}
+h1 {
+   text-align: center;
+}
+div {
+   background-color: #f93;
+   border: 1px solid #333;
+   width: 300px;
+   height: 150px;
+   margin: 4em auto;
+}
+
+/*
+div:hover {
+   transform: translate(150px,-20px);    /*gornji lijevi ugao elementa se pomiče na te koordinate kad se mišem prijeđe preko njega- element ode udesno
+} */
+
+.translate {
+   transform: translate(150px,-20px); 
+}
+
+.rotate {
+   transform: rotate(30deg);   /*rotira se  u smjeru kazaljke na satu - s minus predznakom bi išao suprotno od kazaljke */
+}
+
+.scale {
+   transform: scale(2, 0.5);  /*u X-smjeru se element duplo povećao, a u Y-smjeru visina se smanjila na pola*/
+   /* alternativno: 
+   transform: scaleX(2) scaleY(0.5);  */
+}
+.skew {
+   transform: skew(20deg, 15deg);
+   /*alternativno:
+   transform: skewX (20deg) skewY(15deg;) */
+}
+
+.multiple {
+   transform: rotate(30deg) scale(0.5, 0.3) skew(20deg, 15deg);
+}
+
+.matrix {
+   transform: scale(-0.5, 1.5) skew(20deg, 15deg) translate(100px, -100px);
+   /*alternativno:
+   transform: matrix(2, 20deg, 15deg, 1.5, 100px, -100px,);  ????*/
+}
+
