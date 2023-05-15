@@ -3,6 +3,8 @@ body {
 	margin-left: auto;
     margin-right: auto;
     width: 1024px;
+		box-sizing: border-box;
+		align-items: center;
 }
 
 header {
@@ -40,6 +42,7 @@ section {
 	text-align: center;
 	margin-bottom: 40px;
 	margin-top: 40px;
+	align-items: center;
 }
 
 h1 {
@@ -60,6 +63,12 @@ hr {
 	height: 2px;
 	width: 40%;
 	border: 0;
+}
+h2 {
+	font-family: sans-serif;
+	color: #0000ff;
+	font-size: x-large;
+	font-weight: 100;
 }
 
 .buttons {
@@ -104,41 +113,6 @@ hr {
 	height: 200px;
 	width: 300px;
 	object-fit: cover;
-}
-
-#contact {
-	padding: 0;
-}
-
-#contact h2 {
-	font-family: sans-serif;
-	color: #0000ff;
-	font-size: 24px;
-	margin-bottom: 20px;
-	font-weight: 100;
-}
-
-#contact-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#contact-form input,
-#contact-form textarea {
-	margin-bottom: 10px;
-	padding: 5px;
-	width: 300px;
-}
-
-#contact-form textarea {
-	height: 100px;
-}
-
-#contact-form input[type="submit"] {
-	border: none;
-	padding: 10px 20px;
-	cursor: pointer;
 }
 
 footer {

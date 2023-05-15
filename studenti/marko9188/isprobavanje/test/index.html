@@ -45,13 +45,36 @@
 			<h2>CONTACT US</h2>
 			<hr class="contact">
 			<form name="f1" id="contact-form">
-				<input type="text" name="first_name" placeholder="First Name" required="required">
-				<input type="text" name="last_name" placeholder="Last Name" required="required">
-				<input type="email" name="email" placeholder="Email" required="required">
-				<input type="text" name="subject" placeholder="Subject" required="required">
-				<textarea placeholder="Enter Message" required=""></textarea>
-				<input type="submit" name="contact-submit" value="SEND">
-			</form>
+				<table align="center" border="1" height="200" cellspacing="12" cellpadding="5">
+						<tr>
+								<td>
+										<input type="text" name="first_name" id="first_name" placeholder="First Name">
+								</td>
+								<td>
+										<input type="text" name="last_name" id="last_name" placeholder="Last Name">
+								</td>
+						</tr>
+						<tr>
+								<tr>
+								<td>
+										<input type="email" name="email" id="email" placeholder="e-mail">
+								</td>
+								<td>
+										<input type="text" name="last_name" id="last_name" placeholder="subject">
+								</td>
+						</tr>
+						<tr>
+								<th colspan="2">
+										<textarea type="message" placeholder="Enter message"></textarea>
+								</th>
+						</tr>
+						<tr>
+								<th colspan="2">
+										<input type="submit" name="contact-submit" value="send">
+								</th>
+						</tr>
+				</table>
+		</form>
 		</section>
 	</main>
 	<footer>
