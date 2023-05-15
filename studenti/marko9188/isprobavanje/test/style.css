@@ -1,0 +1,149 @@
+body {
+	background: url("banner.jpeg");
+}
+
+header {
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+h3 {
+	font-family: sans-serif;
+	font-size: 24px;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+}
+
+nav {
+	text-align: center;
+	margin-top: 20px;
+}
+
+nav a {
+	margin-right: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #0000ff;
+}
+
+main {
+	padding: 40px 0;
+}
+
+section {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+h1 {
+	font-family: sans-serif;
+	color: #0000ff;
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+h3 {
+	font-family: Lato;
+	color: #000000;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.buttons {
+	margin-top: 40px;
+}
+
+.buttons a {
+	display: inline-block;
+	margin-right: 20px;
+	font-family: Lato;
+	color: #000000;
+	text-decoration: none;
+}
+
+.buttons a:last-child {
+	color: #ff0000;
+}
+
+#portfolio {
+	background-color: #ffffff;
+	padding: 40px;
+}
+
+#portfolio h2 {
+	font-family: sans-serif;
+	color: #00ff00;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.gallery img {
+	margin: 10px;
+	height: 200px;
+	width: 300px;
+	object-fit: cover;
+}
+
+#contact {
+	background-color: #ffffff;
+	padding: 40px;
+}
+
+#contact h2 {
+	font-family: sans-serif;
+	color: #0000ff;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#contact-form input,
+#contact-form textarea {
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 300px;
+}
+
+#contact-form textarea {
+	height: 100px;
+}
+
+#contact-form input[type="submit"] {
+	background-color: #000000;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #000000;
+	padding: 20px;
+	text-align: center;
+}
+
+footer a {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+footer p {
+	margin: 0;
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 24px;
+}

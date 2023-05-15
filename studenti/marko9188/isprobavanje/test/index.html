@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple website using html only</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h3 align="center">LOGO</h3>
+		<nav>
+			<a href="#">HOME</a>
+			<a href="#">VIDEOS</a>
+			<a href="#portfolio">PORTFOLIO</a>
+			<a href="#">BLOG</a>
+			<a href="#contact">CONTACT US</a>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1 align="center">SIMPLE AND ONE PAGE WEBSITE</h1>
+			<h3 align="center">USING HTML ONLY (NO CSS USED)</h3>
+			<div class="buttons">
+				<a href="#">GET STARTED</a>
+				<a href="#">SUBSCRIBE US</a>
+			</div>
+		</section>
+		<section id="portfolio">
+			<h2>PORTFOLIO</h2>
+			<div class="gallery">
+				<img src="img1.jpeg" alt="Image 1">
+				<img src="img2.jpeg" alt="Image 2">
+				<img src="img3.jpeg" alt="Image 3">
+				<img src="img4.jpeg" alt="Image 4">
+				<img src="img5.jpeg" alt="Image 5">
+				<img src="img6.jpeg" alt="Image 6">
+			</div>
+			<a href="#">LOAD MORE</a>
+		</section>
+		<section id="contact">
+			<h2>CONTACT US</h2>
+			<form name="f1" id="contact-form">
+				<input type="text" name="first_name" placeholder="First Name" required="required">
+				<input type="text" name="last_name" placeholder="Last Name" required="required">
+				<input type="email" name="email" placeholder="Email" required="required">
+				<input type="text" name="subject" placeholder="Subject" required="required">
+				<textarea placeholder="Enter Message" required=""></textarea>
+				<input type="submit" name="contact-submit" value="SEND">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>
+			<a href="index.html">LOGO</a>
+		</p>
+		<p>
+			Proudly made by Zorislav. Free to use.
+		</p>
+	</footer>
+</body>
+</html>
