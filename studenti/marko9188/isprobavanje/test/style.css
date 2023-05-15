@@ -1,33 +1,35 @@
 body {
 	background: url("banner.jpeg");
+	margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
 }
 
 header {
-	background-color: #ffffff;
-	padding: 20px;
+	padding-top: 10px;
+	padding-left: 20px;
 }
 
-h3 {
-	font-family: sans-serif;
-	font-size: 24px;
-	color: #000000;
-	text-align: center;
+h3.logo {
+	font-family: Arial;
+	font-size: 32px;
+	text-align: top left;
 	margin: 0;
+	display: inline;
 }
 
 nav {
-	text-align: center;
 	margin-top: 20px;
+	display: inline;
+	position: relative;
+	left: 400px;
 }
 
 nav a {
-	margin-right: 20px;
-	color: #000000;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #0000ff;
+	margin-right: 15px;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 main {
@@ -44,12 +46,19 @@ h1 {
 	color: #0000ff;
 	font-size: 48px;
 	margin-bottom: 20px;
+	padding-top: 4.5em;
 }
 h3 {
 	font-family: Lato;
 	color: #000000;
 	font-size: 24px;
 	margin-bottom: 20px;
+}
+hr {
+	background: white;
+	height: 2px;
+	width: 40%;
+	border: 0;
 }
 
 .buttons {
@@ -60,8 +69,11 @@ h3 {
 	display: inline-block;
 	margin-right: 20px;
 	font-family: Lato;
-	color: #000000;
 	text-decoration: none;
+	text-decoration: underline;
+	font-size: 18.72px;
+	color: black;
+	font-weight: 700;
 }
 
 .buttons a:last-child {
@@ -69,32 +81,33 @@ h3 {
 }
 
 #portfolio {
-	background-color: #ffffff;
 	padding: 40px;
+	padding-top: 150px;
 }
 
 #portfolio h2 {
 	font-family: sans-serif;
-	color: #00ff00;
-	font-size: 36px;
+	color: rgb(0, 128, 0);
+	font-size: 24px;
 	margin-bottom: 20px;
+	font-weight: 100;
 }
 
 .gallery {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding-top: 75px;
 }
 
 .gallery img {
-	margin: 10px;
+	padding: 20px;
 	height: 200px;
 	width: 300px;
 	object-fit: cover;
 }
 
 #contact {
-	background-color: #ffffff;
 	padding: 40px;
 }
 
@@ -123,15 +136,12 @@ h3 {
 }
 
 #contact-form input[type="submit"] {
-	background-color: #000000;
-	color: #ffffff;
 	border: none;
 	padding: 10px 20px;
 	cursor: pointer;
 }
 
 footer {
-	background-color: #000000;
 	padding: 20px;
 	text-align: center;
 }
@@ -143,7 +153,6 @@ footer a {
 
 footer p {
 	margin: 0;
-	color: #ffffff;
 	font-family: sans-serif;
 	font-size: 24px;
 }
