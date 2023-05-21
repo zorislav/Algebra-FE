@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+}
+
+.wrapper {
+	border: 1px dashed #666;
+	/* min-height: 100svh;
+	min-height: 100vh; */
+	padding: 1em;
+}
+
+.flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-line-pack: justify;
+	align-content: space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex-item {
+	background-color: #eee;
+	text-align: center;
+	border: 1px solid black;
+	-ms-flex-preferred-size: 31%;
+	flex-basis: 31%;
+	height: 23%;
+	padding: 1em;
+	margin: 0.25em;
+}

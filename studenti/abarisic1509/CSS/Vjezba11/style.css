@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+}
+
+section {
+	border: 1px solid #ccc;
+	margin: auto;
+	width: 400px;
+}
+
+section div {
+	background-color: #f93;
+	border: 1px solid #333;
+	font-size: 2em;
+	line-height: 150px;
+	width: 300px;
+	height: 150px;
+	margin: 4em auto;
+	text-align: center;
+}
+
+.transform-1 {
+	transform: translateX(-400px);
+}
+.transform-2 {
+	transform: translateY(calc(-150px - 4em));
+}
+.transform-3 {
+	transform: translate(400px, calc(-300px - 8em));
+}
+.transform-4 {
+	transform: translate(-400px, calc(-300px - 8em)) rotate(180deg);
+}
+.transform-5 {
+	transform: translateY(calc(-450px - 12em)) skew(15deg, 10deg);
+}
+.transform-6 {
+	transform: translate(400px, calc(-600px - 16em)) rotate(45deg)
+		skew(40deg, 5deg);
+}
+.matrix {
+	transform: translateY(calc(-600px - 16em)) matrix(4, 0, 5, 4, 1, 1);
+}
