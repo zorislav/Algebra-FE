@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple website using html and css</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<a href="#" class="logo">Logo</a>
+
+			<button
+				class="nav-btn"
+				id="navBtn"
+				aria-controls="navList"
+				aria-expanded="false"
+			>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<ul class="nav-list" id="navList">
+				<li><a href="#">home</a></li>
+				<li><a href="#">videos</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#contact">contact us</a></li>
+			</ul>
+		</header>
+		<!-- MAIN -->
+		<main>
+			<!-- HERO -->
+			<section class="hero">
+				<div>
+					<h1>SIMPLE AND ONE PAGE WEBSITE</h1>
+					<h2>USING HTML AND CSS</h2>
+					<div class="links-wrapper">
+						<a href="#">Get started</a>
+						<a href="#">Subscribe</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- PORTFOLIO -->
+			<section class="portfolio" id="portfolio">
+				<hr />
+				<h2>portfolio</h2>
+				<hr />
+
+				<div class="projects-list">
+					<img src="img1.jpeg" alt="Project 1" width="300" />
+					<img src="img2.jpeg" alt="Project 2" width="300" />
+					<img src="img3.jpeg" alt="Project 3" width="300" />
+					<img src="img4.jpeg" alt="Project 4" width="300" />
+					<img src="img5.jpeg" alt="Project 5" width="300" />
+					<img src="img6.jpeg" alt="Project 6" width="300" />
+				</div>
+				<a href="#">load more</a>
+			</section>
+
+			<!-- CONTACT -->
+			<section class="contact" id="contact">
+				<hr />
+				<h2>contact us</h2>
+				<hr />
+
+				<form>
+					<div class="input-wrapper">
+						<p>
+							<input
+								type="text"
+								name="first_name"
+								placeholder="First Name"
+								required="required"
+							/>
+						</p>
+						<p>
+							<input
+								type="text"
+								name="Last_name"
+								placeholder="Last Name"
+								required="required"
+							/>
+						</p>
+					</div>
+
+					<div class="input-wrapper">
+						<p>
+							<input
+								type="email"
+								name="email"
+								placeholder="Email"
+								required="required"
+							/>
+						</p>
+						<p>
+							<input
+								type="text"
+								name="subject"
+								placeholder="Subject"
+								required="required"
+							/>
+						</p>
+					</div>
+
+					<p><textarea placeholder="Enter Message" required></textarea></p>
+					<p><input type="submit" name="contact-submit" value="SEND" /></p>
+				</form>
+			</section>
+		</main>
+
+		<!-- FOOTER -->
+		<footer>
+			<hr />
+			<p>
+				<a href="#">logo</a>
+			</p>
+			<p>Proudly made by Zorislav. Free to use.</p>
+		</footer>
+
+		<!-- Nav scripts -->
+		<script>
+			const initNav = () => {
+				const navBtn = document.getElementById("navBtn");
+				const navList = document.getElementById("navList");
+
+				const toggleNavMenu = () => {
+					const isOpen = JSON.parse(navBtn.getAttribute("aria-expanded"));
+					console.log(isOpen);
+					if (isOpen) {
+						navList.classList.remove("active");
+						navBtn.setAttribute("aria-expanded", "false");
+					} else {
+						navList.classList.add("active");
+						navBtn.setAttribute("aria-expanded", "true");
+					}
+				};
+
+				navBtn.addEventListener("click", toggleNavMenu);
+			};
+
+			initNav();
+		</script>
+	</body>
+</html>
