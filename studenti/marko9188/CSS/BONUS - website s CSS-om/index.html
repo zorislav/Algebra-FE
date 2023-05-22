@@ -6,85 +6,102 @@
 	<title>Simple website using html and css</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<header>
-		<h3 class="logo">LOGO</h3>
+<body background="banner.jpeg" link="black" alink="blue" vlink="black">
+	<header id="header-container">
+		<p id="logo">LOGO</p>
 		<nav>
-			<a href="#">HOME</a>
-			<a href="#">VIDEOS</a>
-			<a href="#portfolio">PORTFOLIO</a>
-			<a href="#">BLOG</a>
-			<a href="#contact">CONTACT US</a>
+			<ul id="inner-header-container">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">VIDEOS</a></li>	
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#">BLOG</a></li>
+				<li><a href="#contact">CONTACT US</a></li>
+			</ul>
 		</nav>
 	</header>
 	<main>
-		<section>
+		<section id="section-title">
 			<h1 >SIMPLE AND ONE PAGE WEBSITE</h1>
 			<h3 >USING HTML AND CSS</h3>
-			<div class="buttons">
-				<a href="#">GET STARTED</a>
-				<a href="#">SUBSCRIBE US</a>
-			</div>
+			<ul>
+				<li><a href="#">GET STARTED</a></li>
+				<li><a href="#">SUBSCRIBE US</a></li>
+			</ul>
 		</section>
-		<section id="portfolio">
+		<section id="section-portfolio">
+		  <div>
 			<hr>
-			<h2>PORTFOLIO</h2>
+			<p>PORTFOLIO</p>
 			<hr>
-			<div class="gallery">
-				<img src="img1.jpeg" alt="Image 1">
-				<img src="img2.jpeg" alt="Image 2">
-				<img src="img3.jpeg" alt="Image 3">
-				<img src="img4.jpeg" alt="Image 4">
-				<img src="img5.jpeg" alt="Image 5">
-				<img src="img6.jpeg" alt="Image 6">
+		  </div>
+		  <div id="image-grid">
+			<div>
+				<img class="image" src="img1.jpeg" alt="Image 1">
 			</div>
-			<a href="#">LOAD MORE</a>
+			<div>
+				<img class="image" src="img2.jpeg" alt="Image 2">	
+			</div>	
+			<div>
+				<img  class="image" src="img3.jpeg" alt="Image 3">
+			</div>
+			<div>
+				<img class="image" src="img4.jpeg" alt="Image 4">
+			</div>
+			<div>
+				<img class="image" src="img5.jpeg" alt="Image 5">
+			</div>
+			<div>
+				<img class="image" src="img6.jpeg" alt="Image 6">
+			</div>
+			<div id="more"><a href="#">LOAD MORE</a></div>
+			
 		</section>
 		<section id="contact">
-			<hr class="contact">
-			<h2>CONTACT US</h2>
-			<hr class="contact">
-			<form name="f1" id="contact-form">
-				<table cellspacing="12" cellpadding="5">
-						<tr>
-								<td>
-										<input type="text" name="first_name" id="first_name" placeholder="First Name">
-								</td>
-								<td>
-										<input type="text" name="last_name" id="last_name" placeholder="Last Name">
-								</td>
-						</tr>
-						<tr>
-								<tr>
-								<td>
-										<input type="email" name="email" id="email" placeholder="e-mail">
-								</td>
-								<td>
-										<input type="text" name="last_name" id="last_name" placeholder="subject">
-								</td>
-						</tr>
-						<tr>
-								<th colspan="2">
-										<textarea type="message" placeholder="Enter message"></textarea>
-								</th>
-						</tr>
-						<tr>
-								<th colspan="2">
-										<input type="submit" name="contact-submit" value="send">
-								</th>
-						</tr>
-				</table>
+			<div id="contact-us">
+			  <hr>
+			  <p>CONTACT US</p>
+			  <hr>
+			</div>
+		<form action="" id="contact-form">
+		 <div id="form-container">
+			<div style="display: flex;">
+				<div class="input-container">
+					<input type="text" name="first_name" id="first_name" placeholder="First Name">
+				</div>
+				<div class="input-container">
+					<input type="text" name="last_name" id="last_name" placeholder="Last Name">
+				</div>
+			</div>
+			<div style="display: flex;">
+				<div class="input-container">
+					<input type="email" name="email" id="email" placeholder="e-mail">
+				</div>
+				<div class="input-container">
+					<input type="text" name="last_name" id="last_name" placeholder="subject">
+				</div>
+			</div>
+			<div class="other-container">
+				<textarea type="message" placeholder="Enter message"></textarea>
+			</div>
+			<div class="other-container">
+				<input type="submit" name="contact-submit" value="send">
+			</div>
+		 </div>
+			
+				
 		</form>
 		</section>
 	</main>
 	<footer>
-		<p>
-			<hr class="footer">
-			<a href="index.html">LOGO</a>
-		</p>
-		<p>
-			Proudly made by Zorislav. Free to use.
-		</p>
+		<hr>
+		<div id="footer-logo">
+			<a href="#">LOGO</a>
+		</div>
+		<div id="footer-text">
+			<p>
+				Proudly made by Zorislav. Free to use.
+			</p>
+		</div>
 	</footer>
 </body>
 </html>
