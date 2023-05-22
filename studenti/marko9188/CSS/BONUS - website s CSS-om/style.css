@@ -101,6 +101,10 @@ h2 {
 	margin-bottom: 20px;
 	font-weight: 100;
 }
+#portfolio a{
+	color: black;
+	font-weight: bold;
+}
 
 .gallery {
 	display: flex;
@@ -132,16 +136,31 @@ footer p {
 	margin: 20px;
 	font-family: sans-serif;
 	font-size: large;
+	
 }
 hr.contact{
 	background: black;
 	height: 2px;
 	width: 30%;
 	border: 0;
-	/* nisam sposoban napraviti da crta ide preko cijelog ekrana, nije mi se dalo guglat */
+	/* nisam sposoban napraviti da crta ide preko cijelog ekrana */
 }
 footer>hr{
 	background: black;
 	height: 2px;
 	width: 100%;
 }
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	margin-top: 50px;	
+}
+td, tr, th, textarea, input {
+	border: 1px solid black;
+}
+#contact,footer {
+	position: relative;
+	transform: translateY(150px);
+}
+
