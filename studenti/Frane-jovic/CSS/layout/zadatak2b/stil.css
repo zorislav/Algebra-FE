@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{border: 2px #666 dashed;
+  min-height: 100vh;
+  padding: 1em;
+} 
+.wrapper div {
+  background-color: #eee;
+  border: 1px solid #666;
+  padding:  1em;
+  text-align: center;
+  
+  
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column-reverse;
+  
+
+}
+.flex-item{
+  flex-basis: 18vh;
+  
+}
