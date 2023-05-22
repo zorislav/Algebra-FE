@@ -7,7 +7,7 @@ body {
     color: black;
     background-image: url("./assets/banner.jpeg");
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 body a:active {
@@ -65,7 +65,7 @@ h3{
 .section-title{
     border-top: 2px solid white;
     border-bottom: 2px solid white;
-    max-width: 20%;
+    max-width: 30%;
     margin: auto auto 5% auto;
     font-size: 2em;
     color: green;
@@ -121,5 +121,43 @@ table * {
     text-decoration: underline black 1px;
 }
 
+
+@media only screen and (max-width: 768px) {
+
+    h1{
+        font-size: 2em;
+    }
+    header p{
+        transform: scale(0.7);
+        margin-left: 1em;
+    }
+
+    nav{
+        transform:scale(0.85);
+    }
+
+    nav a{
+        display: block;
+        text-align: right;
+        margin-bottom: 2%;
+    }
+
+    .section-title{
+        font-size: 1em;
+    }
+
+    .image-grid img{
+        width: 50%;
+    }
+
+    #portfolio-link{
+        font-size: 3vw;
+    }
+
+    section {
+        margin-bottom: 20% !important; 
+    }
+
+}
 
 
