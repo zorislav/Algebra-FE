@@ -1,0 +1,15 @@
+body {
+    font-family: tahoma,sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+p{
+     background-color: #eee;
+     display:inline-block;
+     border: 1px black solid;
+     margin-left: -4px;
+     padding: 1em;
+     width:33.33%;
+     box-sizing: border-box;
+
+}
