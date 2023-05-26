@@ -1,0 +1,40 @@
+$color1: #eee; 
+$color2: #333;
+$color3: #800;
+
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+
+@mixin spacing($margin, $padding) {
+   margin: $margin;
+   padding: $padding;
+}
+
+body {
+   @include spacing(0, 0);   /*margine su na 0 u svim smjerovima*/
+   background-color: $color1;
+   color: $color2;
+   font-family: $font1;
+}
+
+div {
+   @include spacing(0 0 1em 0, 0);   /*margine su 0 0 1em 0, a padding je 0 u svim smjerovima*/
+   background-color: $color3;
+   height: 20px;
+}
+
+@for $i from 1 through 8 {      /* varijabla  i se ponavlja od 1 do 8*/
+    $sirina: percentage(1 / $i);  /*definicija varijable koja se zove 'sirina'*/
+    .col-#{$i} {       /*.col-1 = u prvom prolazu; .col-2 u drugom prolazu*/
+      width: $sirina;    /*u prvom prolazu to je 100%*/
+    }
+}
+
+/*varijabla 'i' ide od 1 do 8 
+--> prvi prolazak: i= 1 --> percentage 1/1 --> širina je 100%; 
+--> drugi prolazak: i = 2 --> percentage 1/2 = 0.5 = 50%;
+--> treći prolazak: i = 3 --> percentage 1/3 =  33,33%;
+--> osmi prolazak: i = 8 --> percentage 1/8 = 12.5%;
+ovakva notacija u 4 reda zamijeni CSS notaciju od 30 redova*
+- preduvjet je ovdje da klase imaju ovakva imena numerirana*/
