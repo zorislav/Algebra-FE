@@ -1,8 +1,7 @@
 body {
-   margin: 40px auto;
-   color: white
+   margin: 40px auto;  /* alternativno: margin: 0;*/
 }
-div {
+div { /* alternativno: body > div*/
    background-color: rgb(234, 230, 230);
    border: 10px solid lightslategray;
    padding: 20px auto;
@@ -10,18 +9,18 @@ div {
    height: 500px;
    margin: auto;
 }
-.red {
-   height: 250px;
-   width: 250px;
+.red { /* alternativno: div:first-child*/
+   height: 250px; /* alternativno: 50%* - bolja opcija, kraći način/
+   width: 250px; /* alternativno: 50%*/
    margin-top: 0px;
    margin-right: auto;
    margin-left: 0px;
    background-color: rgb(235, 102, 102);
    border: none;
 }
-.blue {
-   height: 250px;
-   width: 250px;
+.blue { /* alternativno: div:last-child*/
+   height: 250px; /* alternativno: 50%*/
+   width: 250px; /* alternativno: 50%*/
    margin-right: 0px;
    margin-left: auto;
    background-color: rgb(50, 124, 244);

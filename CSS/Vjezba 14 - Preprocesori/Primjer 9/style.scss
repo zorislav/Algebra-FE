@@ -15,19 +15,25 @@ body {
   background-color: $color1;
   color: $color2;
   font-family: $font1;
+  content: "di si?";
 }
 
 div {
-  @include spacing(0 0 1em 0, 0);
-  background: $color3;
-  height: 20px;
+  @include spacing(0 0 1em 0, 1em);
+  background: $color2;
+  color: $color1;
 }
 
-// @for
+// @while
 
-@for $i from 1 through 8 {
-  $width: percentage(1 / $i);
-  .col-#{$i} {
-    width: $width;
+$num: 8;
+
+@while $num > 0 {
+  .col-#{$num} {
+    &:before {
+      content: "#{$num}";
+    }
   }
+
+  $num: $num - 1;
 }

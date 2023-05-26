@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website - HTML + CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3 id="logo">LOGO</h3>
+        <nav>
+           <a href="#">HOME</a>
+           <a href="#">VIDEOS</a>
+           <a href="#portfolio">PORTFOLIO</a>
+           <a href="#">BLOG</a>
+           <a href="#kontakt">CONTACT US</a>
+        </nav>
+     </header>
+  
+     <main>
+        <section>
+           <h1>SIMPLE AND ONE PAGE WEBSITE</h1>
+           <h3 id="CSS">USING HTML and CSS</h3>
+           <h3 id="us">
+              <a id="started" href="#">GET STARTED</a>
+              <a id="sub" href="#">SUBSCRIBE US</a>
+           </h3>
+        </section>
+       
+        <section id="portfolio">
+           <div>
+              <p id="port">PORTFOLIO</p>
+           </div>
+           
+           <figure class="flex-container">
+                 <img src="img1.jpeg" alt="slika1">
+                 <img src="img2.jpeg" alt="slika2">
+                 <img src="img3.jpeg" alt="slika3">
+                 <img src="img4.jpeg" alt="slika4">
+                 <img src="img5.jpeg" alt="slika5">
+                 <img src="img6.jpeg" alt="slika6">
+           </figure>
+           <h4><a href="#">LOAD MORE</a></h4>
+        </section>
+  
+        <section id="kontakt">
+           <p id="contact">CONTACT US</p>
+  
+           <form action="">
+              <table>
+                 <tr>
+                    <td><input type="text" name="first name" placeholder="First Name"></td>
+                    <td><input type="text" name="last name" placeholder="Last Name"></td>
+                 </tr>
+                 <tr>
+                    <td><input type="email" name="email" placeholder="E-mail"></td>
+                    <td><input type="text" name="subject" placeholder="Subject"></td>
+                 </tr>
+                 <tr>
+                    <th colspan="2">
+                       <textarea name="message" placeholder="Enter message"></textarea>
+                    </th>
+                 </tr>
+                 <tr>
+                    <td colspan="2">
+                       <input type="submit" name="contact-submit" value="SEND">
+                    </td>
+                 </tr>
+              </table>
+           </form>
+     
+        </section>
+     </main>
+  
+     <footer>
+        <p id="logo2" >
+           <a id="red" href="#">LOGO</a>
+        </p>
+        <p id="end">Proudly made by me. Free to use.</p>
+     </footer>
+</body>
+</html>

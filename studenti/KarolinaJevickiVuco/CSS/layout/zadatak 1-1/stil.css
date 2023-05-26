@@ -1,0 +1,35 @@
+* {   /*ova pravila primijenjiva na svaki element*/
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333;
+}
+.wrapper {
+   border: 1px dashed #666;
+   min-height: 100vh;  /*jer element ide preko cijele visine viewporta*/
+   padding: 1em;
+}
+
+/* alternativno:
+.wrapper div {
+   border: 1px solid #666;
+   background-color: #eee;
+   padding: 1em;
+   text-align: center; 
+} */
+.flex-item { 
+   border: 1px solid #666;
+   background-color:#eee;
+   padding: 1em;
+   flex-basis: 18%;
+   text-align: center;
+}
+.flex-container {
+   height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+  
