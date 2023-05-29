@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1rem;
+	background: url(../media/back.JPG) center/cover fixed;
+}
+
+p {
+	font-size: 2rem;
+	color: $clr-text;
+	text-align: center;
+}
