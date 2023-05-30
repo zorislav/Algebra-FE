@@ -1,0 +1,106 @@
+* {
+
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 20px;
+	padding: 14px 12px;
+	max-width: 900px;
+	margin: 0 auto;
+	color: #333;
+	border-left: 4px solid rgb(226, 215, 201);
+	border-right: 4px solid rgb(226, 215, 201);
+}
+
+img {
+	max-width: 100%;
+}
+
+.logo {
+	border-bottom: 8px double rgb(226, 215, 201);
+	text-align: center;
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+}
+
+.logotext {
+	font-size: 18px;
+}
+
+.locopic {
+	display: block;
+}
+
+.img {
+	position: relative;
+}
+
+.imgscone {
+	border: 8px solid #e5c799;
+	border-radius: 4px;
+}
+
+.caption {
+	font-size: 10px;
+	background-color: #333;
+	color: white;
+	position: absolute;
+	bottom: 17px;
+	right: 17px;
+	padding: 3px;
+}
+
+.uvodtext {
+	font-size: 35px;
+	font-style: italic;
+}
+
+
+ h3 {
+	margin: 0;
+}
+
+
+.method li {
+	padding: 20px 0;
+} 
+
+
+
+@media screen and (min-width: 767px) {
+	body {
+		border-left: 4px solid rgb(226, 215, 201);;
+		border-right: 4px solid rgb(226, 215, 201);;
+		padding: 15px 30px;
+	}
+
+	.uvod {
+		display: table;
+		width: 100%;
+	}
+
+	.uvodtext,
+	.img {
+		display: table-cell;
+		width: 50%;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.uvodtext {
+		padding: 10px;
+		text-align: left;
+		position: relative;
+	}
+
+	.ingredients {
+		font-size: 18px;
+		float: right;
+		padding: 15px;
+		border-radius: 3px;
+		background-color: #fff2e0;
+		border: 2px solid #f3ce96;
+	}
+
+}
