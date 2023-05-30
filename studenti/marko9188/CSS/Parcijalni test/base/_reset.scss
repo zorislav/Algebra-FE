@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body,div,p,header, footer
+   {
+    margin: 0;
+    padding: 0;
+  }
+ p {
+    font-weight: normal;
+ }
