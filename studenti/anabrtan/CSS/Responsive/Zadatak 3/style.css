@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: black;
+    background-image: url("./assets/banner.jpeg");
+    text-align: center;
+    font-size: 1em;
+}
+
+body a:active {
+    color: blue;
+}
+
+body a {
+    color: black;
+    margin-right: 2%;
+}
+ 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p{
+    text-align: left;
+    font-size: 2em;  
+    font-weight: bold;
+    margin-left: 3em;
+}
+
+nav{
+    width: 40%;
+}
+
+nav a:active{
+    color: blue;
+}
+
+#title {
+    margin: 15% 0 10% 0;
+}
+
+h1 {
+    color: blue;
+    font-size: 3em;
+}
+
+h3{
+    font-family: Lato;
+
+}
+
+#links {
+    margin-top: 3%;
+    font-size: 1em;
+}
+#red{
+    color: red ;
+}
+
+.section-title{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    max-width: 30%;
+    margin: auto auto 5% auto;
+    font-size: 2em;
+    color: green;
+    padding: 15px;
+}
+
+.image-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: auto;
+}
+
+.image-grid img  {
+    width: 30%;
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+section {
+    margin-bottom: 5%;
+}
+
+#portfolio-link{
+    color: black;
+    font-weight: bold;
+}
+
+table{
+    border: 1px solid black;
+    height: 200px;
+    margin: auto;
+    border-spacing: 10%;
+    padding: 7px;
+    border-spacing: 10px;
+}
+
+table * {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#contact-title {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: blue;
+}
+
+#footer-logo {
+    font-size: 3em;
+    color: red;
+    text-decoration: underline black 1px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    h1{
+        font-size: 2em;
+    }
+    header p{
+        transform: scale(0.7);
+        margin-left: 1em;
+    }
+
+    nav{
+        transform:scale(0.85);
+    }
+
+    nav a{
+        display: block;
+        text-align: right;
+        margin-bottom: 2%;
+    }
+
+    .section-title{
+        font-size: 1em;
+    }
+
+    .image-grid img{
+        width: 50%;
+    }
+
+    #portfolio-link{
+        font-size: 3vw;
+    }
+
+    section {
+        margin-bottom: 20% !important; 
+    }
+
+}
+
+

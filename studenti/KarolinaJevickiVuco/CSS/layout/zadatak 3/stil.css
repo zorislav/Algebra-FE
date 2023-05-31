@@ -1,0 +1,46 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333;
+}
+.wrapper {
+   border: 1px dashed #666;
+   height: 100vh;
+   padding: 1em;
+}
+.wrapper div {
+   border: 1px solid #666;
+   background-color: #eee;
+   padding: 1em;
+   text-align: center;
+}
+
+.flex-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.flex-item {
+   padding: 1em; 
+   flex-basis: 24vw;
+}
+.flex-item:nth-child(2) {
+   flex-basis: 47vw;
+}
+
+/*alternativno::
+.flex-item {
+   flex-grow: 1;
+}
+
+.flex-item:nth-child(2) {
+   flex-grow: 3;  (jer je 3x veći od preostala dva elementa)
+}
+.flex-item + .flex-item {    --> cilja svaki element flex-item koji se nalazi neposredno iza elementa flex-item - ovdje onda (2) i (3)
+   margin-left: 2%;  (varijabilna veličina za razmak između jer nije fiksni razmak)
+}
+   */
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori HTML Elemenata</title>
+    <style>
+        body {
+        color: #333;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        [title] {
+            text-decoration: underline solid red;
+        }
+        
+        [title="prvi odlomak"] {
+            font-weight: bold;
+        }
+        
+        [title*="odlomak"]{
+            color: darkgreen;
+        }
+        
+        [title~="odlomak"]{
+            text-transform: uppercase;
+        }
+        
+        [title^="odlomak"]{
+            font-style: italic;
+        }
+
+        [title|="odlomak"]{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        [title$="odlomak"]{
+            color: darkorange;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 title="Naslov stranice">Lorem ipsum dolor</h1>
+    <h2 class="crveno">Lorem ipsum</h2>
+    <h3>Lorem ipsum sit amet</h3>
+    <h4 class="plavo">Lorem ipsum sit amet consectur</h4>
+    <p title= "prvi odlomak">
+       <span class="istaknuto"> Contrary to popular belief</span>, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+    </p>
+    <p title="odlomak 2">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+    </p>
+    <p title="odlomak-moj">
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using <em> 'Content here, content here' </em>, making it look like readable <strong> English</strong>. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+    </p>
+    <h2 class="crveno">Lorem ipsum</h2>
+    <h3>Lorem ipsum sit amet</h3>
+    <h4 class="plavo">Lorem ipsum sit amet consectur</h4>
+    <p class="podcrtano crveno">
+        <span> Contrary to popular belief</span>, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+    </p>
+    <p title="zadnji.odlomak">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+    </p>
+    <p title="odlomak"> 
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using <em> 'Content here, content here' </em>, making it look like readable <strong class="neistaknuto"> English </strong>. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+    </p>
+</body>
+</html>
