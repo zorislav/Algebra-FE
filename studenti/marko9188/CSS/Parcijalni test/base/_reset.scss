@@ -9,11 +9,13 @@ html {
     box-sizing: inherit;
   }
   
-  body,div,p,header, footer
-   {
+  body,
+  div,
+  header,
+  footer,
+  p {
     margin: 0;
     padding: 0;
-  }
- p {
     font-weight: normal;
- }
+  }
+  
