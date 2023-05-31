@@ -1,0 +1,70 @@
+1. Kreirati folder testiranje i u njemu script.js datoteku slijedećeg sadržaja
+
+function findMax(numbers) {
+  var i;
+  var max = -Infinity;
+  for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+    }
+  }
+  return max;
+}
+
+module.exports = findMax;
+
+
+2. Instalirajte Jest framework u projekt u folderu testiranje (pratite upute ovdje: https://jestjs.io/docs/en/getting-started)
+
+# npm init --yes
+# npm install --save-dev jest
+
+Ažuriraj package.json
+
+{
+  "name": "testiranje",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
+
+
+3. Kreirati folder __tests__ i u njemu datoteku script.test.js slijedećeg sadržaja:
+
+const maxNumber = require('../script');
+const testArray = [1,4,5,89,43,2,-1];
+
+test("Get max number", () => {
+	expect(maxNumber(testArray)).toBe(89);
+});
+
+test("Get number", () => {
+	expect(maxNumber(testArray)).not.toBeNaN();
+});
+
+
+4. Startati testiranje
+
+# npm test
+
+> testiranje@1.0.0 test C:\Tmp\Algebra\Vjezbe_radno\tmp\js\testiranje
+> jest
+
+ PASS  __tests__/script.test.js
+  √ Get max number (1 ms)
+  √ Get number (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        0.512 s, estimated 1 s
+Ran all test suites.
