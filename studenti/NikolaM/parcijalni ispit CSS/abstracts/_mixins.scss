@@ -1,0 +1,23 @@
+
+@mixin container($position,$display,$align){
+    position:$position;
+    display:$display;
+    align-items: $align;
+}
+
+@mixin border-radius($r: 50%){
+    border-radius: $r;
+}
+
+@mixin velicina($width,$height){
+    width:$width;
+    height:$height;
+}
+
+
+@mixin fonts($size,$family,$style){
+    font-size: $size;
+    font-family: $family;
+    font-style: $style;
+}
+
