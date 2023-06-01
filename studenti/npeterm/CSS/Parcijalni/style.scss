@@ -17,8 +17,9 @@ body {
 }
 
 footer {
+  bottom: 0;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 60%;
 }
 #text {
   color: $color2;
@@ -65,12 +66,13 @@ footer {
   #o1,#o3{
     margin-bottom:15%;
   }
-  #sunce,.oblak img{
-    width: 70%;
+.oblak img{
+    width: 90%;
   }
-  #sunce,.oblak img{
-    height: 70%;
+.oblak img{
+    height: 90%;
   }
+
 }
 @media (max-width: 479px) {
   #o1{
@@ -79,11 +81,11 @@ footer {
   #o3 {
     display: none;
   }
-  #sunce,.oblak img{
-    width: 50%;
+.oblak img{
+    width: 60%;
   }
-  #sunce,.oblak img{
-    height: 50%;
+.oblak img{
+    height: 60%;
   }
 }
 
