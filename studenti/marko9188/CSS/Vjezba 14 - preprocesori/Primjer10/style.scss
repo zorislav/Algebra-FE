@@ -1,0 +1,31 @@
+// import
+@import "mixins";
+
+$color1: #eee;
+$color2: #333;
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  background-color: $color1;
+  border: 2px solid $color2;
+  text-align: center;
+  padding: 1em;
+}
+
+.flex-container {
+  @include flex;
+  min-height: 200px;
+}
+.flex-item {
+  flex-basis: 23%;
+  @include mq("large", max) {
+    flex-basis: 48%;
+    margin-bottom: 1em;
+  }
+  @include mq("small", max) {
+    flex-basis: 100%;
+  }
+}

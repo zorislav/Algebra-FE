@@ -1,0 +1,37 @@
+$color1: #eee; 
+$color2: #333;
+$color3: #800;
+
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+@mixin spacing($margin, $padding) {
+   margin: $margin;
+   padding: $padding;
+}
+
+body {
+   @include spacing(0, 0);   /*margine su na 0 u svim smjerovima*/
+   background-color: $color1;
+   color: $color2;
+   font-family: $font1;
+}
+
+div {
+   @include spacing(0 0 1em 0, 1em);
+   background-color: $color2;
+   color: $color1;
+}
+
+$num: 8;
+
+@while  $num > 0 {   /*ponavlja sadržaj petlje dokle god je neki uvjet koji se ispituje prije prvog prolaza ispunjen* - ovdje ispituje je li vrijednost num veći od 0*/
+ .col-#{$num}  {
+   &:before {
+      content: "#{$num}";    /*content pravilo se koristi da se umetne nešto ispred - u ovom slučaju broj 8 ispred teksta 'Moj tekst'*/
+   }
+ }
+   $num: $num - 1;  /*mora biti razmak*/
+}     
+
+/*drugi prolaz num=7, treći num=6.... sve do 1 - dakle efektivno 8 prolaza*/

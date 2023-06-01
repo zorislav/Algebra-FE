@@ -1,0 +1,101 @@
+body {
+  background-image: url(back.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  height: 300px;
+  width: 300px;
+  margin-top: 4vh;
+  margin-left: 45vw;
+}
+
+.sun {
+  flex-wrap: wrap;
+  display: flex;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  background-color: #edef55;
+}
+
+.flex-container {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 80px 10px;
+  position: absolute;
+}
+
+.flex-item {
+  width: 33%;
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-basis: 33%;
+  }
+}
+@media (max-width: 479px) {
+  .first, .second {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .sun {
+    height: 100px;
+    width: 100px;
+  }
+}
+@keyframes animacija1 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.flex-item:first-of-type {
+  animation: animacija1 3.9s linear 1.1s infinite;
+}
+
+.flex-item:nth-of-type(2) {
+  animation: animacija1 3.9s linear 2.7s infinite;
+}
+
+.flex-item:last-of-type {
+  animation: animacija1 3.9s linear 3.9s infinite;
+}
+
+@keyframes animacija2 {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.sun {
+  animation: animacija2 3.6s linear;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20vh;
+  margin-left: 45vw;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
