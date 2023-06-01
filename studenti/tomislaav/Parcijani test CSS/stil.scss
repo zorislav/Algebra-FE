@@ -1,0 +1,113 @@
+@import "abstracts/mixin";
+@import "base/reset";
+@import "base/colors";
+
+body {
+    background: url(./img/back.jpg) no-repeat center cover fixed;
+}
+
+.flex-container {
+    @include flex-container;
+}
+
+.clouds {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+    margin-top: 4em;
+    img {
+        width: 100%;
+    }
+}
+
+#sun {
+    @include sun;
+    margin: 2em auto;
+    z-index: 1;
+}
+
+
+
+@keyframes animation1 {
+    0% {
+        transform: translateX(0%);
+      }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(100%);
+      }
+}
+
+.cloud:first-of-type {
+    animation: animation1 3.9s linear 1.1s infinite;
+}
+
+.cloud:nth-of-type(2) {
+    animation: animation1 3.9s linear 2.7s infinite;
+}
+
+.cloud:last-of-type {
+    animation: animation1 3.9s linear 3.9s infinite;
+}
+
+@keyframes animation2 {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+      }
+    }
+
+#sun {
+    animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
+}
+
+@keyframes sunrise {
+    0% {
+        box-shadow: none;
+    }
+}
+
+@keyframes rays {
+    0% {
+        box-shadow:
+        0 0 0 0px #ffde0080, 
+        0 0 0 20px #ffde0040, 
+        0 0 0 40px #ffde0030,
+        0 0 0 60px #ffde0010,
+        0 0 0 80px #ffde0010;
+    }
+
+    100% {
+        box-shadow:
+        0 0 0 20px #ffde0080, 
+        0 0 0 40px #ffde0040, 
+        0 0 0 60px #ffde0030,
+        0 0 0 80px #ffde0010,
+        0 0 0 100px #ffde0010;
+    }
+}
+
+@media (max-width: 479px) {
+    .cloud:nth-of-type(2), .cloud:last-of-type {
+    display: none;
+    }
+    .cloud:nth-of-type(1) {
+        width: 50%;
+    }
+}
