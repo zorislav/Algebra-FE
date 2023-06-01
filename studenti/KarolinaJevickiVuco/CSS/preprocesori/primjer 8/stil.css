@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  /*margine su na 0 u svim smjerovima*/
+  background-color: #eee;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+}
+
+div {
+  margin: 0 0 1em 0;
+  padding: 0;
+  /*margine su 0 0 1em 0, a padding je 0 u svim smjerovima*/
+  background-color: #800;
+  height: 20px;
+}
+
+/* varijabla  i se ponavlja od 1 do 8*/
+/*definicija varijable koja se zove 'sirina'*/
+.col-1 {
+  width: 100%;
+}
+
+/* varijabla  i se ponavlja od 1 do 8*/
+/*definicija varijable koja se zove 'sirina'*/
+.col-2 {
+  width: 50%;
+}
+
+/* varijabla  i se ponavlja od 1 do 8*/
+/*definicija varijable koja se zove 'sirina'*/
+.col-3 {
+  width: 33.3333333333%;
+}
+
+/* varijabla  i se ponavlja od 1 do 8*/
+/*definicija varijable koja se zove 'sirina'*/
+.col-4 {
+  width: 25%;
+}
+
+/* varijabla  i se ponavlja od 1 do 8*/
+/*definicija varijable koja se zove 'sirina'*/
+.col-5 {
+  width: 20%;
+}
+
+/* varijabla  i se ponavlja od 1 do 8*/
+/*definicija varijable koja se zove 'sirina'*/
+.col-6 {
+  width: 16.6666666667%;
+}
+
+/* varijabla  i se ponavlja od 1 do 8*/
+/*definicija varijable koja se zove 'sirina'*/
+.col-7 {
+  width: 14.2857142857%;
+}
+
+/* varijabla  i se ponavlja od 1 do 8*/
+/*definicija varijable koja se zove 'sirina'*/
+.col-8 {
+  width: 12.5%;
+}/*# sourceMappingURL=stil.css.map */
