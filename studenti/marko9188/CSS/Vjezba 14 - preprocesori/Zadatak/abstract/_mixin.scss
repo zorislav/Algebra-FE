@@ -1,0 +1,29 @@
+//mixins
+
+@mixin align-element($display, $txt-align, $space) {
+    display: $display;
+    margin: $space;
+    text-align: $txt-align;
+  }
+  
+  @mixin linx($link, $visit, $hover, $active) {
+    a {
+      color: $link;
+      text-decoration: none;
+      &:visited {
+        color: $visit;
+      }
+      &:hover {
+        color: $hover;
+      }
+      &:active {
+        color: $active;
+      }
+    }
+  }
+  
+  @mixin flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
