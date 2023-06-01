@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(46, 41, 41);
+}
+
+header {
+  background-color: rgb(28, 25, 25);
+  color: rgb(245, 193, 96);
+}
+header p {
+  text-align: left;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+li {
+  display: inline;
+}
+
+.flex.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main {
+  text-align: center;
+  justify-content: space-between;
+}
+main h1 {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+html {
+   box-sizing: border-box;
+   font-size: 16px;
+}
+
+*, *:before, *:after {    /*za sve elemente ispred i iza*/
+   box-sizing: inherit;
+}
+
+body, ul {
+   margin: 0;
+   padding: 0;
+}
