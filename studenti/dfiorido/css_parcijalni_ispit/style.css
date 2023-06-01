@@ -13,6 +13,21 @@ body, header, footer, div, p {
   font-weight: normal;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, header, footer, div, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
 .flex_clouds {
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +66,7 @@ footer {
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
   font-size: 5em;
-  color: #ccc;
+  color: gray;
 }
 
 .sun {

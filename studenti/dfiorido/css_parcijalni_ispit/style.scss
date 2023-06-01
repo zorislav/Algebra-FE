@@ -1,5 +1,7 @@
 @import "base/reset";
 @import "abstracts/mixins";
+@import "base/colors";
+@import "base/reset";
 
 .flex_clouds {
     @include flex;
@@ -37,7 +39,7 @@ body {
   p {
     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
     font-size: 5em;
-    color: #ccc;
+    color: $color2;
   }
   
   .sun {
@@ -54,7 +56,7 @@ body {
     display: inline;
     text-align: center;
     margin: 3rem auto;
-    background-color: yellow;
+    background-color: $color1;
     border-radius: 100%;
     position: relative;
     top: -10 rem;
