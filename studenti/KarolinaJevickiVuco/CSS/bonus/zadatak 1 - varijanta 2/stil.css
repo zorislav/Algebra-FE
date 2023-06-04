@@ -1,0 +1,210 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: sans-serif;
+   font-size: 16px;
+   color: black;
+}
+
+ul {
+   list-style: none;
+}
+
+#logo {
+   font-size: 2em;
+   font-weight: bold;
+
+}
+
+#header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 3vh;
+   margin-left: 18vw;
+   margin-right: 18vw;
+}
+
+#inner-header-container {
+   display: flex;
+   
+}
+
+
+#inner-header-container li {
+   font-family: sans;
+   font-size: 1.125em;
+   font-weight: bold;
+   padding-left: 1em;
+}
+
+#section-title {
+   margin-top: 34vh;
+   text-align: center;
+}
+
+#section-title h1 {
+   color:blue;
+   font-family: sans-serif;
+   font-size: 3em;
+   font-weight: 700;
+}
+
+#section-title h3 {
+   font-family: lato;
+   font-size: 1.5em;
+   margin-top: 2.5vh;
+}
+
+#section-title ul {
+   display: flex;
+   justify-content: center;
+   margin-top: 7vh;
+   padding: 0;
+   font-family: lato;
+   font-size: 1.15em;
+   font-weight: bold;
+}
+
+#section-title ul li:nth-of-type(2) a {
+   padding-left: 2.5vh;
+   color: red;
+   text-decoration-color: black;  /*kad se radi o anchor tagu/link dakle/ onda se text decoration odnosi na boju underlina*/
+}
+
+#portfolio {
+   margin-top: 20vh;
+   margin-bottom: 20vh;
+   text-align: center;
+}
+
+#portfolio p {
+   font-family: sans-serif;
+   font-size: 1.5em;
+   color: green;
+   text-align: center;
+   margin-top: 1.5vh;
+   margin-bottom: 1.5vh;
+}
+
+#portfolio hr {
+   border-color: white;
+   margin-left: 40%;
+   margin-right: 40%;
+   width: 20%;
+}
+
+#image-grid {    /*time se slike skaliraju i prate veličinu displaya*/
+   margin; auto;
+   padding-left: 15vw;
+   padding-right: 15vw;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);  /*daje 3 stupca, pri čemu je svaki stupac 1 fraction ili dio, tj. svaki zauzima trećinu*/
+   grid-row-gap: 3vh; /*razmak između redova*/
+   grid-column-gap: 3vw; /*razmak između stupaca*/
+} 
+
+.image {
+   width: 100%;  /*zauzima 100% zadanog stupca*/
+   height: 100%;
+   object-fit: contain; /*svodi se u zadani okvir*/
+}
+
+#more {
+   margin-top: 3vw;
+   margin-bottom: 3vw;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 700;
+   text-align: center;
+
+}
+
+#contact-us {
+   text-align: center;
+   margin-top: 20vh;
+   margin-bottom: 5vh;
+}
+
+#contact-us hr {
+   border-color: black;
+   margin-left: 40%;
+   margin-right: 40%;
+   width: 20%;
+}
+
+#contact-us p {
+   font-family: sans-serif;
+   font-size: 1.5em;
+   color: blue;
+   text-align: center;
+   margin-top: 1.5vh;
+   margin-bottom: 1.5vh;
+}
+
+#form-container {
+   width: fit-content;
+   margin: auto;
+   border: 1px solid black;
+}
+
+.input-container {
+   border: 1px solid black;
+   padding: 0.5em;
+   margin: 0.5em;
+}
+
+.other-container {
+   border: 1px solid black;
+   padding: 0.5em;
+   margin: 0.5em;
+   text-align: center;
+}
+
+#footer-logo {
+   margin-top: 2vh;
+   text-align: center;
+}
+
+#footer-text {
+   margin-top: 2vh;
+   margin-bottom: 2vh;
+   text-align: center;
+   font-family: sans-serif;
+   font-size: 1.25em;
+}
+
+footer hr {
+   border-color: black;
+   margin-top: 10vh;
+   border-width: 2px;
+}
+
+#footer-logo a {
+   font-family: sans-serif;
+   font-size: 3em;
+   color: red;
+   text-decoration: none;
+   border-bottom: 1.5px solid black;   /*simulira crnu boju dolje*/
+}
+
+@media (max-width: 1023px) {   /* ovo je desktop first varijanta - na nekih 1003px počinje se prelamati navigacijski dio gore --> za sve viewporte manje od 1023 ide ovaj skup pravila*/
+   #header-container {
+      flex-direction: column;
+      align-items: start;
+   }
+   #inner-header-container {
+      flex-direction: column;
+      padding-left: 0;
+   }
+   #inner-header-container li {
+      padding-left: 0;
+   }
+}
+
+/* kako definiramo točke prijelaza za meadia query?
+   - ovisi o sadržaju i kako ga želimo prikazati - cilj: vidljivo
+   - responzivi dizajn - koristiti varijabilne jedinice --> em i rem, za paddinge (vh, vw ili postotak - ako definiramo element dijete)
+   - CSS pravila se mogu pisati bilo kojim redoslijedom, ali se obično krene sa selektorom svih elemenata, pa selektore po vrsti elementa, pa po klasi, pa po id; 
+   -->ili varijanta 2 - grupirati po dijelu dokumenta ili elementima koje želim stilizirati; */

@@ -1,0 +1,13 @@
+body{
+    font-family:Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #ddd;
+    background-image: url(butterfly.png);
+    background-repeat: no-repeat; /* background-repeat: repeat|repeat-x|repeat-y|no-repeat */
+    background-position: center center; /* background-position: [position-x] [position-y] */
+  	background-attachment: fixed; /* background-attachment: scroll|fixed */
+  	background-size: 25%; /* background-size: auto|length|cover|contain */
+
+    /* background: #ddd url(butterfly.png) center center/25% no-repeat fixed ;-isto kao ovo iznad */
+}

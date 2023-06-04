@@ -1,0 +1,28 @@
+body{
+    font-family: tahoma,sans-serif;
+    font-size: 16px;
+    color: #333;
+    max-width: 0;
+}
+
+
+
+
+.div1{
+    background-color: #b7c1bb;
+    border: 20px solid #999;
+    margin: 2em auto ;
+    height: 800px;
+    width: 800px;
+    
+}
+.div2{
+    background: #f66;
+    height: 50%; 
+    width: 50%;
+}
+.div3{
+    background: #69f;
+    margin-left: auto;margin-right: 0;
+    height: 50%;width: 50%;
+}

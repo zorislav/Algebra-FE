@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color:rgb(20, 170, 170) ;
+    text-decoration: none;
+}
+
+header a:visited {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+#logo {
+    font-family: 'Courgette';
+    color: aqua;
+    text-shadow: 1px 2px #202020;
+    padding-top: 0px;
+    font-size: 36px;
+    font-weight: bold;
+}
+#inner-header-container {
+    display: flex;
+}
+
+#inner-header-container li a {
+    padding: 0px 20px;
+    color:aqua;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+section  {
+    margin: 20px 300px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  #grid-item1,
+  #grid-item2,
+  #grid-item3,
+  #grid-item4,
+  #grid-item5,
+  #grid-item6,
+  #grid-item7,
+  #grid-item8,
+  #grid-item9,
+  #grid-item10
+
+   {
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 3%;
+  }
+
+#grid-item3 {
+  text-align: center;
+  grid-column: span 2;
+}
+  
+  #image {
+    float: left;
+    border-radius: 3%;
+    height: 200px;
+    width: 200px;
+  }
+  
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  #caption {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+img {
+    float: left;
+    border-radius: 3%;
+    height: 150px;
+    width: 180px;
+    justify-content: left;
+}
+
+h2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 70px;
+    text-align: center;
+}
+
+
+h4:after {
+    content: ' \2794';
+    color:rgb(20, 170, 170) ;
+  }
+
+  h4 {
+    padding-top: 25px;
+    padding-right: 5px;
+    float: right;   
+    font-size: 12px;
+    margin-bottom: 2px;
+
+  }
+
+#caption {
+    display: inline;
+    flex-wrap: wrap;
+    font-size:12px;
+
+}
+
+footer {
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: #1d1d1d;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+#contact {
+    display: flex;
+    justify-content: center; 
+}
+
+#img {
+    padding: 15px;
+    height: 60px;
+    width: 60px;
+}
+

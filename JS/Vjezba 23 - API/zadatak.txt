@@ -1,0 +1,8 @@
+1. Odite na stranicu https://any-api.com/ 
+
+2. Izaberite jedan public API sa liste koji podržava REST standard, pruža podatke u JSON obliku i ima upute za dohvaćanje sa XMLHttpRequest objektom (nativni JavaScript jezik).
+
+3. Napišite JS kod koji se priključuje na taj API (po uzoru na primjer iz prijašnje lekcije).
+
+4. Izaberite jedan endpoint u APIju nad kojim možete napraviti GET request. 
+Ispišite rezultat u konzolu.

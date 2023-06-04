@@ -1,0 +1,46 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color:#333;
+    margin: 0;
+}
+div {
+    background-color: #eee;
+    text-align: justify;
+}
+
+.div1 {
+    width: 300px;
+    border: 5px solid #666;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 2em 2em 2em;
+}
+
+.div2 {
+    width: 25%;
+    border: 5px dashed #666;
+    margin: 2em 0 2em auto;
+    padding: 2em 4em 2em 4em;
+}
+
+.div3 {
+    width: 40%;
+    border-top: none;
+    border-right: 10px double #666;
+    border-bottom: none;
+    border-left: none;
+    padding: 5px 20px 30px 50px;
+    margin: 2em auto 2em 0;
+}
+
+.div4 {
+    width: 80%;
+    border-top: 3px dashed #666;
+    border-bottom: 3px dotted #333;
+    margin: auto;
+    padding: 10px;
+
+}

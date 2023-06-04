@@ -1,0 +1,33 @@
+@keyframes showCloud {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes cloudAnimation {
+	0% {
+		transform: translateY(-20px);
+	}
+	25% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(20px);
+	}
+	75% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-20px);
+	}
+}
+@keyframes sunAnimation {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 15%;
+	}
+}

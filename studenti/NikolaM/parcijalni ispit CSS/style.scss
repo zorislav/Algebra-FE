@@ -1,0 +1,109 @@
+@import "abstracts/mixins";
+@import "base/reset";
+@import "base/colors";
+
+  .flex-container {
+    @include container(relative,flex,flex-start)
+  }
+  
+  #Sun {
+    background-color: $color1;
+    @include border-radius();
+    @include velicina(28vh,28vh);
+    margin: 3.5% auto;
+    z-index: 1;
+    box-shadow:0 0 30px $color1;
+
+  }
+  
+  .clouds {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .cloud {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     }
+  
+  .cloud img {
+    @include velicina(85%,60%);
+    margin-top: 25%;
+  }
+
+   footer {
+    text-align: center;
+      margin-top: 21%;
+      
+  }
+  
+  footer p {
+    color: $color2;
+    @include fonts(4em, Tahoma, italic)
+         }
+  
+
+  @media (max-width: 767px) {
+  .cloud:last-of-type {
+  display: none;
+  }
+  }
+  @media (max-width: 479px) {
+  .cloud:nth-of-type(2), .cloud:last-of-type {
+  display: none;
+  }
+  }
+
+           
+  $delay1: 1.1s;
+	$delay2: 2.7s;
+	$delay3: 3.9s;
+
+  @keyframes animacija1 {
+    0% {
+        transform: translateX(0%);
+      }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(100%);
+      }
+    }
+
+
+.cloud:first-of-type {
+    animation: animacija1 3.9s linear $delay1 infinite;
+}
+
+.cloud:nth-of-type(2) {
+    animation: animacija1 3.9s linear $delay2 infinite;
+}
+
+.cloud:last-of-type {
+    animation: animacija1 3.9s linear $delay3 infinite;
+}
+
+@keyframes animacija2 {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 30%;
+    }
+    100% {
+        opacity: 100%;
+      }
+    }
+
+#Sun {
+    animation: animacija2 3.6s linear;
+}
+
