@@ -1,0 +1,71 @@
+$color1: #eee; 
+$color2: #333;
+$color3: #800;
+
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+@mixin margin-mix ($margin ...) {    /*tri točkice znači da ćemo koristiti proizvoljan broj parametara i više varijanti - ovdje 1em, 20px...*/
+   margin: $margin;
+}
+
+@mixin border-radius ($r: 20px)  {   /*ovime definiramo neku zadanu vrijednost koja se koristi, ako se izostavi parametar*/
+   border-radius: $r;
+}
+
+@mixin has-content  {     /*mixin selektira section, a unutar njega stavljamo sve što kasnije navedemo kao pravila - jer imamo content*/
+   section {
+      @content; 
+   }
+}
+
+@mixin odlomci($color5) {     /*selektira p element i stavlja mu boju koju odaberemo */
+   p {
+      color: $color5;
+      @content;           /*dva pravila koja smo prilikom uključivanja mixina dodali bit će  upisana-dodana tu gdje piše 'content'*/
+   }
+}
+
+body {
+   background-color: $color1;
+   color: $color2;
+   font-family: $font1;
+}
+
+@include odlomci(#fff) {
+   background-color: $color3;   /*ova dodana pravila bivaju uključena na mjesto u mixinu gdje u tom mixinu piše 'content'*/
+   padding: 1em;
+}
+
+header, footer, section, article {
+   border: 2px solid $color2;
+   padding: 1em;
+}
+
+header {
+   @include margin-mix(20px);
+}
+
+section {
+   @include margin-mix(2em auto);
+   width: 80%;
+   article {
+      @include margin-mix(1em);
+      @include border-radius();   /*bit će 20px jer nismo ubacili nikakav parametar*/
+      &:last-child {               /* & je ovdje zamjena za parent, dakle 'article'*/
+         @include margin-mix(0);
+         @include border-radius(0 30px);    /*samo dva ugla su zaobljena*/
+      }
+   }
+}
+
+@include has-content() {
+   .odlomak {
+      border: 8px dotted $color2;    /*ovo se u odabrani mixin kopira na mjesto gdje stoji 'content'*/
+   }
+}
+
+
+footer {
+   @include margin-mix(1em 0 2em 5em);
+}

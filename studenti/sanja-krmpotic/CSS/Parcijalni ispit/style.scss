@@ -1,0 +1,100 @@
+@import "abstracts/mixins";
+@import "base/colors";
+@import "base/reset";
+
+body {
+    background: url(./img/back.jpeg) no-repeat center/cover fixed;
+}
+
+footer {
+        text-align: center;
+        margin: 40vh auto 0 auto;
+        p {
+            color: $color2;
+            font-family: Tahoma, sans-serif;
+            font-size: 4vw;
+            font-style: italic;
+        }
+}
+
+.flex-container {
+    @include flex-container;
+}
+
+.clouds {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+    margin-top: 4em;
+    img {
+        width: 100%;
+    }
+}
+  
+#sun {
+    @include sun;
+    margin: 3em auto;
+    z-index: 1;
+}
+
+$delay1: 1.1s;
+$delay2: 2.7s;
+$delay3: 3.9s;
+
+@keyframes animation1 {
+    0% {
+        transform: translateX(0%);
+      }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(100%);
+      }
+}
+
+.cloud:first-of-type {
+    animation: animation1 3.9s linear $delay1 infinite;
+}
+
+.cloud:nth-of-type(2) {
+    animation: animation1 3.9s linear $delay2 infinite;
+}
+
+.cloud:last-of-type {
+    animation: animation1 3.9s linear $delay3 infinite;
+}
+
+@keyframes animation2 {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+      }
+    }
+
+#sun {
+    animation: animation2 3.6s linear;
+}
+
+@media (max-width: 479px) {
+    .cloud:nth-of-type(2), .cloud:last-of-type {
+    display: none;
+    }
+    .cloud:nth-of-type(1) {
+        width: 50%;
+    }
+}

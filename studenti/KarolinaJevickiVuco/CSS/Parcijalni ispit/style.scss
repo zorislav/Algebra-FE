@@ -1,0 +1,164 @@
+@import "abstracts/mixins";    
+@import "base/reset";
+@import "base/colors";
+
+$font1: Tahoma, sans-serif;
+$font-style: italic;
+
+body {
+   background-image: url(img/back.JPG);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+}
+
+header {
+   @include align-element(null, center, auto);
+   height: 85vh;
+}
+
+footer {
+   @include align-element (null, center, 1rem auto)
+}
+p {
+   font-family: $font1;
+   font-size: 4em;
+   font-style: $font-style;
+   color: $text-color;
+}
+
+
+.flex-container {
+   @include flex-container();
+   .clouds {
+      margin: 300px auto;
+       img {
+         @include align-element(inline, center, 2rem auto);
+         padding: 1rem 1rem;
+         width: 32%;
+      }
+   }
+}
+
+.sun {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   margin: 3em auto;
+   width: 100%;
+}
+
+#sun {
+   @include align-element(inline, center, 2rem auto);
+   background-color: $color1;
+   box-shadow: 15px 15px 60px 15px $color3;
+   border: 1px solid $color1;
+   border-radius: 100%;
+   height: 250px;
+   width: 250px;
+ }
+
+ @keyframes sun {
+   0% {  
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.2);
+      background-color: orange;
+   }
+   100% {   
+      transform: scale(1)
+   }
+} 
+
+ #sun {
+   animation: sun 3.6s linear;
+}
+
+
+
+
+@keyframes clouds {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(3deg);
+   }
+
+}
+
+#cloud1  {
+   animation: clouds 3.9s ease-in-out 1.1s infinite alternate-reverse;
+}
+
+
+#cloud2 {
+   animation: clouds 3.9s ease-in-out 2.7s infinite alternate-reverse;
+}
+
+#cloud3  {
+   animation: clouds 3.9s ease-in-out 3.9s infinite alternate-reverse;
+}
+
+
+
+#cloud1, #cloud2, #cloud3 {
+   @include mq("medium", max) {     
+   @include align-element(inline-block, center, 2rem auto);
+      width: 48%;          
+      margin-bottom: 1em;       
+   }   
+}
+
+#cloud1 {
+   @include mq("small", max) {     
+      width: 100%;                
+   }   
+}
+
+#cloud2, #cloud3 {
+   @include mq("small", max) {     
+       width: 0%;                
+   }  
+}
+
+
+
+p {
+   @include mq("medium", max) {
+      font-size: 2em;
+   }
+   @include mq("small", max) {   
+         font-size: 1em;
+   }
+}
+
+#sun {
+   @include mq("x-large", max) {     
+      height: 175px;
+      width: 175px;           
+      }
+   @include mq("large", max) {    
+      height: 150px;
+      width: 150px;                   
+      }
+   @include mq("medium", max) {   
+      height: 125px;
+      width: 125px; 
+      }
+   }
+
+.clouds {
+   @include mq("medium", max) {   
+      margin: 150px auto;
+      }
+}
+ 
+
+
+
+
+
+
