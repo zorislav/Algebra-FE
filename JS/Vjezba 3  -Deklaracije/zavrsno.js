@@ -1,18 +1,18 @@
-var firstName, lastName, price, discount, fullPrice;
+/**
+ * Inicijalizacija varijabli
+ */
 
-firstName = "John";
-lastName = "Doe";
+var first_name = "Tony";
 
-price = 19.9;
-discount = 0.1;
+var first_name = "John",
+	lastName = "Doe",
+	price = 0,
+	discount = 78,
+	fullPrice = 0,
+	myVarijable = [],
+	$myObject = {};
 
-if (x == 1) {
-	x = 2;
-}
+console.log(price);
+console.log(lastName);
 
-if (a) {
-  var z = 44;
-  return 0;
-}
-
-fullPrice = (price * 100) / discount;
+// Kraj mog programa
