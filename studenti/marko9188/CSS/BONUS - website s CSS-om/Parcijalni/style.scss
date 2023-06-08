@@ -1,6 +1,6 @@
-@import 'abstracts/mixins';
-@import 'base/reset';
-@import 'base/colors';
+@import 'mixins';
+@import 'reset';
+@import 'colors';
 
 body {
   background: url(./img/back.jpg) no-repeat center center/cover fixed;
