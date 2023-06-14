@@ -1,0 +1,1 @@
+var mojPassword = "1234abcfgttc";
