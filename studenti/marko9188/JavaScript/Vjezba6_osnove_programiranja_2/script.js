@@ -1,5 +1,3 @@
-const _ = require('lodash');
-
 function hasUniqueCharacters(password) {
   const characters = password.split('');
   const uniqueCharacters = _.uniq(characters);
@@ -17,7 +15,7 @@ function truncatePassword(password) {
     return _.truncate(password, { length: 10 });
   }
 
-  const password = 'pprimjer123';
+  const password = 'pprimjer123ass';
 
   console.log(hasUniqueCharacters(password)); // false
   console.log(hasOnlyDigits(password)); // false
