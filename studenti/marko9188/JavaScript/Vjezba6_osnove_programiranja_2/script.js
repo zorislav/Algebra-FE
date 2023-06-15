@@ -21,4 +21,4 @@ function truncatePassword(password) {
 
   console.log(hasUniqueCharacters(password)); // false
   console.log(hasOnlyDigits(password)); // false
-  console.log(truncatePassword(password)); // pprimjer12
+  console.log(truncatePassword(password)); // pprimjer12??
