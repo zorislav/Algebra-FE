@@ -4,10 +4,19 @@
   <title>Karlovac</title>
 </head>
 <body>
+  <img src="slika.png" alt="slika">
   <div class="description">
     Grad na <span>4 rijeke</span>
+    <script>
+      //komentar
+    </script>
+    <div>
+      unutarnji div element
+    </div>
   </div>
-  <div class="info"></div>
+  <div id="user" data-id="1234" data-user="ivanhorvat" data-date of birth>
+    Ivan Horvat
+  </div>
   <footer id="footer">
     <ul>
 	  <li></li>
@@ -16,7 +25,14 @@
   </footer>
   <script>
     var divEl = document.querySelector("div.description");
-    console.log (divEl.innerHTML ) ;                 //vraća sadržaj elementa vraća sve znakove tog elementa u ovom slučaju razmake i <span> elemente
+    console.log (divEl.innerHTML);                 //vraća sadržaj elementa vraća sve znakove tog elementa u ovom slučaju razmake i <span> elemente
+    console.log (divEl.innerText);
+    console.log (divEl.textContent);
+    var imgEl = document.querySelector("img");
+    imgEl.src = "novaslika.jpg";
+    var dataEl = document.getElementById("user");
+    console.log(`user:${dataEl.dataset.user}`);
+    dataEl.dataset.dateOfBirth = "1995-11-20";
   </script>
 </body>
 </html>
