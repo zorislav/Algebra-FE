@@ -1,20 +1,4 @@
-@mixin flex {
-  display: inline-block;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 80px 10px;
-
-}
-
-@mixin sunce {
-  display: inline-block;
-  border-radius: 50%;
-  height: 10vw;
-  width: 10vw;
-  box-shadow: 0 0 30px $color1;
-  }
-
-  @mixin flex-container {
+@mixin flex-container {
     align-items: center;
     display: flex;
     justify-content: space-around;
