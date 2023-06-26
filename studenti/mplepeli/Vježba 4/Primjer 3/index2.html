@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <h1>Canvas</h1>
+    <h2>Linija</h2>
+        <canvas id="canvas1" width="600" height="200"></canvas>
+        <script>
+            let c = document.getElementById('canvas1')
+            let ctx = c.getContext('2d')
+            ctx.beginPath()
+            ctx.moveTo(30,180)
+            ctx.lineTo(460,30)
+            ctx.lineWidth = 8
+            ctx.strokeStyle = "purple"
+            ctx.stroke()
+        </script>
+    <hr>
+    <h2>Kvadrat</h2>
+    <canvas id="canvas2" width="600" height="200"></canvas>
+    <script>
+        let c2 = document.getElementById('canvas2')
+        let ctx2 = c2.getContext('2d')
+        ctx2.beginPath()
+        ctx2.rect(20,20,150,150)
+        ctx2.fillStyle = "lime"
+        ctx2.fill()
+        ctx2.strokeStyle = "purple"
+        ctx2.lineWidth = 15
+        ctx2.stroke()
+    </script>
+     <hr>
+    <h2>Krug</h2>
+        <canvas id="canvas3" width="600" height="200"></canvas>
+        <script>
+            let c3 = document.getElementById('canvas3')
+            let ctx3 = c3.getContext('2d')
+            let cx = c3.width / 2
+            let cy = c3.height / 2
+            let radius = 80
+            ctx3.beginPath()
+            ctx3.arc(cx, cy, radius, 0, 2 * Math.PI)
+            ctx3.fillStyle = "cyan"
+            ctx3.fill()
+            ctx3.strokeStyle = "yellow"
+            ctx3.lineWidth = 8
+            ctx3.stroke()
+        </script>
+    <hr>
+    <h2>Polukrug</h2>
+        <canvas id="canvas4" width="600" height="200"></canvas>
+        <script>
+            let c4 = document.getElementById('canvas4')
+            let ctx4 = c4.getContext('2d')
+            let cx2 = c4.width / 2
+            let cy2 = c4.height / 2
+            let radius2 = 80
+            ctx4.beginPath()
+            ctx4.arc(cx2, cy2, radius2, 0, 1 * Math.PI)
+            ctx4.fillStyle = "purple"
+            ctx4.fill()
+            ctx4.strokeStyle = "lime"
+            ctx4.lineWidth = 8
+            ctx4.stroke()
+        </script>
+    <hr>
+    <h2>Proizvoljna linija</h2>
+        <canvas id="canvas5" width="600" height="200"></canvas>
+        <script>
+            let c5 = document.getElementById('canvas5')
+            let ctx5 = c5.getContext('2d')
+            ctx5.beginPath()
+            ctx5.moveTo(170,80)
+            ctx5.bezierCurveTo(130,100,130,150,230,150)
+            ctx5.bezierCurveTo(250,180,320,180,340,150)
+            ctx5.lineWidth = 4
+            ctx5.strokeStyle = "black"
+            ctx5.stroke()
+        </script>
+    <hr>
+    <h2>Tekst</h2>
+        <canvas id="canvas6" width="600" height="200"></canvas>
+        <script>
+            let c6 = document.getElementById('canvas6')
+            let ctx6 = c6.getContext('2d')
+            let x = 50
+            ctx6.font = "italic bold 70px 'Curier New'"
+            ctx6.fillStyle = "purple"
+            ctx6.fillText('Ovo je primjer', x, 100)
+        </script>
+</body>
+</html>

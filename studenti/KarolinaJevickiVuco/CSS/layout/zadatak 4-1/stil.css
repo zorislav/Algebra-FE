@@ -1,0 +1,29 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333;
+}
+.wrapper {
+   border: 1px dashed #666;
+   min-height: 100vh; /* ovako se smanjuje i flex-item s promjenom visine viewporta --> alternativno: 600px; - fiksna veličina - smanjenjem viewporta, tj. prozora - dobije se scroll bar */
+   padding: 1em;
+}
+.wrapper div {
+   border: 1px solid #666;
+   background-color: #eee;
+   padding: 1em;
+   text-align: center;
+}
+.flex-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+}
+.flex-item {
+   flex-basis: 33%;
+   height: 21vh;
+}

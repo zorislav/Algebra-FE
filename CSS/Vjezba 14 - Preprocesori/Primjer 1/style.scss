@@ -1,0 +1,61 @@
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #eee;
+}
+
+// nesting
+
+header {
+  text-align: center;
+  h1 {
+    color: #800;
+  }
+  p {
+    font-size: 20px;
+  }
+  a {
+    color: #ff6;
+  }
+}
+
+section {
+  h1 {
+    font-family: "Courier New", Courier, monospace;
+  }
+  p {
+    text-align: justify;
+  }
+  a {
+    color: #800;
+  }
+  article {
+    background-color: #800;
+    p {
+      color: #eee;
+    }
+    a {
+      color: #fff;
+    }
+  }
+}
+
+footer {
+  h1 {
+    color: #ff6;
+  }
+  p {
+    font-size: 12px;
+  }
+  a {
+    color: #0f0;
+    font-size: 20px;
+  }
+}

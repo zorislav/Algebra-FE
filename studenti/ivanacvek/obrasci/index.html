@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt forma</title>
+</head>
+<body>
+    <form action="">
+<p>
+    <label for="ime">Ime i prezime *</label><br>
+    <input id="ime" name="ime_prezime" type="text" placeholder="Vaše ime i prezime" size="30" required> 
+</p>
+<p>
+    <label for="mail">E-mail adresa *</label><br>
+    <input id="mail" name="mail" type="email" size="30" placeholder= "Upišite valjanju email adresu" required>
+</p>
+<p>
+    <label for="tel">Kontakt broj telefona</label><br>
+    <input ide="tel" name="telefon" type="tel" size="30">
+</p>
+<p>
+    <label for="datum">Datum rođenja</label><br>
+    <input type="date" id="datum" name="datum">
+</p>
+<p>
+    Koji jezik govorite?<br>
+    <label for="engleski">Engleski</label>
+    <input type="checkbox" name="jezik" id="engleski" value="engleski">
+    <label for="talijanski">Talijanski</label>
+    <input type="checkbox" name="jezik" id="talijanski" value="talijanski">
+    <label for="njemački">Njemački</label>
+    <input type="checkbox" name="jezik" id="njemački" value="njemački">
+    <label for="francuski">Francuski</label>
+    <input type="checkbox" name="jezik" id="francuski" value="francuski">
+    <label for="španjolski">Španjolski</label>
+    <input type="checkbox" name="jezik" id="španjolski" value="španjolski">
+</p>
+<p>
+    Da li ste do sada koristili usluge naše tvrtke?<br>
+    <label for="usluge-da">Da</label>
+    <input type="radio" name="usluge" id="usluge-da" value="da">
+    <label for="usluge-ne">Ne</label>
+    <input type="radio" name="usluge" id="usluge-ne" value="ne">
+</p>
+<p>
+    <label for="cv">Priložite životopis</label><br>
+    <input type="file" id="cv" name="cv">
+</p>
+<p>
+    <input type="reset" name="reset-btn" value="Poništi">
+    <input type="submit" name="submit_btn" value="Prijavi se">
+</p>
+    </form>
+</body>
+</html>

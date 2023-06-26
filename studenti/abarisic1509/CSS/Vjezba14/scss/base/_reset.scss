@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-family: $sans-serif;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $text-color;
+	background-color: $background;
+}
+
+a {
+	color: $color1;
+	text-decoration: none;
+	&:visited {
+		color: $color2;
+	}
+	&:hover {
+		color: $color4;
+	}
+	&:active {
+		color: $color5;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	font-weight: normal;
+}
+
+ul {
+	list-style-type: none;
+}
