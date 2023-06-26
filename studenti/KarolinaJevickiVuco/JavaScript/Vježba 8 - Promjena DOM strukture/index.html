@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karlovac</title>
+</head>
+<body>
+  <div class="description">
+    Grad na <span>4 rijeke</span>
+  </div>
+  <footer id="footer">
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  </footer>
+
+  <script>
+    //selekcija po IDu
+    const el = document.getElementById("footer");  //pohranjeno u varijablu 'el'
+    console.log(el);    //ispisuje sadržaj varijable
+
+    //selekcija po tipu elementa
+
+    console.log(document.getElementsByTagName("li"));
+    //ispis: collection ili niz tih elemenata
+
+    //selekcija po klasi
+
+    console.log(document.getElementsByClassName("description"));  //vraća collection
+
+    //selekcija po query selektoru
+
+    console.log(document.querySelector(".description"));
+                                        //selektira po klasi description --> ispis jednog elementa, tj klase
+
+    console.log(document.querySelectorAll(".description"));
+            //ispisuje listu svih takvih elemenata
+    
+    console.log(document.querySelector("#footer"));  //selektira ID
+
+    //kreiranje i dodavanje elemenata
+
+    var f = document.querySelector("#footer");   //selektiran ID spremljen u varijabli f
+    var d = document.createElement("div");  //stvara novi element div i pohranjuje ga u varijabli d
+    f.appendChild(d);   //dodaje elementu f (footer) novokreirani element (div)
+    //u HTMLu se taj novi element ne vidi, ali se ispisuje u konzoli;
+
+    //micanje elemenata
+
+    var f = document.querySelector("#footer");   //selektiran ID spremljen u varijabli f 
+    f.parentNode.removeChild(f);  //miče varijablu f - tj. footer koji je spremljen u njoj
+    //parentNode - odabire parent Node, tj. body i miče njegovo dijete element, tj. footer
+  </script>
+</body>
+</html>
