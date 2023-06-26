@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasljeđivanje CSS svojstava</title>
+    <style>
+      body {
+         color: #333;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 20px;
+         text-align: center;
+      }
+      p {
+         color: green;
+      }
+      em {
+         color: aqua; 
+      }
+      strong {
+         text-decoration: underline wavy red;
+      }
+      span {
+         font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor</h1>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <h3>Lorem ipsum dolor sit amet</h3>
+    <h4>Lorem ipsum dolor sit amet consectetur</h4>
+
+    <p>
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </p>
+
+    <p>
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout.  <strong> The point of using
+      Lorem Ipsum is that it has <span>a more-or-less normal distribution of letters </span> ,
+      as opposed to using 'Content here, content here' </strong>, making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for <em> 'lorem
+      ipsum' </em> will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </p>
+    
+  </body>
+</html>

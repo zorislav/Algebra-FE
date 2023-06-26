@@ -1,0 +1,44 @@
+* {
+   box-sizing: border-box;
+}
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 16px;
+   color: #333;
+}
+
+section {
+   border: 1px solid #ccc;
+   width: 400px;
+   margin:auto;
+}
+
+div {
+   background-color: #f93;
+   border: 1px solid #333;
+   font-size: 2em;
+   width: 300px;
+   height: 150px;
+   line-height: 150px;
+   margin: 4em auto;
+   text-align: center;
+}
+
+div:first-child {
+   transform: translate(-500px, 0px); 
+}
+div:nth-child(2) {
+   transform: translate(0px, -278px);   
+}
+div:nth-child(3) {
+   transform: translate(500px, -556px); 
+}
+div:nth-child(4) {
+   transform: translate(-500px, -556px) rotate(180deg);
+}
+div:nth-child(5) {
+   transform: translate(0px, -834px) skew(15deg, 10deg); 
+}
+div:last-child {
+   transform: translate(500px, -1108px) rotate(45deg) skew(45deg, 5deg); 
+}

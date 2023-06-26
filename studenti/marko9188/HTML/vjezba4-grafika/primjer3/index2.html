@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <h1>Canvas</h1>
+    <h2>Linija</h2>
+    <canvas id="canvas1" height="200" width="600"></canvas>
+    <script>
+        var c = document.getElementById("canvas1");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(30,180);
+        ctx.lineTo(400,30);
+        ctx.lineWidth = 8;
+        ctx.strokeStyle = "#F00"
+        ctx.stroke();
+    </script>
+    <hr>
+    <h2>Kvadrat</h2>
+    <canvas id="canvas2" height="200" width="600"></canvas>
+    <script>
+        var c = document.getElementById("canvas2");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.rect(20,20,150,150);
+        ctx.fillStyle = "#FF6";
+        ctx.fill();
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+    <hr>
+    <h2>Krug</h2>
+    <canvas id="canvas3" height="200" width="600"></canvas>
+    <script>
+        var c = document.getElementById("canvas3");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        var cx = c.width/2;
+        var cy = c.height/2;
+        var radius = 80;
+        ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.fillStyle = "#E00";
+        ctx.fill();
+        ctx.stroke();
+    </script>
+    <hr>
+    <h2>Polukrug</h2>
+    <canvas id="canvas4" height="200" width="600"></canvas>
+    <script>
+        var c = document.getElementById("canvas4");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        var cx = c.width/2;
+        var cy = c.height/2;
+        var radius = 80;
+        ctx.arc(cx, cy, radius, 0, 1 * Math.PI);
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.fillStyle = "#E00";
+        ctx.fill();
+        ctx.stroke();
+    </script>
+    <hr>
+    <h2>Proizvoljna linija</h2>
+    <canvas id="canvas5" height="200" width="600"></canvas>
+    <script>
+        var c = document.getElementById("canvas5");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(180,80);
+        ctx.bezierCurveTo(130,100,130,150,230,150);
+        ctx.bezierCurveTo(250,180,320,180,340,150);
+        ctx.bezierCurveTo(420,150,420,120,390,100);
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "#333";
+        ctx.stroke();
+    </script>  
+
+</body>
+</html>

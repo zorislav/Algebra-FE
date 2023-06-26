@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-size: 16px;
+}
+img {
+    border: 2px solid #999;
+    padding: 20px;
+    margin: 1em;
+    width: 25%;
+}

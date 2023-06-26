@@ -1,0 +1,7 @@
+img {
+   border: 2px solid lightslategray;
+   padding: 20px;
+   margin: 15px auto;
+   display: block;
+   width: 500px; /*alternativno: 25%;*/
+}

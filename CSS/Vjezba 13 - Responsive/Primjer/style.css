@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100vh;
+}
+.flex-container > *,
+section {
+  padding: 10px;
+}
+
+header,
+footer {
+  background: #999;
+  flex: 0 100%;
+  height: 10vh;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 100%;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+section {
+  background: #eee;
+  flex: 0 24%;
+}
+
+/* Svi uređaji širine manje od 1024px */
+@media (max-width: 1023px) {
+  section {
+    flex: 0 49%;
+    height: 48%;
+  }
+}
+
+/* Svi uređaji širine manje od 768px  */
+@media (max-width: 767px) {
+  section:first-child,
+  section:last-child {
+    flex: 0 100%;
+    height: 24%;
+  }
+}
+
+/* Svi uređaji širine manje od 480px */
+@media (max-width: 479px) {
+  section {
+    flex: 0 100%;
+    height: 24%;
+  }
+}

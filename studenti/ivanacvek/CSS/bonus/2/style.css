@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: 'Times New Roman', Times, serif ;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em auto;
+ }
+ 
+ h1, p, figure, h4 {
+    margin-bottom: 1em;
+ }
+ 
+ blockquote, article, footer, .top1 {
+    margin-top: 1em;
+ }
+ .top {
+    margin-top: 2em;
+    margin-bottom: 2em;
+ }
+ .img1 {
+    height: 20%;
+    width: 32%;
+    
+ }
+ .img2 {
+    height: 13%;
+    width: 20%;
+ }

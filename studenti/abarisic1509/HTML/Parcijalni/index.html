@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Parcijalni iz HTML-a</title>
+	</head>
+	<body>
+		<header>
+			<h1>Turistička agencija "Avanturist"</h1>
+			<nav>
+				<ul>
+					<li><a href="#about">O nama</a></li>
+					<li><a href="#services">Naše djelatnosti</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr />
+		<main>
+			<h2>Turistička agencija "Avanturist"</h2>
+			<section id="about">
+				<h3>O nama</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+					incidunt eveniet ipsa quia aspernatur laborum fugiat illum numquam ab?
+					Fuga veniam eveniet placeat fugiat adipisci, sint culpa obcaecati
+					accusamus nesciunt sit repellat aliquam laborum? Ab ipsam error dolor
+					optio repellendus ullam quibusdam ad, ut expedita! Doloribus labore
+					omnis perspiciatis minus?
+				</p>
+				<img src="team.jpg" alt="Tim" />
+			</section>
+			<section id="services">
+				<h3>Naše djelatnosti</h3>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+					cumque saepe, qui debitis facere deserunt minima expedita laudantium
+					doloribus sed harum, illum odit explicabo blanditiis mollitia ex
+					voluptate accusantium obcaecati accusamus? Alias dolor vel repellat
+					molestias recusandae saepe aut cum a delectus consequatur, obcaecati
+					ullam magni deleniti modi voluptate voluptas!
+				</p>
+				<img src="adventure.jpg" alt="Avantura" />
+			</section>
+			<section id="contact">
+				<h3>Kontakt</h3>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni maxime
+					rem et, non ad quibusdam perferendis. Qui explicabo suscipit dolorum
+					deleniti ducimus. Voluptatem commodi natus laboriosam amet, asperiores
+					veniam nihil reiciendis id maxime dolorum consequuntur dolores.
+					Cupiditate natus alias voluptas repudiandae ducimus. Eveniet molestiae
+					officia ducimus deserunt iusto consequatur molestias?
+				</p>
+				<form action="" method="post">
+					<p>
+						<label for="fullName">Ime i prezime</label><br />
+						<input type="text" name="fullName" id="fullName" />
+					</p>
+					<p>
+						<label for="email">E-mail</label><br />
+						<input type="email" name="email" id="email" />
+					</p>
+					<p>
+						<label for="message">Poruka</label><br />
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+						></textarea>
+					</p>
+					<input type="submit" value="Pošalji poruku" />
+				</form>
+			</section>
+		</main>
+		<hr />
+		<footer>
+			<p><i>Avanturist © 2019.</i></p>
+			<a href="mailto:email@mail.com"
+				><img src="mail.png" alt="Pošalji email"
+			/></a>
+		</footer>
+	</body>
+</html>
