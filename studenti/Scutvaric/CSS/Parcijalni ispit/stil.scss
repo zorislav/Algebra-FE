@@ -63,49 +63,18 @@ body {
 	
   }
 
-  	$delay1: 1.1s;
-	$delay2: 2.7s;
-	$delay3: 3.9s;
-
-  @keyframes animacija1 {
-    0% {
-        transform: translateX(0%);
-      }
-    50% {
-        transform: translateX(50%);
-    }
-    100% {
-        transform: translateX(100%);
-      }
-    }
-
-
-img:first-of-type {
-    animation: animacija1 3.9s linear $delay1 infinite;
+.oblak1 {
+  @include animation('left-right 3.9s 1.1s ease-in-out alternate infinite');
 }
-
-img:nth-of-type(2) {
-    animation: animacija1 3.9s linear $delay2 infinite;
+.oblak2 {
+  @include animation('left-right 3.9s 2.7s ease-in-out alternate infinite');
 }
-
-img:last-of-type {
-    animation: animacija1 3.9s linear $delay3 infinite;
+.oblak3 {
+  @include animation('left-right 3.9s 3.9s ease-in-out alternate infinite');
 }
-
-@keyframes animacija2 {
-    0% {
-        opacity: 100%;
-    }
-    50% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-      }
-    }
 
 .sunce {
-    animation: animacija2 3.6s linear;
+  @include animation('skakanje 3.6s linear forwards');
 }
 
 @media (max-width: 767px) {

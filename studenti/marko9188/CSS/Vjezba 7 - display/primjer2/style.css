@@ -9,13 +9,16 @@ body {
   ul {
     border:1px solid #CCC;
     list-style-type: none;
-    padding:1em;
+    padding:0;
+    text-align: center;
   }
   
   li {
     background-color: #ffc;
     display: inline-block;
-    width: 20%;
+    width: 19%;
+    text-align: center;
+    
   }
   
   p{
