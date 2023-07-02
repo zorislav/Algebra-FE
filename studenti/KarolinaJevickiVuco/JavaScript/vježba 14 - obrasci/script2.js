@@ -34,7 +34,7 @@ var modul2 = {
 }
 
 modul2.y();
-console.loh(modul3.x);
+console.log(modul3.x);
 
 //ispis: 1
 
