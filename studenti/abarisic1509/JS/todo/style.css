@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 3rem;
+  background-color: rgb(235, 235, 235);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(151, 151, 151);
+  margin-inline: auto;
+}
+
+.btn-wrapper {
+  display: flex;
+  width: fit-content;
+  margin-inline: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.panel-btn {
+  padding: 0.5rem;
+  width: 100%;
+}
+.panel-btn.active,
+.panel-btn:hover {
+  background-color: black;
+  color: white;
+}
+.panel-btn:nth-child(2) {
+  border-inline: 1px solid black;
+}
+.panels-wrapper {
+  box-shadow: 2px 2px 12px #534545;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 800px;
+}
+
+.add-task {
+  position: relative;
+  border-bottom: 1px solid #eee;
+  border-radius: 8px;
+}
+.add-task input {
+  padding: 0.75rem;
+}
+.add-task button {
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #eee;
+}
+/* .panel {
+    display: flex;
+    flex-direction: column;
+} */
+.panel li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem 0.75rem;
+}
+.panel li button {
+  margin-left: auto;
+}
+.panel li input:checked + label {
+  text-decoration: line-through;
+}
+.clear-btn {
+  margin-left: auto;
+}
