@@ -1,0 +1,70 @@
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+
+$font1: tahoma, sans-serif;
+$font2: courier, monospace;
+
+@mixin margin-mix($margin...) {
+    margin: $margin;
+}
+
+@mixin border-radius ($r: 20px) {
+    border-radius: $r;
+}
+
+@mixin has-content {
+    section {
+        @content;
+    }
+}
+
+@mixin odlomci($color5) {
+    p {
+        color: $color5;
+        @content;
+    }
+}
+
+body {
+    background-color: $color1;
+    color: $color2;
+    font-family: $font1;
+}
+
+@include odlomci (#fff) {
+    background-color: $color3;
+    padding: 1em;
+}
+
+header, footer, section, article {
+    border: 2px solid $color2;
+    padding: 1em;
+}
+
+header {
+    @include margin-mix(20px)
+}
+
+section {
+    @include margin-mix(2em auto);
+    width: 80%;
+    article {
+        @include margin-mix(1em);
+        @include border-radius();
+        &:last-child {
+            @include margin-mix(0);
+            @include border-radius(0 30px);
+        }
+    }
+}
+
+@include has-content(){
+    .odlomak {
+        border: 8px dotted $color2;
+    }
+}
+
+footer {
+    @include margin-mix(1em 0 2em 5em);
+}
