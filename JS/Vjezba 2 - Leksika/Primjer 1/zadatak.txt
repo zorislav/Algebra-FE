@@ -1,0 +1,4 @@
+1. Formatirajte JS kod po naučenim pravilima:
+	- maknite višak razmaka u izjavama
+	- dodajte razmak gdje smatrate da je nužan za jednostavnije čitanje koda
+	- dodajte točku-zarez na kraj izjava

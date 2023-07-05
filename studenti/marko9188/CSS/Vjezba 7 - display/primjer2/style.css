@@ -1,0 +1,32 @@
+body {
+
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+  
+  ul {
+    border:1px solid #CCC;
+    list-style-type: none;
+    padding:0;
+    text-align: center;
+  }
+  
+  li {
+    background-color: #ffc;
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    
+  }
+  
+  p{
+    border:1px solid #CCC;
+    box-sizing:border-box;
+    display:inline-block;
+    margin:0;
+    margin-left:-4px; /* inline-block margin issue */
+    width:25%;
+  }
+  

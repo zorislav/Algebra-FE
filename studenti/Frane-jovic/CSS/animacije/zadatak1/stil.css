@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+.wrapper{
+    text-align: center;
+}
+.wrapper div{
+    display: inline-block;
+    background-color: #f93;
+    border: 4px solid #333;
+    border-radius: 100%;
+    font-size: 2em;
+    line-height: 90px;
+    width: 100px;
+    height: 100px;
+    margin:1em ;
+    text-align: center;
+    position: relative;
+}
+@keyframes an1{
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+        background-color:red;
+    }   
+    100%{
+        transform: scale(1);
+    }
+
+}
+.wrapper div:nth-child(1){
+    animation: an1 1s ease-in-out infinite;
+}
+@keyframes an2{
+    0%{
+        transform:translate(0,0) scale(1) rotate(0);
+    }
+    50% {
+        transform:translate(0,300px) scale(0.8) rotate(360deg);
+    }   
+    100%{
+        transform:translate(0,0) scale(1) rotate(0);
+    }
+
+}
+.wrapper div:nth-child(2){
+    animation: an2 2s ease-in-out infinite;
+}
+@keyframes an3{
+    0%{
+        transform: rotate(0);
+        border-radius: 100%;
+    }
+    50% {
+        transform: rotate(180deg);
+        border-radius: 0;
+    }   
+    100%{
+        transform: rotate(360deg);
+        border-radius: 100%;
+    }
+
+}
+.wrapper div:nth-child(3){
+    animation: an3 5s linear infinite;
+}
+
+@keyframes an4{
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(0,-20px);
+    }   
+    100% {
+        transform: translate(0,0);
+    }
+}
+.wrapper div:nth-child(4){
+    animation: an4 0.5s ease-in-out infinite;
+}
+
+@keyframes an5{
+    0%{
+        top: 0;
+    
+    }
+    25% {
+        top: 600px;
+        background-color: #f93;
+        transform: rotate(0deg);
+    }   
+    50%{
+        background-color: red;
+        transform: rotate(360deg);
+    }
+    75%{
+        top: 600px;
+        transform: rotate(0,0);
+        background-color: #f93;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 0;
+    }
+
+}
+.wrapper div:nth-child(5){
+    animation: an5 4s ease-in-out infinite;
+}
+
+@keyframes an6{
+    0%{
+        transform:scale(1);
+    
+    }
+    
+    
+    50%{transform: scale(2);
+        
+    }
+        
+    
+    100% {
+        transform: scale(1);
+    }
+
+}
+.wrapper div:nth-child(6){
+    animation: an6 4s ease-in-out infinite;
+}

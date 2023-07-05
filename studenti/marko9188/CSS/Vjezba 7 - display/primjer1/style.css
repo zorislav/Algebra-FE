@@ -1,0 +1,34 @@
+body {
+    font-family: tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+h1 {
+    text-align: center;
+}
+p { 
+    background-color: #f93;
+}
+em {
+    background-color: #ccf;
+}
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
+.box {
+    height: 100px;
+    width: 300px;
+    margin: 20px;
+}
+.none {
+    display: none;
+}
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}

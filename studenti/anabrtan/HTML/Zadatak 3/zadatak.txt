@@ -1,0 +1,14 @@
+Vjezba 4 - Grafika - Zadatak 3 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+3. Postaviti naslov dokumenta "SVG"
+
+4. U dokumentu kreirati svg područje dimenzija 500 x 500 i u njemu tri elementa jedan preko drugog:
+	- četverokut
+	- trokut
+	- krug

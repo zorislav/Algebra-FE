@@ -1,0 +1,130 @@
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #DEFCFA;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    background-image: url("ocean.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    text-align: center;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;   
+    margin-bottom: 10%;
+}
+
+#logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: yellow;
+    margin: 1% auto auto 1%;
+}
+
+.navigation {
+    margin: 2% 1% 0 auto;
+}
+
+nav ul {
+    width: 300px;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    color: yellow;
+    padding: 2%;
+}
+
+nav a:visited {
+    color: yellow;
+}
+
+button:hover{
+    cursor: pointer;
+    }
+
+.header-section {
+    background-color: rgba(61, 59, 59, 0.8);
+    width: 35%;
+    height: 27%;
+    border-radius: 10px;
+    margin:  auto;
+}
+
+h1 {
+    color: white;
+    font-size: 2vw;
+    padding: 3%;
+}
+
+#subtitle {
+    color: rgb(211, 206, 206);
+    font-size: 1vw;
+}
+
+button {
+    background-color: yellow;
+    margin: 3%;
+    padding: 2% 3%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+#section-title {
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 2%;
+}
+
+.highlights {
+    display: flex;  
+    margin-bottom: 10%;
+    flex-flow: row;
+    justify-content: center;
+    height: 150px;
+}
+
+figure {
+    max-width: 500px;
+    margin: 1%;
+    text-align: center;
+}
+
+figure img{
+    width: 250px;
+    height: 175px;
+    border-radius: 15px;
+    box-shadow: 0 1px 5px;
+}
+
+figcaption {
+    color: lightslategray;
+}
+
+figcaption span {
+    color: rgb(19, 131, 19);
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+}
+
+footer img {
+    max-height: 50px;
+    margin: 2%;
+}

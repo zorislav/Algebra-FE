@@ -1,0 +1,29 @@
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+//media queries
+
+$breakpoints: (
+  "small": 480px,
+  "medium": 768px,
+  "large": 1024px,
+  "x-large": 1200px
+);
+
+//keywords($args) //=> map
+@mixin mq($width, $type: min) {
+  // map-has-key($map, $key)
+  @if map_has_key($breakpoints, $width) {
+    //map-get($map, $key)
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}

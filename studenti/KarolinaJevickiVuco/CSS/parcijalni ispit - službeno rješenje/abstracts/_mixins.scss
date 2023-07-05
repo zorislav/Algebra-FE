@@ -1,0 +1,17 @@
+@mixin flex-container {
+   align-items: center;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   width: 100vw;
+ }
+ 
+ @mixin keyframes($animation-name) {         /*definira parametre za animaciju*/
+   @keyframes #{$animation-name} {
+     @content;
+   }
+ }
+ 
+ @mixin animation($str) {        /* na temelju onoga što predamo, pravilo izvršava*/
+   animation: #{$str};
+ }

@@ -1,0 +1,26 @@
+$color1: #eee; 
+$color2: #333;
+$color3: #800;
+
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+body {
+   background-color: $color1;
+   color: $color2;
+   font-family: $font1;
+}
+
+.borders {
+   border: 2px solid  $color2;
+}
+
+%spaces {            /*definiramo pravila i uključujemo s extend na mjestu na kojem želimo*/
+   padding: 1em;
+   margin: 1em; 
+}
+
+header, footer, article {
+   @extend .borders;              /*include je samo za mixine, extend za klase*/  /*kroz extend se parametri bordersa prenosi na header, footer i article*/
+   @extend %spaces;   /*ovog dijela nema u CSS dokumentu*/
+}

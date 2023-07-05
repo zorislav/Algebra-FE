@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body, div, p, header, footer {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  background-image: url(./img/back.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  color: #979595;
+  font-family: Tahoma, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.oblaci {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 80px 10px;
+  margin-top: 10%;
+}
+
+img {
+  height: 250px;
+  width: 550px;
+}
+
+.flex-container {
+  text-align: center;
+}
+
+.sunce {
+  display: inline-block;
+  border-radius: 50%;
+  height: 10vw;
+  width: 10vw;
+  box-shadow: 0 0 30px #edef55;
+  background-color: #edef55;
+  z-index: -1;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+}
+
+.flex-container {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes animacija1 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+img:first-of-type {
+  animation: animacija1 3.9s linear 1.1s infinite;
+}
+
+img:nth-of-type(2) {
+  animation: animacija1 3.9s linear 2.7s infinite;
+}
+
+img:last-of-type {
+  animation: animacija1 3.9s linear 3.9s infinite;
+}
+
+@keyframes animacija2 {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.sunce {
+  animation: animacija2 3.6s linear;
+}
+
+@media (max-width: 1143px) {
+  header {
+    flex-basis: 33%;
+  }
+  img {
+    height: 200px;
+    width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    flex-basis: 33%;
+  }
+  img {
+    height: 150px;
+    width: 250px;
+  }
+}
+@media (max-width: 479px) {
+  img:nth-of-type(2), img:last-of-type {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .sunce {
+    height: 100px;
+    width: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */
