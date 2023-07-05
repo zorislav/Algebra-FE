@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    background-image: url(banner.jpeg);
+    margin: 20px 30px;
+}
+
+
+body a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-top: 18px;
+    margin-right: 50px;
+    margin-left: -40px;
+}
+
+nav{
+    width: 60%;
+}
+
+nav a:active{
+    color: blue;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p{
+    text-align: left;
+    font-size: 32px;  
+    font-weight: bold;
+    margin-left: 5em;
+}
+
+.naslov {
+    margin: 16em 0em;
+}
+
+h1 {
+    color: blue;
+    font-size: 48px;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin: 17px 0px;
+}
+
+.get {
+    margin: 60px;
+    font-size: 18px;
+}
+.sub{
+    color: red ;
+}
+
+.portfolio{
+    margin: auto auto 5% auto;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    max-width: 20%;
+    font-size: 24px;
+    color: green;
+    padding: 15px;
+}
+
+.imges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 65%;   
+}
+
+table.slike {
+    height: 200px;
+    margin: auto auto 50px auto;
+    border-spacing: 10%;
+    padding: 7px;
+    border-spacing: 10px;
+}
+
+.link {
+    color: black;
+    font-weight: bold;
+    margin: 30px auto 200px 90px;
+}
+
+table.table {
+    border: 1px solid black;
+    height: 200px;
+    margin: auto auto 50px auto;
+    border-spacing: 10%;
+    padding: 7px;
+    border-spacing: 10px;
+}
+
+table.table * {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.contact {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: blue;
+    margin: auto auto 5% auto;
+    max-width: 20%;
+    font-size: 24px;
+    padding: 15px;
+    }
+
+.flogo {
+    font-family: sans-serif;
+    font-size: 45px;
+    color: red;
+    text-decoration: underline black 1px;
+    text-align: center;
+    margin: auto auto 30px auto;
+} 
+footer div {
+    width: 100wv;
+    border-top: solid black 2px;
+    margin-bottom: 25px;
+}
+
+footer p {
+    margin: 50px auto;
+}
+

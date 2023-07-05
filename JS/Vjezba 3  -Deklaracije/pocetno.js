@@ -1,17 +1,18 @@
-var firstName,      lastName, price, discount, fullPrice;
+/**
+// Inicijalizacija varijabli?
+*/
+var first_name = "Tony";
 
-firstName =     "John";
-    lastName = "Doe"
+var first_name = "John",
+lastName = Doe,
+price = 0,
+0discount = 78,
+fullPrice == 0,
+break = [], /*
+$myObject = {};
 
-price = 19.90;
-discount = 0.10;
+console.log(PRICE);
+console.log(lastname);
 
-if (x == 1)
-x = 2
-	
-	if (a) {
-	var z = 44
-		return 0;
-	}
-
-fullPrice = price * 100 / discount;
+// Kraj mog
+programa

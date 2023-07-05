@@ -1,0 +1,39 @@
+//breakpoints (ovo mi je pravo otkriće :D)
+$breakpoints: (
+	"sm": 480px,
+	"md": 768px,
+	"lg": 1024px,
+);
+
+@mixin mediaQuery($size, $type: min) {
+	@if map-has-key($map: $breakpoints, $key: $size) {
+		$width: map-get(
+			$map: $breakpoints,
+			$key: $size,
+		);
+		@if $type == max {
+			$width: $width - 1px;
+		}
+
+		@media (#{$type}-width: $width) {
+			@content;
+		}
+	}
+}
+
+//layout
+@mixin flex($direction, $wrap, $justify, $align) {
+	display: flex;
+	flex-wrap: $wrap;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+//objects
+@mixin circle($size, $color) {
+	width: $size;
+	height: $size;
+	border-radius: 100%;
+	background: $color;
+}

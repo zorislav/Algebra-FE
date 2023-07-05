@@ -1,0 +1,14 @@
+@mixin flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin sun {
+    border-radius: 50%;
+    height: 12vw;
+    width: 12vw;
+    background-color: $color1;
+    box-shadow: 0 0 30px $color3;
+}
+

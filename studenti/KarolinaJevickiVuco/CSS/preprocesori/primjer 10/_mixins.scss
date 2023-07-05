@@ -1,0 +1,28 @@
+@mixin flex {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+/*map --> kombinacije parova - ključna riječ + vrijednost --->*/
+
+$breakpoints: (               /*točke prelamanja layouta - ovdje širina viewporta*/ 
+   "small": 480px,      /*labela: vrijednost*/
+   "medium": 768px,
+   "large": 1024px,
+   "x-large": 1200px
+);
+
+@mixin mq($width, $type: min)  {       /*u zagradu su args = argumenti - ako ne pozovemo drugi argument, vrijednost je min*/
+   @if map_has_key($breakpoints, $width)    {      /* map + ključ --> ispituje ima li neki map kojeg zadamo  nešto što pretražujemo po ključu*/
+      $width: map_get($breakpoints, $width);             /* ako u toj map postoji ključ koji odg width, onda će se iz tog map polja povući sadržaj para varijable koju smo ovdje zadali - width*/
+      @if $type == max {
+         $width: $width - 1px;      /*ako je tip max, onda smanjujemo width za jedan px*/
+      }
+      @media (#{$type}-width: $width) {      /*ako je type min --> min-width, ako je type max --> max-width*/
+         @content;
+      }
+    }         
+}
+
+/*$width  - proizvoljni naziv varijable*/

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+.wrapper {
+    border: 1px dashed #666;
+    padding: 1em;
+}
+.wrapper div {
+    width: 150px;
+    background-color: #eee;
+    text-align: center;
+    border: 1px solid #666;
+    padding: 1em;
+    margin: 1em;
+}
+.flex-container{
+    display: flex;
+}

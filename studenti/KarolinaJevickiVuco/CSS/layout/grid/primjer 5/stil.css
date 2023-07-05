@@ -1,0 +1,52 @@
+* {   /*ova pravila primijenjiva na svaki element*/
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333;
+}
+header, 
+footer, 
+main, 
+article,
+aside,
+section {
+   border: 1px solid #666;
+   padding: 1em;
+}
+header, footer {
+   background-color: lightgray;
+   height: 10vh; /*ovisi o visini viewporta*/
+}
+main {    /*jedan flex-box i main direction mu je 'row'*/
+   display: flex;
+   justify-content: space-between;
+   margin: auto;
+   min-height: 80vh;
+}
+aside {
+   flex-basis: 32%;  /*jer je jedna trećina velikog containera*/
+}
+section {   /*drugi flex-box koji je unutar maina i main direction mu je 'column'*/
+   display: flex;
+   flex-direction: column;
+   flex-basis: 66%;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+}
+article {
+   flex-basis: 24%;   /*jer imaa 4 reda*/
+   width: 49%;  /*jer zauzima pola section containera*/
+}
+
+@media (max-width: 500px) {   /*media query - kad je širina ekrana 500px ili manje, ovo se pravilo primjenjuje, npr. na displayu mobitela 'aside' dio ide ispod 'articles' u prikazu*/
+   main {
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+   article {
+      width: 99%;
+   }
+}

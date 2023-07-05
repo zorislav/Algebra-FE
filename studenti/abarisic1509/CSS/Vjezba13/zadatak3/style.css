@@ -1,0 +1,267 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	background: url(banner.jpeg) center/cover no-repeat;
+	padding: 1rem;
+}
+a {
+	text-transform: uppercase;
+}
+a,
+a:visited {
+	color: black;
+}
+
+a:active {
+	color: blue;
+}
+
+/* HEADER */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.nav-btn {
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 2px solid black;
+	border-radius: 2px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+}
+
+.nav-btn span {
+	pointer-events: none;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+}
+
+.nav-list {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.125rem;
+	font-weight: 700;
+	list-style: none;
+	padding: 0;
+	display: none;
+
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 1em;
+	background-color: burlywood;
+
+	position: absolute;
+	right: 0;
+	top: calc(100% + 1rem);
+
+	animation: opacity 0.5s linear forwards;
+}
+.nav-list::before {
+	content: "";
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: burlywood;
+	position: absolute;
+	top: -0.25rem;
+	right: 0;
+	transform: translateX(-2px) rotate(45deg);
+}
+
+.nav-list.active {
+	display: flex;
+}
+
+/* SECTIONS */
+section {
+	padding-block: 3em;
+}
+
+/* HERO */
+.hero {
+	min-height: 100svh;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 3rem;
+	color: blue;
+}
+.hero h2 {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.5rem;
+}
+.hero .links-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 2em;
+}
+.hero .links-wrapper a {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+.hero .links-wrapper a:last-of-type {
+	color: red;
+}
+
+/* PORTFOLIO */
+.portfolio {
+	display: flex;
+	flex-direction: column;
+}
+.portfolio hr {
+	color: white;
+	width: 20%;
+}
+
+.portfolio h2 {
+	font-size: 1.5rem;
+	color: green;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+}
+.portfolio a {
+	font-weight: 700;
+	margin-inline: auto;
+	margin-top: 2em;
+}
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2em;
+	margin-top: 2em;
+}
+
+/* CONTACT */
+.contact {
+	display: flex;
+	flex-direction: column;
+}
+.contact hr {
+	color: black;
+	width: 20%;
+}
+
+.contact h2 {
+	font-size: 1.5rem;
+	color: blue;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+}
+
+.contact form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding: 1em;
+	border: 1px inset whitesmoke;
+	margin-top: 2em;
+	width: 100%;
+	max-width: 800px;
+	margin-inline: auto;
+}
+.contact form .input-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+.contact form p {
+	padding: 1em;
+	border: 1px inset whitesmoke;
+	width: 100%;
+	flex: 0 100%;
+	display: flex;
+}
+.contact form input:not([type="submit"]),
+.contact form textarea {
+	width: 100%;
+}
+.contact form input[type="submit"] {
+	margin-inline: auto;
+}
+
+/* FOOTER */
+footer {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+footer hr {
+	color: black;
+}
+footer p {
+	text-align: center;
+}
+footer p:last-child {
+	font-size: 1.125rem;
+}
+footer a {
+	font-size: 3rem;
+	color: red;
+}
+
+/* MEDIA */
+
+@media (min-width: 480px) {
+	.contact form .input-wrapper {
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 768px) {
+	.nav-btn {
+		display: none;
+	}
+	.nav-list {
+		display: flex;
+
+		flex-direction: row;
+		padding: 0;
+		background-color: transparent;
+		position: static;
+	}
+	.nav-list::before {
+		display: none;
+	}
+}
+
+/* keyframes */
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
