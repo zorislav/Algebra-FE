@@ -13,8 +13,7 @@ p:first-of-type {
 
 /* višestruke pozadine */
 
-p:nth-of-type(3) {
-  background: url(orange.png) right top/150px no-repeat,
-    url(butterfly.png) left center/contain no-repeat,
-    url(coffee-cup.png) center center/contain no-repeat #ccf url(pattern.png);
+p:nth-of-type(3) 
+{
+  background: url(butterfly.png) left center/contain no-repeat, url(orange.png) right top/150px no-repeat, url(pattern.png),url(coffee-cup.png) center center/contain no-repeat
 }
