@@ -1,0 +1,9 @@
+- Planiranje aplikacije, uključivanje JS skripte u html
+- Tipovi podataka
+- Izjave 
+- Funkcije
+- Objekti
+- Operatori
+- DOM manipulacija
+- OOP tehnike
+- Obrasci - module obrazac koji se neporsredno izvršava
