@@ -1,0 +1,151 @@
+body {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  margin-top: 20vh;
+  font-size: 10vh;
+  color: #666;
+  margin-bottom: 5vh;
+}
+
+.menu {
+  margin-top: 20px;
+  height: 5vh;
+  margin-bottom: 5vh;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.task-delete {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.menu a.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.add-task {
+  margin-top: 20px;
+ 
+}
+
+.add-task input[type="text"] {
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-task button:hover {
+  background-color: #666;
+  color: #fff;
+}
+.add-task button:active {
+  background-color: #000;
+  color: #fff;
+}
+
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+  border-radius: 5px;
+  max-width: 35%;
+  margin: 0 auto;
+
+}
+
+.task-list-empty {
+  border: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  word-break: break-word;
+}
+
+.task-item:last-child {
+  margin-bottom: 0;
+}
+
+.task-item .task-text {
+  flex-grow: 1;
+}
+
+.task-item .task-checkbox {
+  margin-right: 5vw;
+}
+
+.task-item .task-delete {
+  color: rgb(77, 77, 77);
+  cursor: pointer;
+}
+
+.task-item .task-text.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+#btn-all {
+  border-radius: 5px 0 0 5px;
+}
+
+#btn-completed {
+  border-radius: 0 5px 5px 0;
+}
+
+#task-input {
+  height: 2.5vh;
+  width: 40%;
+  margin-right: 0;
+}
+
+.task-text {
+  text-align: left;
+}
+
+div.add-task {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+

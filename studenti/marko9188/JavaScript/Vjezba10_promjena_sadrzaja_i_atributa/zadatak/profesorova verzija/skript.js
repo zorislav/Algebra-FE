@@ -4,10 +4,11 @@ h1.innerText = 'Karlovac';
 var description = document.querySelector('.description');
 description.innerHTML = 'Grad na <h3>5 rijeka.</3>';
 
-var description = document.querySelector('.info');
+var info = document.querySelector('.info');
 info.innerText = 'Peta je piva.';
 
-var rijeke = ['Mreznica' , 'Kupa' , 'Korana' , 'Dobra' , 'Piva'];
+
+var rijeke = ['Mreznica', 'Kupa', 'Korana', 'Dobra', 'Piva'];
 //var footer = document.querySelectorAll('#footer');
 var footerLista = document.querySelectorAll('#footer li');
 
@@ -19,10 +20,14 @@ for ( var i = 0; i < footerLista.length; i++) {
     footerLista[i].innerText = rijeke[i];
 }
 
-var cssObj = window.getComputedStyle (description, nul);
+var cssObj = window.getComputedStyle (description, null);
 console.log (cssObj.getPropertyValue('font-size'));
 
 var foot = document.getElementById ('footer');
-var pos =0;
+// var pos =0;
 
-setInterval(frame, 10);
+// setInterval(frame, 50);
+// function frame(){
+//     pos++;
+//     foot.style.marginleft = pos +'px';
+// }
