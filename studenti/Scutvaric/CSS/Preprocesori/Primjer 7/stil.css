@@ -1,0 +1,10 @@
+body {
+  font-family: Tahoma, sans-serif;
+}
+
+header, footer, article {
+  background-color: #333;
+  color: #eee;
+  margin: 1em;
+  padding: 2em;
+}/*# sourceMappingURL=stil.css.map */

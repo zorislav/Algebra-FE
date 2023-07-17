@@ -28,8 +28,8 @@ body {
   }
 
   img {
-	height: 300px;
-	width: 600px;
+	height: 250px;
+	width: 550px;
   }
   
   .flex-container {
@@ -72,11 +72,12 @@ body {
         transform: translateX(0%);
       }
     50% {
-        transform: translateX(50%);
+        transform: translateX(30%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(0%);
       }
+    
     }
 
 
@@ -108,10 +109,23 @@ img:last-of-type {
     animation: animacija2 3.6s linear;
 }
 
+@media (max-width: 1143px) {
+	header {
+	  flex-basis: 33%;
+	}
+  img {
+    height: 200px;
+    width: 350px;
+    }
+  }
 @media (max-width: 767px) {
 	header {
 	  flex-basis: 33%;
 	}
+  img {
+    height: 150px;
+    width: 250px;
+    }
   }
   @media (max-width: 479px) {
 	img:nth-of-type(2), img:last-of-type {

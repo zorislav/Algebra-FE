@@ -1,0 +1,87 @@
+@import "abstract/mixin";
+@import "abstract/variables";
+@import "base/reset";
+@import "base/typography";
+
+body {
+    background-color: $background;
+    color: $text-color;
+    font-family: $sans-serif;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+  //include
+  h1,
+  h2 {
+    @include align-element(null, center, 0 auto 1rem);
+  }
+  
+  @include linx($color1, $color2, $color4, $color5);
+  
+  //Placeholder selectors
+  %spaces {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  
+  %borders {
+    border: $border-width $border-style $border-color;
+  }
+  header,
+  nav,
+  footer,
+  main,
+  section {
+    @extend %spaces; //@extend placeholder selectors
+  }
+  
+  header,
+  footer {
+    background-color: $text-color;
+    color: $background;
+  }
+  nav,
+  section {
+    @extend %borders; //@extend placeholder selectors
+  }
+  
+  header {
+    @include align-element(null, center, auto);
+  
+    a {
+      @include align-element(inline-block, center, 1rem auto);
+      background: $color4;
+      padding: 10px 2rem;
+      width: 300px;
+      &:hover {
+        background: $color2;
+      }
+    }
+  }
+  
+  nav {
+    li {
+      display: inline;
+    }
+  }
+  
+  main,
+  footer {
+    @include flex-container;
+    h1 {
+      flex-basis: 100%;
+    }
+  }
+  main {
+    max-width: 1200px;
+    section {
+      flex-basis: 32%;
+    }
+  }
+  
+  footer {
+    margin-bottom: 0;
+    section {
+      flex-basis: 48%;
+    }
+  }

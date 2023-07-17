@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser okolina</title>
+</head>
+<body>
+    <script>
+        //1. Ispisite u konzoli visinu i širinu svog trenutno otvorenog prozora
+        console.log('Sirina'+ window.innerWidth);
+        console.log(`Visina: ${window.innerHeight}`);
+        //Saznajte ime domene stranice (hostname) i redirektajte na www.google.com
+        console.log(window.location.hostname);
+        //window.location.replace('http://www.algebra.hr');
+        //Napišite naredbu koja otvara konfirmacijski prozor u browseru vezan uz politiku cookija
+        window.confirm('Do you want to continue?');
+        //Napišite jednostavnu console.log funkciju koja se izvršava 2 sekunde nakon što je pozvana
+        window.setTimeout(function(){
+            console.log('I am late.')
+        },4000);
+    </script>
+</body>
+</html>

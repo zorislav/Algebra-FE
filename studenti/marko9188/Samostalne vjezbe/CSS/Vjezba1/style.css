@@ -1,0 +1,10 @@
+h1 {
+    color: red;
+}
+p:nth-of-type(1) {
+    color: green;
+
+}
+p:last-of-type {
+    color: blue;
+}
