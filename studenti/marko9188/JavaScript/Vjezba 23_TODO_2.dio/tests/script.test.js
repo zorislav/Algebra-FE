@@ -1,11 +1,10 @@
+/* eslint-disable no-undef */
+import Td from'../script.js';
 
-import Td from '..script.js';
 
-const myTodo = new Td();
 
 test('Todo test', () => {
-
     const myTodo = new Td();
-    console.log(myTodo);
-
+    const el = myTodo.createListItem()
+    expect(el.innerHTML).toBe('<div class="li-container"><div class="li-container-int"><input type="checkbox"></div><div class="removeButton"></div></div>');
 });
