@@ -25,6 +25,7 @@ body {
   .oblaci {
 	@include flex;
 	margin-top: 10%;
+
   }
 
   img {
@@ -42,6 +43,7 @@ body {
 	position: absolute;
 	top: 5%;
 	left: 45%;
+  
 	
   }
   
@@ -128,7 +130,7 @@ img:last-of-type {
     }
   }
   @media (max-width: 479px) {
-	img:nth-of-type(2), img:last-of-type {
+	img:nth-of-type(2), img:nth-last-of-type(3) {
 	  display: none;
 	}
   }
