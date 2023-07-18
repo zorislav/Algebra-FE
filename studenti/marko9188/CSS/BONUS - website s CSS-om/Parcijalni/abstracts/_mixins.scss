@@ -1,0 +1,17 @@
+@mixin flex-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  
+  @mixin keyframes($animation-name) {
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+  
+  @mixin animation($str) {
+    animation: #{$str};
+  }
