@@ -18,7 +18,7 @@ module.exports = findMax;
 // - imamo for petlju u kojoj ispitujemo je li tekući element veći od max --- > na kraju bi funk trebala vratiti najveću vrijednost niza
 //exportiramo tu max funckiju
 //5. u script.test.js upisujemo:
- constmaxNumber = require('../script'); //navodimo put do datoteka
+ constmaxNumber = require('./script'); //navodimo put do datoteka
  const testArray = [1,2,4,89,43,2,-1];    //definiramo testno polje s ovim vrijednostima
 
  test('Get max number', () => {              //ovim se definira test - ime testa, funkcija
