@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+main {
+  text-align: center;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  background: #f3f3f3;
+  padding: 10px 0;
+} 
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: overline underline;
+}
+
+
+.spinning {
+  display: none;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid black;
+  border-radius: 75%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }
+
+#song-search {
+  padding: 10px;
+  margin: 0 auto;
+  width: 300px;
+  font-size: 15px;
+  border-radius: 5px;
+  color: #333;
+}
+
+#search-button {
+  padding: 12px 15px;
+  margin: 0 auto;
+  background-color: black;
+  color: red;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+
+#search-button:hover {
+  background-color: red;
+  color: black;
+}
+
+
+#results-table {
+  width: 60%;
+  margin: 20px auto;
+  padding: 8px;
+  text-align: left;
+}
