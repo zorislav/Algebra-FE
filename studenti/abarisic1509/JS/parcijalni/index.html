@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Parcijalni - iTunes Song search</title>
+		<!-- Tailwind css -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- Custom css -->
+		<link rel="stylesheet" href="style.min.css" />
+	</head>
+	<body class="bg-slate-900 text-sky-50">
+		<header
+			class="bg-sky-900 flex flex-col gap-4 items-center justify-center py-8"
+		>
+			<h1
+				class="text-3xl font-bold border-b border-slate-900 w-full text-center pb-2 px-8"
+			>
+				iTunes Song search
+			</h1>
+
+			<label for="search" class="relative flex px-6 w-full max-w-[400px]">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="20"
+					viewBox="0 0 512 512"
+					aria-hidden="true"
+					class="absolute left-8 top-[25%]"
+				>
+					<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+					<path
+						d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+						fill="rgb(15, 23, 42)"
+					/>
+				</svg>
+				<input
+					type="text"
+					name="search"
+					id="search"
+					placeholder="Pretraži po nazivu pjesme ili izvođaču"
+					class="w-full py-2 pl-8 pr-2"
+				/>
+			</label>
+		</header>
+
+		<main
+			class="mx-2 my-12 py-8 px-2 sm:mx-4 sm:px-4 border border-sky-900 flex items-center justify-center max-w-[768px] md:mx-auto"
+		>
+			<div id="noResults" class="text-2xl text-center">
+				Za pretraživanje upišite naziv pjesme ili izvođača
+			</div>
+
+			<div id="loader" class="hidden">
+				<span
+					class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-sky-200 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+				></span>
+				<span class="sr-only">Loading...</span>
+			</div>
+
+			<ul id="searchResults" class="hidden flex flex-col gap-4"></ul>
+		</main>
+
+		<script src="script.min.js"></script>
+	</body>
+</html>
