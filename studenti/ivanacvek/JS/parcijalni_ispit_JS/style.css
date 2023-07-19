@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+}
+
+img {
+    display: block;
+    margin: 0px auto;
+    width: 95px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+header {
+    text-align: center;
+    background: #f3f3f3;
+    padding: 10px 0;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#main {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#input {
+    font-size: 15px;
+    box-shadow: 0 0 0px rgb(0, 0, 0.2);
+    border-radius: 5px;
+    color: #333;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+#button {
+    padding: 10px 20px;
+    background-color: #434446;  
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+  
+#table th, #table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+  
+#table th {
+    background-color: #434446;
+    color: white;
+    position: sticky;
+}
+
+.spinner {
+    display: none;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid  #434446;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spinner 3s linear infinite;
+    margin: 0 auto;
+  }
+  
+@keyframes spinner {
+    0% { 
+        transform: rotate(0deg); 
+        }
+    100% { 
+        transform: rotate(360deg); 
+        }
+}
+  
+#message {
+    font-size: 20px;
+}
