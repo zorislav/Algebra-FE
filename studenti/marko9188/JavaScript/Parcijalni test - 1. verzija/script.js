@@ -30,10 +30,22 @@ async function searchITunes(term) {
     // Prikazi rezultate u tablici
     for (const result of results) {
       const row = table.insertRow();
+      const imageCell = row.insertCell();
       const nameCell = row.insertCell();
       const artistCell = row.insertCell();
+      const audioCell = row.insertCell();
       nameCell.innerHTML = result.trackName;
       artistCell.innerHTML = result.artistName;
+       // Dodaj audio oznaku
+      const audio = document.createElement("audio");
+      audio.controls = true;
+      audio.src = result.previewUrl;
+      audioCell.appendChild(audio);
+
+      // Dodaj sliku
+      const image = document.createElement("img");
+      image.src = result.artworkUrl60;
+      imageCell.appendChild(image);
     }
   }
   
