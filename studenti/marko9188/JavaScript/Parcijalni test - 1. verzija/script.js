@@ -34,6 +34,8 @@ async function searchITunes(term) {
       const nameCell = row.insertCell();
       const artistCell = row.insertCell();
       const audioCell = row.insertCell();
+      
+
       nameCell.innerHTML = result.trackName;
       artistCell.innerHTML = result.artistName;
        // Dodaj audio oznaku
@@ -50,7 +52,7 @@ async function searchITunes(term) {
   }
   
   // Funkcija za prikaz greške
-  function displayError(message) {
+    function displayError(message) {
     const table = document.getElementById("results-table");
     table.innerHTML = "";
   
