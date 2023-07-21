@@ -9,7 +9,8 @@ const Td=
      */
 
     function (){
-            
+
+          
 
     /** 
      * Todo - predstavlja objekt zadatka
@@ -211,7 +212,7 @@ const Td=
          * @param {event} event
          * @return {HTMLElement}
          */
-        function createListItem(text) {
+        this.createListItem = function(text) {
             var listItem = document.createElement('li');
             var div = document.createElement('div');
             div.classList.add('li-container');
@@ -232,10 +233,10 @@ const Td=
          * @memberof Todo_namespace.Todo
          * @function
          */
-        function addListItem() {
+        this.addListItem = function() {
             var text = input.value;
             if(text.trim().length !== 0){
-                var newItem = createListItem(text);
+                var newItem = this.createListItem(text);
                 list.appendChild(newItem);
                 input.value = '';
             }else{
@@ -253,11 +254,14 @@ const Td=
          * @function
          */
         this.addListeners = function() {
-			addButton.addEventListener('click', addListItem);
+            document.addEventListener('DOMContentLoaded', () => {
+            addButton.addEventListener('click', ()=> {this.addListItem()});
             allButton.addEventListener('click', showAll);
             activeButton.addEventListener('click', showActive);
             completedButton.addEventListener('click', showCompleted);
             clearAllCompletedButton.addEventListener('click', removeAllCompleted);
+            });
+			
 		};
     }
 

@@ -15,15 +15,14 @@ body {
 #results-table {
     background-color: rgba(174, 123, 255, 0.3);
     margin-top: 40px;
-    border-radius: 40px;
+    border-radius: 10px;
     margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25vw;
+    justify-content: center;
+    width: 65vw;
 }
 
 input {
-    border-radius: 10px;
+    border-radius: 5px;
     width: 20vw;
 
 }
