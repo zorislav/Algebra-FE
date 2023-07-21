@@ -1,234 +1,217 @@
+/* display=swap  - automatski mijenja iz fallback fonta u željeni kada postane raspoloživ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
 html {
-    background: url('https://scied.ucar.edu/sites/default/files/media/images/weather_0.jpg') no-repeat center center fixed;
-    background-size: cover;
+  /* background: image repeat horizontal-position vertical-position attachment */
+  background: url('https://scied.ucar.edu/sites/default/files/media/images/weather_0.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-
 header .place-container {
-    color:#fff;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  color:#fff;
+}
+
+header .place-container #time-zone{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+header .place-container #country{
+  font-size: 12px;
+  font-weight: 700;
 }
 
 header input {
-    font: inherit;
-    border: 1px solid #3c3c44;
-    border-radius: 15px;
-    font-size: 1rem;
-    padding: 5px 15px;
+  font: inherit;
+  border: 1px solid #3c3c44;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 5px 15px;
 }
 
 header button {
-    font: inherit;
-    font-size: 1rem;
-    color: #eee;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 50px;
-    background: #3c3c44;
+  font: inherit;
+  font-size: 1rem;
+  color: #eee;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 50px;
+  background: #3c3c44;
 }
 
 header button:hover {
-    background: #151518;
-    cursor: pointer;
-}
-
-header .place-container{
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-}
-
-header .place-container .time-zone{
-    font-size: 30px;
-    font-weight: 100;
-}
-
-header .place-container .country{
-    font-size: 12px;
-    font-weight: 700;
+  background: #151518;
+  cursor: pointer;
 }
 
 header #input-location {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 main {
-    color:#fff;
+  color:#fff;
 }
 
 main .current-info-container {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-main .current-info-container .today{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding:15px;
-    padding-right: 40px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.2)
+main .current-info-container #today{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding:15px;
+  padding-right: 40px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2)
 }
 
-main .current-info-container .today .day{
-    padding: 5px 15px;
-    background: #3c3c44;
-    border-radius: 50px;
-    text-align: center;
+main .current-info-container #today .day{
+  padding: 5px 15px;
+  background: #3c3c44;
+  border-radius: 50px;
+  text-align: center;
+}
+
+main .current-info-container #today .temp{
+  font-size: 18px;
+  padding-top: 15px;
 }
 
 main .date-container{
-    font-weight: 100;
-}
-main .date-container .time{
-    font-size: 70px;
+  font-weight: 100;
 }
 
-main .date-container #am-pm{
-    font-size: 30px;
-    margin-left: 20px;
+main .date-container #date{
+  font-size: 30px;
 }
 
-main .date-container .date{
-    font-size: 30px;
+main .date-container #time{
+  font-size: 70px;
 }
 
-
-
-main .current-info .others{
-    display: flex;
-    flex-direction: column;
-    background: rgba(24,24,27, 0.6);
-    padding:20px;
-    border-radius: 10px;
-    margin: 10px 0;
-    border: 1px solid #eee;
+main .current-info #current-weather-items {
+  display: flex;
+  flex-direction: column;
+  background: rgba(24,24,27, 0.6);
+  padding:20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid #eee;
 }
 
-main .current-info .others .weather-item{
-    display: flex;
-    justify-content: space-between;
-}
-
-main .today{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding:10px;
-    padding-right: 40px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.2)
-}
-
-main .today .day{
-    padding: 5px 15px;
-    background: #3c3c44;
-    border-radius: 50px;
-    text-align: center;
-}
-
-main .today .temp{
-    font-size: 18px;
-    padding-top: 15px;
+main .current-info #current-weather-items .weather-item{
+  display: flex;
+  justify-content: space-between;
 }
 
 footer .future-forecast{
-    background: rgba(24,24,27,0.8);
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    color:white;
-    width: 100%;
-     align-items: center;
-    justify-content: center;
-    overflow-y: hidden;
+  background: rgba(24,24,27,0.8);
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  color:white;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* overflow-y: hidden; */
 }
 
-footer .future-forecast .weather-forecast {
-    display: flex;
+footer .future-forecast #weather-forecast {
+  display: flex;
 }
 
-footer .weather-forecast .weather-forecast-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    border: 1px solid #eee;
-    padding: 15px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.2);
+footer #weather-forecast .weather-forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2);
 }
 
-footer .weather-forecast .weather-forecast-item .day{
-    padding: 5px 15px;
-    background: #3C3C44;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 0.6rem;
+footer #weather-forecast .weather-forecast-item .day{
+  padding: 5px 15px;
+  background: #3C3C44;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 0.6rem;
 }
 
-footer .weather-forecast .weather-forecast-item .temp{
-    font-weight: 100;
-    font-size: 0.6rem;
+footer #weather-forecast .weather-forecast-item .temp{
+  font-weight: 100;
+  font-size: 0.6rem;
 }
 
-footer .weather-forecast .weather-forecast-item img {
-    width: 50px;
-    height: 50px;
+footer #weather-forecast .weather-forecast-item img {
+  width: 50px;
+  height: 50px;
 }
 
 @media (max-width: 700px){
 
-    header {
-        flex-direction: column;
-    }
+  header {
+      flex-direction: column;
+  }
 
-    header .place-container {
-        margin-bottom: 20px;
-    }
+  header .place-container {
+      margin-bottom: 20px;
+  }
 
-    main .current-info-container {
-        flex-direction: column;
-    }
+  header .input-container {
+    text-align: center;
+  }
 
-    footer .future-forecast .weather-forecast {
-        flex-wrap: wrap;
-    }
+  main .current-info-container {
+      flex-direction: column;
+  }
 
-    footer .future-forecast{
-        position: static;
-    }
-    
+  main #time, main #date {
+    text-align: center;
+  }
+
+  footer .future-forecast #weather-forecast {
+      flex-wrap: wrap;
+  }
+
+  footer .future-forecast{
+      position: static;
+  }
+  
+  footer #weather-forecast .weather-forecast-item {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-height: 630px) {
 
-    footer .future-forecast{
-        position: static;
-    }
+  footer .future-forecast{
+      position: static;
+  }
 }
-
