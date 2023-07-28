@@ -1,0 +1,5 @@
+1. Pomoću jQueryja:
+	- prepišite sve događaje napisane u vanilla JSu u jQuery sintaksu
+	- pratite resize događaj na korisničkom ekranu ispisujući širinu ekrana u konzolu
+	- pratite kretanje miša i na ulazak miša preko retka tablice promijenite mu pozadinsku boju
+  - na izlazak miša sa retka mora se pozadinska boja vratiti na prijašnju
