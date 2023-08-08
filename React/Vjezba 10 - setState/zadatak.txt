@@ -1,0 +1,6 @@
+Početno stanje aplikacije je završno stanje vježbe 5.9 i nalazi se u mapi "Pocetno stanje".
+
+	1. Potrebno je dodati novu komponentu koja u sebi sadrži gumb
+	2. Pritiskom na gumb potrebno je promijeniti godine korisnika
+	3. Prikazati promjenu na ekranu
+	4. Komponenta App smije biti jedina komponenta sa stanjima (statefull), komponenta App mora biti definirana klasom
