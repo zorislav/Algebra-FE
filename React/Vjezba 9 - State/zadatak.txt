@@ -1,0 +1,5 @@
+Početno stanje aplikacije je završno stanje aplikacije iz vježbe 5.8 i nalazi se u mapi "Pocetno stanje".
+
+	1. U vježbi je potrebno definirati polje korisnici iz prethodne vježbe unutar stanja (statea) komponente App
+	2. Unutar stanja (statea) komponente App pored polja korisnici potrebno je definirati proizvoljnu tekstualnu varijablu
+	3. Prikazati na ekranu vrijednosti iz stanja (statea), a proizvoljnu vrijednost prikazati preko children propsa.
