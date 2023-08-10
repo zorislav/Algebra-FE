@@ -9,6 +9,11 @@
 <script>
 document.getElementById("demo").innerHTML = "Hello World!";
 document.querySelector('body').appendChild(document.createElement('h3'));
+document.querySelector('h2').style.color = "green";
+// document.querySelector('body').removeChild(document.querySelector('p'));
+document.querySelector('body').addEventListener('mouseover', function(){
+    document.querySelector('p').style.display ='none';
+});
 </script>
 
 </body>
