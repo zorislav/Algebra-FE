@@ -1,0 +1,8 @@
+ 	1. Napraviti novu React aplikaciju
+	2. Instalirati mobx i potrebne dekoratore za jednostavnije korištenje mobx-a
+
+U ovoj vježbi potrebno je napraviti sljedeće:
+	3. Napraviti "Mobx" komponentu koja će u sebi sadržati sva stanja (state) aplikacije i sve funkcije za upravljanje tim stanjima (state).
+	4. Aplikacija mora imati traku za unos teksta i gumb za postavljanje novih elemenata u stanje
+	5. Elementi nakon što su dodani moraju biti prikazani na ekranu
+	6. Dodati funkcijonalnost za brisanje elemenata.
