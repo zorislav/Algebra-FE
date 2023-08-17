@@ -2,7 +2,7 @@ var h1 = document.querySelector('h1');
 h1.innerText = 'Karlovac';
 
 var description = document.querySelector('.description');
-description.innerHTML = 'Grad na <h3>5 rijeka.</3>';
+description.innerHTML = 'Grad na <h3>5 rijeka.</h3>';
 
 var info = document.querySelector('.info');
 info.innerText = 'Peta je piva.';
