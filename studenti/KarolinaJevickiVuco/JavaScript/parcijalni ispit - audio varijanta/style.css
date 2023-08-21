@@ -32,6 +32,10 @@ h1 {
   color: #333;
 }
 
+input {
+  font-family: 'Architects Daughter', cursive;
+}
+
 #input {
   padding: 0.5rem;
   border: 3.5px solid #00b3ff;
