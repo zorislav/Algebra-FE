@@ -1,0 +1,17 @@
+1. Napraviti github.com account
+
+Koristim username zorislav 
+
+2. Na githubu napraviti novi private repozetorij
+
+Kreiram private repozitorij Git-Demo
+
+3. Povezati repozitorij iz prošle vježbe s github repozitorijem 
+
+# git remote add origin https://github.com/zorislav/Git-Demo
+
+4. Potrebno je poslati sve podatke iz lokalnog git repozetorija na github (git push -u origin master)
+
+# git push -u  origin master
+
+opcija -u postavlja trekući remote(origin) kao upstream

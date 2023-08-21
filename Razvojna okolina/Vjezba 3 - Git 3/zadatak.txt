@@ -1,0 +1,21 @@
+Početno stanje je završno stanje vježbe Git 2
+
+1. Vratiti kod datoteke index.html na stanje drugog commita
+
+# git checkout <unikatan_key_commita> index.html
+
+2. Provjeriti index.html datoteku
+
+3. Provjeriti stanje repozetorija
+
+# git status
+ 
+4.  Vratiti se natrag na master branch
+
+# git checkout master index.html
+ 
+5. Provjeriti stanje repozetorija
+
+# git status
+
+6. Provjeriti index.html datoteku

@@ -1,0 +1,7 @@
+1. Uključite Handlebars biblioteku na stranicu koristeći CDN.
+2. Proučite Pokemon API (https://pokeapi.co/)
+3. Kreirajte XHR request na API koji dohvaća prvih 20 Pokemon vrsta koje su žute boje
+4. Kreirajte HTML stiliziranu tablicu dobivenih rezultata koristeći Handlebars
+5. Lista mora sadržavati:
+    - redni broj
+    - ime vrste koje je ujedno i link na API endpoint sa vise informacija o vrsti
