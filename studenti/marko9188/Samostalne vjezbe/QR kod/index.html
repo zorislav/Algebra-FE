@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Scanner</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #qr-container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <div id="qr-container">
+      <h1>QR Code Scanner</h1>
+      <video id="qr-video" width="300" height="300" autoplay></video>
+      <p id="qr-result">QR kod će se prikazati ovdje</p>
+      <button id="generate-qr">Generiraj QR kod</button>
+      <div id="generated-qr-image"></div>
+      <p id="status-message"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
