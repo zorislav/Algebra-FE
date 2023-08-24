@@ -1,1 +1,0 @@
-JS Parcijalni ispit
