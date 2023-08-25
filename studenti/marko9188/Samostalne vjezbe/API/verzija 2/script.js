@@ -18,6 +18,18 @@ function performSearch(query) {
   const apiUrl = `https://www.googleapis.com/customsearch/v1?q=${query}&key=${apiKey}&cx=${searchEngineId}`;
 
   fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    // Ispišite kompletni JSON odgovor u konzoli
+    console.log("Kompletni JSON odgovor:");
+    console.log(JSON.stringify(data, null, 2)); // Formatirani JSON sa 2 razmaka
+    // Ispišite specifične podatke koje želite izvući
+    const items = data.items;
+    console.log("Lista rezultata:");
+    console.log(items);
+  });
+
+  fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
       const items = data.items;
