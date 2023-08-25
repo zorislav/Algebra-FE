@@ -1,5 +1,5 @@
 
-    function (){
+    function(){
             
 
      export function Todo(){
@@ -147,6 +147,6 @@
     var todo = new Todo();
     window.addEventListener('load', todo.init());
    return Todo
-})();
+}();
 
 export default Td;
