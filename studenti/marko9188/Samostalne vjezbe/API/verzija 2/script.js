@@ -3,13 +3,22 @@ const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 
 searchButton.addEventListener("click", () => {
-  const searchQuery = searchInput.value;
-  if (searchQuery.trim() !== "") {
-    performSearch(searchQuery);
+  performSearch();
+});
+
+searchInput.addEventListener("keyup", event => {
+  if (event.key === "Enter") {
+    performSearch();
   }
 });
 
-function performSearch(query) {
+function performSearch() {
+  const searchQuery = searchInput.value;
+  if (searchQuery.trim() !== "") {
+    fetchSearchResults(searchQuery);
+  }
+}
+function fetchSearchResults(query) {
   searchResultsList.innerHTML = ""; // Clear previous results
 
   const apiKey = "AIzaSyASh0thX2lyFtsbGlbLLQ11_DjKagOUny8";
