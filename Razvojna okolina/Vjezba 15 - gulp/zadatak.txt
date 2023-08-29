@@ -1,0 +1,9 @@
+Ova vježba se nastavlja na vježbu webpack
+Kopirati sve foldere i datoteke iz te vježbe
+Kreirati datoteku style.scss istog sadržaja kao i style.css
+
+1. Instalirajte gulp paket.
+2. Kreirajte gulp konfiguracijski file koji obavlja sljedeće zadatke:
+	- kompailira ES6 JS kod u ES5 kod, minificira ga i sprema u /dist folder
+	- pretvara SCSS u CSS, minificira datoteku i sprema u /dist folder
+	- prati promjene na SCSS i JS datotekama na stranici i refresha stranicu nakon bilo kakve promjene
