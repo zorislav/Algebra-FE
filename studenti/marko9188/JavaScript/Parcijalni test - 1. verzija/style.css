@@ -1,0 +1,35 @@
+* {
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('ITunes_12.2_logo.png') ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 10vw;
+    background-size: 50%;
+}
+
+#results-table {
+    background-color: rgba(174, 123, 255, 0.3);
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    justify-content: center;
+    width: 65vw;
+}
+
+input {
+    border-radius: 5px;
+    width: 20vw;
+
+}
+h1{
+    font-size: 3rem;
+    width: 30vw;
+    margin: auto;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
