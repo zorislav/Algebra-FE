@@ -1,23 +1,17 @@
+import randomstring from 'randomstring';
+
 import logo from './logo.svg';
 import './App.css';
 
+const ime='Perica';
+const prezime='Horvat';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <p> Moj randomstring: {randomstring.generate()}</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Moje ime je:  {ime +' '+ prezime}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
