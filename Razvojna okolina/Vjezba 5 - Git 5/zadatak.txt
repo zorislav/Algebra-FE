@@ -1,0 +1,16 @@
+Početno stanje je GitHub repozitorij kreiran u prethodnom zadatku.
+
+1. Napraviti novi feature branch pod imenom "button" (git checkout -b button)
+
+# git checkout -b button 
+
+2. Dodati button u index.html 
+
+3. Commitati promjene i pushati promjene na GitHub repozitorij
+
+# git add .
+# git commit -m "Button commit"
+# git push -u origin button
+
+Rezultat:
+GitHub repozitorij ima 2 brancha: master i button
