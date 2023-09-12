@@ -11,7 +11,7 @@ class App extends React.Component {
     };
   }
 
-  UNSAFE_componentWillMount(){
+  componentWillMount(){
     console.log('Component wll mount!');
   }
 
@@ -23,9 +23,10 @@ class App extends React.Component {
   getList = () => {
     fetch('https://api.github.com/users/facebook/repos')
     .then(response => response.json())
-    .then(data => {this.setState({repos: data});
-    console.log(data);
-    });
+    .then(data => {
+      console.log(data);
+      this.setState({repos: data});
+        });
     
   }
 
@@ -34,7 +35,7 @@ class App extends React.Component {
     // return this.state.repos !== nextState.repos;
   }
 
-  UNSAFE_componentWillUpdate(nextProps, nextState) {
+  componentWillUpdate(nextProps, nextState) {
     console.log('Component will update!');
   }
 
@@ -52,7 +53,9 @@ class App extends React.Component {
       <div className="App">
         <h3>Hello mounting lifecycle methods!</h3>
         {repos.map((repo,index) => (
-            <div key={repos.id}>{index}: <strong>{repo.name}</strong></div>
+            <div key={repo.id}> 
+              {index} : <strong>{repo.name}</strong>
+            </div>
         ))}
       </div>
     );

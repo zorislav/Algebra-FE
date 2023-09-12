@@ -29,7 +29,7 @@ function AppH () {
       <div className="App">
         <h3>Hello mounting lifecycle methods!</h3>
         {repos.map((repo,index) => (
-            <div key={repos.id}>{index}: <strong>{repo.name}</strong></div>
+            <div key={repo.id}>{index}: <strong>{repo.name}</strong></div>
         ))}
       </div>
     );
