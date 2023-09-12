@@ -9,65 +9,64 @@ body {
     font-size: larger;
   }
 
-    div, form {
+div, form {
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
 
   }
 
-  .members-count,
-  .members-list,
-  .messages {
+.members-count,
+.members-list,
+.messages {
     border: 1px solid #e4e4e4;
-    
     padding: 15px;
     margin-bottom: 15px;
   }
 
-  .messages {
+.messages {
     flex-shrink: 1;
     overflow: auto;
     height: 60vh;
   }
 
-  .message {
+.message {
     padding: 5px 0;
   }
-  .message .member {
+.message .member {
     display: inline-block;
   }
 
-  .member {
+.member {
     padding-right: 10px;
     position: relative;
   }
 
-  .my-member {
+.my-member {
      text-align: right;
   }
 
-  .my-message {
+.my-message {
      text-align: right;
      background-color: #ffffff;
   }
 
-  .guest-message {
+.guest-message {
     background-color: #ffffff; 
   }
 
-  .message-form {
+.message-form {
     display: flex;
     flex-shrink: 0;
   }
-  .message-form__input {
+.message-form__input {
     flex-grow: 1;
     border: 1px solid #dfdfdf;
     padding: 10px 15px;
     font-size: 1.5rem;
     margin-right: 15px;
   }
-  .message-form__button {
+.message-form__button {
     background-color: green; 
     color: white;
     border: none;
@@ -77,11 +76,9 @@ body {
     transition: background-color 0.3s;
     font-size: 1.5rem;
   }
-  .message-form__button:hover {
+.message-form__button:hover {
     background-color: darkgreen;
   }
-
-
 
 .message-text {
   background-color: #ffffff; 
@@ -92,7 +89,6 @@ body {
 
 .my-message .message-text {
   background-color: #90ff99;
-  color: rgb(0, 0, 0); 
   width: auto;
  }
 
