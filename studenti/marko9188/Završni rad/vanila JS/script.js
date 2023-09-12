@@ -1,9 +1,7 @@
-// PS! Replace this with your own channel ID
-// If you use this channel ID your app will stop working in the future
 const CLIENT_ID = '5NJvdxSWCntSYFxc';
 
 const drone = new ScaleDrone(CLIENT_ID, {
-  data: { // Will be sent out as clientData via events
+  data: { 
     name: getRandomName(),
     color: getRandomColor(),
   },
@@ -44,9 +42,7 @@ drone.on('open', error => {
   room.on('data', (text, member) => {
     if (member) {
       addMessageToListDOM(text, member);
-    } else {
-      // Message is from server
-    }
+    } else {    }
   });
 });
 
@@ -71,8 +67,6 @@ function getRandomName() {
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
 }
-
-//------------- DOM STUFF
 
 const DOM = {
   membersCount: document.querySelector('.members-count'),
@@ -102,12 +96,15 @@ function createMemberElement(member) {
   el.appendChild(document.createTextNode(name));
   el.className = 'member';
   el.style.color = color;
+  if (name === drone.clientId) {
+    el.classList.add('my-member');
+  }
   return el;
 }
 
 function updateMembersDOM() {
-  DOM.membersCount.innerText = `${members.length} users in room:`;
-  DOM.membersList.innerHTML = '';
+  DOM.membersCount.innerText = `Broj gostiju u sobi: ${members.length}`;
+  DOM.membersList.innerHTML = 'Popis gostiju:';
   members.forEach(member =>
     DOM.membersList.appendChild(createMemberElement(member))
   );
@@ -118,6 +115,10 @@ function createMessageElement(text, member) {
   el.appendChild(createMemberElement(member));
   el.appendChild(document.createTextNode(text));
   el.className = 'message';
+  if (member.id === drone.clientId) {
+    el.classList.add('my-message');
+  }  else {
+    el.classList.add('guest-message');}
   return el;
 }
 
