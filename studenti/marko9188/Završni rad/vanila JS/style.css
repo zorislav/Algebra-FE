@@ -49,6 +49,11 @@ body {
 
   .my-message {
      text-align: right;
+     background-color: #ffffff;
+  }
+
+  .guest-message {
+    background-color: #ffffff; 
   }
 
   .message-form {
@@ -77,5 +82,21 @@ body {
   }
 
 
- 
 
+.message-text {
+  background-color: #ffffff; 
+  padding: 5px; 
+  border-radius: 5px; 
+  display: inline-block; 
+}
+
+.my-message .message-text {
+  background-color: #90ff99;
+  color: rgb(0, 0, 0); 
+  width: auto;
+ }
+
+.guest-message .message-text {
+  background-color: #ff8c8c;
+  width: auto;
+}

@@ -111,16 +111,24 @@ function updateMembersDOM() {
 }
 
 function createMessageElement(text, member) {
-  const el = document.createElement('div');
-  el.appendChild(createMemberElement(member));
-  el.appendChild(document.createTextNode(text));
-  el.className = 'message';
-  if (member.id === drone.clientId) {
-    el.classList.add('my-message');
-  }  else {
-    el.classList.add('guest-message');}
-  return el;
-}
+    const el = document.createElement('div');
+    el.appendChild(createMemberElement(member));
+  
+    const messageText = document.createElement('div');
+    messageText.appendChild(document.createTextNode(text));
+    messageText.className = 'message-text';
+  
+    el.appendChild(messageText);
+    el.className = 'message';
+  
+    if (member.id === drone.clientId) {
+      el.classList.add('my-message');
+    } else {
+      el.classList.add('guest-message');
+    }
+  
+    return el;
+  }
 
 function addMessageToListDOM(text, member) {
   const el = DOM.messages;
