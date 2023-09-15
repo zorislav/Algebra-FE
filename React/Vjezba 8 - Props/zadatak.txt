@@ -1,0 +1,7 @@
+Potrebno napraviti React aplikaciju koja će imati sljedeće:
+	1.	U vježbi je potrebno napraviti četiri komponente u četiri odvojene datoteke. Komponenta App i još jedna komponenta moraju biti definirane klasom, a dvije komponente je potrebno definirati funkcijom.
+	2.	Komponenta App mora biti parent komponenta ostalima i mora sadržavati polje "korisnici" koje unutar sebe sadrži tri objekta s imenima i godinama korisnika.
+	3.	Komponenta App mora pozivati ostale komponente i u pozivu preko props-a im treba proslijediti ime i godine korisnika, jednu komponentu je potrebno pozvati s "children" propsima.
+	4.	Komponenta definirana funkcijom treba prikazati ime i godine korisnika.
+	5.	Komponenta definirana klasom treba prikazati ime i godine korisnika.
+	6.	Druga komponenta definirana funkcijom treba prikazati ime i godine korisnika, te treba ispisati proslijeđene children propse.
