@@ -96,3 +96,9 @@ div, form {
   background-color: #ff8c8c;
   width: auto;
 }
+
+.message-datetime {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}

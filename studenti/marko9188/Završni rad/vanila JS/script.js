@@ -111,24 +111,41 @@ function updateMembersDOM() {
 }
 
 function createMessageElement(text, member) {
-    const el = document.createElement('div');
-    el.appendChild(createMemberElement(member));
-  
-    const messageText = document.createElement('div');
-    messageText.appendChild(document.createTextNode(text));
-    messageText.className = 'message-text';
-  
-    el.appendChild(messageText);
-    el.className = 'message';
-  
-    if (member.id === drone.clientId) {
-      el.classList.add('my-message');
-    } else {
-      el.classList.add('guest-message');
-    }
-  
-    return el;
+  const el = document.createElement('div');
+  el.appendChild(createMemberElement(member));
+
+  const messageCircle = document.createElement('div');
+  messageCircle.className = 'message-circle';
+  messageCircle.style.backgroundColor = member.clientData.color;
+
+  const messageText = document.createElement('div');
+  messageText.appendChild(document.createTextNode(text));
+  messageText.className = 'message-text';
+
+  const messageDateTime = document.createElement('div');
+  messageDateTime.appendChild(document.createTextNode(getMessageDateTime()));
+  messageDateTime.className = 'message-datetime';
+
+  el.appendChild(messageCircle);
+  el.appendChild(messageText);
+  el.appendChild(messageDateTime); 
+  el.className = 'message';
+
+  if (member.id === drone.clientId) {
+    el.classList.add('my-message');
+  } else {
+    el.classList.add('guest-message');
   }
+
+  return el;
+}
+
+function getMessageDateTime() {
+  const now = new Date();
+  const date = now.toLocaleDateString(); 
+  const time = now.toLocaleTimeString(); 
+  return `${date} ${time}`;
+}
 
 function addMessageToListDOM(text, member) {
   const el = DOM.messages;
