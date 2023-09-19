@@ -114,16 +114,14 @@ div, form {
   display: inline-block;
   margin-top: auto;
   margin-right: 10px; 
-
+  position: relative;
 }
 
 .message-text {
   max-width: 50%;
 }
 
-.message-conten.message-circle{
-  margin-top: auto;
-}
+
 
 
 
