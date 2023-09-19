@@ -1,6 +1,7 @@
 body {
     box-sizing: border-box;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 13px;
     display: flex;
     flex-direction: column;
@@ -10,7 +11,7 @@ body {
   }
 
 div, form {
-    width: 60vw;
+    width: 37vw;
     margin-left: auto;
     margin-right: auto;
 
@@ -22,6 +23,7 @@ div, form {
     border: 1px solid #e4e4e4;
     padding: 15px;
     margin-bottom: 15px;
+    width: 40vw;
   }
 
 .messages {
@@ -90,11 +92,13 @@ div, form {
 .my-message .message-text {
   background-color: #90ff99;
   width: auto;
+  text-align: left;
  }
 
 .guest-message .message-text {
   background-color: #ff8c8c;
   width: auto;
+  text-align: left;
 }
 
 .message-datetime {
@@ -102,6 +106,12 @@ div, form {
   color: #666;
   margin-top: 5px;
 }
+
+.message-text {
+  max-width: 50%;
+}
+
+
 
 
 
