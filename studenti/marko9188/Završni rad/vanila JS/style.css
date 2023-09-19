@@ -11,7 +11,7 @@ body {
   }
 
 div, form {
-    width: 37vw;
+    width: 40vw;
     margin-left: auto;
     margin-right: auto;
 
@@ -30,6 +30,7 @@ div, form {
     flex-shrink: 1;
     overflow: auto;
     height: 60vh;
+    margin-top: 1rem;
   }
 
 .message {
@@ -111,6 +112,9 @@ div, form {
   max-width: 50%;
 }
 
+.chat-window{
+  text-align: center;
+}
 
 
 
