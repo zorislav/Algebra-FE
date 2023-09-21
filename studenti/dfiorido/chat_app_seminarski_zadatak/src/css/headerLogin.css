@@ -1,0 +1,16 @@
+.header {
+    background: #e7e7e7;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .heading {
+    font-size: 26px;
+  }
+  

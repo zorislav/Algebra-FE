@@ -1,0 +1,59 @@
+.msg-list {
+    padding: 15px 0px 40px 0px;
+    list-style: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    flex-grow: 1;
+  }
+  
+  .msg-list-msg {
+    display: flex;
+    margin: 6px 2px 0px 10px;
+  }
+  
+  .msg-list-msg--thisMember {
+    flex-direction: row-reverse;
+  }
+  
+  .msg-list-member-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .msg-list-member-data--thisMember {
+    flex-direction: row-reverse;
+  }
+  
+  .msg-list-username {
+    display: block;
+    color: black;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+  
+  .msg-list-text {
+    padding: 4px;
+    border-radius: 6px;
+    background-color: rgb(70, 76, 160);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    word-break: break-word;
+    line-height: 20px;
+    user-select: text;
+    margin-right: 50px;
+    margin-left: 0px;
+  }
+  
+  .msg-list-text::selection {
+    background-color: lightgray;
+  }
+  
+  .msg-list-msg--thisMember .msg-list-text {
+    background-color: rgb(106, 114, 228);
+    margin-right: 0px;
+    margin-left: 50px;
+  }
+  
