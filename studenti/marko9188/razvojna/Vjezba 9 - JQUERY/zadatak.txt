@@ -1,0 +1,8 @@
+1. Uključite jQuery biblioteku na vašu stranicu preko CDN-a ako vec niste.
+2. Pri završetku loadanja stranice i rezultata pomoću jQueryja:
+ 	- kreirajte izmjenjujući zebra uzorak na redovima tablice
+	- dodajte stil na sve header elemente tablice: boju darkBlue
+3. Nakon 2 sekunde:
+	- maknite sve redove Pokemona cija imena pocinju sa slovom p
+	- popravite zebra uzorak
+- ispisite podatak o broju skrivenih redova u novostvorenom div-u

@@ -21,4 +21,25 @@ header {
 
 section {
   margin: 2em auto;
+  width: 80%;
+}
+section article {
+  margin: 1em;
+  border-radius: 20px;
+}
+section article:last-child {
+  margin: 0;
+  border-radius: 0 30px;
+}
+
+section .odlomak {
+  border: 8px dotted #333;
+}
+
+footer {
+  margin: 1em 0 2em 5 em;
+}
+
+section .odlomak {
+  border: 8px dotted #333;
 }/*# sourceMappingURL=style.css.map */

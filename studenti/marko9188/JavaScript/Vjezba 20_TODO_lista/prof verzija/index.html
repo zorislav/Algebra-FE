@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>My tasks</h1>
+        <div>
+            <!-- header button group -->
+            <div class="button-group">
+                <button id="button-all" disabled>All</button>
+                <button id="button-active">Active</button>
+                <button id="button-completed">Completed</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- todo section -->
+        <div id="section-todo">
+            <!-- todo input section -->
+            <div id="section-input">
+                <input id="input-text" type="text" placeholder="Add todo" autofocus/>
+                <input id="input-add" type="submit" value="Add">
+            </div>
+            <!-- todo list -->
+            <ul class="ul-todo"></ul>
+        </div>
+        <!-- clear all completed -->
+        <div id="section-clear-completed">
+            <button id="button-clear-completed">Clear completed</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

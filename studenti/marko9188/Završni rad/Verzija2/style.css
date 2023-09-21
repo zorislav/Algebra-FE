@@ -1,0 +1,134 @@
+body {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+   }
+
+div, form {
+    width: 39vw;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+.members-count,
+.members-list,
+.messages {
+    border: 1px solid #e4e4e4;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 40vw;
+  }
+
+.messages {
+    flex-shrink: 1;
+    overflow: auto;
+    height: 60vh;
+  }
+
+.message {
+    padding: 5px 0;
+  }
+.message .member {
+    display: inline-block;
+  }
+
+.member {
+    padding-right: 10px;
+    position: relative;
+  }
+
+.my-member {
+     text-align: right;
+  }
+
+  .my-message {
+    text-align: right;
+    background-color: #ffffff;
+  }
+
+.guest-message {
+    background-color: #ffffff; 
+  }
+
+.message-form {
+    display: flex;
+    flex-shrink: 0;
+  }
+.message-form__input {
+    flex-grow: 1;
+    border: 1px solid #dfdfdf;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+.message-form__button {
+    background-color: green; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.5rem;
+  }
+.message-form__button:hover {
+    background-color: darkgreen;
+  }
+
+.message-text {
+  background-color: #ffffff; 
+  padding: 5px; 
+  border-radius: 5px; 
+  display: inline-block; 
+ 
+}
+
+.my-message .message-text {
+  background-color: #90ff99;
+  width: auto;
+  text-align: left;
+ }
+
+.guest-message .message-text {
+  background-color: #ff8c8c;
+  width: auto;
+}
+
+.message-datetime {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.message-circle {
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%; 
+  display: inline-block;
+  margin-top: auto;
+  margin-right: 10px; 
+  position: relative;
+}
+
+.message-text {
+  max-width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
