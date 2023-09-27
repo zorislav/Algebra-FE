@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { ADD_COUNT, SUBTRACT_COUNT, RESET } from './store/redux-store';
+import Komponenta1 from './components/Komponenta1';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <button onClick={subtractOne}> - </button>
       <div>
         <button onClick={reset}>Reset</button>
+      <Komponenta1 />
       </div>
     </>
   );
