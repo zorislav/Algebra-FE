@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Webfood</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<h1><a href="#">Webfood</a></h1>
+
+			<input
+				type="checkbox"
+				name="toggleNav"
+				id="toggleNav"
+				aria-label="Toggle menu"
+			/>
+			<label for="toggleNav" class="nav-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+
+			<ul>
+				<li><a href="#">Browse meals</a></li>
+				<li><a href="#">My orders</a></li>
+			</ul>
+		</header>
+		<main class="main-container">
+			<h2>Browse our delicious meals</h2>
+			<div class="article-wrapper">
+				<article class="meal-card">
+					<div class="img-wrapper">
+						<img src="./risotto.jpg" alt="Risotto" />
+					</div>
+					<div class="content">
+						<h3>Risotto with tiger prawns</h3>
+						<button type="button" class="btn">Add to cart</button>
+					</div>
+				</article>
+				<article class="meal-card">
+					<div class="img-wrapper">
+						<img src="./cheeseburgers.jpg" alt="Cheeseburgers" />
+					</div>
+					<div class="content">
+						<h3>Cheeseburgers</h3>
+						<button type="button" class="btn">Add to cart</button>
+					</div>
+				</article>
+			</div>
+		</main>
+	</body>
+</html>

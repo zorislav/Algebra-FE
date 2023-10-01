@@ -3,8 +3,8 @@
 */
 var first_name = "Tony";
 
-var first_name2 = "John";
-    lastName = "Doe";
+var first_name = "John";
+    lastName = Doe;
     price = 0;
     discount = 78;
     fullPrice = 0;
@@ -15,4 +15,4 @@ console.log(price);
 console.log(lastName);
 
 // Kraj mog
-//programa
+programa

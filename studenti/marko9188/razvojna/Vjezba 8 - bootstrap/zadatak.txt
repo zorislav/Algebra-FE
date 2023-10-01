@@ -1,4 +1,0 @@
-1. Uključite Bootstrap biblioteku u vašu stranicu sa prošle vježbe (CSS i JS).
-2. Vašu tablicu pretvorite u Bootstrap tablicu.
-3. Tablicu učinite responzivnom pomoću Bootstrapa tako da je u mobilnoj verziji vidljivo samo ime vrste bez rednog broja.
-4. Na mobilnoj verziji dodajte popover element koji se pojavljuje na klik na ime vrste sa linkom na više informacija o vrsti.

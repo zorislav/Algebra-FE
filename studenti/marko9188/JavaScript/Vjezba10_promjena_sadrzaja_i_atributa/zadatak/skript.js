@@ -8,13 +8,12 @@
 // Zamijeni span element u description div-u s h3 elementom koji sadrži tekst "5 rijeka"
 var spanElement = document.querySelector(".description span");
 var h3Element = document.createElement("h3");
-h3Element.textContent = "5 rijeka";  //radi s innerHtml
+h3Element.textContent = "5 rijeka";
 spanElement.parentNode.replaceChild(h3Element, spanElement);
 
 // Postavi tekst u div-u s klasom "info" na "Peta rijeka je piva."
-// var infoDiv = document.querySelector(".info");
-// infoDiv.textContent = "Peta rijeka je piva.";
- document.querySelector('.info').innerHTML='Peta rijeka je piva.';
+var infoDiv = document.querySelector(".info");
+infoDiv.textContent = "Peta rijeka je piva.";
 
 // Dohvati postojeće li elemente iz liste
 var footerList = document.querySelectorAll("#footer ul li");

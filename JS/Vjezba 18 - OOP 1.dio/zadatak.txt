@@ -1,7 +1,5 @@
 1. Pratite kod u scripts.js.
 
-2. Nadite prototip objekta "character" (naputak: koristite metode 
-globalnog Object objekta). Nadite prototip tog prototipa. Ispisite ih.
+2. Nadite prototip objekta "character" (naputak: koristite metode globalnog Object objekta). Nadite prototip tog prototipa. Ispisite ih.
 
-3. Dodajte prototipu objekta "character" 
-funkciju koja vraća jedan (slucajno odabran) citat iz niz "quotes".
+3. Dodajte prototipu objekta "character" funkciju koja vraća jedan (slucajno odabran) citat iz niz "quotes".

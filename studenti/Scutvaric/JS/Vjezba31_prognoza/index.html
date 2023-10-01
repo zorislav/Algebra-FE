@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="place-container">
+            <div id="input-location">Current location</div>
+            <div id="time-zone">Region/City</div>
+            <div id="country">LAT/LON</div>
+        </div>
+        <div class="input-container">
+            <input type="text" name="input" id="input">
+            <button id="button">Traži</button>
+        </div>
+    </header>
+    <main>
+        <div class="current-info-container">
+            <div class="current-info">
+                <div class="date-container">
+                    <div id="time">
+                        00:00
+                    </div>
+                    <div id="date">
+                        Monday, 01 Jan
+                    </div>
+                    <div id="current-weather-items"></div>
+                </div>
+            </div>
+            <div id="today">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon">
+                <div class="other">
+                    <div class="day">Monday</div>
+                    <div class="temp">Night - 00.0&#176; C</div>
+                    <div class="temp">Day - 00.0&#176; C</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="future-forecast">
+            <div id="weather-forecast">
+                <div class="weather-forecast-item">
+                    <div class="day">Tue</div>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon">
+                    <div class="temp">Night - 00.0&#176; C</div>
+                    <div class="temp">Day - 00.0&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Wed</div>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon">
+                    <div class="temp">Night - 00.0&#176; C</div>
+                    <div class="temp">Day - 00.0&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Thu</div>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon">
+                    <div class="temp">Night - 00.0&#176; C</div>
+                    <div class="temp">Day - 00.0&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Fri</div>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon">
+                    <div class="temp">Night - 00.0&#176; C</div>
+                    <div class="temp">Day - 00.0&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Sat</div>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather_icon">
+                    <div class="temp">Night - 00.0&#176; C</div>
+                    <div class="temp">Day - 00.0&#176; C</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

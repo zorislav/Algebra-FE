@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>My tasks</h1>
+
+      <div class="btn-wrapper">
+        <button class="panel-btn active" id="all">All</button>
+        <button class="panel-btn" id="active">Active</button>
+        <button class="panel-btn" id="completed">Completed</button>
+      </div>
+
+      <div class="panels-wrapper">
+        <form class="add-task" id="addTaskForm">
+          <input type="text" name="addTask" id="addTaskInput" />
+          <button id="addTaskButton">Add</button>
+        </form>
+        <ul class="panel" id="tasks">
+          <li>
+            <input type="checkbox" id="task1" />
+            <label for="task1">Neki task</label>
+            <button id="deleteTask">X</button>
+          </li>
+        </ul>
+      </div>
+      <button class="clear-btn" id="clear">Clear completed</button>
+    </main>
+
+    <!-- Custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>

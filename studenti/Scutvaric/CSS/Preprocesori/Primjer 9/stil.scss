@@ -1,0 +1,36 @@
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+@mixin spacing($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+body {
+  @include spacing(0, 0);
+  background-color: $color1;
+  color: $color2;
+  font-family: $font1;
+}
+
+div {
+  @include spacing(0 0 1em 0, 0);
+  background: $color2;
+  color: $color1;
+}
+
+$num: 8;
+
+@while $num > 0 {
+  .col-#{$num} {
+    &:before {
+      content: "#{$num}";
+    }
+  }
+
+  $num: $num - 1;
+}

@@ -1,0 +1,9 @@
+form  label{
+    padding:15px;
+}
+input#tel{
+    border-radius: 5px;
+}
+input{
+    border-radius: 5px;
+}
