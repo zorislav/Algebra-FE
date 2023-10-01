@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, header, footer, div, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, header, footer, div, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.flex_clouds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 300px auto;
+}
+
+.clouds {
+  margin: 300px auto;
+}
+
+.flex_clouds .clouds img {
+  display: inline;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  width: 32%;
+}
+
+.clouds {
+  position: relative;
+  top: -10rem;
+}
+
+body {
+  background-image: url(img/back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+footer {
+  text-align: center;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  font-size: 5em;
+  color: gray;
+}
+
+.sun {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: 4em auto;
+  width: 100%;
+}
+
+#sun {
+  width: 250px;
+  height: 250px;
+  display: inline;
+  text-align: center;
+  margin: 3rem auto;
+  background-color: yellow;
+  border-radius: 100%;
+  position: relative;
+  top: -10 rem;
+}
+
+@keyframes sun {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+#sun {
+  animation: sun 3.6s linear;
+}
+
+@keyframes clouds {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
+#cloud1 {
+  animation: clouds 3.9s ease-in-out infinite;
+  animation-delay: 1.1s;
+}
+
+#cloud2 {
+  animation: clouds 3.9s ease-in-out infinite;
+  animation-delay: 2.7s;
+}
+
+#cloud3 {
+  animation: clouds 3.9s ease-in-out infinite;
+  animation-delay: 3.9s;
+}
+
+@media (max-width: 767px) {
+  #cloud1 {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    width: 48%;
+  }
+  #cloud2 {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    width: 48%;
+  }
+  #cloud3 {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    width: 48%;
+  }
+}
+@media (max-width: 479px) {
+  #cloud1 {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .clouds {
+    margin: 300px auto;
+  }
+} /*# sourceMappingURL=style.css.map */

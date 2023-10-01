@@ -1,0 +1,26 @@
+body {
+    font-family: tahoma,sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+ul {
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 1em;
+}
+
+
+li {
+    background-color: #ffc;
+    display: inline-block;
+    width: 18%;
+}
+
+p {
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 23%;
+    margin-left: -4px;
+    padding: 5px;
+}

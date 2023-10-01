@@ -1,0 +1,32 @@
+* {   /*ova pravila primijenjiva na svaki element*/
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333;
+}
+.wrapper {
+   border: 1px dashed #666;
+   padding: 1em;
+   height: 600px;
+}
+.wrapper div {  /*targetirani svi elementi koji su unutar elementa koji ima class 'wrapper'*/
+   background-color: #eee;
+   text-align: center;
+   border: 1px solid #666;
+   padding: 1em;
+   margin: 1em;  /*dodaje razmak između elemenata*/
+   
+}
+.flex-container {
+   display: flex;
+  /* align-items: flex-end;*/   /*ako ubacim ovdje onda se svi poravnaju po donjem rubu*/
+}
+.flex-item {
+   flex-grow: 1;
+  
+}
+.flex-item:nth-child(3) {
+   align-self: flex-end;
+}

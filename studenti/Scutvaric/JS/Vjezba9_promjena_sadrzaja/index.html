@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Karlovac</title>
+</head>
+<body>
+    <img src="slika.jpg" alt="">
+  <div class="description">
+    Grad na <span>4 rijeke</span>
+    <script>
+        // Komentar
+    </script>
+    <div>
+        Unutarnji div element
+    </div>
+  </div>
+  <div id="user" data-id="1234" data-used="ivanhorvat" data-date-of-birth>
+    Ivan Horvat
+  </div>
+  <footer id="footer">
+    <ul>
+	<li></li>
+    <li></li>
+    </ul>
+  </footer>
+  <script>
+   var divEl = document.querySelector("div.description");
+   console.log(divEl.innerHTML);
+   console.log(divEl.innerText);
+   console.log(divEl.textContent);
+   var imgEl = document.querySelector("img");
+   imgEl.src = "novaslika.jpg";
+   var dataEl = document.getElementById("user");
+   console.log(`user: ${dataEl.dataset.user}`)
+   dataEl.dataset.dateofBirth = "1995-11-20";
+  </script>
+</body>
+</html>

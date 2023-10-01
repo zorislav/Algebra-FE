@@ -1,0 +1,82 @@
+$color1: rgb(150,0,0); 
+$color2: rgb(150,150,0) ;
+
+
+
+
+@mixin transition ($args ...) {   /*set parametara predaje se na transition i uključuje tamo gdje ga ubacimo*/
+   transition: $args;
+}
+
+@mixin animation($str) {
+   animation: #{$str};  /*povisilicom i vitičastom zagradom dobije se interpretacija izraza u zagradi kao niz parametara koji se predaju animation pravilu*/
+} 
+
+div {
+   background-color: $color2;
+   margin: 1em auto;
+   padding: 1em;
+   width: 25%;
+   &:first-child {
+      @include animation("fade 2s ease-in-out infinite");   /* u navodnicima jer je to string koji pozivamo*/
+   }
+   &:nth-child(2) {
+      @include animation("fade 4s linear 2s infinite");
+   }
+   &:nth-child(3) {
+      @include animation("fade 0.5s ease-in infinite");
+   }
+   &:nth-child(4) {
+      @include transition(background-color 5s ease);    /*tranzicija će se primijeniti na promjenu boje i to tako da se ona mijenja kad dođemo mišem iznad nje*/
+      &:hover {
+         background-color: $color1;
+      }
+   }
+   &:nth-child(5) {
+      @include transition(width 2s ease);    /*tranzicija će se primijeniti na promjenu boje i to tako da se ona mijenja kad dođemo mišem iznad nje*/
+      &:hover {
+         width: 80%;
+      }
+   }
+   &:nth-child(6) {
+      @include transition(transform 2s ease-out);    /*tranzicija će se primijeniti na promjenu boje i to tako da se ona mijenja kad dođemo mišem iznad nje*/
+      &:hover {
+         transform: translate(150px, 0);    /*pomakne se u X smjeru za 150px kad dođemo mišem iznad njega*/
+      }
+   }
+}
+
+
+@mixin keyframes($animation-name) {   /* mixin prima parametar keyframes*/
+   @keyframes #{$animation-name} {      /*keyframes definira pojedine dijelove animacije*/
+      @content;   
+   }
+}
+
+@include keyframes(fade) {    /*fade je animation-name i sav se ovaj set pravila prenosi na mixin pod 'content'*/
+   0% {
+      opacity: 1;
+   }
+   50% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+
+
+
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karlovac</title>
+</head>
+<body>
+  <img src="slika.png" alt="slika">
+  <div class="description">
+    Grad na <span>4 rijeke</span>
+    <script>
+      //komentar
+    </script>
+    <div>
+      Unutarnji div element.
+    </div>
+  </div>
+  <div id="user" data-id="1234"  data-user="ivanhorvat" data-date-of-birth>  
+    Ivan Horvat
+  </div>
+  <footer id="footer">
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+  </footer>
+
+  <script>
+  
+  var divEl = document.querySelector("div.description");  //selektira div
+  console.log(divEl.innerHTML);
+
+  //innerHTML - vraća sadržaj elementa uključujući razmake i sve elemente djecu 
+  //- ispisao je sadržaj elementa div uključujući i njegovo dijete span element što je inner HTML u ovom slučaju
+
+  var divEl = document.querySelector("div.description");  //selektira div
+  console.log(divEl.innerText);
+
+  //ispisuje čisti tekstualni sadržaj elementa bez span elementa + isto za sve child elemente;
+
+  var divEl = document.querySelector("div.description");  //selektira div
+  console.log(divEl.textContent);
+
+  //ispisuje tekstualni sadržaj i sadržaj script i style elemenata + ispisuje i sadržaj svih elemenata koji su u njemu - child
+  
+  var imgEl = document.querySelector("img");   //selektira img
+  imgEl.src = "novaslika.jpg";   //postavlja novi source na novaslika - ispisuje se tako u konzoli - mijenja time atribut elementa img
+
+
+  var dataEl = document.getElementById("user");
+  console.log(`user: ${dataEl.dataset.user}`);   //ispsuje: user: ivanhorvat
+
+  dataEl.dataset.dateOfBirth = "1995-11-20";  //postavlja vrijednost atributu date-of-birth - u html se u konzoli učita kod data-date-of-birth
+
+
+  </script>
+</body>
+</html>

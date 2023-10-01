@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Index 3</title>
+   <script src="./script.js" defer></script>   <!--uključuje naš js dokument - parsira i load paralelno uz  odgodu izvršenja-->
+   <script>
+      console.log ("Bok svima");  /*može ostati ovdje jer ne poziva neki drugi element*/
+   </script>
+</head>
+<body>
+   <div></div>
+   <noscript>  <!--sadržaj koji će se prikazati ako se ne može učitati JS-->
+
+   </noscript>
+</body>
+</html>
+
+<!--ovdje se div element ispisuje u WebTools -> Console-->
+<!--često u upotrebi jer grupira naredbe gore i tad DEFER odgađa izvršavanje scripte tek kad cijeli dokument bude parsiran-->

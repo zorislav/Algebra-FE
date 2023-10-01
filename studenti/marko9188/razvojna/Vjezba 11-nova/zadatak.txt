@@ -1,5 +1,0 @@
-1. Prepišite XHR poziv u jQuery AJAX poziv.
-2. Dodajte funkciju koja se poziva na neuspješan kraj API poziva. Ta funkcija ispisuje poruku na ekranu sa dodatnim infomacijama o greški.
-3. Dodajte u tablicu:
-    - prirodno staniše vrste (link na detaljne informacije o staništu)	
-    - brzinu rasta

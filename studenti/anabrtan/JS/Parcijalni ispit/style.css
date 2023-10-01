@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+#apple-logo {
+    max-height: 40px;
+    padding-right: 2%;;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    line-height: 5vw;
+}
+
+header {
+    margin-top: 5%;
+}
+
+input {
+    margin-top: 2%;
+}
+
+main hr{
+    margin: 2% 0 2% 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0% 2% 0% 2%;
+}
+
+.hidden {
+    display: none;
+}
+
+li {
+    background-color: gray;
+    border: 1px black solid;
+    height: 50px !important; 
+}
