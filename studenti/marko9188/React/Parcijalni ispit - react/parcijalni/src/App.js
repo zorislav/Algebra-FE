@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Button from 'react-bootstrap/Button';
+import './index.css';
 
 class UserDetails extends Component {
   render() {
     const { user } = this.props;
     return (
       <div>
-        <img src={user.avatar_url} alt="User Avatar" />
+        <img src={user.avatar_url} alt="User Avatar" width="200px" height="200px"/>
         <h2>{user.name}</h2>
-        <p>Location: {user.location}</p>
+        <p>Lokacija: {user.location}</p>
         <p>Bio: {user.bio}</p>
-        <h3>Repositories:</h3>
+        <h3>Repozitoriji:</h3>
         <ul>
           {user.repos.map((repo) => (
             <li key={repo.id}>{repo.name}</li>
@@ -85,11 +87,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>GitHub User Details</h1>
+        <h2>GitHub username:</h2>
         {user ? (
           <div>
             <UserDetails user={user} />
-            <button onClick={this.handleReset}>Reset</button>
+            <Button variant='secondary' style={{ marginTop: '10px', marginBottom: '20px', width: '150px'  }} onClick={this.handleReset}>Reset</Button>
           </div>
         ) : (
           <div>
@@ -99,7 +101,8 @@ class App extends Component {
               value={username}
               onChange={this.handleUsernameChange}
             />
-            <button onClick={this.handleFetchUser}>Fetch User</button>
+            <br />
+            <Button type='submit' variant='secondary' style={{ marginTop: '10px', marginBottom: '20px', width: '150px' }} onClick={this.handleFetchUser}>GO!</Button>
           </div>
         )}
       </div>
