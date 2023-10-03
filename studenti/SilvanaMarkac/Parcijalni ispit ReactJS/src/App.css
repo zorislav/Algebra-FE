@@ -1,0 +1,85 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.formDiv {
+  border: 2px solid #888;
+  width: 400px;
+  height: 150px;
+  padding: 3vh 5vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  
+}
+
+.btnGo {
+  width: 100%;
+  background: #777;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 1vh;
+  color: white
+}
+
+.inputKorisnik {
+  width: 95%;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 1vh;
+  margin-top: 1vh;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.mainData {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 600px;
+}
+
+.repoData {
+  width: 600px;
+}
+
+.naslov {
+  font-size: 6vh;
+  padding-left: 30px;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  border: 1px solid #ccc;
+  padding: 1vh;
+}
+
+.btnReset {
+  margin-top: 1vh;
+  width: 100%;
+  background: #777;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 1vh;
+  color: white
+}
+
+.sviPodaci {
+  border: 1px solid black;
+  padding: 5vh;
+  margin: 5vh;
+}
