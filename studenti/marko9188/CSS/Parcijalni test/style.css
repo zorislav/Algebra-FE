@@ -57,8 +57,8 @@ img {
   border-radius: 50%;
   height: 10vw;
   width: 10vw;
-  box-shadow: 0 0 30px #22df2c;
-  background-color: #22df2c;
+  box-shadow: 0 0 30px #edef55;
+  background-color: #edef55;
   z-index: -1;
   position: absolute;
   top: 5%;
@@ -140,7 +140,7 @@ img:last-of-type {
   }
 }
 @media (max-width: 479px) {
-  img:nth-of-type(2), img:nth-last-of-type(3) {
+  img:nth-of-type(2), img:last-of-type {
     display: none;
   }
 }

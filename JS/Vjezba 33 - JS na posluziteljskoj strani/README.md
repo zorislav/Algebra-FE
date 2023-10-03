@@ -1,1 +1,0 @@
-# JS na posluziteljskoj strani
