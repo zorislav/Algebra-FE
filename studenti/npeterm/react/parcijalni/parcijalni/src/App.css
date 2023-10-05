@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.form{
+  border:4px solid black;
+  width:400px;
+  height:200px;
+  background-color: gray;
+ 
+}
+.button{
+  border:2px solid black;
+}
+.dbutton{
+  border:2px solid black;
+}
+.input{
+  border: 2px solid greenyellow;
+  background-color: white;
+  width: 40%;
+  height: 40%;
+}
+.md{
+  border:4px solid black;
+  width:flex;
+  height:flex;
+  background-color: rgb(247, 11, 11);
+}
+
+.repoz{
+  background-color: aquamarine;
+  width: flex;
+  height: flex;
+}
