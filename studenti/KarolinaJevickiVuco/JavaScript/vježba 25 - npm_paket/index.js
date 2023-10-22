@@ -20,6 +20,4 @@ function getType(e) {
 
 //ispisuje kojeg je tipa unos
 
-const test = "test string";
-
-getType(test);
+module.exports = getType;

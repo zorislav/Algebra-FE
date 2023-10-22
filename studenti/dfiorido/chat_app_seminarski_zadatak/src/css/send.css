@@ -1,0 +1,30 @@
+.chat-input {
+    flex-shrink: 0;
+  }
+  
+.msg-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.msg-form-input {
+    padding: 15px 0px;
+    font-size: 16px;
+    flex-grow: 1;
+    color: rgb(0, 0, 0);
+    background-color: #e7e7e7;
+    border: none;
+    user-select: auto;
+  }
+  
+.msg-form-input::selection {
+    background-color: rgb(255, 255, 255);
+}
+  
+.msg-form-btn {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    padding: 0 15px 0 20px;
+}
+  

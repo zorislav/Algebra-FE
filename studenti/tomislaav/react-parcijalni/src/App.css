@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  width: 350px;
+  height: 135px;
+  padding: 50px 50px;
+  background-color: gray;
+}
+
+.button {
+  border: 2px solid black;
+}
