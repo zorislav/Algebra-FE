@@ -1,5 +1,0 @@
-/**
- * +@function
- * @author Zorislav
- * @param 
- */
