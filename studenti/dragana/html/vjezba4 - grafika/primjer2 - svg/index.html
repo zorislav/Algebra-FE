@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: century gothic;
+            text-align: center;
+            color: #777;
+        }
+
+        #mainCont {
+            width: 600px;
+            margin: 50px auto;
+        }
+
+        #mainCont p {
+            padding-bottom: 60px;
+            font-weight: bold;
+        }
+    </style>
+    <title>SVG</title>
+</head>
+
+<body>
+
+    <div id="mainCont">
+
+        <p>SVG elements</p>
+
+        <svg width="400" height="200">
+            <rect x="100" y="2" width="200" height="100" stroke="#9a1" stroke-width="4px" fill="#ce3" />
+        </svg>
+        <svg width="400" height="200">
+            <circle cx="200" cy="92" r="90" stroke="#626" stroke-width="4px" fill="#cce" />
+        </svg>
+        <svg width="400" height="200">
+            <ellipse cx="200" cy="100" rx="80" ry="40" stroke="#9a1" stroke-width="4px" fill="#ce3" />
+        </svg>
+        <svg width="400" height="200">
+            <line x1="100" y1="82" x2="300" y2="20" stroke="#626" stroke-width="2px" />
+        </svg>
+        <svg width="400" height="200">
+            <polygon points="200,2 240,22 240,62 200,82 160,62 160,22" stroke="#9a1" stroke-width="4px" fill="#ce3" />
+        </svg>
+        <svg width="400" height="200">
+            <polyline points="170,30 230,60 170,90 230,120 170,150 230,180" stroke="#626" stroke-width="4px"
+                fill="none" />
+        </svg>
+        <svg width="400" height="200">
+            <text x="150" y="40" fill="#9a1">Hello SVG &#128579;</text>
+            <line x1="130" y1="50" x2="270" y2="50" stroke="#9a1" stroke-width="1px" />
+        </svg>
+
+    </div>
+
+</body>
+
+</html>
