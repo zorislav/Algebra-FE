@@ -7,5 +7,5 @@ Folder za studentske radove
 
 Svaki student treba kreirati vlastiti folder ispod ovog
 
-Preporuka je da se vlastiti folder nazove isto kao i vlatiti GitHub račun
+Preporuka je da se vlastiti folder nazove isto kao i vlastiti GitHub račun
 
