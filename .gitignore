@@ -1,7 +1,9 @@
+# MAC
 .DS_Store
 *.DS_Store
 **/.DS_Store
 
-.vscode/**
+# VS Code Workspace settings
+.vscode/*
 
 
