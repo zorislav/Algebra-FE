@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas1" width="200" height="200"> </canvas>
+    <script>
+        var canvasEl = document.getElementById("myCanvas1");
+        var ctx = canvasEl.getContext("2d");
+        
+        ctx.beginPath();
+        ctx.rect(20,20,160,160);
+        ctx.fillStyle = "#FF6";
+        ctx.fill();
+        ctx.strokeStyle = "#F33";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+
+    <canvas id="myCanvas2" width="200" height="200"></canvas>
+    <script>
+      var canvasEl = document.getElementById("myCanvas1");
+      var ctx = canvasEl.getContext("2d");
+
+      var centerX = canvasEl.width / 2;
+      var centerY = canvasEl.height / 2;
+      var radius = 45;
+
+      ctx.beginPath();
+      ctx.arc(centerX,centerY,radius,0,2*Math.PI);
+      ctx.fillStyle = "blue";
+      ctx.fill();
+      ctx.strokeStyle = "#111";
+      ctx.lineWidth = 5;
+      ctx.stroke(); 
+      </script>
+
+    <canvas id="myCanvas3" width="200" height="200"> </canvas>
+    <script>
+      var canvasEl = document.getElementById("myCanvas1");
+      var ctx = canvasEl.getContext("2d");
+    
+      ctx.beginPath();
+      ctx.rect(83,80,35,35);
+      ctx.fillStyle = "#FFF";
+      ctx.fill();
+      ctx.strokeStyle = "#FFF";
+      ctx.lineWidth = 5;
+      ctx.stroke();
+     </script>
+
+</body>
+</html>

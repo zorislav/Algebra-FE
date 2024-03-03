@@ -11,8 +11,8 @@
   <h2>Linija</h2>
   <canvas id="myCanvas1" width="600" height="200"></canvas>
   <script>
-    var canvasE1 = document.getElementById("myCanvas1");
-    var ctx = canvasE1.getContext("2d");
+    var canvasEl = document.getElementById("myCanvas1");
+    var ctx = canvasEl.getContext("2d");
     
     ctx.beginPath();
     ctx.moveTo(30,100);
@@ -25,8 +25,8 @@
     <h2>Kvadrat</h2>
     <canvas id="myCanvas2" width="600" height="200"> </canvas>
     <script>
-        var canvasE1 = document.getElementById("myCanvas2");
-        var ctx = canvasE1.getContext("2d");
+        var canvasEl = document.getElementById("myCanvas2");
+        var ctx = canvasEl.getContext("2d");
         
         ctx.beginPath();
         ctx.rect(20,20,150,150);
@@ -110,7 +110,7 @@
       var canvasEl = document.getElementById("myCanvas7");
       var ctx = canvasEl.getContext("2d");
 
-      var grad1 = ctx.createLinearGradient(200,100,50,200,100,150);
+      var grad1 = ctx.createRadialGradient(200,100,50,200,100,150);
 
       grad1.addColorStop(0,"#F00");
       grad1.addColorStop(0.5,"#0F0");
