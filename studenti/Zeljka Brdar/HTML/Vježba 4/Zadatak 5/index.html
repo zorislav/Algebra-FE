@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    <script>
+        var canvasEl = document.getElementById("myCanvas");
+        var ctx = canvasEl.getContext("2d");
+
+        //Parametri za krug
+        var centerX=canvasEl.width / 2;
+        var centerY=canvasEl.height / 2;
+        var radius=50;
+
+        //Kvadrat1
+        ctx.beginPath();
+        ctx.rect(10,10,180,180);
+        ctx.fillStyle="#ff6";
+        ctx.fill();
+        ctx.strokeStyle="#f00";
+        ctx.lineWidth=2;
+        ctx.stroke();
+
+        //Krug
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, 2*Math.PI);
+        ctx.fillStyle="#00f";
+        ctx.fill();
+        ctx.strokeStyle="#000";
+        ctx.lineWidth=5;
+        ctx.stroke();
+
+        //Kvadrat2
+        ctx.beginPath();
+        ctx.rect(75,75,50,50);
+        ctx.fillStyle="#fff";
+        ctx.fill();
+
+    </script>
+</body>
+</html>

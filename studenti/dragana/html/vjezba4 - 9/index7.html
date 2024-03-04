@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vjezba 4-9</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="naslov">Algebra fun time &infin;</p>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logoDS" id="logo">
+                </a>
+            </header>
+            <nav id="stiNav">
+                <ol>
+                    <li><a href="index4.html">Vježba 4</a></li>
+                    <li><a href="index5.html">Vježba 5</a></li>
+                    <li><a href="index6.html">Vježba 6</a></li>
+                    <li><a href="index7.html">Vježba 7</a></li>
+                    <li><a href="index8.html">Vježba 8</a></li>
+                    <li><a href="index9.html">Vježba 9</a></li>
+                </ol>
+            </nav>
+            <main>
+                <h3>&#8756;<br>Vježba 7 - Tablice<br>&#8757;</h3>
+
+                <table id="zaposlenici">
+                    <tr>
+                        <th class="titTable" colspan="6">Web development team</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="titTable2">Project manager</th>
+                        <th colspan="2" class="titTable2">Project architect</th>
+                        <th colspan="2" class="titTable2">UI/UX designer</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="images/ana.svg" alt="ana"></td>
+                        <td colspan="2"><img src="images/ivana.svg" alt="ivana"></td>
+                        <td colspan="2"><img src="images/ivan.svg" alt="ivan"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Officia eiusmod mollit velit commodo nulla incididunt commodo aliqua nostrud
+                            aliqua qui minim excepteur veniam. Ea voluptate culpa nulla sint incididunt veniam minim ex
+                            ad anim.
+                        </td>
+                        <td colspan="2">Officia eiusmod mollit velit commodo nulla incididunt commodo aliqua nostrud
+                            aliqua qui
+                            minim excepteur veniam. Ea voluptate culpa nulla sint incididunt veniam minim ex ad anim.
+                        </td>
+                        <td colspan="2">Officia eiusmod mollit velit commodo nulla incididunt commodo aliqua nostrud
+                            aliqua qui
+                            minim excepteur veniam. Ea voluptate culpa nulla sint incididunt veniam minim ex ad anim.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th class="titTable" colspan="3">Web developers</th>
+                        <th class="titTable" colspan="3">QA and testing specialists</th>
+                    </tr>
+                    <tr>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/mirko.svg" alt="mmirko"></td>
+                        <td><img src="images/maja.svg" alt="maja"></td>
+                        <td><img src="images/anja.svg" alt="anja"></td>
+                        <td><img src="images/slavko.svg" alt="pero"></td>
+                        <td><img src="images/pero.svg" alt="pero"></td>
+                        <td><img src="images/slavica.svg" alt="slavica"></td>
+                    </tr>
+                    <tr>
+                        <td>Officia eiusmod mollit velit commodo nulla incididunt commodo aliqua nostrud
+                            aliqua qui
+                            minim excepteur veniam.
+                        </td>
+                        <td>Officia eiusmod mollit velit commodo nulla incididunt commodo aliqua nostrud
+                            aliqua qui
+                            minim excepteur veniam.
+                        </td>
+                        <td>Officia eiusmod mollit velit commodo nulla incididunt commodo aliqua nostrud
+                            aliqua qui
+                            minim excepteur veniam.
+                        </td>
+                        <td>Officia eiusmod mollit velit commodo nulla incididunt commodo aliqua nostrud
+                            aliqua qui
+                            minim excepteur veniam.
+                        </td>
+                        <td>Officia eiusmod mollit velit commodo nulla incididunt commodo aliqua nostrud
+                            aliqua qui
+                            minim excepteur veniam.
+                        </td>
+                        <td>Officia eiusmod mollit velit commodo nulla incididunt commodo aliqua nostrud
+                            aliqua qui
+                            minim excepteur veniam.
+                        </td>
+                    </tr>
+                </table>
+            </main>
+
+            <footer>
+                <div id="icons">
+                    <a href=""><img src="images/icons/facebook.png" alt=""></a>
+                    <a href=""><img src="images/icons/linkedin.png" alt=""></a>
+                    <a href=""><img src="images/icons/email.png" alt=""></a>
+                    <a href=""><img src="images/icons/telephone.png" alt=""></a>
+                </div>
+                <p>All rights reserved &copy;Dee</p>
+            </footer>
+        </div>
+
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var stiNav = document.getElementById("stiNav");
+            var sticky = stiNav.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    stiNav.classList.add("sticky")
+                } else {
+                    stiNav.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+
+</html>

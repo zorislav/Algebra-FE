@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vjezba 4-9</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="naslov">Algebra fun time &infin;</p>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logoDS" id="logo">
+                </a>
+            </header>
+            <nav id="stiNav">
+                <ol>
+                    <li><a href="index4.html">Vježba 4</a></li>
+                    <li><a href="index5.html">Vježba 5</a></li>
+                    <li><a href="index6.html">Vježba 6</a></li>
+                    <li><a href="index7.html">Vježba 7</a></li>
+                    <li><a href="index8.html">Vježba 8</a></li>
+                    <li><a href="index9.html">Vježba 9</a></li>
+                </ol>
+            </nav>
+            <main>
+                <h3>&#8756;<br>Vježba 8 - Obrasci<br>&#8757;</h3>
+
+                <div id="obrazac">
+
+                    <form action="" method="post" id="letMeKnow" enctype="multipart/form-data">
+
+                        <label for="ime">Ime</label>
+                        <input type="text" id="ime" placeholder="Ime" size="50">
+
+                        <label for="prezime">Prezime</label>
+                        <input type="text" id="prezime" placeholder="Prezime" size="50">
+
+                        <label for="email">E-mail adresa:</label>
+                        <input type="email" name="email" id="email" placeholder="Email adresa" size="50">
+
+                        <label for="lozinka">Lozinka</label>
+                        <input type="password" id="lozinka" size="50">
+
+                        <label for="boje">Odaberi najdražu boju:</label>
+                        <input type="color" name="boje" id="boje">
+
+                        <label for="velicina">Odaberi veličinu:</label>
+                        <input type="radio" value="s" name="one">
+                        <label for="s" id="s">Small</label>
+                        <input type="radio" value="m" name="one">
+                        <label for="m" id="m">Medium</label>
+                        <input type="radio" value="l" name="one">
+                        <label for="l" id="l">Large</label>
+
+                        <label for="Dostava">Dostava:</label>
+                        <input type="checkbox" value="dostava" id="dostava">
+
+                        <label for="datum">Odaberite datum dostave:</label>
+                        <input type="date" id="datum">
+
+                        <label for="dokument">Priloži dokument:</label>
+                        <input type="file" id="dokument">
+
+                        <label for="komentar">Dodatne informacije</label>
+                        <textarea name="komentar" cols="50" rows="10"></textarea>
+
+                        <label for="opcina">Odaberite općinu:</label>
+                        <select id="opcina">
+                            <option value="istarska">Istarska</option>
+                            <option value="dubrovacko neretvanska" selected>Dubrovačko neretvanska</option>
+                            <option value="splitsko dalmatinska">Splitsko dalmatinska</option>
+                        </select>
+
+                        <label for="grad">Odaberite grad:</label>
+                        <input list="grad">
+                        <datalist id="grad">
+                            <option value="Umag"></option>
+                            <option value="Rovinj"></option>
+                            <option value="Poreč"></option>
+                            <option value="Dubrovnik"></option>
+                            <option value="Split"></option>
+                        </datalist><br>
+
+                        <input type="submit" value="Pošalji" id="sub">
+                        <input type="reset" value="Poništi" id="res">
+
+                    </form>
+
+                </div>
+
+            </main>
+
+            <footer>
+                <div id="icons">
+                    <a href=""><img src="images/icons/facebook.png" alt=""></a>
+                    <a href=""><img src="images/icons/linkedin.png" alt=""></a>
+                    <a href=""><img src="images/icons/email.png" alt=""></a>
+                    <a href=""><img src="images/icons/telephone.png" alt=""></a>
+                </div>
+                <p>All rights reserved &copy;Dee</p>
+            </footer>
+        </div>
+
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var stiNav = document.getElementById("stiNav");
+            var sticky = stiNav.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    stiNav.classList.add("sticky")
+                } else {
+                    stiNav.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+
+</html>
