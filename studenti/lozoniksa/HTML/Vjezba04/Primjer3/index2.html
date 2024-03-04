@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas</title>
+</head>
+
+<body>
+    <h1>Canvas</h1>
+    <h2>Linija</h2>
+    <canvas id="myCanvas" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(30, 180);
+        ctx.lineTo(460, 30);
+        ctx.lineWidth = 8;
+        ctx.strokeStyle = "#1F3"
+        ctx.stroke();
+    </script>
+    <h2>Kvadrat</h2>
+
+    <canvas id="myCanvas1" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas1");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.rect(20, 20, 150, 150);
+        ctx.fillStyle = "#F88"
+        ctx.fill();
+
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+
+    <h2>Krug</h2>
+
+    <canvas id="myCanvas2" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas2");
+        var ctx = c.getContext("2d");
+        var centerX = c.width / 2;
+        var centerY = c.height / 2;
+        var radius = 80;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = "#4F9";
+        ctx.fill();
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+
+    <h2>Polukrug</h2>
+
+    <canvas id="myCanvas3" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas3");
+        var ctx = c.getContext("2d");
+        var centerX = c.width / 2;
+        var centerY = c.height / 2;
+        var radius = 80;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0 * Math.PI, 1 * Math.PI);
+        ctx.closePath();
+        ctx.fillStyle = "#88F";
+        ctx.fill();
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+
+    <h2>Proizvoljni oblici</h2>
+    <canvas id="myCanvas4" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById('myCanvas4');
+        var ctx = c.getContext('2d');
+
+
+        ctx.beginPath();
+        ctx.moveTo(170, 80);
+        ctx.bezierCurveTo(130, 100, 130, 150, 230, 150);
+        ctx.bezierCurveTo(250, 180, 320, 180, 340, 150);
+        ctx.bezierCurveTo(420, 150, 420, 120, 390, 100);
+        ctx.bezierCurveTo(430, 40, 370, 30, 340, 50);
+        ctx.bezierCurveTo(320, 5, 250, 20, 250, 50);
+        ctx.bezierCurveTo(200, 5, 150, 20, 170, 80);
+        ctx.closePath();
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = 'blue';
+        ctx.stroke();
+    </script>
+
+    <h2>Tekst</h2>
+    <canvas id="myCanvas5" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas5");
+        var ctx = c.getContext("2d");
+        var positionX = 50;
+        var positionY = 100;
+        ctx.font = "italic bold 60px 'Courier New'";
+        ctx.fillStyle = "#F60";
+        ctx.fillText("Pozdrav svima", positionX, positionY);
+    </script>
+
+    <h2>Gradijenti</h2>
+    <canvas id="myCanvas6" width="400" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas6");
+        var ctx = c.getContext("2d");
+
+        var grd = ctx.createLinearGradient(0, 0, 400, 0);
+        grd.addColorStop(0, "#00F")
+        grd.addColorStop(0.6, "#76F");
+        grd.addColorStop(1, "#09F");
+
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, 400, 200);
+    </script>
+
+<canvas id="myCanvas7" width="400" height="200"></canvas>
+<script>
+    var c=document.getElementById("myCanvas7");
+    var ctx=c.getContext("2d");
+
+    var grd=ctx.createRadialGradient(200,100,50,200,100,150);
+    grd.addColorStop(0,"#00f")
+    grd.addColorStop(0.5,"#76f");
+    grd.addColorStop(1, "#09f");
+
+    ctx.fillStyle=grd;
+    ctx.fillRect(0,0,400,200);
+</script>
+
+</body>
+
+</html>
