@@ -1,0 +1,18 @@
+Vjezba 4 - Grafika - Zadatak 1 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+  
+3. Postaviti naslov dokumenta "Rad s grafikom u HTML-u"
+
+4. U dokumentu kreirati opisnu listu sa kategorijama JPG GIF PNG SVG i sadrzajem koji opisuje svaku kategoriju
+
+5. Umetnuti slike:
+	- html-css.png
+	- rome.jpg
+	- blur-buildings.jpg
+	- beach-clouds.jpg

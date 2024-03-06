@@ -6,17 +6,17 @@
   <title>Canvas</title>
 </head>
 <body>
-    <canvas id="myCanvas1" width="200" height="200"> </canvas>
+    <canvas id="myCanvas1" width="200" height="200"></canvas>
     <script>
         var canvasEl = document.getElementById("myCanvas1");
         var ctx = canvasEl.getContext("2d");
         
         ctx.beginPath();
-        ctx.rect(20,20,160,160);
+        ctx.rect(10,10,180,180);
         ctx.fillStyle = "#FF6";
         ctx.fill();
         ctx.strokeStyle = "#F33";
-        ctx.lineWidth = 5;
+        ctx.lineWidth = 4;
         ctx.stroke();
     </script>
 
