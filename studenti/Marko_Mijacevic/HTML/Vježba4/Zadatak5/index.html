@@ -12,15 +12,26 @@
       var ctx = canvasEL.getContext("2d");
 
       ctx.beginPath();
-      ctx.rect(5, 5, 185, 185);
-      ctx.fillStyle = "#ebda5b";
+      ctx.rect(10, 10, 180, 180);
+      ctx.fillStyle = "#ff6";
       ctx.fill();
       ctx.strokeStyle = "red";
-      ctx.lineWidth = 3;
+      ctx.lineWidth = 4;
       ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+      ctx.fillStyle = "blue";
+      ctx.fill();
+      ctx.strokeStyle = "black";
+      ctx.lineWidth = 5;
+      ctx.stroke();
+
+      ctx.fillStyle = "white";
+      ctx.fillRect(75, 75, 50, 50);
     </script>
 
-    <script>
+    <!-- <script>
       var canvasEL = document.getElementById("myCanvas");
       var ctx = canvasEL.getContext("2d");
 
@@ -36,9 +47,9 @@
       ctx.strokeStyle = "black";
       ctx.lineWidth = 5;
       ctx.stroke();
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
       var canvasEL = document.getElementById("myCanvas");
       var ctx = canvasEL.getContext("2d");
 
@@ -49,6 +60,6 @@
       ctx.strokeStyle = "black";
       ctx.lineWidth = 1;
       ctx.stroke();
-    </script>
+    </script> -->
   </body>
 </html>
