@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vjezba 4-9</title>
+        <title>Obrasci</title>
         <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -19,12 +19,26 @@
             </header>
             <nav id="stiNav">
                 <ol>
-                    <li><a href="index4.html">Vježba 4</a></li>
-                    <li><a href="index5.html">Vježba 5</a></li>
-                    <li><a href="index6.html">Vježba 6</a></li>
-                    <li><a href="index7.html">Vježba 7</a></li>
-                    <li><a href="index8.html">Vježba 8</a></li>
-                    <li><a href="index9.html">Vježba 9</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                        <div class="dropDownContent">
+                            <a href="index4.html">4. Grafika</a>
+                            <a href="index5.html">5. AV</a>
+                            <a href="index6.html">6. Linkovi</a>
+                            <a href="index7.html">7. Tablice</a>
+                            <a href="index8.html" class="current">8. Obrasci</a>
+                            <a href="index9.html">9. Strukturiranje</a>
+                            <a href="index10.html">Parcijalni ispit</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                        <div class="dropDownContent">
+                            <a href="index11.html">5. Pozadina</a>
+                        </div>
+                    </li>
+                    <li><a href="">JS</a></li>
                 </ol>
             </nav>
             <main>
@@ -34,61 +48,76 @@
 
                     <form action="" method="post" id="letMeKnow" enctype="multipart/form-data">
 
-                        <label for="ime">Ime</label>
-                        <input type="text" id="ime" placeholder="Ime" size="50">
+                        <!--<label for="ime">Ime</label>-->
+                        <input type="text" id="ime" placeholder="Ime">
 
-                        <label for="prezime">Prezime</label>
-                        <input type="text" id="prezime" placeholder="Prezime" size="50">
+                        <!--<label for="prezime">Prezime</label>-->
+                        <input type="text" id="prezime" placeholder="Prezime">
 
-                        <label for="email">E-mail adresa:</label>
-                        <input type="email" name="email" id="email" placeholder="Email adresa" size="50">
+                        <!--<label for="email">E-mail adresa:</label>-->
+                        <input type="email" name="email" id="email" placeholder="Email adresa">
 
-                        <label for="lozinka">Lozinka</label>
-                        <input type="password" id="lozinka" size="50">
+                        <!--<label for="lozinka">Lozinka</label>-->
+                        <input type="password" id="lozinka" placeholder="Lozinka">
 
-                        <label for="boje">Odaberi najdražu boju:</label>
-                        <input type="color" name="boje" id="boje">
+                        <!--<label for="komentar">Dodatne informacije</label>-->
+                        <textarea name="komentar" placeholder="Napiši nam poruku"></textarea>
 
-                        <label for="velicina">Odaberi veličinu:</label>
-                        <input type="radio" value="s" name="one">
-                        <label for="s" id="s">Small</label>
-                        <input type="radio" value="m" name="one">
-                        <label for="m" id="m">Medium</label>
-                        <input type="radio" value="l" name="one">
-                        <label for="l" id="l">Large</label>
+                        <button type="button" id="showHideButt" onclick="showHide()">Dodatne informacije
+                            <span id="formArrowDown">&#x1F81F;</span>
+                            <span id="formArrowUp" style="display: none;">&#x1F81D;</span>
+                        </button>
 
-                        <label for="Dostava">Dostava:</label>
-                        <input type="checkbox" value="dostava" id="dostava">
-
-                        <label for="datum">Odaberite datum dostave:</label>
-                        <input type="date" id="datum">
-
-                        <label for="dokument">Priloži dokument:</label>
-                        <input type="file" id="dokument">
-
-                        <label for="komentar">Dodatne informacije</label>
-                        <textarea name="komentar" cols="50" rows="10"></textarea>
-
-                        <label for="opcina">Odaberite općinu:</label>
-                        <select id="opcina">
-                            <option value="istarska">Istarska</option>
-                            <option value="dubrovacko neretvanska" selected>Dubrovačko neretvanska</option>
-                            <option value="splitsko dalmatinska">Splitsko dalmatinska</option>
-                        </select>
-
-                        <label for="grad">Odaberite grad:</label>
-                        <input list="grad">
-                        <datalist id="grad">
-                            <option value="Umag"></option>
-                            <option value="Rovinj"></option>
-                            <option value="Poreč"></option>
-                            <option value="Dubrovnik"></option>
-                            <option value="Split"></option>
-                        </datalist><br>
-
-                        <input type="submit" value="Pošalji" id="sub">
-                        <input type="reset" value="Poništi" id="res">
-
+                        <div id="detalji">
+                            <div id="bojeEl">
+                                <label for="boje">Odaberi najdražu boju:</label>
+                                <input type="color" name="boje">
+                            </div>
+                            <div id="velicinaEl">
+                                <label for="velicina">Odaberi veličinu:</label>
+                                <input type="radio" value="s" name="one">
+                                <label for="s" id="s">S</label>
+                                <input type="radio" value="m" name="one">
+                                <label for="m" id="m">M</label>
+                                <input type="radio" value="l" name="one">
+                                <label for="l" id="l">L</label>
+                            </div>
+                            <div id="dostavaEl">
+                                <label for="Dostava">Dostava:</label>
+                                <input type="checkbox" value="dostava">
+                            </div>
+                            <div id="datumEl">
+                                <label for="datum">Odaberite datum dostave:</label>
+                                <input type="date" id="datum">
+                            </div>
+                            <div id="dokumentEl">
+                                <label for="dokument">Priloži dokument:</label>
+                                <input type="file" id="dokument">
+                            </div>
+                            <div id="opcinaEl">
+                                <label for="opcina">Odaberite općinu:</label>
+                                <select id="opcina">
+                                    <option value="istarska">Istarska</option>
+                                    <option value="dubrovacko neretvanska" selected>Dubrovačko neretvanska</option>
+                                    <option value="splitsko dalmatinska">Splitsko dalmatinska</option>
+                                </select>
+                            </div>
+                            <div id="gradEl">
+                                <label for="grad">Odaberite grad:</label>
+                                <input list="grad">
+                                <datalist id="grad">
+                                    <option value="Umag"></option>
+                                    <option value="Rovinj"></option>
+                                    <option value="Poreč"></option>
+                                    <option value="Dubrovnik"></option>
+                                    <option value="Split"></option>
+                                </datalist><br>
+                            </div>
+                        </div>
+                        <div id="butt">
+                            <input type="submit" value="Pošalji" id="sub">
+                            <input type="reset" value="Poništi" id="res">
+                        </div>
                     </form>
 
                 </div>
@@ -117,6 +146,21 @@
                     stiNav.classList.add("sticky")
                 } else {
                     stiNav.classList.remove("sticky");
+                }
+            }
+
+            function showHide() {
+                var x = document.getElementById("detalji");
+                var spanDown = document.getElementById("formArrowDown");
+                var spanUp = document.getElementById("formArrowUp");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    spanUp.style.display = "inline";
+                    spanDown.style.display = "none";
+                } else {
+                    x.style.display = "none";
+                    spanUp.style.display = "none";
+                    spanDown.style.display = "inline";
                 }
             }
         </script>
