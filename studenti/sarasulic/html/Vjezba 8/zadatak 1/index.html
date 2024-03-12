@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrasci</title>
+  </head>
+  <body>
+    <form
+      name="obrazac1"
+      action=""
+      method="post"
+      autocomplete="off"
+      target="_blank"
+    >
+      <p>
+        <label for="ime">Ime i prezime *</label><br />
+        <input
+          id="ime"
+          type="text"
+          size="30"
+          maxlength="30"
+          placeholder="Vaše ime i preizme"
+          required
+        />
+      </p>
+      <p>
+        <label for="mail">E-mail adresa *</label><br />
+        <input
+          id="mail"
+          type="email"
+          name="mail"
+          placeholder="Upišite valjanu e-mail adresu"
+        />
+      </p>
+      <p>
+        <label for="tel">Kontakt broj telefona</label><br />
+        <input id="tel" type="tel" name="tel" />
+      </p>
+      <p>
+        <label for="datum">Datum rođenja</label><br />
+        <input id="datum" type="date" name="datum" />
+      </p>
+      <p>
+        Koje jezike govorite? <br />
+        <label for="engleski">Engleski</label>
+        <input id="engleski" type="radio" name="jezici" value="engleski" />
+        <label for="talijanski">Talijanski</label>
+        <input id="talijanski" type="radio" name="jezici" value="talijanski" />
+        <label for="njemacki">Njemački</label>
+        <input id="njemacki" type="radio" name="jezici" value="njemacki" />
+        <label for="francuski">Francuski</label>
+        <input id="francuski" type="radio" name="jezici" value="francuski" />
+        <label for="spanjolski">Španjolski</label>
+        <input id="spanjolski" type="radio" name="jezici" value="spanjolski" />
+      </p>
+      <p>
+        Da li ste do sada koristili usluge naše tvrtke? <br />
+        <label for="da">Da</label>
+        <input id="da" type="radio" name="usluge" value="da" />
+        <label for="ne">Ne</label>
+        <input id="ne" type="radio" name="usluge" value="ne" />
+      </p>
+      <p>
+        <label for="zivotopis">Priložite životopis</label><br />
+        <input id="zivotopis" type="file" name="zivotopis" />
+      </p>
+      <p>
+        <input name="reset_btb" type="reset" value="Poništi" />
+        <input name="submit_btn" type="submit" value="Prijavi se" />
+      </p>
+    </form>
+  </body>
+</html>
