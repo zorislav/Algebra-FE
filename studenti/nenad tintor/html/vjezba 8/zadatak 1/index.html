@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrasci</title>
+</head>
+<body>
+      <p>
+        <label for="ime">Ime i prezime*</label><br />
+        <input
+          id="ime"
+          size="30"
+          maxlength="20"
+          name="Ime i prezime"
+          type="text"
+          placeholder="Vaše ime i prezime"
+          required
+        />
+      </p>
+      <p>
+        <label for="E mail">E-mail adresa*</label><br />
+        <input
+          id="E mail"
+          size="45"
+          maxlength="20"
+          name="Upišite valjanu e-mail adresu"
+          type="text"
+          placeholder="Upišite valjanu e-mail adresu"
+          required 
+        />
+      </p>
+      <p>
+        <label for="kontakt">Kontakt broj telefona</label><br />
+        <input
+          id="kontakt"
+          size="30"
+          maxlength="20"
+          name="Kontat broj telefona"
+          type="text"
+          placeholder="Kontakt broj telefona"
+          required
+        />
+      </p>
+      <p>
+        <label for="datum">Datum rođenja</label><br />
+        <input
+          id="datum"
+          type="date"
+          name="datum"
+          min="1984-12-31"
+          max="2020-06-30"
+        />
+      </p>
+      <p>
+        Koje jezike govorite
+        <br />
+        <label for="o1">Engleski</label>
+        <input id="o1" type="checkbox" name="ocjena" value="1" />
+        <label for="o2">Talijanski</label>
+        <input id="o2" type="checkbox" name="ocjena" value="2" />
+        <label for="o3">Njemački</label>
+        <input id="o3" type="checkbox" name="ocjena" value="3" />
+        <label for="o4">Francuski</label>
+        <input id="o4" type="checkbox" name="ocjena" value="4" />
+        <label for="o5">Španjolski</label>
+        <input id="o5" type="checkbox" name="ocjena" value="5" />
+      </p>
+      <p>
+        Dali ste dosad koristili usluge naše tvrtke
+        <br />
+        <label for="o1">Da</label>
+        <input id="o1" type="radio" name="ocjena" value="1" />
+        <label for="o2">Ne</label>
+        <input id="o2" type="radio" name="ocjena" value="2" />
+        <p>
+          <label for="životopis">Priložite životopis</label><br />
+          <input id="životopis" type="file" name="životopis" />
+        </p>
+        <p>
+          <input name="reset_btb" type="reset" value="Poništi" />
+          <input type="submit" name="submit_btn" value="Prijavi se" id="" />
+        </p>
+</body>
+</html>
