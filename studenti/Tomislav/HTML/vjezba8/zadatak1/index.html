@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Obrasci</title>
+</head>
+<body style="font-family: sans-serif;">
+  <div style="width: 520px; margin:auto; padding: 22px; border-radius: 22px; background: #eee;">
+    <h1 style="text-align: center;">OBRAZAC ZA PRIJAVU</h1>
+    <form name="Obrazac" action="" method="post" autofill="off" style="width: 100%;">
+      <!-- text -->
+      <div>
+        <input type="text" name="ime" id="ime" placeholder="IME I PREZIME" style="padding: 7px; width: 100%; height: 36px; margin-bottom: 3px; box-sizing:border-box">
+      </div>
+      <!-- email -->
+      <div>
+        <input type="text" name="email" id="email" placeholder="E-MAIL" style="padding: 7px; width: 100%; height: 36px; margin-bottom: 3px; box-sizing:border-box">
+      </div>
+      <!-- tel -->
+      <div>
+        <input type="tel" name="tel" id="tel" placeholder="BROJ TELEFONA" pattern="[0-9]{3}/[0-9]{4}-[0-9]{3}" style="padding: 7px; width: 100%; height: 36px; margin-bottom: 3px; box-sizing:border-box">
+      </div>
+      <br>
+      <!-- date -->
+      <div>
+        <label for="datum">DATUM PRIJAVE</label><br>
+        <input type="date" name="datum" id="datum" min="2024-03-12" style="width: 100%; height: 36px; box-sizing:border-box">
+      </div>
+      <br>
+      <!-- file -->
+      <div>
+        <label for="dokument">Priložite dokument</label><br>
+        <input type="file" name="dokument" id="dokument">
+      </div>
+      <br><br>
+      <!-- radio -->
+      <div style="text-align: center;">
+        <label for="">OCIJENITE NAŠE USLUGE</label><br>
+        <div>
+          <label for="o1">1</label>
+          <input type="radio" name="ocjena" id="o1" value="1">
+          <label for="o2">2</label>
+          <input type="radio" name="ocjena" id="o2" value="2">
+          <label for="o3">3</label>
+          <input type="radio" name="ocjena" id="o3" value="3">
+          <label for="o4">4</label>
+          <input type="radio" name="ocjena" id="o4" value="4">
+          <label for="o5">5</label>
+          <input type="radio" name="ocjena" id="o5" value="5">
+        </div>
+      </div>
+      <br><br>
+      <!-- checkbox -->
+      <div>
+        <label for="uvjeti">Pročitao sam uvjete korištenja i slažem se s njima.</label>
+        <input type="checkbox" name="uvjeti" id="uvjeti"><br>
+        <i>
+        <p style="font-size: small;">Uvjete korištenja možete proćitati <a href="">ovdje</a></p>
+        </i>
+      </div>
+      <br>
+      <!-- submit / reset -->
+      <div>
+        <input name="reset_btn" type="reset" value="PONIŠTI" style="width: 29%; height: 28px; box-sizing:border-box" >
+        <input name="submit_btn" type="submit" value="POŠALJI" style="width: 70%; height: 28px; box-sizing:border-box">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

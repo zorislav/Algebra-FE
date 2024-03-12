@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrasci</title>
+</head>
+<body>
+  <form name="obrazac2" action="" method="post" autocomplete="off" target="_blank">
+  <p>
+    <label for="ime">Ime i prezime *</label><br>
+    <input id="ime" name="imeiprezime" size="25" maxlength="25" type="text" placeholder="Vaše ime i prezime" required>
+  </p>
+  <p>
+    <label for="mail">E-mail adresa *</label><br>
+    <input name="email" id="mail" type="email" placeholder="Upišite valjanu e-mail adresu" required size="35" maxlength="35">
+ </p>
+ <p>
+    <label for="tel">Kontakt broj telefona</label><br>
+    <input type="tel" name="tel" id="tel" size="25" maxlength="25" pattern="[0-9]{3}/[0-9]{4}-[0-9]{3}">
+  </p>
+  <p>
+    <label for="date">Datum rođenja</label><br>
+    <input id="datum" name="datum" type="date">
+  </p>
+  <p>
+    Koje jezike govorite?<br>
+    <label for="checkbox">Engleski</label>
+    <input type="checkbox" name="jezik" id="jezik">
+    <label for="checkbox">Talijanski</label>
+    <input type="checkbox" name="jezik" id="jezik">
+    <label for="checkbox">Njemački</label>
+    <input type="checkbox" name="jezik" id="jezik">
+    <label for="checkbox">Francuski</label>
+    <input type="checkbox" name="jezik" id="jezik">
+    <label for="checkbox">Španjolski</label>
+    <input type="checkbox" name="jezik" id="jezik">
+  </p>
+  <p>
+    Da li ste do sada koristili naše usluge tvrtke?<br>
+    <label for="01">Da</label>
+    <input type="radio" name="usluga" id="01" value="1">
+    <label for="02">Ne</label>
+    <input type="radio" name="usluga" id="02" value="2">
+  </p>
+  <p>
+    <label for="dokument">Priložite životopis</label><br>
+    <input id="dokument" type="file" name="dokument">
+  </p>
+  <p>
+    <input name="reset_btb" type="reset" value="Poništi obrazac">
+    <input name="submit_btn" type="submit" value="Pošalji podatke">
+  </p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,411 @@
+@font-face {
+  font-family: mainFont;
+  src: url(openSans-regular.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: "mainFont";
+  color: #333;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header {
+  background-color: #333;
+  padding: 60px 0;
+  color: #fff;
+}
+
+header #naslov {
+  text-align: center;
+  font-size: 22px;
+}
+
+header #logo {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  float: right;
+  width: 130px;
+}
+
+nav {
+  background-color: #00b0ba;
+  padding: 0;
+  padding-right: 36px;
+  overflow: hidden;
+  clear: both;
+}
+
+nav ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00b0ba;
+  float: right;
+}
+
+nav ol li {
+  float: left;
+}
+
+nav ol li a,
+.dropbtn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 15px 17px;
+  color: #fff;
+}
+
+nav ol li a:hover,
+.dropdown:hover {
+  background-color: #ff828b;
+}
+
+nav ol li.dropdown {
+  display: inline-block;
+}
+
+nav .dropDownContent {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  z-index: 1;
+}
+
+nav .dropdown a {
+  display: block;
+}
+
+nav .dropdown:hover .dropDownContent {
+  display: block;
+  background-color: #00b0ba;
+}
+
+nav ol li a.current {
+  background-color: #ff828b;
+}
+
+main {
+  text-align: center;
+  padding: 0 50px;
+}
+
+main h3 {
+  margin: 100px 0 50px 0;
+}
+
+main h4 {
+  margin: 60px;
+}
+
+main #monster {
+  display: block;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+main #imagesZad1 {
+  width: 50%;
+  margin: 100px auto;
+}
+
+main #imagesZad1 img {
+  width: 100%;
+}
+
+main .svgEl {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #00b0ba;
+}
+
+main #multimedija {
+  margin: 100px 0;
+}
+
+main #multimedija video {
+  width: 40%;
+}
+
+main #linkovi {
+  margin-top: 50px;
+}
+
+main #linkovi a {
+  text-decoration: none;
+  color: #00b0ba;
+  border-bottom: 1px solid #00b0ba;
+  padding: 5px 0;
+  margin: 10px 5px;
+}
+
+main #linkovi a:hover {
+  color: #ff828b;
+  border-bottom: 1px solid #ff828b;
+}
+
+main #anchors {
+  margin: 100px auto;
+  text-align: justify;
+  width: 50%;
+}
+
+main #anchors .top {
+  text-align: center;
+}
+
+main #eiffel {
+  display: block;
+  margin: 100px auto;
+  width: 50%;
+}
+
+main #zaposlenici {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+main #zaposlenici .titTable {
+  background-color: #ffdacc;
+  padding: 15px 0;
+}
+
+main #zaposlenici .titTable2 {
+  padding-top: 50px;
+}
+
+main #zaposlenici td {
+  padding: 15px;
+}
+
+main #zaposlenici th {
+  text-align: center;
+  padding: 10px 0;
+}
+
+main #obrazac {
+  width: 40%;
+  margin: 100px auto;
+  text-align: left;
+  font-size: 1rem;
+}
+
+main #obrazac #ime::placeholder,
+main #obrazac #prezime::placeholder,
+main #obrazac #email::placeholder,
+main #obrazac #lozinka::placeholder,
+main #obrazac textarea::placeholder {
+  font-size: 1rem !important;
+  font-family: "mainFont";
+}
+
+main #obrazac label {
+  margin: 25px 0 8px 0;
+}
+
+main #obrazac #ime,
+main #obrazac #prezime,
+main #obrazac #email,
+main #obrazac #lozinka,
+main #obrazac textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0 6px 0;
+  margin-bottom: 15px;
+}
+
+main #obrazac #ime:active,
+main #obrazac #prezime:active,
+main #obrazac #email:active,
+main #obrazac #lozinka:active,
+main #obrazac textarea:active,
+main #obrazac #ime:focus,
+main #obrazac #prezime:focus,
+main #obrazac #email:focus,
+main #obrazac #lozinka:focus,
+main #obrazac textarea:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #aaa;
+}
+
+main #obrazac textarea {
+  margin: 50px 0;
+  resize: none;
+}
+
+main #obrazac #showHideButt {
+  background-color: #00b0ba;
+  border: 1px solid #00b0ba;
+  padding: 10px 18px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+}
+
+main #obrazac #showHideButt:hover {
+  background-color: #ff828b;
+  border: 1px solid #ff828b;
+}
+
+main #obrazac #detalji {
+  margin-bottom: 50px;
+  padding: 40px 30px 50px 30px;
+  display: none;
+  border: 1px solid #00b0ba;
+}
+
+main #obrazac #detalji div {
+  margin-bottom: 30px;
+}
+
+main #obrazac #detalji div label {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+main #obrazac #s,
+main #obrazac #m,
+main #obrazac #l {
+  text-transform: lowercase;
+  display: inline;
+}
+
+main #obrazac #datum,
+main #obrazac #opcina,
+main #obrazac #grad {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+}
+
+main #obrazac #datum:focus,
+main #obrazac #opcina:focus,
+main #obrazac #grad:focus {
+  outline: none;
+}
+
+main #obrazac #dokument {
+  background-color: #00b0ba;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+main #obrazac #sub,
+main #obrazac #res {
+  background-color: #00b0ba;
+  border: 1px solid #00b0ba;
+  padding: 10px 20px;
+  color: #fff;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+main #obrazac #sub:hover,
+main #obrazac #res:hover {
+  background-color: #ff828b;
+  border: 1px solid #ff828b;
+}
+
+main #strukt {
+  margin-top: 100px;
+}
+
+main #coding {
+  display: block;
+  width: 40%;
+  margin: 100px auto;
+}
+
+main #parcIs {
+  width: 65%;
+  margin: 100px auto;
+}
+
+main #parcIs ul {
+  list-style-type: none;
+}
+
+main #parcIs ul li {
+  display: inline;
+}
+
+main #parcIs ul li a {
+  text-decoration: none;
+  color: #00b0ba;
+  margin: 0 10px;
+}
+
+main #parcIs ul li a:hover {
+  color: #ff828b;
+}
+
+main #parcIs hr {
+  border: 1px solid #00b0ba;
+}
+
+main #parcIs img {
+  width: 70%;
+}
+
+main #parcIs .top {
+  display: block;
+  margin: 20px auto;
+  width: 20px;
+}
+
+#bkgMain {
+  padding: 0 0 100px 0;
+  margin: 0;
+  background: url(images/imgCss/pattern.png) center/cover no-repeat,
+    url(images/imgCss/blossom.jpg) center no-repeat;
+}
+
+#bkgMain h3 {
+  color: #fff;
+  padding: 50px 0;
+  margin: 0;
+  background-color: rgba(20, 128, 143, 0.4);
+}
+
+#bkgMain p {
+  color: #fff;
+  margin: 0;
+  padding: 30px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+footer #icons {
+  padding: 40px 0 10px 0;
+  text-align: center;
+}
+
+footer #icons img {
+  width: 25px;
+  margin: 0 10px;
+}
