@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrasci</title>
+</head>
+<body>
+  <form name="obrazac1" action="" method="post" autocomplete="on">
+    <p>
+      <label for="ime">Ime i prezime</label><br>
+      <input id="ime" name="imeiprezime" type="text" size="30" maxlength="30" placeholder="Vaše ime i prezime">
+    </p>
+    <br>
+    <p>
+      <label for="e-mail">Vaš email</label><br>
+      <input id="e-mail" name="email" type="email" size="30" maxlength="30" placeholder="@" >
+    </p>
+    <br>
+    <p>
+      <label for="tel">Telefon</label><br>
+      <input type="tel" name="tel" id="tel" placeholder="099/1234-123" pattern="[0-9]{3}/[0-9]{4}-[0-9]{3}">
+    </p>
+    <br>
+    <p>
+      <label for="zaporka">Vaša zaporka</label><br>
+      <input for="zaporka" name="zaporka" type="password" size="10" maxlength="8"></input>
+    </p>
+    <br>
+    <p>
+      <label for="boja">Boja</label>
+      <input type="color" name="boja" id="boja">
+    </p>
+    <br>
+    <p>
+      <label for="obavijesti">Želim primati obavijesti</label>
+      <input type="checkbox" name="newsletter" id="obavijesti" value="true" checked>
+    </p>
+    <br>
+    <p>
+      Ocijenite usluge naše tvrtke
+      <br>
+      <label for="o1">1</label>
+      <input type="radio" name="ocjena" id="o1" value="1">
+      <label for="o2">2</label>
+      <input type="radio" name="ocjena" id="o2" value="2">
+      <label for="o3">3</label>
+      <input type="radio" name="ocjena" id="o3" value="3">
+      <label for="o4">4</label>
+      <input type="radio" name="ocjena" id="o4" value="4">
+      <label for="o5">5</label>
+      <input type="radio" name="ocjena" id="o5" value="5">
+    </p>
+    <br>
+    <p>
+      <label for="dokument">Priložite dokument</label><br>
+      <input type="file" name="dokument" id="dokument">
+    </p>
+    <br>
+    <p>
+      <label for="datum">Odaberite datum</label><br>
+      <input type="date" name="datum" id="datum" min="1984-12-31" max="2020-06-30">
+    </p>
+    <br>
+    <p>
+      <label for="komentar">Upišite vaš komentar</label><br>
+      <textarea name="komentar" id="komentar" cols="30" rows="10" style="resize: none;"></textarea>
+    </p>
+    <br>
+    <p>
+      <label for="grad">Odaberite seminar</label><br>
+      <select name="grad" id="grad">
+        <option value="london">London</option>
+        <option value="pariz">Pariz</option>
+        <option value="rim">Rim</option>
+      </select>
+    </p>
+    <br>
+    <p>
+      <label for="grad2">Odaberite ili upišite grad</label><br>
+      <input type="text" name="grad2" id="grad2" list="gradovi">
+      <datalist id="gradovi">
+        <option value="London"></option>
+        <option value="Pariz"></option>
+        <option value="Rim"></option>
+      </datalist>
+    </p>
+    <br>
+    <p>
+      <input name="reset_btn" type="reset" value="PONIŠTI OBRAZAC">
+      <input name="submit_btn" type="submit" value="POŠALJI PODATKE" disabled>
+    </p>
+  </form>
+</body>
+</html>
