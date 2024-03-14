@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrasci</title>
+</head>
+<body>
+  <form name="obrazac1" action="/question" method="post" autocomplete="off" target="_blank">
+    <p>
+      <label for="ime">Ime i prezime</label><br>
+      <input id="ime" name="imeiprezime" size="30" maxlength="20" type="text" placeholder="Vaše ime i prezime" required>
+    </p>
+    <p>
+      <label for="mail">E-mail</label><br>
+      <input type="email" name="email" id="mail" placeholder="@" size="20" maxlength="20">
+    </p>
+    <p>
+      <label for="tel">Telefon</label><br>
+      <input type="tel" name="tel" id="tel" placeholder="098/1234-123" pattern="[0-9]{3}/[0-9]{4}-[0-9]{3}">
+    </p>
+    <p>
+      <label for="" type="zaporka">Vaša zaporka</label><br>
+      <input type="password" name="zaporka" id="zaporka" size="10" maxlength="8" minlength="4" disabled>
+    </p>
+    <p>
+      <label for="boja">Boja</label><br>
+      <input id="boja" type="color" name="boja">
+    </p>
+    <p>
+      <label for="obavijesti">Želim primati obavijesti</label><br>
+      <input type="checkbox" name="newsletter" id="obavijesti" value="true" checked>
+    </p>
+    <p>
+      Ocijenite usluge naše tvrtke:<br>
+      <label for="o1">1</label>
+      <input type="radio" id="o1" name="ocijena" value="1">
+      <label for="o2">2</label>
+      <input type="radio" id="o2" name="ocijena" value="2">
+      <label for="o3">3</label>
+      <input type="radio" id="o3" name="ocijena" value="3">
+      <label for="o4">4</label>
+      <input type="radio" id="o4" name="ocijena" value="4">
+      <label for="o5">5</label>
+      <input type="radio" id="o5" name="ocijena" value="5">
+    </p>
+    <p>
+      <label for="dokument">Priložite dokument</label><br>
+      <input type="file" name="dokument" id="dokument">
+    </p>
+    <p>
+      <label for="datum">Odaberite datum</label><br>
+      <input type="date" name="datum" id="datum" min="1984-12-31" max="2020-06-30">
+    </p>
+    <p>
+      <label for="komentar">Upišite vaš komentar</label><br>
+      <textarea name="komentar" id="komentar" cols="45" rows="10" style="resize: none;"></textarea>
+    </p>
+    <p>
+      <label for="grad">Odaberite seminar</label><br>
+      <select name="grad" id="grad">
+        <option value="london">London</option>
+        <option value="pariz" selected>Pariz</option>
+        <option value="rim">Rim</option>
+      </select>
+    </p>
+    <p>
+      <label for="grad2">Odaberite ili upište grad</label><br>
+      <input id="grad2" name="grad2" type="text" list="gradovi">
+      <datalist id="gradovi">
+        <option value="London">
+        <option value="Pariz">
+        <option value="Rim">
+      </datalist>
+    </p>
+    <p>
+      <input name="reset_btn" type="reset" value="Poništi obrazac">
+      <input name="submit_btn" type="submit" value="Pošalji podatke">
+    </p>
+  </form>
+</body>
+</html>
