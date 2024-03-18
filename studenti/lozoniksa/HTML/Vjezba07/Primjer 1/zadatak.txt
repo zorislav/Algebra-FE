@@ -1,0 +1,45 @@
+Vjezba 7 - Tablice - Primjer 1 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Tablice"
+
+4. Kreirati tablicu
+
+	1 2 3
+	4 5 6
+
+5. Kreirati tablicu
+	                               Rezultati zavrsnog ispita
+	Redni broj  Ime  Prezime    Zanimanje                     Broj osvojenih bodova na ispitu
+	1           Maja majic      web dizajnerica               98
+	2           Pero Peric      postar                        82
+	3           Ana Anicic      nastavnica                    76
+	4           Mirko Mirkovski saborski zastupnik u mirovini 75
+	5           Ivan Ivancevic  student                       74	
+
+
+6. Kreirati tablicu
+
+	Namirnica  Kolicina  Predvidzena potrosnja
+	Tresnje    5kg       100kn
+	Breskve    2kg       20kn
+	Marelice   2kg       30kn
+	Ukupno:    9kg       150kn
+
+7. Kreirati tablicu
+
+	red1 celija1
+	red2 celija4  red2 celija5  red2 celija6
+	red3 celija7  red3 celija8
+
+8. Kreirati tablicu
+
+	              red1 celija2  red1 celija3
+	red1 celija1  red2 celija5  red3 celija6
+                              red3 celija9
