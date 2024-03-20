@@ -1,0 +1,29 @@
+body{ 
+  font-family: sans-serif;
+  color: rgb(70, 70, 70);
+  background-color: rgb(238, 238, 238);
+  margin: 75px;
+}
+h1{ 
+  font-family: serif;
+  color:rgb(182, 43, 113);
+}
+h2{ 
+  font-family: serif;
+  color: blueviolet;
+}
+h3{ 
+  font-family: serif;
+  color: rgb(27, 27, 27);
+}
+p{ 
+  background-color: rgb(209, 209, 209);
+  padding:25px;
+  border-radius: 25px;
+}
+details{ 
+  cursor: pointer;
+  background-color: rgb(209, 209, 209);
+  padding:25px;
+  border-radius: 25px;
+}
