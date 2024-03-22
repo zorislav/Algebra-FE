@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selektori HTML elemenata</title>
+  <style>
+    body {
+      color: #333;
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    [title]{
+      text-decoration: underline solid red;
+    }
+    [title="Prvi odlomak"]{
+      font-weight: bold;
+    }
+    [title~="odlomak"]{
+      text-transform: uppercase;
+    }
+    [title^="odlomak"]{
+      font-style: italic;
+    }
+    [title*="odlomak"]{
+      color: darkgreen;
+    }
+    [title$="odlomak"]{
+      color: darkorange;
+    }
+    [title|="odlomak"]{
+      font-family: 'Courier New', Courier, monospace;
+    }
+    [href$=".com"]{
+      color: lightseagreen;
+    }
+    [href="https://google.com"]{
+      color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1 title="Naslov stranice">Lorem ipsum dolor</h1>
+  <h2>Lorem ipsum</h2>
+  <h3>Lorem ipsum dolor sit amet</h3>
+  <a href="https://google.com">Google</a>
+  <p title="Prvi odlomak">
+    Excepteur ea fugiat in culpa sit cillum laboris et excepteur sit eu quis.
+    Nulla duis sit ex consectetur reprehenderit ea consequat id id enim do
+    amet. Dolor nisi Lorem sunt consectetur incididunt anim. Elit Lorem
+    excepteur ullamco culpa et. Pariatur exercitation eu mollit ut aliquip
+    aute sint adipisicing dolore ex culpa. Excepteur ea fugiat in culpa sit
+    cillum laboris et excepteur sit eu quis. Nulla duis sit ex consectetur
+    reprehenderit ea consequat id id enim do amet. Dolor nisi Lorem sunt
+    consectetur incididunt anim. Elit Lorem excepteur ullamco culpa et.
+    Pariatur exercitation eu mollit ut aliquip aute sint adipisicing dolore ex
+    culpa.
+  </p>
+  <p title="odlomak-2">
+    Excepteur ea fugiat in culpa sit cillum laboris et excepteur sit eu quis.
+    Nulla duis sit ex consectetur reprehenderit ea consequat id id enim do
+    amet. Dolor nisi Lorem sunt consectetur incididunt anim. Elit Lorem
+    excepteur ullamco culpa et. Pariatur exercitation eu mollit ut aliquip
+    aute sint adipisicing dolore ex culpa. Excepteur ea fugiat in culpa sit
+    cillum laboris et excepteur sit eu quis. Nulla duis sit ex consectetur
+    reprehenderit ea consequat id id enim do amet. Dolor nisi Lorem sunt
+    consectetur incididunt anim. Elit Lorem excepteur ullamco culpa et.
+    Pariatur exercitation eu mollit ut aliquip aute sint adipisicing dolore ex
+    culpa.
+  </p>
+  <p title="odlomak 3">
+    Excepteur ea fugiat in <span>culpa <span>sit</span> cillum</span> laboris et excepteur sit eu quis.
+    Nulla duis sit ex consectetur reprehenderit ea consequat id id enim do
+    amet. Dolor nisi <strong>Lorem sunt</strong> consectetur incididunt anim. Elit Lorem
+    excepteur ullamco culpa et. Pariatur exercitation eu mollit ut aliquip
+    aute sint adipisicing dolore ex culpa.
+  </p>
+  <p title="odlomakbla">
+    Excepteur ea fugiat in culpa sit cillum laboris et excepteur sit eu quis.
+    Nulla duis sit ex consectetur reprehenderit ea consequat id id enim do
+    amet. Dolor nisi Lorem sunt consectetur incididunt anim. Elit Lorem
+    excepteur ullamco culpa et. <strong>Pariatur exercitation</strong> eu mollit ut aliquip
+    aute sint adipisicing dolore ex culpa. Excepteur ea fugiat in culpa sit
+    cillum laboris et excepteur sit eu quis. Nulla duis sit ex consectetur
+    reprehenderit ea consequat id id enim do amet. Dolor nisi Lorem sunt
+    consectetur incididunt anim. Elit Lorem excepteur ullamco culpa et.
+    Pariatur exercitation eu mollit ut aliquip aute sint adipisicing dolore ex
+    culpa.
+  </p>
+  <p>
+    Excepteur ea fugiat in <strong>culpa <span title="sit">sit</span> cillum</strong> laboris et excepteur sit eu quis.
+    Nulla duis sit ex consectetur reprehenderit ea consequat id id enim do
+    amet. Dolor nisi Lorem sunt consectetur incididunt anim. Elit Lorem
+    excepteur ullamco culpa et. Pariatur exercitation eu mollit ut aliquip
+    aute sint adipisicing dolore ex culpa. Excepteur ea fugiat in culpa sit
+    cillum laboris et excepteur sit eu quis. Nulla duis sit ex consectetur
+    reprehenderit ea consequat id id enim do amet. Dolor nisi Lorem sunt
+    consectetur incididunt anim. Elit Lorem excepteur ullamco culpa et.
+    Pariatur exercitation eu mollit ut aliquip aute sint adipisicing dolore ex
+    culpa.
+  </p>
+</body>
+</html>
