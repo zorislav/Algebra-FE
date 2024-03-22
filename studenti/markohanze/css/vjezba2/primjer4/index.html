@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selektori HTML elemenata</title>
+  <style>
+    body{color: #333; 
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+[title]{
+  text-decoration: underline solid red; ;
+}
+[title="Prvi odlomak"]{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: darkorange
+}
+[title~=odlomak-3]{
+  text-transform: uppercase;
+}
+
+[title^=odlomak]{
+font-style: italic;
+}
+[title*=odlomak]{
+color: darkgreen;
+}
+[title$=odlomak]{
+  color: darkorange;
+}
+[title|=odlomak]{
+  font-family: 'Courier New', Courier, monospace;
+}
+[href$=".com"]{
+  color: lightseagreen
+}
+[href="https://google.com"]{
+  color: yellowgreen;
+}
+
+  </style>
+</head>
+<body>
+  <h1 title="Naslov stranice">Lorem Ipsum dolor</h1>
+  <h2>Lorem ipsum</h2>
+  <h3>Lorem ipsum sit amet</h3>
+  <a href="https://google.com">Google</a>
+  <p title="Prvi odlomak">
+    Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea.Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.
+  </p>
+  <p title="odlomak-2">
+    Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu eaEu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.
+
+  </p>
+  <p title="odlomak-3">
+    Eu laborum occaecat mollit Lorem est <strong>cupidatat  <span>nostrud</span> commodo</strong>  eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et <em>consequat</em> velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.
+  </p>
+  <p title="odlomakblaa">
+    Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing <strong>cupidatat  <span>nostrud</span> commodo</strong> id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea.Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation.
+  </p>
+  <p>
+    Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. <strong>Eu laborum <span title>occaecat</span> mollit</strong>  Lorem est cupidatat nostrud commodo eu eaEu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit Lorem est cupidatat nostrud commodo eu ea. Minim mollit ex occaecat elit mollit laborum proident.Deserunt adipisicing exercitation fugiat anim pariatur et consequat velit cillum cillum mollit. Non et nulla ut magna consequat Lorem exercitation magna ut excepteur reprehenderit adipisicing id mollit. Eu laborum occaecat mollit.
+  </p>
+</body>
+</html>
