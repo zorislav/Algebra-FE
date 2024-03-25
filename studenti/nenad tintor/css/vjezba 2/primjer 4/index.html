@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektori HTML elemenata</title>
+    <style>
+       body {
+      color: #333;
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    [title] {
+      text-decoration: underline solid red;
+    }
+    [title="prvi odlomak"] {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    [title~="odlomak"] {
+      text-transform: uppercase;
+    }
+    [title^= "odlomak"]{
+    font-style: italic;
+    }
+    [title*="odlomak"] {
+      color: darkgreen;
+    }
+    [title$="odlomak"] {
+      color:darkorange;
+    }
+    [title|= "odlomak"]{
+    font-family: 'Courier New', Courier, monospace;
+    }
+    [href="https://google.com"] {
+      color: yellowgreen;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 title="naslov stranice">Lorem ipsum dolor</h1>
+    <h2>Lorem ipsum</h2>
+    <h3>Lorem ipsum dolor sit amet</h3>
+    <a href="https://google.com">Google</a>
+    <p title="prvi odlomak">
+      In amet nulla deserunt consequat veniam cupidatat ad consequat labore anim
+      deserunt dolore. Deserunt officia officia nostrud irure irure enim. Ipsum
+      aliquip eu nostrud veniam irure officia sint mollit minim. Laboris nisi
+      voluptate exercitation laborum ipsum et qui proident minim culpa. Laborum
+      tempor et amet et.Cillum cillum adipisicing esse commodo dolor
+        reprehenderit nisi. Amet do Lorem aliquip ullamco laborum mollit sunt
+        Lorem. In amet nulla deserunt consequat veniam cupidatat ad consequat
+         Deserunt officia officia nostrud irure irure
+      enim. Ipsum aliquip eu nostrud veniam irure officia sint mollit minim.
+      Laboris nisi voluptate exercitation laborum ipsum et qui proident minim
+      culpa. Laborum tempor et amet et. Cillum cillum adipisicing esse commodo
+      dolor reprehenderit nisi. Amet do Lorem aliquip ullamco laborum mollit
+      sunt Lorem.
+    </p>
+
+    <p title="odlomak-2">
+      mollit minim. Laboris nisi voluptate exercitation laborum ipsum et qui
+      proident minim culpa. Laborum tempor et amet et. Cillum cillum adipisicing
+      esse commodo dolor reprehenderit nisi. Amet do Lorem aliquip ullamco
+      laborum mollit sunt Lorem. In amet nulla deserunt consequat veniam
+      cupidatat ad consequat labore anim deserunt dolore. Deserunt officia
+      officia nostrud irure irure enim. Ipsum aliquip eu nostrud veniam irure
+      officia sint mollit minim. Laboris nisi voluptate exercitation laborum
+      ipsum et qui proident minim culpa. Laborum tempor et amet et. Cillum
+      cillum adipisicing esse commodo dolor reprehenderit nisi. Amet do Lorem
+      aliquip ullamco laborum mollit Lorem ipsum dolor sit amet consecteteursunt Lorem. In amet nulla deserunt
+      consequat veniam cupidatat ad consequat labore anim deserunt dolore.
+      Deserunt officia officia nostrud irure irure enim. Ipsum aliquip eu
+      nostrud veniam irure officia sint mollit minim. Laboris nisi voluptate
+      exercitation laborum ipsum et qui proident minim culpa. Laborum tempor et
+      amet et. Cillum cillum adipisicing esse commodo dolor reprehenderit nisi.
+      Amet do Lorem aliquip ullamco laborum mollit sunt Lorem
+    </p>
+
+    <p title="odlomak 3">
+      mollit minim. Laboris nisi voluptate exercitation laborum ipsum et qui
+      proident minim culpa. Laborum tempor et amet et. Cillum cillum adipisicing
+      esse commodo dolor reprehenderit nisi. Amet do Lorem aliquip ullamco
+      laborum mollit sunt Lorem. In amet nulla deserunt consequat veniam
+      cupidatat ad consequat labore anim deserunt dolore. Deserunt officia
+      officia nostrud irure irure enim. Ipsum aliquip eu nostrud veniam irure
+      officia sint mollit minim. Laboris nisi voluptate exercitation laborum
+      ipsum et qui proident minim culpa. Laborum tempor et amet et. Cillum
+      cillum adipisicing esse commodo dolor reprehenderit nisi. Amet do Lorem
+      aliquip ullamco laborum mollit Lorem ipsum dolor sit amet consecteteursunt Lorem. In amet nulla deserunt
+      consequat veniam cupidatat ad consequat labore anim deserunt dolore.
+      Deserunt officia officia nostrud irure irure enim. Ipsum aliquip eu
+      nostrud veniam irure officia sint mollit minim. Laboris nisi voluptate
+      exercitation laborum ipsum et qui proident minim culpa. Laborum tempor et
+      amet et. Cillum cillum adipisicing esse commodo dolor reprehenderit nisi.
+      Amet do Lorem aliquip ullamco laborum mollit sunt Lorem
+    </p>
+
+    <p title="odlomakbla">
+      mollit minim. Laboris nisi <strong>voluptate exercitation laborum</strong> ipsum et qui
+      proident minim culpa. Laborum tempor et amet et. Cillum cillum adipisicing
+      esse commodo dolor reprehenderit nisi. Amet do Lorem aliquip ullamco
+      laborum mollit sunt Lorem. In amet nulla deserunt consequat veniam
+      cillum adipisicing esse commodo dolor reprehenderit nisi. Amet do Lorem
+      aliquip ullamco laborum mollit Lorem ipsum dolor sit amet consecteteursunt Lorem. In amet nulla deserunt
+      consequat veniam cupidatat ad consequat labore anim deserunt dolore.
+      Deserunt officia officia nostrud irure irure enim. Ipsum aliquip eu
+      nostrud veniam irure officia sint mollit minim. Laboris nisi voluptate
+      exercitation laborum ipsum et qui proident minim culpa. Laborum tempor et
+      amet et. Cillum cillum adipisicing esse commodo dolor reprehenderit nisi.
+      Amet do Lorem aliquip ullamco laborum mollit sunt Lorem
+    </p>
+
+    <p>
+      mollit minim. <strong>Laboris nisi <span title="voluptate">voluptate</span> exercitation </strong>laborum ipsum et qui
+      proident minim culpa. Laborum tempor et amet et. Cillum cillum adipisicing
+      esse commodo dolor reprehenderit nisi. Amet do Lorem aliquip ullamco
+      Deserunt officia officia nostrud irure irure enim. Ipsum aliquip eu
+      nostrud veniam irure officia sint mollit minim. Laboris nisi voluptate
+      exercitation laborum ipsum et qui proident minim culpa. Laborum tempor et
+      amet et. Cillum cillum adipisicing esse commodo dolor reprehenderit nisi.
+      Amet do Lorem aliquip ullamco laborum mollit sunt Lorem
+    </p>
+
+  </body>
+</html>
