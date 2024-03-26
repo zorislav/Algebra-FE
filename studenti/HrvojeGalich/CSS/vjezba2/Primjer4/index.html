@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selektori HTML elemenata</title>
+  <style>
+    body {
+      color: #333;
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    [title]{
+      text-decoration: underline solid red;
+    }
+    [title="Prvi odlomak"]{
+      font-weight: bold;
+    }
+    [title~="odlomak"]{  /* Negdje se pojavljuje */
+      text-transform: uppercase;
+    }
+    [title^="odlomak"]{ /* Prefix */
+      font-style: italic;
+    }
+    [title*="odlomak"]{ /* Barem jednom se pojavljuje */
+      color:darkgreen;
+    }
+    [title$="odlomak"]{ /* sufix  */
+      color: darkorange;
+    }
+    [title|="odlomak"]{ /* ili samo odlomak ili odlomak-nešto */
+      font-family: 'Courier New', Courier, monospace;
+    }
+    [href$=".com"]{
+      color: lightseagreen;
+    }
+    [href="https://google.com"]{
+      color: yellowgreen;
+    }
+  
+  </style>
+</head>
+<body>
+  <h1 title="Naslov stranice">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+  <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+  <h3>Lorem ipsum dolor sit amet.</h3>
+  <a href="https://google.com" target="_blank">Google</a>
+  <a href="https://yahoo.com" target="_blank">Yahoo</a>
+  <p title="Prvi odlomak">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt non ducimus ipsam dicta iste esse atque placeat quia velit, repudiandae, maxime eum autem voluptas adipisci corporis, quaerat explicabo maiores nulla.
+    Dolore debitis iusto fuga a voluptate labore impedit hic non! Totam delectus hic illum nam sit iure excepturi, aliquid aut ipsa cupiditate consectetur ullam iste at quidem laboriosam eum sed!
+    Recusandae praesentium est doloribus labore libero distinctio dolorem explicabo culpa delectus harum consequatur unde dicta suscipit ipsa eum, omnis molestias illum eaque eos nemo magnam deserunt! Blanditiis eius quibusdam veniam.
+  </p>
+  <p title="odlomak-2"> 
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt non ducimus ipsam dicta iste esse atque placeat quia velit, repudiandae, maxime eum autem voluptas adipisci corporis, quaerat explicabo maiores nulla.
+    Dolore debitis iusto fuga a voluptate labore impedit hic non! Totam delectus hic illum nam sit iure excepturi, aliquid aut ipsa cupiditate consectetur ullam iste at quidem laboriosam eum sed!
+    Recusandae praesentium est doloribus labore libero distinctio dolorem explicabo culpa delectus harum consequatur unde dicta suscipit ipsa eum, omnis molestias illum eaque eos nemo magnam deserunt! Blanditiis eius quibusdam veniam.
+    Commodi illo optio perferendis sapiente quibusdam maiores mollitia voluptas nobis dolorem beatae, voluptatum totam perspiciatis incidunt iste sit qui ipsam quidem. Repellat fugiat vel magni. At laborum fuga accusantium provident?
+    Minima possimus tenetur vero, dicta, sunt delectus quod ratione fugit eius odio, voluptatibus vel laudantium reiciendis voluptatem sequi nobis adipisci? Quas distinctio nemo molestiae enim temporibus unde a cumque iste.
+  </p>
+  <p title="odlomak 3"> 
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt non ducimus ipsam dicta iste esse atque placeat quia velit, repudiandae, maxime eum autem voluptas adipisci corporis, quaerat explicabo maiores nulla.
+    Dolore debitis iusto fuga a voluptate labore impedit hic non! Totam delectus hic illum nam sit iure excepturi, aliquid aut ipsa cupiditate consectetur ullam iste at quidem laboriosam eum sed!
+    Recusandae praesentium est doloribus labore libero distinctio dolorem explicabo culpa delectus harum consequatur unde dicta suscipit ipsa eum, omnis molestias illum eaque eos nemo magnam deserunt! Blanditiis eius quibusdam veniam.
+    Commodi illo optio perferendis sapiente quibusdam maiores mollitia voluptas nobis dolorem beatae, voluptatum totam perspiciatis incidunt iste sit qui ipsam quidem. Repellat fugiat vel magni. At laborum fuga accusantium provident?
+    Minima possimus tenetur vero, dicta, sunt delectus quod ratione fugit eius odio, voluptatibus vel laudantium reiciendis voluptatem sequi nobis adipisci? Quas distinctio nemo molestiae enim temporibus unde a cumque iste.
+  </p>
+  <p title="odlomakbla"> 
+    Lorem ipsum dolor sit amet consectetur, <strong> adipisicing elit. Incidunt non</strong> ducimus ipsam dicta iste esse atque placeat quia velit, repudiandae, maxime eum autem voluptas adipisci corporis, quaerat explicabo maiores nulla.
+    Dolore debitis iusto fuga a voluptate labore impedit hic non! Totam delectus hic illum nam sit iure excepturi, aliquid aut ipsa cupiditate consectetur ullam iste at quidem laboriosam eum sed!
+    Recusandae praesentium est doloribus labore libero distinctio dolorem explicabo culpa delectus harum consequatur unde dicta suscipit ipsa eum, omnis molestias illum eaque eos nemo magnam deserunt! Blanditiis eius quibusdam veniam.
+    Commodi illo optio perferendis sapiente quibusdam maiores mollitia voluptas nobis dolorem beatae, voluptatum totam perspiciatis incidunt iste sit qui ipsam quidem. Repellat fugiat vel magni. At laborum fuga accusantium provident?
+    Minima possimus tenetur vero, dicta, sunt delectus quod ratione fugit eius odio, voluptatibus vel laudantium reiciendis voluptatem sequi nobis adipisci? Quas distinctio nemo molestiae enim temporibus unde a cumque iste.
+  </p>
+  <p> 
+    Lorem ipsum dolor sit amet consectetur, <strong>adipisicing <span title="sit">elit</span>. Incidunt</strong> non ducimus ipsam dicta iste esse atque placeat quia velit, repudiandae, maxime eum autem voluptas adipisci corporis, quaerat explicabo maiores nulla.
+    Dolore debitis iusto fuga a voluptate labore impedit hic non! Totam delectus hic illum nam sit iure excepturi, aliquid aut ipsa cupiditate consectetur ullam iste at quidem laboriosam eum sed!
+    Recusandae praesentium est doloribus labore libero distinctio dolorem explicabo culpa delectus harum consequatur unde dicta suscipit ipsa eum, omnis molestias illum eaque eos nemo magnam deserunt! Blanditiis eius quibusdam veniam.
+    Commodi illo optio perferendis sapiente quibusdam maiores mollitia voluptas nobis dolorem beatae, voluptatum totam perspiciatis incidunt iste sit qui ipsam quidem. Repellat fugiat vel magni. At laborum fuga accusantium provident?
+    Minima possimus tenetur vero, dicta, sunt delectus quod ratione fugit eius odio, voluptatibus vel laudantium reiciendis voluptatem sequi nobis adipisci? Quas distinctio nemo molestiae enim temporibus unde a cumque iste.
+  </p>
+</body>
+</html>
