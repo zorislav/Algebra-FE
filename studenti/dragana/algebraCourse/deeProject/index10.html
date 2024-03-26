@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parcijalni ispit HTML</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="naslov">Algebra fun time &infin;</p>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logoDS" id="logo">
+                </a>
+            </header>
+            <nav id="stiNav">
+                <ol>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                        <div class="dropDownContent">
+                            <a href="index4.html">4. Grafika</a>
+                            <a href="index5.html">5. AV</a>
+                            <a href="index6.html">6. Linkovi</a>
+                            <a href="index7.html">7. Tablice</a>
+                            <a href="index8.html">8. Obrasci</a>
+                            <a href="index9.html">9. Strukturiranje</a>
+                            <a href="index10.html" class="current">Parcijalni ispit</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                        <div class="dropDownContent">
+                            <a href="index11.html">5. Pozadina</a>
+                        </div>
+                    </li>
+                    <li><a href="">JS</a></li>
+                </ol>
+            </nav>
+            <main>
+                <h3>&#8756;<br>Turistička agencija "Avanturist"<br>&#8757;</h3>
+                <div id="parcIs">
+                    <ul>
+                        <li><a href="#prvi">O nama</a></li>
+                        <li><a href="#drugi">Naše djelatnosti</a></li>
+                        <li><a href="#treci">Kontakt</a></li>
+                    </ul>
+                    <hr>
+                    <h4>O nama</h4>
+                    <p id="prvi">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                        incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation<br>
+                        ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in
+                        reprehenderit<br>
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat
+                        cupidatat<br>
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
+                        <img src="images/team.jpg" alt="avanturist team">
+                    </p>
+
+                    <a href="#"><img src="images/top.png" alt="back on top" class="top"></a>
+
+                    <h4>Naše djelatnosti</h4>
+                    <p id="drugi">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                        incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation<br>
+                        ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in
+                        reprehenderit<br>
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat
+                        cupidatat<br>
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
+                        <img src="images/adventure.jpg" alt="avanturist adventure">
+                    </p>
+
+                    <a href="#"><img src="images/top.png" alt="back on top" class="top"></a>
+
+                    <h4>Kontakt</h4>
+                    <p id="treci">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                        incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation<br>
+                        ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in
+                        reprehenderit<br>
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat
+                        cupidatat<br>
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+                    <div id="obrazac">
+                        <form action="" method="post" id="letMeKnow" enctype="multipart/form-data">
+                            <!--<label for="ime">Ime</label>-->
+                            <input type="text" id="ime" placeholder="Ime">
+
+                            <!--<label for="prezime">Prezime</label>-->
+                            <input type="text" id="prezime" placeholder="Prezime">
+
+                            <!--<label for="email">E-mail adresa:</label>-->
+                            <input type="email" name="email" id="email" placeholder="Email adresa">
+
+                            <!--<label for="lozinka">Lozinka</label>-->
+                            <input type="password" id="lozinka" placeholder="Lozinka">
+
+                            <!--<label for="komentar">Dodatne informacije</label>-->
+                            <textarea name="komentar" placeholder="Napiši nam poruku"></textarea>
+
+                            <div id="butt">
+                                <input type="submit" value="Pošalji poruku" id="sub">
+                            </div>
+                        </form>
+                    </div>
+                    <hr>
+                    <a href="#"><img src="images/top.png" alt="back on top" class="top"></a>
+
+                </div>
+            </main>
+
+            <footer>
+                <div id="icons">
+                    <a href=""><img src="images/icons/facebook.png" alt=""></a>
+                    <a href=""><img src="images/icons/linkedin.png" alt=""></a>
+                    <a href=""><img src="images/icons/email.png" alt=""></a>
+                    <a href=""><img src="images/icons/telephone.png" alt=""></a>
+                </div>
+                <p>All rights reserved &copy;Dee</p>
+            </footer>
+        </div>
+
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var stiNav = document.getElementById("stiNav");
+            var sticky = stiNav.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    stiNav.classList.add("sticky")
+                } else {
+                    stiNav.classList.remove("sticky");
+                }
+            }
+
+            function showHide() {
+                var x = document.getElementById("detalji");
+                var spanDown = document.getElementById("formArrowDown");
+                var spanUp = document.getElementById("formArrowUp");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    spanUp.style.display = "inline";
+                    spanDown.style.display = "none";
+                } else {
+                    x.style.display = "none";
+                    spanUp.style.display = "none";
+                    spanDown.style.display = "inline";
+                }
+            }
+        </script>
+    </body>
+
+</html>
