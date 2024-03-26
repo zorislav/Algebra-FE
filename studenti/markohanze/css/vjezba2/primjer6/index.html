@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selektori pseudo klase 2 dio</title>
+  <style>
+    body {
+      color: #333;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+    }
+    p:first-child {
+      text-decoration: underline wavy red;
+    }
+    p:last-child{
+      font-size: 14px;
+    }
+    p:nth-child(2) {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    p:first-of-type{
+      font-weight: bold;
+    }
+    P:last-of-type{
+      text-transform: uppercase;
+    }
+    P:nth-of-type(2){
+color: darkturquoise
+    }
+    p::selection {
+      background-color: yellow;
+    }
+    p::first-line{
+      color: green;
+    }
+    P::first-letter{
+      color: red
+    }
+  </style>
+</head>
+<body>
+  <header>
+<h1>Zaglavlje header</h1>
+<p>Odlomak - header</p>
+  </header>
+  <section>
+    <p>Odlomak section - section p1</p>
+    <p>Odlomak section - section p2</p>
+    <p>Odlomak section - section p3</p>
+    <p>Odlomak section - section p4</p>
+    <p>Odlomak section - section p5</p>
+  </section>
+  <section>
+<h1>Naslov section 2 - section 2</h1>
+<p>Odlomak section 2 - section p1</p>
+<p>Odlomak section 2 - section p2</p>
+<p>Odlomak section 2 - section p3</p>
+<p>Odlomak section 2 - section p4</p>
+<p>Odlomak section 2 - section p5</p>
+<a href="">a section 2</a>
+
+  </section>
+  <p>Proident do duis dolor fugiat tempor sint consequat. Ipsum pariatur laborum aliquip anim. Et laboris quis consequat ipsum consequat veniam ea quis cupidatat magna cupidatat incididunt.
+
+  </p>
+  <footer>
+<p>Odlomak - footer - p1</p>
+<p>Odlomak - footer - p2</p>
+<p>Odlomak - footer -p3</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kobntekstualni selektori</title>
+  <style>
+    body {
+      color: #333;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+    }
+    section p, section h1{
+      color: green;
+    }
+    footer section p{
+      font-family: 'Courier New', Courier, monospace;
+    }
+    section > p {
+      text-decoration: line-through solid red;
+    }
+    h1 + p {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zaglavlje - header</h1>
+    <p>Odlomak - header</p>
+  </header>
+  <main>
+    <section>
+      <h1>Naslov sekcije - section 1</h1>
+      <div>
+        <p>Odlomak - section 1 - p1</p>
+        <p>Odlomak - section 1 - p2</p>
+      </div>
+      <article>
+        <p>Odlomak - section 1 - p3</p>
+        <p>Odlomak - section 1 - p4</p>
+      </article>
+    </section>
+    <section>
+      <h1>Naslov sekcije - section 2</h1>
+      <p>Odlomak - section 2 - p1</p>
+      <p>Odlomak - section 2 - p2</p>
+      <p>Odlomak - section 2 - p3</p>
+      <p>Odlomak - section 2 - p4</p>
+      <p>Odlomak - section 2 - p5</p>
+    </section>
+    <article>
+      <h1>Objava - article</h1>
+      <p>Odlomak - section 2 - p1</p>
+      <p>Odlomak - section 2 - p2</p>
+      <p>Odlomak - section 2 - p3</p>
+      <p>Odlomak - section 2 - p4</p>
+      <p>Odlomak - section 2 - p5</p>
+    </article>
+  </main>
+  <footer>
+    <h1>Footer</h1>
+    <section>
+      <h1>Footer - section 1</h1>
+      <p>Odlomak - section 1 - p1</p>
+      <p>Odlomak - section 1 - p2</p>
+      <p>Odlomak - section 1 - p3</p>
+      <p>Odlomak - section 1 - p4</p>
+      <p>Odlomak - section 1 - p5</p>
+    </section>
+    <section>
+      <h1>Footer - section 2</h1>
+      <p>Odlomak - section 2 - p1</p>
+      <p>Odlomak - section 2 - p2</p>
+      <p>Odlomak - section 2 - p3</p>
+      <p>Odlomak - section 2 - p4</p>
+      <p>Odlomak - section 2 - p5</p>
+    </section>
+  </footer>
+</body>
+</html>
