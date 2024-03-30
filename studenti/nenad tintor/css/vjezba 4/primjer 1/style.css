@@ -1,0 +1,24 @@
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #ddd;
+}
+ h1 {
+  background-color: red;
+}
+header {
+background-color: green;
+}
+nav {
+background-color: #ffc;
+}
+main {
+background-color: skyblue;
+}
+p {
+  background-color: rgb(253, 190, 190);
+}
+footer {
+  background-color: aquamarine;
+}

@@ -1,0 +1,13 @@
+body {
+    font-family: Tahoma, sans-sarif;
+    color: #333;
+    font-size: 16px;
+    background-color: #ddd;
+    background-image: url(images/butterfly.png);
+    background-repeat: no-repeat; 
+    background-position: center center; /* u x-osi i y-osi // 50px na prvo da makne 50 px od lijevog ruba  */
+    background-size: 25%;
+    background-attachment: fixed;
+    
+    /* background: #ddd url(images/butterfly.png) center center/25% no-repeat fixed; */
+}
