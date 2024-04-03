@@ -1,0 +1,21 @@
+body{
+  font-family: Tahoma, sans-serif;
+  		font-size: 16px;
+  		color: #333;
+  		margin: 0;
+}
+.mamadiv{
+  background-color: #eee;
+  		border: 20px solid #999;
+  		height: 800px;
+  		margin: 2em auto;
+  		width: 800px;
+}
+.bebadiv1{
+  background: #69f;
+  		margin-left: auto;
+  		margin-right: 0;
+}
+.bebadiv2{
+  background: #f66;
+}
