@@ -11,8 +11,6 @@ div {
   background-color: #f93;
 }
 
-/* width, height ************************************************************ */
-
 .width1 {
   width: 50%;
 }
@@ -37,28 +35,22 @@ div {
   background-color: #ccf;
 }
 
-/* border ****************************************************************** */
-/* border: border-width border-style border-color */
 .border {
   border: 2px solid #333;
 }
 
-/* border-width: medium|thin|thick|length */
 .border-width {
   border: 6px solid #333;
 }
 
-/* border-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset */
 .border-style {
   border: 6px dashed #333;
 }
 
-/* border-color: color|transparent */
 .border-color {
   border: 6px solid rgb(0, 0, 255);
 }
 
-/* top, right, bottom, left */
 .border2 {
   border-top: 6px solid #333;
   border-right: 10px double #f33;
@@ -66,8 +58,6 @@ div {
   border-left: 8px dotted #3f3;
 }
 
-/* padding****************************************************************** */
-/* padding: px|em|% */
 .padding {
   padding: 20px;
 }
@@ -76,12 +66,10 @@ div {
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 5px;
-  /* padding:20px 30px 50px 5px; */
-  text-align: justify; /* da bi se naglasio padding-right */
+
+  text-align: justify;
 }
 
-/* margin****************************************************************** */
-/* margin: px|em|%|auto */
 .margin {
   margin: 20px;
 }
@@ -90,7 +78,6 @@ div {
   margin-right: 30px;
   margin-bottom: 50px;
   margin-left: 200px;
-  /* margin:20px 30px 50px 200px; */
 }
 
 .margin-auto {
