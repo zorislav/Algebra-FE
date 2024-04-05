@@ -1,10 +1,33 @@
-body{
+body {
   font-family: Tahoma, sans-serif;
   		font-size: 16px;
   		color: #333;
   		margin: 0;
 }
-.mamadiv{
+body > div {
+height: 800px;
+width: 800px;
+background-color: #eee;
+border: 20px solid #999;
+margin: 2em auto;
+}
+
+div > div {
+	/* background-color: #f66; */
+	width: 50%;
+	height: 50%;
+}
+
+div > div:first-child {
+	background-color: #f66;
+}
+div > div:last-child {
+	background-color: #69f;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* .mamadiv{
   background-color: #eee;
   		border: 20px solid #999;
   		height: 800px;
@@ -18,4 +41,4 @@ body{
 }
 .bebadiv2{
   background: #f66;
-}
+} */
