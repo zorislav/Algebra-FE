@@ -13,17 +13,18 @@ body > div{
   width: 800px;
 }
 
-div div{
-  background-color: #f66;
+div > div{
   width: 50%;
   height: 50%;
 }
 
-div:last-child{
+div > div:first-child{
+  background-color: #f66;
+}
+
+div > div:last-child{
   background-color: #69f;
   margin-left: auto;
   margin-right: 0;
-  width: 50%;
-  height: 50%;
 }
 
