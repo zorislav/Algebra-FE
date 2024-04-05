@@ -1,0 +1,12 @@
+body{
+  font-family: Tahoma, sans-serif;
+  color: #333;
+  font-size: 16px;
+  background-color: #ddd;
+  background-image: url(images/butterfly.png);
+  background-repeat: no-repeat;
+  background-position:  center center;
+  background-size: 25%;
+  background-attachment: fixed;
+  /* background: #ddd url(images/butterfly.png) center center/25% no-repeat fixed; */
+}
