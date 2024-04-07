@@ -1,0 +1,50 @@
+body{
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin:0;
+}
+div{
+  background-color: #eee;
+  text-align: justify;
+}
+.box1{
+  border: 5px solid #666;
+  width:300px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box2{
+  border: 5px dashed #666;
+  width: 25%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+.box3{
+  border-right: 8px double #666;
+  width: 30em;
+  margin-top: 2em;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-left: 0;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 20px;
+
+}
+.box4{
+  border-top: 4px dashed #666;
+  width: 80%;
+  border-bottom: : 6px dotted #333;
+  margin: auto;
+  padding: 10px;
+}
