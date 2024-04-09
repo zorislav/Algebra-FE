@@ -1,0 +1,15 @@
+body {
+    font-family: Yahoma, sans-serif;
+    font_size: 16px;
+    color: #333;
+}
+
+p {
+    background-color: #eee;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: -4px;
+    padding: 1em;
+    width: 33%;
+}
