@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper div {
+  border: 1px solid #666;
+  background-color: #eee;
+  width: 150px;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
+.wrapper {
+  border: 1px dashed #666;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
