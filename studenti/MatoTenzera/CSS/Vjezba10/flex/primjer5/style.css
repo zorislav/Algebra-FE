@@ -23,7 +23,7 @@ body {
 }
 
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; /* display:flex | inline-flex */
+
+  display: flex;
+  justify-content: center;
 }

@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  -webkit-box-sizing: border-box;
+
   box-sizing: border-box;
 }
 body {
@@ -23,7 +23,10 @@ body {
 }
 
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; /* display:flex | inline-flex */
+
+  display: flex;
+}
+
+.flex-item:nth-child(3) {
+  order: -1;
 }

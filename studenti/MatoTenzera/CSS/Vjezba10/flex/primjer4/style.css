@@ -18,7 +18,7 @@ body {
   border: 1px solid #666;
   padding: 1em;
   text-align: center;
-  width: 150px;
+  width: 30%;
   margin: 1em;
 }
 
@@ -26,4 +26,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; /* display:flex | inline-flex */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap-reverse;
+          flex-flow: row wrap-reverse; /* flex-flow: <‘flex-direction’> || <‘flex-wrap’> */
 }
