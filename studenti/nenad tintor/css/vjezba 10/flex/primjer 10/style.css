@@ -6,22 +6,24 @@ body {
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.wrapper div {
+  border: 1px solid #666;
+  background-color: #eee;
+  width: 150px;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
 .wrapper {
   border: 1px dashed #666;
-  padding: 1em;
 }
-
-.wrapper div {
-  background: #eee;
-  border: 1px solid #666;
-  padding: 1em;
-  text-align: center;
-  width: 150px;
-  margin: 1em;
-}
-
 .flex-container {
-  display: flex
-    flex-direction: column;
+  display: flex;
+}
+
+.flex-item {
+  flex-shrink: 1;
+}
+.flex-item:nth-child(3) {
+  flex-shrink: 3;
 }

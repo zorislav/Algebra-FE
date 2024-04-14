@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
@@ -9,7 +10,6 @@ body {
 
 .wrapper {
   border: 1px dashed #666;
-  padding: 1em;
 }
 
 .wrapper div {
@@ -22,6 +22,9 @@ body {
 }
 
 .flex-container {
-  display: flex
-    flex-direction: column;
+  display: flex;
+}
+
+.flex-item:nth-child(3) {
+  order: -1;
 }
