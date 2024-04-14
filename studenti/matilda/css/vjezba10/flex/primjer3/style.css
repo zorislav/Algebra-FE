@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
@@ -17,11 +18,14 @@ body {
   border: 1px solid #666;
   padding: 1em;
   text-align: center;
-  width: 150px;
+  width: 30%;
   margin: 1em;
 }
 
 .flex-container {
-  display: flex
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* display:flex | inline-flex */
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; /* flex-wrap: nowrap | wrap | wrap-reverse */
 }

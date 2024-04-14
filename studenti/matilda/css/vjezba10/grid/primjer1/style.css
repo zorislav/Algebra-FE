@@ -8,7 +8,6 @@ body {
 }
 
 .wrapper {
-  border: 1px dashed #666;
   padding: 1em;
 }
 
@@ -17,11 +16,20 @@ body {
   border: 1px solid #666;
   padding: 1em;
   text-align: center;
-  width: 150px;
-  margin: 1em;
 }
 
 .flex-container {
-  display: flex
-    flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-item {
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+
+.flex-item:nth-child(3n) {
+  flex-basis: 100%;
 }
