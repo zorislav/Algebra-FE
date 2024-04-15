@@ -1,27 +1,29 @@
-* {
+*{
   margin: 0;
   box-sizing: border-box;
 }
-body {
+
+body{
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper {
+.wrapper{
   border: 1px dashed #666;
-  padding: 1em;
+
 }
 
-.wrapper div {
-  background: #eee;
+.wrapper div{
   border: 1px solid #666;
-  padding: 1em;
-  text-align: center;
+  background-color: #eee;
   width: 150px;
   margin: 1em;
+  padding: 1em;
+  text-align: center;
 }
 
-.flex-container {
-  display: flex
-    flex-direction: column;
+.flex-container{
+  display: flex;
+  justify-content: center;
+
 }
