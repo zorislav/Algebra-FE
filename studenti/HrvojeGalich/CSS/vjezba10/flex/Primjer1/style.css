@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+  border: 1px dashed #666;
+}
+
+.wrapper div{
+  border: 1px solid #666;
+  background-color: #eee;
+  width: 150px;
+  margin: 1em;
+  text-align: center;
+  padding: 1em;
+}
+
+.flex-container{
+  display: flex;
+}
+
