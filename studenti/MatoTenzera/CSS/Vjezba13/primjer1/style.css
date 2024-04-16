@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  background-color: #f93;
+  border: 1px solid #333;
+  text-align: center;
+  border-radius: 100%;
+  line-height: 149px;
+  margin: 0 auto 2em 0;
+  font-size: 2em;
+  position: relative;
+}
+
+@keyframes animacija1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 1000px;
+    background-color: yellow;
+  }
+
+}
+
+div:first-of-type {
+  animation: animacija1 2s linear;
+}
