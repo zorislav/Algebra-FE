@@ -19,7 +19,7 @@ a:link{
 }
 
 a:hover{
-  font-size: 1.2em;
+  font-weight: bold;
 }
 
 a:visited{
@@ -40,8 +40,14 @@ hr{
 }
 
 ul{
-  list-style: none;
+  list-style-type: none;
   flex-grow: 1;
+  padding: 0;
+  justify-content: space-between;
+}
+
+ul li{
+  padding: 10px;
 }
 
 .ElementiZaglavlja{
