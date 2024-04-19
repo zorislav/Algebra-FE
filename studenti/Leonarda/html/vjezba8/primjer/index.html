@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrasci</title>
+  </head>
+  <body>
+    <form name="obrazac1" action="" method="post" autocomplete="off">
+      <p>
+        <label for="ime">Ime i prezime</label><br />
+        <input
+          id="ime"
+          name="imeiprezime"
+          type="text"
+          placeholder="Vase ime i prezime"
+          maxlength="20"
+          size="30 "
+        />
+      </p>
+      <div>
+        <label for="mail">E-mail adresa</label><br />
+        <input name="mail" id="mail" type="email" placeholder="@" />
+      </div>
+      <p>
+        <label for="tel">Telefon</label><br />
+        <input type="tel" name="tel" id="tel" placeholder="099/1234-123" />
+      </p>
+      <p>
+        <label for="zaporka">Vaša zaporka</label><br />
+        <input
+          name="zaporka"
+          type="password"
+          id="zaporka"
+          size="10"
+          maxlength="8"
+        />
+      </p>
+      <p>
+        <label for="boja">Boja</label>
+        <input type="color" name="boja" id="boja" />
+      </p>
+      <p>
+        <label for="obavijesti">Želim primati obavijesti</label>
+        <input
+          id="obavijesti"
+          type="checkbox"
+          name="newsletter"
+          value="true"
+          checked
+        />
+      </p>
+      <p>
+        Ocijenite usluge naše tvrtke <br />
+        <label for="o1">1</label>
+        <input id="o1" type="radio" name="ocjena" value="1" />
+        <label for="o2">2</label>
+        <input id="o2" type="radio" name="ocjena" value="2" />
+        <label for="o3">3</label>
+        <input id="o3" type="radio" name="ocjena" value="3" />
+        <label for="o4">4</label>
+        <input id="o4" type="radio" name="ocjena" value="4" />
+        <label for="o5">5</label>
+        <input id="o5" type="radio" name="ocjena" value="5" />
+      </p>
+      <p>
+        <input name="reset_btb" type="reset" value="Ponisti obrazac" />
+        <input name="submit_btb" type="submit" value="Posalji podatke" />
+      </p>
+    </form>
+  </body>
+</html>

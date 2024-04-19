@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background-image</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="naslov">Algebra fun time &infin;</p>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logoDS" id="logo">
+                </a>
+            </header>
+            <nav id="stiNav">
+                <ol>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                        <div class="dropDownContent">
+                            <a href="index4.html">4. Grafika</a>
+                            <a href="index5.html">5. AV</a>
+                            <a href="index6.html">6. Linkovi</a>
+                            <a href="index7.html">7. Tablice</a>
+                            <a href="index8.html">8. Obrasci</a>
+                            <a href="index9.html">9. Strukturiranje</a>
+                            <a href="index10.html">Parcijalni ispit</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                        <div class="dropDownContent">
+                            <a href="index11.html" class="current">5. Pozadina</a>
+                        </div>
+                    </li>
+                    <li><a href="">JS</a></li>
+                </ol>
+            </nav>
+            <main id="bkgMain">
+                <h3>&#8756;<br>CSS pozadine<br>&#8757;</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                    incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation<br>
+                    ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in
+                    reprehenderit<br>
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat
+                    cupidatat<br>
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
+                </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
+                    incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation<br>
+                    ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in
+                    reprehenderit<br>
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat
+                    cupidatat<br>
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>
+                </p>
+            </main>
+
+            <footer>
+                <div id="icons">
+                    <a href=""><img src="images/icons/facebook.png" alt=""></a>
+                    <a href=""><img src="images/icons/linkedin.png" alt=""></a>
+                    <a href=""><img src="images/icons/email.png" alt=""></a>
+                    <a href=""><img src="images/icons/telephone.png" alt=""></a>
+                </div>
+                <p>All rights reserved &copy;Dee</p>
+            </footer>
+        </div>
+
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var stiNav = document.getElementById("stiNav");
+            var sticky = stiNav.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    stiNav.classList.add("sticky")
+                } else {
+                    stiNav.classList.remove("sticky");
+                }
+            }
+
+            function showHide() {
+                var x = document.getElementById("detalji");
+                var spanDown = document.getElementById("formArrowDown");
+                var spanUp = document.getElementById("formArrowUp");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    spanUp.style.display = "inline";
+                    spanDown.style.display = "none";
+                } else {
+                    x.style.display = "none";
+                    spanUp.style.display = "none";
+                    spanDown.style.display = "inline";
+                }
+            }
+        </script>
+    </body>
+
+</html>

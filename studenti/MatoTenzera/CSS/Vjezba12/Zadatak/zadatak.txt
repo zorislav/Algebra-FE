@@ -1,0 +1,71 @@
+Vjezba 11 - Tranzicije - Zadatak
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "CSS Tranzicije"
+
+4. U dokumentu kreirati slijedece elemente:
+    <h1>Tranzicije</h1>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+}
+
+/* box */
+
+div {
+  background-color: #f93;
+  border: 1px solid #333;
+  font-size: 2em;
+  line-height: 150px;
+  width: 400px;
+  height: 150px;
+  margin: 0 auto 2em;
+  text-align: center;
+}
+
+6. Kreirati slijedeće tranzicije:
+
+Za prvi div element
+- Kada se promjeni sirina, u trajanju od 1.5s linearno
+- Kada se promjeni boja pozadine, u trajanju od 1s ease-out
+- Na prolaz misem promijeniti sirinu na 650px
+- Na prolaz misem promijeniti boju pozadine u #8cc
+
+Za drugi div element
+- Kada se promjeni transform atribut, u trajanju od 2s ease-in-out
+- Na prolaz misem promijeniti transform atribut u rotate(360deg) i scale(1.5)
+
+Za treci div element
+- Kada se promjeni transform atribut, u trajanju od 1s linear
+- Na prolaz misem promijeniti transform atribut u translate(400px, 0) i rotate(90deg)
+
+Za cetvrti div element
+- Kada se promjeni transform atribut, u trajanju od 2.5s ease-in s odgodom od 2s
+- Kada se promjeni boja pozadine, u trajanju od 1s linear
+- Kada se promjeni visina, u trajanju od 0.5s ease-out s odgodom od 1s
+- Na prolaz misem promijeniti transform atribut u translate(0, 200px), visinu na 200px i boju pozadine u zutu
+
+
+6. Ukljuciti datoteku style.css u index.html
