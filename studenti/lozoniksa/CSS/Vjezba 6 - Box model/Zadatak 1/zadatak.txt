@@ -1,0 +1,57 @@
+Vjezba 6 - Box model - Zadatak 1
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "CSS Box Model"
+
+4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
+	- <div>
+    	- <div>
+    	- <div>
+	- <div>
+
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+	body 
+  		font-family: Tahoma, sans-serif;
+  		font-size: 16px;
+  		color: #333;
+  		margin: 0;
+	div 
+  		background-color: #eee;
+  		text-align: justify
+
+
+	Za prvi <div> element
+	- border 5px solid #666
+	- margina gore i dolje 2em lijevo idesno auto
+	- padding lijevo desno gore i dolje 2em
+	- sirina 300px
+
+	Za drugi <div> element
+	- border 5px dashed #666
+	- margina gore 2em, desno 0, dolje 2em lijevo auto
+	- padding gore i dolje 2em, lijevo i desno 4em
+	- sirina 25%
+
+	Za treci <div> element
+	- border-right 8px double #666
+	- margina gore 2em, desno auto, dolje 2em lijevo 0
+	- padding gore 5px, desno 20px, dolje 30px, lijevo 50px
+	- sirina 30em
+
+	Za cetvrti <div> element
+	- border-top 4px dashed #666
+	- border-bottom 6px dotted #333
+	- margina svuda auto
+	- padding svuda 10px
+	- sirina 80%	
+
+6. Ukljuciti datoteku style.css u index.html
