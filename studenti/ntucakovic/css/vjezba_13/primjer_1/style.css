@@ -25,7 +25,7 @@ div{
   position: relative;
 }
 
-@keyframes animacija1{
+@keyframes animacija1 {
   0% {
     left: 0;
   }
@@ -35,6 +35,113 @@ div{
   }
 }
 
+@keyframes animacija2{
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  50%{
+    left: 1000px;
+    transform: rotate(180deg);
+  }
+  100%{
+    left: 0;
+    transform: rotate(0deg);
+  }
+
+}
+
+@keyframes animacija3{
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  50%{
+    left: 1000px;
+    transform: rotate(360deg);
+  }
+  100%{
+    left: 0;
+    transform: rotate(0deg);
+  }
+
+}
+
+@keyframes animacija4{
+  0% {
+    left: 0;
+  }
+  50%{
+    left: 80%;
+  }
+  100%{
+    left: 0;
+  }
+
+}
+
+@keyframes animacija5{
+  0% {
+    left: 0;
+  }
+  50%{
+    left: 80%;
+  }
+  100%{
+    left: 0;
+  }
+
+}
+
+@keyframes animacija6{
+  0% {
+    left: 0;
+    background-color: red;
+  }
+  100%{
+    left: 80%;
+    background-color: green;
+  }
+
+}
+
+@keyframes animacija7{
+  0% {
+    left: 0;
+  }
+  50%{
+    left: 80%;
+  }
+  100%{
+    left: 0;
+  }
+
+}
+
 div:first-of-type{
   animation: animacija1 2s linear;
+}
+
+div:nth-of-type(2){
+  animation: animacija2 2s ease-in-out;
+}
+
+div:nth-of-type(3){
+  animation: animacija3 2s ease-in-out;
+}
+
+div:nth-of-type(4){
+  animation: animacija4 2s ease-in-out 2s infinite;
+}
+
+div:nth-of-type(5){
+  animation: animacija5 2s ease-in-out 2s 3 alternate;
+}
+
+div:nth-of-type(6){
+  animation: animacija6 2s ease-in-out 2s both;
+}
+
+div:nth-of-type(7){
+  animation: animacija7 10s ease-in-out infinite;
 }
