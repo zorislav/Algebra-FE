@@ -9,28 +9,30 @@ body {
 }
 
 .wrapper {
-  border: 1px dashed #666;
+  padding: 1em;
 }
 
 .wrapper div {
   border: 1px solid #666;
   background-color: #eee;
-  width: 150px;
-  margin: 1em;
   padding: 1em;
   text-align: center;
 }
 
 .flex-container {
   display: flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
 }
 
 .flex-item {
-  -ms-flex-preferred-size: 18%;
-  flex-basis: 18vw;
+  flex-basis: 32%;
+  width: 24%;
+  height: 100px;
+}
+
+.flex-item:nth-child(3n) {
+  flex-basis: 100%;
 }
