@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo-klase</title>
+    <style>
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        section p {
+            color: green;
+        }
+
+        footer section p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        section>p {
+            text-decoration: line-through solid red;
+        }
+
+        h1+p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Zaglavlje</h1>
+        <p>Odlomak</p>
+    </header>
+    <main>
+        <section>
+            <h1>Sekcija</h1>
+            <div>
+                <p>Odlomak</p>
+                <p>Odlomak</p>
+            </div>
+            <article>
+                <p>Odlomak</p>
+                <p>Odlomak</p>
+            </article>
+        </section>
+        <section>
+            <h1>Sekcija</h1>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+        </section>
+        <article>
+            <h1>Objava</h1>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+        </article>
+    </main>
+
+    <footer>
+        <h1>Podnožje</h1>
+        <section>
+            <h1>Sekcija</h1>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+        </section>
+        <section>
+            <h1>Sekcija</h1>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+            <p>Odlomak</p>
+        </section>
+    </footer>
+</body>
+
+</html>
