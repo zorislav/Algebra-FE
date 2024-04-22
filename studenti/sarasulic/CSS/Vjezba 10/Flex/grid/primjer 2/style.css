@@ -9,28 +9,28 @@ body {
 }
 
 .wrapper {
-  border: 1px dashed #666;
+  padding: 1em;
 }
 
 .wrapper div {
   border: 1px solid #666;
   background-color: #eee;
-  width: 150px;
-  margin: 1em;
   padding: 1em;
   text-align: center;
 }
 
 .flex-container {
   display: flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .flex-item {
-  -ms-flex-preferred-size: 18%;
-  flex-basis: 18vw;
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+
+.flex-item:nth-child(4n + 1) {
+  flex-basis: 100%;
 }

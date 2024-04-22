@@ -15,7 +15,7 @@ body {
 .wrapper div {
   border: 1px solid #666;
   background-color: #eee;
-  width: 150px;
+  width: 100px;
   margin: 1em;
   padding: 1em;
   text-align: center;
@@ -23,14 +23,12 @@ body {
 
 .flex-container {
   display: flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .flex-item {
-  -ms-flex-preferred-size: 18%;
-  flex-basis: 18vw;
+  flex-shrink: 1;
+}
+
+.flex-item:nth-child(3) {
+  flex-shrink: 3;
 }
