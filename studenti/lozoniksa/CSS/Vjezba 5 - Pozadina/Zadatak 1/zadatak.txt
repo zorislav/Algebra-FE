@@ -1,0 +1,35 @@
+Vjezba 5 - Pozadina - Zadatak 1
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Background-image"
+
+4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
+	- <h1>
+	- <p>
+	- <p>
+	- <p>
+	- <p>
+	- <p>
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+body 
+  background: url(fire.png) center 30%/18% no-repeat fixed,
+    url(pattern.png),
+    url(blossom.jpg) center center/cover no-repeat fixed;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #ccc;
+
+h1 
+  background: #333;
+  text-align: center;
+
+
+6. Ukljuciti datoteku style.css u index.html
