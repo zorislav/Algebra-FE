@@ -4,15 +4,15 @@ body {
   font-family: Tahoma, sans-serif;
 }
 
-h1 {
-  color: #800;
-}
-
-a {
-  font-family: Courier, monospace;
-}
-
+.borders, header,
+footer,
 article {
-  border: 2px solid #800;
-  margin: 2em;
+  border: 2px solid #333;
+}
+
+header,
+footer,
+article {
+  padding: 1em;
+  margin: 1em;
 }/*# sourceMappingURL=style.css.map */
