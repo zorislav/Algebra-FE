@@ -1,0 +1,80 @@
+Vjezba 9 - Layout - Grid - Primjer 3
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Flexbox-layout"
+
+4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
+	- <div class="wrapper flex-container">
+		- <div class="flex-item">1</div>
+		- <div class="flex-item">2</div>
+		- <div class="flex-item">3</div>
+		- <div class="flex-item">4</div>
+		- <div class="flex-item">5</div>
+		- <div class="flex-item">6</div>
+		- <div class="flex-item">7</div>
+		- <div class="flex-item">8</div>
+		- <div class="flex-item">9</div>
+		- <div class="flex-item">10</div>
+		- <div class="flex-item">11</div>
+		- <div class="flex-item">12</div>
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+	* 
+		margin: 0;
+		-webkit-box-sizing: border-box; /*za Safari, Opera, Chrome */
+		box-sizing: border-box;
+
+	body 
+		color: #333;
+		font-family: Arial, Helvetica, sans-serif;
+
+	.wrapper 
+		padding: 1em;
+
+	.wrapper div 
+		background: #EEE;
+		border: 1px solid #666;
+		padding: 1em;
+		text-align: center;
+
+	.flex-container 
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+  		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+		-ms-flex-line-pack: justify;
+		align-content: space-between; /* flex-start | flex-end | center | space-between | space-around | stretch */
+
+	.flex-item 
+		-webkit-box-flex: 0;
+		-ms-flex-positive: 0;
+		flex-grow: 0;
+		-ms-flex-preferred-size: 32%;
+		flex-basis: 32%;
+		width: 24%;
+
+	.flex-item:nth-child(4n+1) 
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+
+
+
+
+
+6. Ukljuciti datoteku style.css u index.html

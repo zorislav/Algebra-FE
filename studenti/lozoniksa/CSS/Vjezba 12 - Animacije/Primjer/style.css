@@ -1,0 +1,258 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+}
+
+div {
+  background-color: #f93;
+  border: 4px solid #333;
+  border-radius: 100%;
+  font-size: 2em;
+  line-height: 145px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 2em 0;
+  text-align: center;
+  position: relative;
+}
+
+/* animacija */
+
+@-webkit-keyframes animacija1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 1000px;
+    background: yellow;
+  }
+}
+
+@keyframes animacija1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 1000px;
+    background: yellow;
+  }
+}
+
+div:first-of-type {
+  -webkit-animation: animacija1 2s linear;
+  animation: animacija1 2s linear;
+}
+
+@-webkit-keyframes animacija2 {
+  0% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    left: 1000px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes animacija2 {
+  0% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    left: 1000px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+div:nth-of-type(2) {
+  -webkit-animation: animacija2 2s ease-in-out;
+          animation: animacija2 2s ease-in-out;
+}
+
+@-webkit-keyframes animacija3 {
+  0% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    left: 1000px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes animacija3 {
+  0% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    left: 1000px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/* timing-functions: linear | ease | ease-in | ease-out |ease-in-out | step-start | step-end |steps (int, start | end) */
+div:nth-of-type(3) {
+  -webkit-animation: animacija3 2s ease-in-out 2s;
+          animation: animacija3 2s ease-in-out 2s;
+}
+
+@-webkit-keyframes animacija4 {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 80%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes animacija4 {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 80%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+/* animation-iteration-count: number | infinite */
+div:nth-of-type(4) {
+  -webkit-animation: animacija4 4s ease-in-out 2s infinite;
+          animation: animacija4 4s ease-in-out 2s infinite;
+}
+
+@-webkit-keyframes animacija5 {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 80%;
+  }
+}
+
+@keyframes animacija5 {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 80%;
+  }
+}
+/*  animation direction: normal | reverse| alternate | alternate-reverse */
+div:nth-of-type(5) {
+  -webkit-animation: animacija5 4s ease-in 2 alternate;
+          animation: animacija5 4s ease-in 2 alternate;
+}
+
+@-webkit-keyframes animacija6 {
+  0% {
+    left: 0;
+    background: red;
+  }
+
+  100% {
+    left: 80%;
+  }
+}
+
+@keyframes animacija6 {
+  0% {
+    left: 0;
+    background: red;
+  }
+
+  100% {
+    left: 80%;
+  }
+}
+/* animation fill mode: none | forwards | backwards| both  */
+div:nth-of-type(6) {
+  -webkit-animation: animacija6 4s ease-in 2s backwards;
+          animation: animacija6 4s ease-in 2s backwards;
+}
+
+@-webkit-keyframes animacija7 {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 80%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes animacija7 {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 80%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+/* animation-iteration-count: number | infinite */
+div:nth-of-type(7) {
+  -webkit-animation: animacija7 10s ease-in-out infinite;
+          animation: animacija7 10s ease-in-out infinite;
+}
+
+div:nth-of-type(7):hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}

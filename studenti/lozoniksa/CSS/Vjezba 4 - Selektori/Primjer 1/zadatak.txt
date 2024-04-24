@@ -1,0 +1,53 @@
+Vjezba 4 - Selektori - Primjer 1
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Selektori HTML elemenata"
+
+4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
+	- <h1>
+	- <h2>
+	- <h3>
+	- <h4>
+	- <p>
+	- <p>
+	- <p>
+	- <h2>
+	- <h3>
+	- <h4>
+	- <p>
+	- <p>
+	- <p>
+	- <em>
+	- <strong>
+	- <span>
+
+5. Pomocu internog CSS-a elementima dodijeliti slijedeća pravila
+
+        body
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+
+        h1  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+
+        h2  color: #f93;
+            font-size: 28px;
+
+        h3  color: #090;
+
+        h4  color: rgb(102, 94, 218)
+
+        p   text-align: justify;
+
+        em  color: red
+
+        strong text-decoration: underline wavy red;
+
+        span font-weight: normal

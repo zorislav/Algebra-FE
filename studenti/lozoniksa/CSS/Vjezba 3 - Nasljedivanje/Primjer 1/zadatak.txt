@@ -1,0 +1,45 @@
+Vjezba 3 - Nasljedzivanje - Primjer 1
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "nasljedzivanje CSS svojstava"
+
+
+4. Pomocu internog CSS-a definirati slijedeća pravila
+
+        body 
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            text-align: center;
+
+        p 
+            color: #060;
+
+        em 
+            color: aqua
+
+        strong 
+            text-decoration: underline wavy red;
+
+        span 
+            font-weight: normal
+        
+           
+
+5. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom 
+	- <h1>
+	- <h2>
+	- <h3>
+	- <h4>
+	- <p>
+	- <p>
+		- <strong>
+			- <span>
+		- <em>
+
+
