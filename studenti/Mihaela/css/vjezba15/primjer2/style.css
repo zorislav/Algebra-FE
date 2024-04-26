@@ -1,0 +1,39 @@
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+div {
+  background-color: rgb(150, 150, 0);
+  width: 25%;
+  margin: 1em auto;
+  padding: 1em;
+}
+div:first-child {
+  animation: fade 2s ease-in-out infinite;
+}
+div:nth-child(2) {
+  animation: fade 4s ease-in-out infinite;
+}
+div:nth-child(3) {
+  animation: fade 0.5 ease-in-out infinite;
+}
+div:nth-child(4) {
+  transition: bacgrounf-color 0.5 ease;
+}
+@hover {
+  div:nth-child(4) {
+    background-color: rgb(150, 0, 0);
+  }
+}/*# sourceMappingURL=style.css.map */
