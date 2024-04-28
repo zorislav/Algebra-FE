@@ -1,0 +1,35 @@
+@mixin flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@mixin animation($vrijednost) {
+  animation: #{$vrijednost};
+}
+
+@keyframes izlazak {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 10vh;
+  }
+}
+
+@keyframes pomicanjeOblaka {
+  0% {
+    top: 0vw;
+  }
+  50% {
+    top: 2vw;
+  }
+  100% {
+    top: -2vw;
+  }
+}
+
+
+
+
+
