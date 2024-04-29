@@ -1,0 +1,12 @@
+body {
+  font-family: Tahoma, sans-serif;
+}
+
+header,
+footer,
+article {
+  background-color: #eee;
+  color: #333;
+  margin: 1em;
+  padding: 2em;
+}
