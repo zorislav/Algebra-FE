@@ -1,17 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #eee;
-  color: #333;
   font-family: Tahoma, sans-serif;
-  content: "di si?";
 }
 
 div {
   margin: 0 0 1em 0;
   padding: 1em;
-  background: #333;
+  background-color: #333;
   color: #eee;
+  width: 100%;
+  height: 20px;
 }
 
 .col-8:before {

@@ -4,15 +4,11 @@ body {
   font-family: Tahoma, sans-serif;
 }
 
-.borders, header,
-footer,
-article {
+.borders, header, footer, article {
   border: 2px solid #333;
 }
 
-header,
-footer,
-article {
+header, footer, article {
   padding: 1em;
-  margin: 1em;
+  margin: 2em;
 }

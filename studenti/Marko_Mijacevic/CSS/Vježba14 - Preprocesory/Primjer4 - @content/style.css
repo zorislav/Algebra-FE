@@ -1,0 +1,48 @@
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+}
+
+header, footer, section, article {
+  border: 2px solid #333;
+  padding: 1em;
+}
+
+header {
+  margin: 20px;
+}
+
+p {
+  color: #fff;
+  background-color: #800;
+  padding: 1em;
+  /* -dodatna flexibilnost jer mogu biti drugacija pravila */
+}
+
+section {
+  margin: 2em auto;
+  width: 80%;
+}
+section article {
+  margin: 1em;
+  /* -standardna vrijednost 20px */
+  border-radius: 20px;
+}
+section article:last-child {
+  /* -standardna vrijednost 20px */
+  border-radius: 0 30px 0 30px;
+  margin: 0;
+}
+
+.odlomak {
+  border: 8px doted #eee;
+}
+
+section .odlomak {
+  border: 8px doted #eee;
+}
+
+footer {
+  margin: 1em 0 2em 5em;
+}

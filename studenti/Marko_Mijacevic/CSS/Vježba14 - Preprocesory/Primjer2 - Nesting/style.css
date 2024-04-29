@@ -1,12 +1,11 @@
 body {
   background-color: #eee;
   color: #333;
-  font-family: Verdana, Tahoma, sans-serif;
-  margin: 0;
+  font-family: Tahoma, sans-serif;
+  margin: o;
 }
 
-header,
-footer {
+header, footer {
   background-color: #333;
   color: #eee;
 }
@@ -25,7 +24,7 @@ header a {
 }
 
 section h1 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Courier, monospace;
 }
 section p {
   text-align: justify;
@@ -40,7 +39,7 @@ section article p {
   color: #eee;
 }
 section article a {
-  color: #fff;
+  color: #eee;
 }
 
 footer h1 {
@@ -50,6 +49,6 @@ footer p {
   font-size: 12px;
 }
 footer a {
-  color: #0f0;
   font-size: 20px;
+  color: #0f0;
 }

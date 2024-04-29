@@ -1,15 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #eee;
-  color: #333;
   font-family: Tahoma, sans-serif;
 }
 
 div {
   margin: 0 0 1em 0;
   padding: 0;
-  background: #800;
+  background-color: #800;
   height: 20px;
 }
 
