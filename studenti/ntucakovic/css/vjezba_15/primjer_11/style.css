@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body, u1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: Tahoma, verdana, sans-serif;
+}
+
+.menu {
+  margin: 1em;
+  padding: 2em;
+  background-color: #eee;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline;
+}
+
+a {
+  margin: 0;
+  padding: 5px 2em;
+  color: rgba(255, 153, 51, 0.75);
+  font-weight: bold;
+  text-decoration: none;
+}
+a:visited {
+  color: rgba(136, 0, 0, 0.75);
+}
+a:hover {
+  color: #333;
+}
+a:active {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

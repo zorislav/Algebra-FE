@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=reset.css.map */
