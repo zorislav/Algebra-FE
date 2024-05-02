@@ -1,4 +1,3 @@
 {
-  "editor.fontSize": 14,
-  "editor.minimap.enabled": false
+  "liveSassCompile.settings.showOutputWindowOn": "Debug"
 }

@@ -1,0 +1,73 @@
+Vjezba 4 - Selektori - Primjer 7
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Kontekstualni elementi"
+
+4. Pomocu internog CSS-a definirati slijedeća pravila
+
+        body
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        
+        section p 
+            color: green;
+
+        footer section p 
+            font-family: 'Courier New', Courier, monospace;
+
+        section>p 
+            text-decoration: line-through solid red;
+
+        h1+p 
+            font-weight: bold;
+           
+
+5. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom 
+	- <header>
+		- <h1>
+		- <p>
+	- <main>
+		- <section>
+			- <h1>
+			- <div>
+			- <article>
+				- <p>
+				- <p>
+		- <section>
+			- <h1>
+			- <p>
+			- <p>
+			- <p>
+			- <p>
+			- <p>
+		- <article>
+			- <h1>
+			- <p>
+			- <p>
+			- <p>
+			- <p>
+			- <p>
+
+	- <footer>
+		- <h1>
+		- <section>
+			- <h1>
+			- <p>
+			- <p>
+			- <p>
+			- <p>
+			- <p>
+		- <section>
+			- <h1>
+			- <p>
+			- <p>
+			- <p>
+			- <p>
+			- <p>

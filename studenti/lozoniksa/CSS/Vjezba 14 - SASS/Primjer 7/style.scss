@@ -1,0 +1,34 @@
+// variables
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+$font1: Tahoma, sans-serif;
+
+//Conditional Statements
+//if else
+
+@mixin theme-colors($light-theme: true) {
+  @if $light-theme {
+    background-color: $color1;
+    color: $color2;
+  } @else {
+    background-color: $color2;
+    color: $color1;
+  }
+}
+
+body {
+  font-family: $font1;
+}
+
+@mixin spacing($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+header,
+footer,
+article {
+  @include theme-colors($light-theme: true);
+  @include spacing(1em, 2em);
+}
