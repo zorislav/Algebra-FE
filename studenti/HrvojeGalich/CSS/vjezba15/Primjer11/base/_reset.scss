@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  color: $color2;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body, ul{
+  margin: 0;
+  padding: 0;
+}
