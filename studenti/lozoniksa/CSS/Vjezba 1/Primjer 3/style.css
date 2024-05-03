@@ -1,0 +1,16 @@
+/* primjer CSS pravila pisanih u CSS dokumentu */
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+h3 {
+  color: rgb(0, 150, 0);
+}
+
+p {
+  color: #666;
+}

@@ -1,0 +1,17 @@
+body {
+    font-family: Tahoma, sans-serif;
+    color: #333;
+    background-color: #ddd;
+    font-size: 16px;
+    }
+
+p:first-of-type {
+    background: #ffc url(light-bulb.png) center/contain no-repeat;
+}
+
+p:nth-of-type(3) {
+    background: url(orange.png) right top/150px no-repeat,
+    url(butterfly.png) left center/contain no-repeat,
+    url(coffee-cup.png) center/contain no-repeat,
+    url(pattern.png) skyblue
+}

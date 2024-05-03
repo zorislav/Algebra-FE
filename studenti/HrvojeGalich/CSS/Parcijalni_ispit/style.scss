@@ -1,0 +1,96 @@
+@import "base/colors";
+@import "base/reset";
+@import "abstracts/mixins";
+
+body {
+ background-image: $background;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+header {
+  @include flex-container;
+  
+  div {
+    background: $cloud;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+    flex-basis: 30vw;
+    z-index: 99;
+    padding-top: 30%;
+    &:nth-child(1) {
+      @include animation ("pomicanjeOblaka 3.9s ease-in-out 1.1s alternate infinite");
+    }
+    &:nth-child(2) {
+      @include animation ("pomicanjeOblaka 3.9s ease-in-out 2.7s alternate infinite");
+    }
+    &:nth-child(3) {
+      @include animation ("pomicanjeOblaka 3.9s ease-in-out 3.9s alternate infinite");
+    }
+  }
+}
+
+main {
+  @include flex-container;
+  justify-content: center;
+ 
+  div{
+    display: inline-block;
+    background-color: $color1-sunce;
+    box-shadow: $color2-sunce-sjena 0px 0px 100px;
+    width: 15vw;
+    height: 15vw;
+    top: 10vh;
+    border-radius: 50%;
+    @include animation("izlazak 3.6s linear forwards");
+    position: absolute;
+  }
+}
+
+footer p {
+  font-family: $font1;
+  text-align: center;
+  font-style: italic;
+  color: $color-font;
+  font-size: 3vw;
+  width: 100vw;
+  bottom: 10vh;
+  position: absolute;
+}
+
+
+@media (max-width: 767px) {
+  header > div {
+    flex-basis: 40vw;
+  }
+  header {
+    justify-content: center;
+  }
+  main div{
+    width: 12vh;
+    height: 12vh;
+  }
+  footer p {
+    font-size: 2em;
+  }
+
+}
+
+@media (max-width: 479px) {
+  header > div:nth-child(1){
+    flex-basis: 80vw;
+    padding-top: 40vh;
+  }
+  header > div:nth-child(2), div:nth-child(3) {
+    display: none;
+  }
+  footer p {
+    font-size: 1em;
+  }
+}
+
+

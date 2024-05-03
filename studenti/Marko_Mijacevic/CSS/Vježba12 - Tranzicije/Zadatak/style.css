@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    height: 150px;
+    width: 400px;
+    background-color: #f93;
+    border: 1px solid #333;
+    font-size: 2em;
+    text-align: center;
+    line-height: 150px;
+    margin: 0 auto 2em;
+}
+
+/* Za prvi div element
+- Kada se promjeni sirina, u trajanju od 1.5s linearno
+- Kada se promjeni boja pozadine, u trajanju od 1s ease-out
+- Na prolaz misem promijeniti sirinu na 650px
+- Na prolaz misem promijeniti boju pozadine u #8cc */
+div:first-of-type {
+    transition: width 1.5s linear, background-color 1s ease-out;
+}
+div:first-of-type:hover {
+    width: 650px;
+    background-color: #8cc;
+}
+
+
+/* Za drugi div element
+- Kada se promjeni transform atribut, u trajanju od 2s ease-in-out
+- Na prolaz misem promijeniti transform atribut u rotate(360deg) i scale(1.5) */
+div:nth-of-type(2) {
+    transition: transform 2s ease-in-out;
+}
+div:nth-of-type(2):hover {
+    transform: rotate(360deg) scale(1.5);
+}
+
+
+/* Za treci div element
+- Kada se promjeni transform atribut, u trajanju od 1s linear
+- Na prolaz misem promijeniti transform atribut u translate(400px, 0) i rotate(90deg) */
+div:nth-of-type(3) {
+    transition: transform 1s linear;
+}
+div:nth-of-type(3):hover {
+    transform: translate(400px, 0) rotate(90deg);
+}
+
+
+/* Za cetvrti div element
+- Kada se promjeni transform atribut, u trajanju od 2.5s ease-in s odgodom od 2s
+- Kada se promjeni boja pozadine, u trajanju od 1s linear
+- Kada se promjeni visina, u trajanju od 0.5s ease-out s odgodom od 1s
+- Na prolaz misem promijeniti transform atribut u translate(0, 200px), visinu na 200px i boju pozadine u zutu */
+div:last-of-type {
+    transition: transform 2.5s ease-in 2s, height 0.5s ease-out 1s, background-color 1s linear;
+}
+div:last-of-type:hover {
+    transform: translate(0, 200px);
+    height: 200px;
+    background-color: yellow;
+}
