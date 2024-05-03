@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+div{
+  font-weight: bold;
+}
+
+a:link{
+  color: black;
+  text-decoration: none;
+  padding: 1em;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+a:visited{
+  color: black;
+}
+
+.logo{
+  width: 150px;
+}
+
+header{
+  margin-bottom: 1.2rem;
+}
+
+hr{
+  width: 99%;
+  margin: auto;
+}
+
+ul{
+  list-style-type: none;
+  flex-grow: 1;
+  padding: 0;
+  justify-content: space-between;
+}
+
+ul li{
+  padding: 10px;
+}
+
+.ElementiZaglavlja{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  
+}
+
+.MojaTvrtka{
+  flex-grow: 7;
+}
+
+ul{
+  display: flex;
+  padding: 0.5em;
+  justify-content: flex-end;
+}
+
+main{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.podaci{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.podaci div{
+  width: 50px;
+  height: 50px;
+  background-color: #ADD8E6;
+  border: 1px solid black;
+  text-align: center;
+  align-content: center;
+  
+}
+
+#razmak{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+}
+
+.podaci div:nth-child(4),
+.podaci div:nth-child(5){
+  margin-left: auto;
+}
+
+section{
+  margin: 10px;
+}
+
+.DodatneOpcije{
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+  margin-top: 20px;
+  
+}
+
+.DodatneOpcije > div{
+  width: 50px;
+  height: 50px;
+  background-color: #ADD8E6;
+  border: 1px solid black;
+  text-align: center;
+  align-content: center;
+ 
+}
+
+
+

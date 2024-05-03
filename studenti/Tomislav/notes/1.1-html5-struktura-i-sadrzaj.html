@@ -1,0 +1,172 @@
+<!-- ovo je komentar :) -->
+<!-- alt + shift + a -->
+
+<!-- pogledaj EMMET cheat cheet https://docs.emmet.io/cheat-sheet/ 
+! + enter napise cijelu osnovnu strukturu HTML dokumenta
+etc. -->
+
+<!-- obavezno staviti na početku svakog HTML dokumenta -->
+<!DOCTYPE html>
+
+<!-- naglašavamo browseru da ovdje započinje HTML5 dokument -->
+<html>
+
+    <!-- meta podatci i slično -->
+    <head>
+        <!-- naziv stranice / taba -->
+        <title>Naziv dokumenta</title>
+
+        <!-- govorimo browseru koji character set koristimo -->
+        <meta charset="UTF-8">
+
+        <!-- govorimo browseru tko je autor web stranice -->
+        <meta name="author" content="Pero Perić">
+
+        <!-- opis dokumenta -->
+        <meta name="description" content="Opis.">
+
+        <!-- tag koji je bitan za pravilno prikazivanje web stranice u browseru -->
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    </head>
+
+    <!-- sadržaj koji se prikazuje na ekranu -->
+    <body>
+
+        <!-- elementi za označavanje teksta -->
+        <div>
+            <h1>Heading 1 text</h1><br>
+            <h2>Heading 2 text</h2><br>
+            <h3>Heading 3 text</h3><br>
+            <h4>Heading 4 text</h4><br>
+            <h5>Heading 5 text</h5><br>
+            <h6>Heading 6 text</h6><br>
+            <b>Lonem ipsum BOLD<b><br>
+            <strong>Lonem ipsum dolon STRONG</strong><br>
+            <i>Lonem ipsum dolon ITALIC</i><br>
+            <em>Lonem ipsum dolon EM</em><br>
+            <mark>Lonem ipsum dolon MARK</mark><br>
+            <sma11>Lorem ipsum dolon SMALL</small><br>
+            <de1>Lonem ipsum dolon DEL</del><br>
+            <ins>Lonem ipsum dolon INSERT</ins><br>
+            <sub>Lorem ipsum dolon SUBSCRIPT</sub><br>
+            <sup>Lorem ipsum SUPERSCRIPT</sup><br>
+        </div>
+
+        <!-- unaprijed oblikovan tekst -->
+        <div>
+            <pre>
+                Lorem ipsum dolor sit, 
+                amet consectetur adipisicing 
+                elit. Dolorum harum 
+                doloremque
+                hic inventore quam excepturi. 
+                voluptatibus facere sed, 
+                aliquid minus consequatur 
+                inventore fugiat 
+                cumque excepturi! 
+                Possimus numquam 
+                tempore 
+                quod
+                ?
+            </pre>
+        </div>
+
+        <!-- paragraf -->
+        <div>
+            <p class="description">
+                sadržaj elementa
+            </p>
+        </div>
+
+        <!-- nested elementi -->
+        <div>
+            <p class="description">
+                <strong>
+                    sadržaj elementa
+                </strong>
+            </p>
+        </div>
+        
+
+        <!-- LISTE -->
+        <!-- 
+            unordered liste <ul> 
+            redoslijed elemenata unutar liste nije bitan
+            elementi liste oznacavaju se sa <li> 
+        -->
+        <div>
+            <ul>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+        </div>
+
+        <!-- ordered liste <ol> -->
+        <div>
+            <ol>
+                <li>Element 1.</li>
+                <li>Element 2.</li>
+                <li>Element 3.</li>
+                <li>Element 4.</li>
+            </ol>
+        </div>
+
+        <!-- vrste ordered lista: 1, A, a, I, i -->
+        <div>
+            <ol type="1">
+                <li>Element 1.</li>
+                <li>Element 2.</li>
+                <li>Element 3.</li>
+                <li>Element 4.</li>
+            </ol>
+
+            <ol type="a">
+                <li>Element 1.</li>
+                <li>Element 2.</li>
+                <li>Element 3.</li>
+                <li>Element 4.</li>
+            </ol>
+
+            <ol type="i">
+                <li>Element 1.</li>
+                <li>Element 2.</li>
+                <li>Element 3.</li>
+                <li>Element 4.</li>
+            </ol>
+        </div>
+
+        <!-- 
+            description lista <dl>
+            svaki clan liste sastoji se od dva elementa
+            <dt> description term - ime clana liste
+            <dd> description definition - sadrzaj clana liste
+        -->
+        <div>
+            <dl>
+                <dt>Lorem</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+                <dt>Ipsum</dt>
+                <dd>Adipisicing elit. Aspernatur, dolorum.</dd>
+                <dt>Dolor</dt>
+                <dd>Alias quia aut, a minima.</dd>
+            </dl>
+        </div>
+
+
+        <!-- MULTIMEDIJSKI SADRZAJ -->
+        <!-- 
+            graficki elementi: <img src="adresa slike" alt="alternativan opis slike">
+            adresa slike moze biti lokalna <img src="../folder/slika.jpg">
+            adresa slike moze biti sa interneta <img src="https://www.algebra.hr/folder/slika.jpg">
+            alternativan opis slike u slucaju da se slika ne moze prikazati <alt="alternativan opis slike">
+            najcesci formati: APNG, GIF, ICO, JPEG, PNG, SVG, BMP, SVG, WEBP, XBM
+
+            jedna tocka znaci slijedeci folder <img src=".slike/slika1.jpg">
+            dvije tocke znace folder gore <img src="../folder_gore/slika1.jpg">
+        -->
+        <img src="https://images.pexels.com/photos/4587955/pexels-photo-4587955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny Cat Photo">
+
+    </body>
+</html>

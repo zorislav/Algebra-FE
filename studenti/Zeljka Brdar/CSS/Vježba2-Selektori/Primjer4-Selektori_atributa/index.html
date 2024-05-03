@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori HTML elemenata</title>
+    <style>
+        body {
+            color: #333;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        [title]{
+            text-decoration: underline solid red;
+        }
+        [title="Prvi odlomak"]{
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+
+        [title~="odlomak"]{
+            text-transform: uppercase;
+        }
+
+        [title^="odlomak"]{
+            font-style: italic;
+
+        }
+        [title*="odlomak"]{
+            color: darkgreen;
+        }
+        [title $="odlomak"]{
+            color: darkorange;
+        }
+        [title|="odlomak"]{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        [href$=".com"]{
+            color: lightseagreen;
+        }
+        [href="https://google.com"]{
+            color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 title="naslov stranice">Lorem ipsum dolor</h1>
+    <h2>Lorem ipsum</h2>
+    <h3>Lorem ipsum dolor sit amet</h3>
+    <a href="https://google.com">Google</a>
+    <p title="Prvi odlomak">
+        Lorem laborum labore adipisicing voluptate ex est non pariatur ex. Ea
+        nulla pariatur commodo non. Sint aliquip quis pariatur anim commodo
+        laborum incididunt incididunt veniam in. Sint cupidatat dolor nisi ea. Eu
+        eiusmod et labore commodo deserunt ad proident et laboris exercitation
+        laboris duis nulla. Lorem laborum labore adipisicing voluptate ex est non
+        pariatur ex. Ea nulla pariatur commodo non. Sint aliquip quis pariatur
+        anim commodo laborum incididunt incididunt veniam in. Sint cupidatat dolor
+        nisi ea. Eu eiusmod et labore commodo deserunt ad proident et laboris
+        exercitation laboris duis nulla. Lorem laborum labore adipisicing
+        voluptate ex est non pariatur ex. Ea nulla pariatur commodo non. Sint
+        aliquip quis pariatur anim commodo laborum incididunt incididunt veniam
+        in. Sint cupidatat dolor nisi ea. Eu eiusmod et labore commodo deserunt ad
+        proident et laboris exercitation laboris duis nulla.
+      </p>
+      <p title="odlomak-2">
+        Lorem laborum labore adipisicing voluptate ex est non pariatur ex. Ea
+        nulla pariatur commodo non. Sint aliquip quis pariatur anim commodo
+        laborum incididunt incididunt veniam in. Sint cupidatat dolor nisi ea. Eu
+        eiusmod et labore commodo deserunt ad proident et laboris exercitation
+        laboris duis nulla. Lorem laborum labore adipisicing voluptate ex est non
+        pariatur ex. Ea nulla pariatur commodo non. Sint aliquip quis pariatur
+        anim commodo laborum incididunt incididunt veniam in. Sint cupidatat dolor
+        nisi ea. Eu eiusmod et labore commodo deserunt ad proident et laboris
+        exercitation laboris duis nulla. Lorem laborum labore adipisicing
+        voluptate ex est non pariatur ex. Ea nulla pariatur commodo non. Sint
+        aliquip quis pariatur anim commodo laborum incididunt incididunt veniam
+        in. Sint cupidatat dolor nisi ea. Eu eiusmod et labore commodo deserunt ad
+        proident et laboris exercitation laboris duis nulla.
+      </p>
+      <p title="odlomak 3">
+        Lorem laborum labore adipisicing voluptate ex est non pariatur ex. Ea
+        nulla pariatur commodo non. Sint aliquip quis pariatur anim commodo
+        laborum incididunt incididunt veniam in. Sint cupidatat dolor nisi ea. Eu
+        eiusmod et labore commodo deserunt ad proident et laboris exercitation
+        laboris duis nulla. Lorem laborum labore adipisicing voluptate ex est non
+        pariatur ex. Ea nulla pariatur commodo non. Sint aliquip quis pariatur
+        anim commodo laborum incididunt incididunt veniam in. Sint cupidatat dolor
+        nisi ea. Eu eiusmod et labore commodo deserunt ad proident et laboris
+        exercitation laboris duis nulla. Lorem laborum labore adipisicing
+        voluptate ex est non pariatur ex. Ea nulla pariatur commodo non. Sint
+        aliquip quis pariatur anim commodo laborum incididunt incididunt veniam
+        in. Sint cupidatat dolor nisi ea. Eu eiusmod et labore commodo deserunt ad
+        proident et laboris exercitation laboris duis nulla.
+      </p>
+      <p title="odlomakbla">
+        Lorem laborum labore adipisicing voluptate ex est non pariatur ex. Ea
+        nulla pariatur commodo non. Sint aliquip quis pariatur anim commodo
+        laborum incididunt incididunt veniam in. Sint cupidatat dolor nisi ea. Eu
+        eiusmod et labore commodo deserunt ad proident et laboris exercitation
+        laboris duis nulla. <strong>Lorem laborum labore</strong> adipisicing voluptate ex est non
+        pariatur ex. Ea nulla pariatur commodo non. Sint aliquip quis pariatur
+        anim commodo laborum incididunt incididunt veniam in. Sint cupidatat dolor
+        nisi ea. Eu eiusmod et labore commodo deserunt ad proident et laboris
+        exercitation laboris duis nulla. Lorem laborum labore adipisicing
+        voluptate ex est non pariatur ex. Ea nulla pariatur commodo non. Sint
+        aliquip quis pariatur anim commodo laborum incididunt incididunt veniam
+        in. Sint cupidatat dolor nisi ea. Eu eiusmod et labore commodo deserunt ad
+        proident et laboris exercitation laboris duis nulla.
+      </p>
+      <p>
+        Lorem laborum labore <strong>adipisicing <span title="voluptate">voluptate</span>  ex</strong> est non pariatur ex. Ea
+        nulla pariatur commodo non. Sint aliquip quis pariatur anim commodo
+        laborum incididunt incididunt veniam in. Sint cupidatat dolor nisi ea. Eu
+        eiusmod et labore commodo deserunt ad proident et laboris exercitation
+        laboris duis nulla. Lorem laborum labore adipisicing voluptate ex est non
+        pariatur ex. Ea nulla pariatur commodo non. Sint aliquip quis pariatur
+        anim commodo laborum incididunt incididunt veniam in. Sint cupidatat dolor
+        nisi ea. Eu eiusmod et labore commodo deserunt ad proident et laboris
+        exercitation laboris duis nulla. Lorem laborum labore adipisicing
+        voluptate ex est non pariatur ex. Ea nulla pariatur commodo non. Sint
+        aliquip quis pariatur anim commodo laborum incididunt incididunt veniam
+        in. Sint cupidatat dolor nisi ea. Eu eiusmod et labore commodo deserunt ad
+        proident et laboris exercitation laboris duis nulla.
+      </p>
+</body>
+</html>

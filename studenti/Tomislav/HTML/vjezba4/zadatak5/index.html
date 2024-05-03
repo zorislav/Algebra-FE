@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas id="canvas1" width="200" height="200"></canvas>
+  <script>
+    var myCanvas = document.getElementById("canvas1");
+    var ctx = canvas1.getContext("2d");
+    
+    var centerX = myCanvas.width / 2;
+    var centerY = myCanvas.height / 2;
+    var radius = 60;
+    
+    ctx.beginPath();
+    ctx.rect(0,0,200,200);
+    ctx.fillStyle = "#76453B";
+    ctx.fill();
+    ctx.strokeStyle = "#B19470";
+    ctx.lineWidth = 30;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, radius, 0,2*Math.PI);
+    ctx.fillStyle = "#607274";
+    ctx.fill();
+    ctx.strokeStyle = "#F8FAE5";
+    ctx.lineWidth = 15;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.rect(80,80,40,40);
+    ctx.fillStyle = "#CD8D7A";
+    ctx.fill();
+    ctx.strokeStyle = "#EAECCC";
+    ctx.lineWidth = 15;
+    ctx.stroke();
+  </script>
+</body>
+</html>

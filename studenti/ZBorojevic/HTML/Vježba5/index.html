@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Audio i video</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>  
+    <h1>Multimedijski sadržaji u HTML-u</h1>
+    <h2>Video</h2>
+    <video src="mountains.mp4" width="720" height="404" controls></video> <br>
+    <video width="720" height="404" autoplay controls loop muted>
+        <source src="mountains.mp4" type="video/mp4">
+    </video><br>
+    <video width="720" height="404" controls>
+        <source src="mountains.mp4" type="video/mp4">
+        <source src="mountains.webm" type="video/webm">
+        <p>Video nije moguće reproducirati.</p>
+    </video>
+    <h2>Audio</h2>
+    <audio src="in3s.mp3" controls></audio>
+    <audio controls>
+        <source src="in3s.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
