@@ -1,0 +1,62 @@
+Vjezba 9 - Layout - Flex - Primjer 13
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Flexbox"
+
+4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
+	- <div class="wrapper flex-container">
+		- <div class="flex-item">
+		- <div class="flex-item">
+		- <div class="flex-item">
+		- <div class="flex-item">
+		- <div class="flex-item">
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+	* 
+		margin: 0;
+		-webkit-box-sizing: border-box; /*za Safari, Opera, Chrome */
+		box-sizing: border-box;
+
+	body 
+		color: #333;
+		font-family: Arial, Helvetica, sans-serif;
+
+	.wrapper 
+		border: 1px dashed #666;
+		padding: 1em;
+		height: 600px;
+
+	.wrapper div 
+		background: #eee;
+		border: 1px solid #666;
+		padding: 1em;
+		text-align: center;
+		width: 150px;
+		margin: 1em;
+
+	.flex-container 
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex; /* display:flex | inline-flex */
+
+	.flex-item 
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+
+	.flex-item:nth-child(3) 
+		-ms-flex-item-align: end;
+		align-self: flex-end; /* align-self: auto | flex-start | flex-end | center | baseline | stretch */
+
+
+
+
+6. Ukljuciti datoteku style.css u index.html
