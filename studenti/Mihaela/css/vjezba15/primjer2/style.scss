@@ -41,4 +41,16 @@ div{
             background-color:$color1;
         }
     }
+    &:nth-child(5){
+        @include transition(width 1s ease);
+        @hover {
+            width:80%;
+        }
+    }
+    &:nth-child(6){
+        @include transition(transform 1s ease);
+        @hover {
+            transform:translate(150px,0);
+        }
+    }
 }
