@@ -4,8 +4,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -22,14 +22,14 @@ p {
 }
 
 body {
-  background: url(./img/back.jpg) no-repeat center center/cover fixed;
+  background: url(images/back.jpg) no-repeat center center/cover fixed;
   font-family: Verdana, Tahoma, sans-serif;
   text-align: center;
 }
 
 .oblaci {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100vw;
@@ -37,7 +37,7 @@ body {
 }
 .oblaci div {
   flex-basis: 30vw;
-  background: url(./img/cloud.png) no-repeat center center/contain;
+  background: url(images/cloud.png) no-repeat center center/contain;
   height: 20vw;
   width: 33vw;
   position: relative;
