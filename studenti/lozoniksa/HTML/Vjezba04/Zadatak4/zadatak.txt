@@ -1,0 +1,11 @@
+Vjezba 4 - Grafika - Zadatak 4 
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+3. Postaviti naslov dokumenta "SVG"
+
+4. U dokumentu kreirati svg područje dimenzija 1200 x 420 i u njemu pet elementa koji zajedno tvore olimpijske krugove

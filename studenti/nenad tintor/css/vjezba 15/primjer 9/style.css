@@ -1,0 +1,46 @@
+body {
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0 0 1em 0;
+  padding: 0.5em;
+  background-color: #333;
+  color: #eee;
+  width: 100%;
+  height: 20px;
+}
+
+.col-8::before {
+  content: "8";
+}
+
+.col-7::before {
+  content: "7";
+}
+
+.col-6::before {
+  content: "6";
+}
+
+.col-5::before {
+  content: "5";
+}
+
+.col-4::before {
+  content: "4";
+}
+
+.col-3::before {
+  content: "3";
+}
+
+.col-2::before {
+  content: "2";
+}
+
+.col-1::before {
+  content: "1";
+}/*# sourceMappingURL=style.css.map */

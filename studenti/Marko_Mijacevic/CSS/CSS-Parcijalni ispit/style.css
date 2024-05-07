@@ -1,0 +1,90 @@
+* {
+  box-sizing: inherit;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./img/back.jpg) no-repeat center center/cover fixed;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.clouds {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding-top: 2vh;
+}
+.clouds div {
+  flex-basis: 30vw;
+  background: url(./img/cloud.png) no-repeat center center/contain;
+  width: 33vw;
+  height: 20vw;
+  position: relative;
+  z-index: 2;
+}
+.clouds .cloud1 {
+  animation: cloud-movement 3.9s 1.1s ease-in-out alternate infinite;
+}
+.clouds .cloud2 {
+  animation: cloud-movement 3.9s 2.7s ease-in-out alternate infinite;
+}
+.clouds .cloud3 {
+  animation: cloud-movement 3.9s 3.9s ease-in-out alternate infinite;
+}
+@media (max-width: 767px) {
+  .clouds div {
+    flex-basis: 49vw;
+  }
+}
+@media (max-width: 479px) {
+  .clouds .cloud2, .clouds .cloud3 {
+    display: none;
+  }
+}
+
+@keyframes cloud-movement {
+  0% {
+    top: 0vw;
+  }
+  50% {
+    top: 2vw;
+  }
+  100% {
+    top: -2vw;
+  }
+}
+main .sun {
+  animation: sun-movement 3.6s linear forwards;
+  background-color: rgb(231, 221, 129);
+  width: 14vw;
+  height: 14vw;
+  box-shadow: rgb(238, 221, 123) 0 0 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: 60vh;
+  left: 43vw;
+}
+
+@keyframes sun-movement {
+  0% {
+    top: 50vh;
+  }
+  100% {
+    top: 5vh;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  padding: 1em;
+  font-size: 3vw;
+  color: rgba(184, 159, 159, 0.85);
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */

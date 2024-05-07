@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    border: 2px dotted #666;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container div {
+    border: 1px solid #666;
+    background-color: #eee;
+    width: 30%;
+    margin: 1em;
+    text-align: center;
+    padding: 1em;
+}

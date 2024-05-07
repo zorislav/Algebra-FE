@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selektori pseudo klase 2 dio</title>
+  <style>
+    body {
+      color: #333;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+    }
+    p:first-child {
+      text-decoration: underline wavy red;
+    }
+    p:last-child {
+      font-size: 14px;
+    }
+    /* prvi pa svako drugi*/
+    p:nth-child(2n + 1) {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    p:first-of-type{
+      font-weight: bold;
+    }
+    p:last-of-type {
+      text-transform: uppercase;
+    }
+    p:nth-of-type(2) {
+      color: darkturquoise;
+    }
+    p::selection {
+      background-color: yellow;
+    }
+    p::first-line {
+      color: green;
+    }
+    p::first-letter {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zaglavlje - header</h1>
+    <p>Odlomak - header</p>
+  </header>
+  <section>
+    <p>Odlomak - section 1 - p1</p>
+    <p>Odlomak - section 1 - p2</p>
+    <p>Odlomak - section 1 - p3</p>
+    <p>Odlomak - section 1 - p4</p>
+    <p>Odlomak - section 1 - p5</p>
+  </section>
+  <section>
+    <h1>Naslov sekcije - section 2</h1>
+    <p>Odlomak - section 2 - p1</p>
+    <p>Odlomak - section 2 - p2</p>
+    <p>Odlomak - section 2 - p3</p>
+    <p>Odlomak - section 2 - p4</p>
+    <p>Odlomak - section 2 - p5</p>
+    <a href="#">a - section 2</a>
+    <p>
+     Ullamco fugiat irure voluptate culpa magna magna do dolor. Labore enim consequat exercitation occaecat qui do. Nulla qui sint ipsum dolore Lorem anim do ipsum id eu non est eiusmod quis. Esse officia ullamco Lorem occaecat consequat dolore deserunt sit do non occaecat.
+    </p>
+  </section>
+  <footer>
+    <p>Odlomak - footer - p1</p>
+    <p>Odlomak - footer - p2</p>
+    <p>Odlomak - footer - p3</p>
+  </footer>
+</body>
+</html>
