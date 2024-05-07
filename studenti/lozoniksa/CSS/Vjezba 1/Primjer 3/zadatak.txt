@@ -1,0 +1,47 @@
+Vjezba 1 - Uvod - Primjer 3
+
+1. Kreirati dokument style.css i u njemu slijedeca pravila:
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+h3 {
+  color: rgb(0, 150, 0);
+}
+
+p {
+  color: #666;
+}
+
+
+2. Kreirati tri html5 dokumenta osnovne strukture imena stranica1.html, stranica2.html i stranica3.html
+
+3. U dokumentima postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+4. Postaviti naslov dokumenta "External CSS"
+
+5. U dokument uljuciti datoteku sa stilovima style.css
+
+6. U dokumentu kreirati <h1> element s proizvoljnim tekstom
+
+7. U dokumentu kreirati neuredzenu listu sa linkovima na sva tri dokumenta
+
+8. Kreirati <h2> element s proizvoljnim tekstom
+
+9. Kreirati <h3> element s proizvoljnim tekstom
+
+10. Kreirati tri <p> elementa s proizvoljnim sadrzajem.
+
+8. Koristeci datoteku sa stilovima style.css postaviti na sva tri dolumenta:
+	- Elementu <h1> boju teksta u crvenu
+	- Elementu <h2> boju teksta u blueviolet
+	- Elementu <h3> boju teksta u rgb(0, 150, 0)
+	- Elementima <p> boju teksta u #666

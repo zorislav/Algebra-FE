@@ -1,0 +1,15 @@
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: tahoma, sans-serif;
+}
+
+.borders, heder, footer, article {
+  border: 2px solid #eee;
+}
+
+heder, footer, article {
+  padding: 2em;
+  margin: 2em;
+}
+/*# sourceMappingURL=style.css.map */
