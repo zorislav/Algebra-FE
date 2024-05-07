@@ -36,4 +36,20 @@ div:nth-child(4) {
   div:nth-child(4) {
     background-color: rgb(150, 0, 0);
   }
+}
+div:nth-child(5) {
+  transition: width 1s ease;
+}
+@hover {
+  div:nth-child(5) {
+    width: 80%;
+  }
+}
+div:nth-child(6) {
+  transition: transform 1s ease;
+}
+@hover {
+  div:nth-child(6) {
+    transform: translate(150px, 0);
+  }
 }/*# sourceMappingURL=style.css.map */
