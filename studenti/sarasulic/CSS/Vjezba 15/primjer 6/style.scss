@@ -11,15 +11,18 @@ body {
   font-family: $font1;
 }
 
-h1 {
-  color: $color3;
+.borders {
+  border: 2px solid $color2;
 }
 
-a {
-  font-family: $font2;
-}
-
-article {
-  border: 2px solid $color3;
+%spaces {
+  padding: 1em;
   margin: 2em;
+}
+
+header,
+footer,
+article {
+  @extend .borders;
+  @extend %spaces;
 }
