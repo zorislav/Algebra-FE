@@ -2,7 +2,6 @@ var btnEl = document.getElementById("btn");
 var pEl = document.querySelector("p");
 var inpEl = document.getElementById("inp");
 
-//
 function onClickHandler() {
   console.log("Kliknuo");
 }
