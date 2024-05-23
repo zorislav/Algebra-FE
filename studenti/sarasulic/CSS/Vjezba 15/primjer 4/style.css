@@ -1,0 +1,44 @@
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+}
+
+header,
+footer,
+section,
+article {
+  border: 2px solid #333;
+  padding: 1em;
+}
+
+header {
+  margin: 20px;
+}
+
+p {
+  color: #fff;
+  background-color: #800;
+  padding: 1em;
+}
+
+section {
+  width: 80%;
+  margin: 2em auto;
+}
+section article {
+  margin: 1em;
+  border-radius: 20px;
+}
+section article:last-child {
+  border-radius: 0 30px;
+  margin: 0;
+}
+
+section .odlomak {
+  border: 8px dotted #eee;
+}
+
+footer {
+  margin: 1em 0 2em 5em;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+@mixin flex-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+  
+@mixin keyframes($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+  
+@mixin animation($str) {
+  animation: #{$str};
+}
+  
+$breakpoints: ("small": 480px, "medium": 768px);
+
+
+@mixin mq($width, $type:min) {
+    @if map-has-key($breakpoints, $width) {
+        $width: map-get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+    }
+    @media (#{$type}-width: $width) {
+        @content;
+    }
+}

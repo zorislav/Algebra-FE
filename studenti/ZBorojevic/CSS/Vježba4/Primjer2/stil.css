@@ -1,0 +1,12 @@
+body {
+    font-family: "Source Code Pro", monospace;
+    background-color: #333;
+    color: whitesmoke;
+    font-size: 16px;
+    background-image: url(butterfly.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25%;
+    background-attachment: fixed;
+    /* background: #ddd url(butterfly.png) center center/25% no-repeat fixed; */
+}
