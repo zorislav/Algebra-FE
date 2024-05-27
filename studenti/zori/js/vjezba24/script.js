@@ -28,7 +28,7 @@ async function getData2() {
 
   try {
 
-    const response = await fetch("https://dummyjson.com/products/1a");
+    const response = await fetch("https://dummyjson.com/products/1");
     const responseData = await response.json();
   
     console.log(JSON.stringify(responseData));
