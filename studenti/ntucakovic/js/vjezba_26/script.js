@@ -35,8 +35,6 @@
       intDiv.innerText = text;
       addCheckBox(intDiv);
       div.appendChild(intDiv);
-      listItem.appendChild(div);
-
       return listItem;
       
     }
