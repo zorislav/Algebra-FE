@@ -94,10 +94,28 @@ h1 {
   cursor: pointer;
 }
 
-.li-container {
-
+#section-todo ul {
+  padding-left: 0;
 }
 
-.li-container-int {
-  
+.ul-todo li {
+  list-style-type: none;
+  font-weight: bold;
+  color: rgb(68,69,68);
+}
+
+.li-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.li-container-int input {
+  margin: 20px;
+}
+
+.removeButton {
+  color: rgb(68,69,68);
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
 }
