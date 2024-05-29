@@ -76,12 +76,12 @@ h1 {
   outline: none;
 }
 
-#section-clear-complited{
+#section-clear-completed{
   width: 60%;
   margin: auto;
 }
 
-#button-clear-complited {
+#button-clear-completed {
   border: 0;
   color: rgb(68, 69, 68);
   background-color: white;
@@ -89,7 +89,33 @@ h1 {
   float: right;
 }
 
-#button-clear-complited:hover{
+#button-clear-completed:hover{
   font-weight: bold;
   cursor: pointer;
+}
+
+#section-todo ul{
+  padding-left: 0;
+}
+
+.ul-todo li{
+  list-style-type: none;
+  font-weight: bold;
+  color: rgb(68, 69, 68);
+}
+
+.li-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.li-container-int input {
+  margin: 20px;
+}
+
+.removeButton {
+  color: rgb(68, 69, 68);
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
 }

@@ -35,18 +35,101 @@
       intDiv.innerText = text;
       addCheckBox(intDiv);
       div.appendChild(intDiv);
-      return listItem;
+      addRemoveButton(div);
+      listItem.appendChild(div);
       
+      return listItem;
     }
 
-    function addCheckBox(){
+    function addCheckBox(item){
       var checkBox = document.createElement("input");
       checkBox.setAttribute("type", "checkbox");
+      checkBox.addEventListener("click", checkListItem);
       item.insertBefore(checkBox, item.firstChild);
+    }
+
+    function addRemoveButton(item) {
+      var RemoveButton = document.createElement("div");
+      removeButton.innerText = "X"
+      removeButton.className = "removeButton";
+      removeButton.addEventListener("click", removeListItem);
+      item.appendChild(removeButton);
+    }
+
+    function checkListItem(event){
+
+      var checkBox = event.target;
+      if(checkBox.checked) {
+        checkBox.parentNode.style.textDeceration = "line-through";
+      }else{
+        checkBox.parentNode.style.textDeceration = "";
+      }
+
+    }
+
+    function checkListItem(event){
+      var removeButton = event.target;
+      removeButton =
+
+    }
+
+    function showActive() {
+
+      var listItems = list.getElementsByTagName("li");
+
+      for (var i=0; i < listItems.length; i++){
+        var check = listItems[i].getElementsByTagName("input");
+        if (check[0].checked) {
+            listItems[i].style.display = "none";
+        }else{
+            listItems[i].style.display = ""; 
+        }
+      }
+
+      allButton.disabled = false;
+      activeButton.disabled = true;
+      complitedButton.disabled = false;
+
+    }
+
+    function showCompleted() {
+
+      var listItems = list.getElementsByTagName("li");
+
+      for (var i=0; i<listItems.length; i++){
+        var check = listItems[i].getElementsByTagName("input");
+        if (!check[0].checked) {
+          listItems[i].style.display = "none";
+
+        }else{
+          listItems[i].style.display ="";
+        }
+
+        allButton.disabled = false;
+        activeButton.disabled = true;
+        complitedButton.disabled = false;
+
+      }
+    }
+    function showAll(){
+
+      var listItems = list.getElementsByTagName("li");
+
+      for (var i=0; i<listItems.length; i++){
+        listItems[i].style.display = "";
+      }
+
+      allButton.disabled = true;
+      activeButton.disabled = false;
+      complitedButton.disabled = false;
     }
 
     this.addListeners = function(){
       addButton.addEventListener("click", addListItem);
+      activeButton.addEventListener("click", showActive);
+      complitedButton.addEventListener("click", showCompleted);
+      allButton.addEventListener("click", showAll);
+      
     }
 
 
