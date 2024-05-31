@@ -1,7 +1,0 @@
-1. Instalirajte Prettier node paket u i plugin u VS Codu.
-
-2. Implementirajte automatsko ispravljanje koda nad varijable.js datotekom. Usporedite sa rezultatima vaše prve vježbe.
-
-3. Provedite automatsko ispravljanje koda nad program.js datotekom. Ispravite greške koje  se javljaju.
-
-4. Kreirajte .prettierrc file u datoteci i dodajte vlastito pravilo.
