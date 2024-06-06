@@ -1,0 +1,6 @@
+{
+  "eslint.nodePath": "C:\\Program Files\\nodejs",
+  "eslint.validate": [
+    "javascript"
+  ]
+}

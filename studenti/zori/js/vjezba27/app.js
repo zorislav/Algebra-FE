@@ -1,4 +1,4 @@
-/*jslint devel single */
+/*jslint white:true devel single */
 
 const name = 'James';
 
