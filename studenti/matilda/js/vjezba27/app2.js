@@ -1,4 +1,6 @@
-const name = "James";
+const name1 = "James";
+
+console.log(name1);
 
 const person = { first: name };
 

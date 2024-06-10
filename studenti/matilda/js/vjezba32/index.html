@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stil.css" />
+    <title>Shopping</title>
+  </head>
+  <body>
+    <header>
+      <img src="cart.jpeg" alt="cart" width="100" height="100" />
+      <h1>Shopping lista</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Spremi</a>
+          </li>
+          <li>
+            <a href="#">Učitaj</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <form action="">
+          <label for="stinp">Stavka</label>
+          <input id="stinp" type="text" maxlength="15" />
+          <label for="kolinp">Količina</label>
+          <input id="kolinp" type="number" min="1" max="999" value="0" />
+          <button type="submit">Dodaj</button>
+          <button type="reset">Poništi</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Stavke</h2>
+        <ul>
+          <li>
+            <p>WC papir 2 kom</p>
+            <button>Obriši</button>
+          </li>
+          <li>
+            <p>Mineralna voda 3 kom</p>
+            <button>Obriši</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Matilda</p>
+    </footer>
+  </body>
+</html>
