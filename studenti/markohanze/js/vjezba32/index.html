@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+<img id="logo" src="cart.jpeg" alt="kolica" width="100px" height="100px">
+<h1>Shipping lista</h1>
+<nav id="menu-std">
+  <ul>
+    <li><a href="#">Spremi</a></li>
+    <li><a href="#">Učitaj</a></li>
+  </ul>
+</nav>
+<div id="icon" onclick="toggleMenuItem()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+  </header>
+  <main>
+    <nav id="menu-small">
+      <ul>
+        <li><a href="#">Spremi</a></li>
+        <li><a href="#">Učitaj</a></li>
+      </ul>
+    </nav>
+<section id="forma">
+  <form action="">
+    <div id="form-inner-container">
+      <label for="stinp" for="">Stavka</label>
+      <input id=stinp name="st" type="text" maxlength="15">
+      <label for="kolinp" id="label-kol">Količina</label>
+      <input id="kolinp" name="kol" type="number" min="1" max="999" value="0">
+    </div>
+    <div id="form-button-container">
+      <button type="submit">Dodaj</button>
+      <button type="reset">Poništi</button>
+    </div>
+  </form>
+</section>
+<section id="stavke">
+  <h2>Stavke</h2>
+  <ol id="ol">
+    <li>
+      <div class="stavka">
+        <p>WC Papir 2kom</p>
+        <button>Obriši</button>
+      </div>
+    </li>
+    <li>
+      <div class="stavka">
+        <p>Mineralna 2kom</p>
+        <button>Obriši</button>
+      </div>
+    </li>
+    <li>
+      <div class="stavka">
+        <p>WC Papir 4kom</p>
+        <button>Obriši</button>
+      </div>
+    </li>
+    <li>
+      <div class="stavka">
+        <p>Papirici 2kom</p>
+        <button>Obriši</button>
+      </div>
+    </li>
+    <li>
+      <div class="stavka">
+        <p>Voda 2kom</p>
+        <button>Obriši</button>
+      </div>
+    </li>
+    <li>
+      <div class="stavka">
+        <p>WC Papir 4kom</p>
+        <button>Obriši</button>
+      </div>
+    </li>
+    <li>
+      <div class="stavka">
+        <p>Mineralna 3kom</p>
+        <button>Obriši</button>
+      </div>
+    </li>
+  </ol>
+</section>
+  </main>
+  <!-- <script>
+    function toggleMenuItem() {
+     var smallMenuElement = document.getElementById("menu-small");
+     var smallMenuDisplay = window.getComputedStyle(smallMenuElement).display;
+
+    if (smallMenuDisplay === "block") {
+        smallMenuElement.style.display = "none";
+      } else {
+        smallMenuElement.style.display = "block";
+      }
+
+      var iconEl = document.getElementById("icon");
+      iconEl.classList.toggle("change");
+    
+    }
+  </script> -->
+  <script src="script.js"></script>
+  <footer>
+<p>&copy; Marko</p>
+  </footer>
+</body>
+</html>
