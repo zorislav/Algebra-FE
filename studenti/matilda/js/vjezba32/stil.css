@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #666;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #eee;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  margin-left: 0.5 em;
+  margin-right: 0.5 em;
+  padding: 0.5;
+  border-radius: 4px;
+}
+
+header ul li a :hover {
+  background-color: #333;
+  color: white;
+}
