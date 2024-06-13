@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTunes Search v2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+    rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/AppleFavicon2.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div>
+            <button id="switch">
+                <img id="switch-img" src="img/Switch_L.png" alt="light" width="100%">
+            </button>
+        </div>
+        
+        <div id="topContainer">
+            <div id="logoContainer">
+                <img id="logoImage" src="img/AppleLogoB.png" alt="logo-apple-black">
+                <h1>iTunes Pretraživač Pjesama</h1>
+            </div>
+
+            <div id="inputContainer">
+                <div id="searchRow">
+                    <img id="searchIcon" src="img/SearchIconB.png" alt="Search-light">
+                    <input type="text" id="searchTerm" placeholder="Upišite ime izvođača">
+                </div>
+            </div>
+        </div> 
+
+        <hr>
+
+        <div id="songsContainer">
+            <h3 id="noSongsFound" style="display: none;">Nema pronađenih pjesama</h3>
+            <div id="spinnerBall" style="display: none;">
+                <img src="img/SpinningBall.png" alt="Ball" width="50" height="50">
+            </div>
+            <ul id="songsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

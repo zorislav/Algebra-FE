@@ -1,0 +1,179 @@
+*{
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.dark-mode *{
+    color: whitesmoke;
+}
+
+body{
+    background: linear-gradient(90deg, white, #b5b5b5);
+}
+body.dark-mode{
+    background: linear-gradient(90deg, #1500b4, #55014e);
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+}
+
+
+#switch{
+    background: none;
+    border: none;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+#switch:hover{
+    cursor: pointer;
+}
+
+#topContainer{
+    padding-top: 50px;
+    width: 100%;
+}
+
+#logoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoContainer img{
+    width: 60px;
+    margin-right: 20px;
+}
+
+#logoContainer h1{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#inputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#searchRow{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 45px;
+    border: 1px solid #8d8d8d;
+    background: none;
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+body.dark-mode #searchRow{
+    border: 1px solid whitesmoke;
+}
+
+#inputContainer input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    color: inherit;
+}
+
+#inputContainer button{
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    background: none;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-right: 2px;
+    border: 1px solid #8d8d8d;
+}
+body.dark-mode #inputContainer button{
+    border: 1px solid whitesmoke;
+}
+
+#inputContainer button img{
+    width: 20px;
+    height: 20px;
+}
+
+#inputContainer button:hover{
+    background: #006bff;
+}
+body.dark-mode #inputContainer button:hover{
+    background: #003c8f;
+}
+
+#inputContainer button:active{
+    background: transparent;
+}
+body.dark-mode #inputContainer button:active{
+    background: transparent;
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+}
+
+#songsContainer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#songsContainer h3{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#spinnerBall{
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#songsList li{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    /* background: linear-gradient(90deg, #b5b5b5, white); */
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70vw;
+    height: 75px;
+    border: 1px solid #8d8d8d;
+    border-radius: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+body.dark-mode #songsList li{
+    border: 1px solid whitesmoke;
+    /* background: linear-gradient(90deg, #55014e, #1500b4); */
+}
+
+.audio-player {
+    width: 260px;
+}
