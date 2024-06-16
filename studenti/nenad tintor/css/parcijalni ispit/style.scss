@@ -1,0 +1,70 @@
+@import "base/colors";
+@import "base/reset";
+@import "abstracts/mixins";
+
+body {
+  background: url(./img/back\ \(1\).JPG) no-repeat center center/cover fixed;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}   
+
+.oblaci {
+  @include flex-container;
+  padding-top: 2vh;
+  div {
+    background: url(./img/cloud.png) no-repeat center center/contain;
+    height: 28vw;
+    width: 33vw;
+    position: relative;
+    z-index: 99;
+    flex-basis: 30vw;
+    left: 50vw - 7vw;
+  }
+}
+
+.oblak1 {
+  @include animation("left-right 3.9s 1.1s ease-in-out alternate infinite")
+}
+
+.oblak2 {
+  @include animation("left-right 3.9s 1.1s ease-in-out alternate infinite")
+}
+
+.oblak3 {
+  @include animation("left-right 3.9s 3.9s ease-in-out alternate infinite")
+}
+
+main {
+  .sunce {
+    width: 14vw;
+    height: 14vw;
+    box-shadow: $sunce-sjena 0 0 50px;
+    border-radius: 100%;
+    background-color: $sunce;
+    position: absolute;
+    top: 60vh;
+    left: 50vw-7vw;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 3vw;
+  font-style: italic;
+  color: $font;
+  width: 100vw;
+  padding: 1rem;
+}
+
+@include keyframes(left-right) {
+  0% {
+    top: 0vw;
+  }
+  50% {
+    top: 2vw;
+  }
+  100% {
+    top:-2vw;
+  }
+
+}

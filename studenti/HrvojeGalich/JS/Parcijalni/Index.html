@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pretraživač pjesama - iTunes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logoTitle">
+        <img id="logoApple" src="./images/apple.png" alt="Apple logo" />
+        <h1>Pretraživač pjesama - iTunes</h1>
+      </div>
+      <div id="search-container">
+        <input
+          type="text"
+          name=""
+          id="search-box"
+          placeholder="Unesite ime izvođača"
+        />
+        <button id="clear-button">X</button>
+      </div>
+      <button id="search-button">Pretraži</button>
+    </nav>
+    <main>
+      <div id="results">
+        <div id="loader"></div>
+
+        <ul id="results-list"></ul>
+        <p id="no-results">Nema rezultata pretraživanja.</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

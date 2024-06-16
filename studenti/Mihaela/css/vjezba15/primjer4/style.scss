@@ -1,0 +1,28 @@
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+
+$font1: Tahoma, sans-serif;
+
+
+body{
+    font-family: $font1;
+}
+
+@mixin spacing($margin,$padding){
+    margin: $margin;;
+    padding: $padding;
+}
+
+@mixin theme-colors($ligt-theme:true){
+    @if $light-theme{
+        background-color: $color1;
+        color: $color2;
+    }else{
+        background-color: $color2;
+        color: $color1;
+    }
+}
+header,footer,article{
+    @include theme-colors($light-theme:true, $txt:$color3)
+}

@@ -1,0 +1,24 @@
+@import mixins;
+
+
+$color1:#eee;
+$color2:#333::after
+*{
+    box-sizing: border-box;
+}
+
+div{
+    background-color: $color1;
+    border: 2px solid $color2;
+    text-align: center;
+    padding: 1em;
+}
+
+.flex-container{
+    @include flex;
+    min-height: 200px;
+
+}
+.flex-items{
+    flex-basis: 23%;
+}
