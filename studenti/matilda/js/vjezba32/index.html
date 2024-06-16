@@ -8,45 +8,81 @@
   </head>
   <body>
     <header>
-      <img src="cart.jpeg" alt="cart" width="100" height="100" />
+      <img id="logo" src="cart.jpeg" alt="cart" width="100" height="100" />
       <h1>Shopping lista</h1>
-      <nav>
+
+      <nav id="menu-stand">
         <ul>
           <li>
-            <a href="#">Spremi</a>
+            <a href="#">Spremi </a>
           </li>
           <li>
-            <a href="#">Učitaj</a>
+            <a href="#">Učitaj </a>
           </li>
         </ul>
       </nav>
+
+      <div id="icon" onclick="toggleMenuIcon()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </header>
 
     <main>
-      <section>
+      <nav id="menu-small">
+        <ul>
+          <li>
+            <a href="#">Spremi </a>
+          </li>
+          <li>
+            <a href="#">Učitaj </a>
+          </li>
+        </ul>
+      </nav>
+      <section id="forma">
         <form action="">
-          <label for="stinp">Stavka</label>
-          <input id="stinp" type="text" maxlength="15" />
-          <label for="kolinp">Količina</label>
-          <input id="kolinp" type="number" min="1" max="999" value="0" />
-          <button type="submit">Dodaj</button>
-          <button type="reset">Poništi</button>
+          <div id="form-inner-container">
+            <label for="stinp">Stavka</label>
+            <input id="stinp" name="st" type="text" maxlength="15" />
+            <label for="kolinp" id="label-kol">Količina</label>
+            <input
+              id="kolinp"
+              name="kol"
+              type="number"
+              min="1"
+              max="999"
+              value="0"
+            />
+          </div>
+
+          <div id="form-button-container">
+            <button type="submit">Dodaj</button>
+            <button type="reset">Poništi</button>
+          </div>
         </form>
       </section>
 
-      <section>
+      <section id="stavke">
         <h2>Stavke</h2>
-        <ul>
-          <li>
-            <p>WC papir 2 kom</p>
-            <button>Obriši</button>
-          </li>
-          <li>
-            <p>Mineralna voda 3 kom</p>
-            <button>Obriši</button>
-          </li>
-        </ul>
+        <ol id="ol"></ol>
       </section>
+      <!--  <script>
+        function toggleMenuIcon() {
+          var smallMenuEl = document.getElementById("menu-small");
+          var smallMenuDisplay = window.getComputedStyle(smallMenuEl).display;
+
+          if (smallMenuDisplay === "block") {
+            smallMenuEl.style.display = "none";
+          } else {
+            smallMenuEl.style.display = "block";
+          }
+          var iconEl = document.getElementById("icon");
+          iconEl.classList.toggle("change");
+        }
+      </script> -->
+
+      <script src="script.js"></script>
     </main>
 
     <footer>
