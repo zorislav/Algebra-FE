@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Parcijalni ispit - JavaScript iTunes search</title>
+
+    <script src="./controller.js" defer type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <img src="./apple.png" class="header__content--logo" />
+        <h1 class="header__content--heading">iTunes pretraživač pjesama</h1>
+      </div>
+
+      <form class="search-form">
+        <input placeholder="Upišite ime izvođača" class="search-form__input" />
+      </form>
+    </header>
+
+    <hr />
+
+    <main class="main">
+      <ul class="main__song-list"></ul>
+    </main>
+  </body>
+</html>
