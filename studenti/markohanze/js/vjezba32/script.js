@@ -1,83 +1,134 @@
+// Deklaracija i inicijalizacija globalnih varijabli
+var olEl = document.getElementById("ol")
+var formaEl = document.getElementById("forma")
+var stInpEl = document.getElementById("stinp")
+var kolInpEl = document.getElementById("kolinp")
+var spremiAEl = document.getElementById("spremi")
+var ucitajAEl = document.getElementById("ucitaj")
+var spremiSmAEl = document.getElementById("spremi-sm")
+var ucitajSmAEl = document.getElementById("ucitaj-sm")
+var stavke = [];
 
-var olEl = document.getElementById("ol");
-var formaEl =  document.getElementById("forma"); 
-var stinpEl = document.getElementById("stinp");
-var kolinpEl = document.getElementById("kolinp");
+// Generira i vraća jedinstveni ID
+function generirajId() {
+    return Date.now().toString(36) + Math.random().toString(36).slice(2)
+}
 
-
-// var stavke = [
-//   { 
-//     naziv: "Mineralna voda",
-//   količina: "5"
-// },
-// { 
-//   naziv: "Vino",
-// količina: "10"
-// },
-// { 
-//   naziv: "Sok",
-// količina: "3"
-// },
-
-// ];
-
+// Funkcija koja prikazuje sve stavke
 function prikaziStavke() {
+    olEl.innerHTML = ""
 
-  olEl.innerHTML = "";
+    for (var i=0; i < stavke.length; i++) {
+        var newLiEl = document.createElement("li")
+        var newDivEl = document.createElement("div")
+        var newBtnEl = document.createElement("button")
+        var newPEl = document.createElement("p")
 
-  for (var i=0; i< stavke.length; i++) {
+        const id = stavke[i].id
+        newBtnEl.addEventListener("click", () => {onDelSt(id)})
+        newPEl.innerText = `${stavke[i].naziv} ${stavke[i].kolicina} kom`
+        newBtnEl.innerText = "Obriši"
+        newDivEl.classList.add("stavka")
+        
+        newDivEl.appendChild(newPEl)
+        newDivEl.appendChild(newBtnEl)
+        newLiEl.appendChild(newDivEl)
+        olEl.appendChild(newLiEl)
 
-    var newLiEl = document.createElement("li");
-    var divEl = document.createElement("div");
-    var btnEl = document.createElement("button");
-    var pEl = document.createElement("p");
-
-    pEl.innerText = `${stavke[i].naziv} ${stavke[i].kolicina} Kom`;
-    btnEl.innerText = "Obrisi";
-
-divEl.appendChild(pEl);
-divEl.appendChild(btnEl);
-newLiEl.appendChild(divEl);
-
-
-olEl.appendChild(newLiEl);
-
-  }
-
+    }
 }
-
+// Funkcija koja briše stavke
+function onDelSt(id) {
+    console.log("Brišem stavku " + id)
+    const noveStavke = stavke.filter((stavka) => stavka.id !== id)
+    stavke = noveStavke
+    prikaziStavke()
+}
+// Funkcija koja procesira formu
 function onSubmitForm(event) {
-event.preventDefault();
-  
-const formData = new FormData(event.target);
+    event.preventDefault();
+    const formData = new FormData(event.target)
+    const stavka = formData.get("st")
+    const kolicina = formData.get("kol")
 
-const stavka = formData.get("st");
-const kolicina = formData.get("kol");
+    stavke.push({
+        id: generirajId(),
+        naziv: stavka,
+        kolicina: kolicina,
+    })
+    stInpEl.value = ""
+    kolInpEl.value = 0
 
-stavke.push({
-  naziv: stavka,
-  kolicina: kolicina
-})
-
-prikaziStavke();
-
+    prikaziStavke()
+}
+// Funkcija koja sprema stavke na backend
+async function spremiStavke() {
+    // Brisanje svih postojećih podataka
+    try {
+        await fetch("https://algebra-fe-c86cb-default-rtdb.firebaseio.com//stavke.json", {
+            method: "DELETE"
+        })
+    }catch (error){
+        alert("Error kod DELETE funkcije")
+    }
+    stavke.forEach((stavka) => {
+        zapisiStavku(stavka)
+    })
+}
+async function zapisiStavku(stavka) {
+    try {   
+        await fetch("https://algebra-fe-c86cb-default-rtdb.firebaseio.com//stavke.json", {
+            method: "POST",
+            body: JSON.stringify(stavka),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+    } catch(error) {
+        alert("Nešto je pošlo po zlu kod POST funkcije")
+    }
+    alert("Podaci su zapisani")
+}
+// Funkcija koja učitava stavke sa backenda
+async function ucitajStavke() {
+    const tmpStavke = []
+    try {
+        const response = await fetch("https://algebra-fe-c86cb-default-rtdb.firebaseio.com//stavke.json", {
+            method: "GET",
+        })
+        const data = await response.json()
+        console.log(data)
+        for(let key in data) {
+            tmpStavke.push({
+                id: data[key].id,
+                naziv: data[key].naziv,
+                kolicina: data[key].kolicina,
+            })
+            stavke = tmpStavke
+            prikaziStavke()
+        }
+    } catch(error) {
+        alert(error)
+    }
 }
 
+// Event listeneri
+formaEl.addEventListener("submit", onSubmitForm)
+spremiAEl.addEventListener("click", spremiStavke)
+ucitajAEl.addEventListener("click", ucitajStavke)
+spremiSmAEl.addEventListener("click", spremiStavke)
+ucitajSmAEl.addEventListener("click", ucitajStavke)
 
+// 
+function toggleMenuIcon() {
+    var smallMenuEl = document.getElementById("menu-small");
+    var smallMenuDisplay = window.getComputedStyle(smallMenuEl).display
+    if (smallMenuDisplay === "block") {
+        smallMenuEl.style.display = "none"
+    } else {
+        smallMenuEl.style.display = "block"
+    }
+    var iconEl = document.getElementById("icon")
+    iconEl.classList.toggle("change")
+}
 
-function toggleMenuItem() {
-  var smallMenuElement = document.getElementById("menu-small");
-  var smallMenuDisplay = window.getComputedStyle(smallMenuElement).display;
-
- if (smallMenuDisplay === "block") {
-     smallMenuElement.style.display = "none";
-   } else {
-     smallMenuElement.style.display = "block";
-   }
-
-   var iconEl = document.getElementById("icon");
-   iconEl.classList.toggle("change");
- 
- }
-
-formaEl.addEventListener("Sumbit", onSubmitForm);
