@@ -37,8 +37,7 @@ export default () => {
         if (retData.length !== 0) {
           
           for (var i in retData) {
-            
-            
+          
             if (retData[i].song && retData[i].artist) {
               
               const listItemElement = createElement(retData[i]);
