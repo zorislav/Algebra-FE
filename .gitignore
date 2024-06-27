@@ -1,0 +1,11 @@
+node_modules/
+.vscode
+.hintrc
+.DS_Store
+**/.DS_Store
+CSS/Bonus/.DS_Store
+CSS/Vjezba 1 - Uvod/.DS_Store
+CSS/Vjezba 10 - Transformacije/.DS_Store
+CSS/Vjezba 11 - Tranzicije/.DS_Store
+CSS/Vjezba 12 - Animacije/.DS_Store
+CSS/Vjezba 2 - Tekst/.DS_Store
