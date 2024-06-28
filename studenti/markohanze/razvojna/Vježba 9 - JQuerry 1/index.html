@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JQuerry</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <script id="hb-template" type="text/x-handlebars-template"> 
+        <table class="{{tableClass}}">
+            <tr>
+                <th class="col-sm-1 hidden-xs">#</th>
+                <th class="col-sm-11 col-xs-12">Ime</th>
+            </tr>
+            {{#each pokemon}}
+            <tr>
+                <td class="col-sm-1 hidden-xs">{{@index}}</td>
+                <td class="col-xs-12 col-sm-11"><a href="{{this.url}}" data-toggle="popover" data-trigger="hover" title="{{this.name}}" data-content="{{this.url}}">{{this.name}}</a></td>
+            </tr>
+            {{/each}}
+        </table>
+    </script>
+    <div id="hb-result"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src='script.js'></script>
+</body>
+</html>
