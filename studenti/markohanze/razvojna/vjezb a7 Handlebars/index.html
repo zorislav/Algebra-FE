@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>handlebars</title>
+</head>
+<body>
+  <script id="hb-template" type="text/x-handlebars-template">
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Ime</th>
+      </tr>
+      {{#each pokemon}}
+      <tr>
+        <td>{{@index}}</td>
+        <td><a href="{{this.url}}">{{this.name}}</a></td>
+      </tr>
+      {{/each}}
+    </table>
+
+  </script>
+  <div id="hb-result"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
