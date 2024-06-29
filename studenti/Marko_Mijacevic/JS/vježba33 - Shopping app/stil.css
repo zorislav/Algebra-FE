@@ -53,6 +53,7 @@ main{
     top: 101px;
     width: 100%;
     height: calc(100vh - 150px);
+    height: calc(var(--vh) - 150px);
     overflow-y: scroll;
 }
 
