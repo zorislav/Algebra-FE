@@ -6,7 +6,6 @@ $(document).ready(function() {
   const template = Handlebars.compile(source); 
   
   //let xhr = new XMLHttpRequest();
-
   var pokemons = [];
 
   function addStripes() {
@@ -86,6 +85,10 @@ $(document).ready(function() {
 
   //  {name, url}  --->> {name, url, habitat, growth_rate}
   //  {name, url}
+  //  
+  //
+  //
+  
 
 
   $.ajax("https://pokeapi.co/api/v2/pokemon-color/yellow", {
@@ -105,4 +108,11 @@ $(document).ready(function() {
   });
 
 });
+
+
+
+
+
+
+
 
