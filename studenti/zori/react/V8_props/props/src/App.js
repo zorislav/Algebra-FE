@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { UserFunction, UserClass } from './user';
+import { UserFunction, UserClass, UserChildren } from './user';
 
 const users = [
   {
@@ -29,6 +29,8 @@ class App extends React.Component {
         <p>Ovo zaista radi</p>
         <UserFunction ime={users[0].name} godine={users[0].years} />
         <UserClass ime={users[1].name} godine={users[1].years} />
+        <UserChildren ime={users[2].name} godine={users[2].years} fontSize="30px">plivanje</UserChildren>
+        <UserChildren godine={users[2].years}>plivanje</UserChildren>
       </div>
     );
 
