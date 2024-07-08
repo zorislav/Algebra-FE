@@ -1,35 +1,65 @@
 import React from 'react';
 import './App.css';
 
+import { UserFunction, UserClass, UserChildren } from './user';
+
 class App extends React.Component {
 
-  constructor() {
-    super();
+  state = {
+    users: [
+      {
+        name: "Ivan",
+        years: 30
+      },
+      {
+        name: "Marko",
+        years: 25
+      },
+      {
+        name: "Ana",
+        years: 25
+      }
+    ],
+    childrenText: "plivanje"
+  };
+  
+  btnClickHandler = () => {
 
-    this.state = {
-      text: "Bok"
-    };
+    const newUsers = this.state.users.map((user) => {
+      return { ...user,  years: user.years + 1 };
+    })
 
-    this.btn1ClickHandler = this.btn1ClickHandler.bind(this);
+
+    this.setState({ users: newUsers});
   }
 
-  btn1ClickHandler() {
-    this.setState({ text: "Ivica"});
-  }
+  nameChangeHandler = (event) => {
 
-  btn2ClickHandler = () => {
-    this.setState({ text: "Marica"});
-  }
+    const { users } = this.state;
 
+    const newUsers = [...users];
+    newUsers[0].name = event.target.value;
+
+    this.setState({ users: newUsers });
+
+  }
+  
   render() {
+
+    const { users, childrenText } = this.state;
+
     return (
       <div className="App">
-        <h1>Class komponenta stanje dodatno</h1>
-        <h2>{this.state.text}</h2>
-        <button onClick={this.btn1ClickHandler}>Promjeni tekst1</button>
-        <button onClick={this.btn2ClickHandler}>Promjeni tekst2</button>
+        <h1>React Aplikacija</h1>
+        <p>Ovo zaista radi</p>
+        <UserFunction ime={users[0].name} godine={users[0].years} onNameChange={this.nameChangeHandler}/>
+        <UserClass ime={users[1].name} godine={users[1].years} />
+        <UserChildren ime={users[2].name} godine={users[2].years} fontSize="30px">plivanje</UserChildren>
+        <UserChildren godine={users[2].years}>{childrenText}</UserChildren>
+        <button onClick={this.btnClickHandler}>Promjena godina</button>
       </div>
-    );    
+    );
+
   }
 }
 
