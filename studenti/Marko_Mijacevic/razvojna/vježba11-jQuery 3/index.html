@@ -20,7 +20,7 @@
 			{{#each pokemon}}
 		  	<tr>
 					<td class="d-none d-sm-table-cell">{{@index}}</td>
-					<td class="d-table-cell"><a href="{{this.url}}" data-toggle="popover" data-trigger="hover" title="{{this.name}}" data-content="{{this.url}}">{{this.name}}</a></td>
+					<td class="d-table-cell"><a href="{{this.url}}" data-bs-toggle="popover" data-bs-trigger="hover" title="{{this.name}}" data-bs_content="{{this.url}}">{{this.name}}</a></td>
 					<td class="d-none d-sm-table-cell">{{habitat}}</td>
 					<td class="d-none d-sm-table-cell">{{growth_rate}}</td>
 				</tr>
