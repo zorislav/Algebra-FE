@@ -1,23 +1,50 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
 
+const NASA_API_KEY = 'F7NDSvVq6xtFLM8IDjYHPEd7bG0GzdVH501agwwn';
+
 function App() {
+
+  const [data, setData] = useState(null);
+
+  async function getData() {
+    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`);
+    const responseData = await response.json();
+    setData(responseData);
+  }
+
+  useEffect(() => {
+
+    // fetch(`https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`)
+    // .then(response => response.json())
+    // .then(responseData => setData(responseData));
+
+    // async function getData() {
+    //   const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`);
+    //   const responseData = await response.json();
+    //   setData(responseData);
+    // }
+
+    getData();
+
+  }, []);
+
+  if(!data) {
+
+    return (
+      <div className="App">
+        <p>Loading...</p>
+      </div>
+    );
+
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>NASA Picture of the Day</h1>
+      <h3>{data.title}</h3>
+      <img src={data.url} alt="Slika" width={500} />
+      <p>{data.explanation}</p>
     </div>
   );
 }
