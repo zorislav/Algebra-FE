@@ -1,5 +1,5 @@
-function UserFunction({ ime, godine }) {
-  /*  const { ime, godine } = props; */
+function UserFunction(props) {
+  const { ime, godine } = props;
   return (
     <p>
       Pozdrav, moje ime je {ime} i imam {godine} godina.
