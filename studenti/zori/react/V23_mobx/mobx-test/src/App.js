@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+
+import GroceryAdd from './components/GroceryAdd';
+import { GroceriesList } from './components/GroceriesList';
+import { observer } from 'mobx-react';
+import { groceriesStore } from './store/groceries-store';
+
 import './App.css';
 
-function App() {
+const App = observer( () => {
+
+  const myGroceries = groceriesStore.getGroceries;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My Groceries - Powered by Mobx!</h1>
+      <p>Groceries List - Total: {myGroceries.length}</p>  
+      <GroceryAdd/>
+      <GroceriesList/>
     </div>
   );
-}
+});
 
 export default App;

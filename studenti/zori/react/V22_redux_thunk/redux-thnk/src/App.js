@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getNasaData } from './store/redux-store';
 import './App.css';
 
+
 function App() {
+
+  const nasaData = useSelector(state => state.nasaData);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+
+    dispatch(getNasaData());
+
+
+  }, [dispatch]);
+
+  if(!nasaData.title) {
+
+    return (
+      <div className="App">
+        <p>Loading...</p>
+      </div>
+    );
+
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>NASA Picture of the Day</h1>
+      <h3>{nasaData.title}</h3>
+      <img src={nasaData.url} alt="Slika" width={500} />
+      <p>{nasaData.explanation}</p>
     </div>
   );
 }
