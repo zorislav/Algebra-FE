@@ -1,0 +1,22 @@
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+}
+
+h1 {
+  color: #800;
+}
+
+a {
+  font-family: Courier, monospace;
+}
+
+article {
+  border: 2px solid #800;
+  margin: 2em;
+}
+
+article > h1 {
+  color: #333;
+}/*# sourceMappingURL=style.css.map */
