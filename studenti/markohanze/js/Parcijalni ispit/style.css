@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+nav #logoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+nav #inputContainer {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background: grey;
+  width: 70%;
+}
+
+#loadingSpinner {
+  display: none;
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid red;
+  border-radius: 50%;
+  margin: 50px auto;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

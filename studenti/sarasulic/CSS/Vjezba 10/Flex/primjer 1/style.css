@@ -23,4 +23,14 @@ body {
 
 .flex-container {
   display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-item {
+  -ms-flex-preferred-size: 18%;
+  flex-basis: 18vw;
 }

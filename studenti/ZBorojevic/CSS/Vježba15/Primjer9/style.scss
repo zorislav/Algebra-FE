@@ -1,0 +1,35 @@
+$white: #F7F1F1;
+$gray: #3C3A3A;
+$red: #A32727;
+$black: #151414;
+
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+@mixin spacing($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+body {
+    @include spacing(0, 0);
+    font-family: $font1;
+}
+div {
+    @include spacing(0 0 1em 0, 1em);
+    background-color: $black;
+    color: $white;
+    width: 100%;
+    height: 30px;
+}
+
+$num: 8;
+
+@while $num > 0 {
+    .col-#{$num} {
+      &:before {
+        content: "#{$num}";
+      }
+    }
+  
+    $num: $num - 1;
+  }

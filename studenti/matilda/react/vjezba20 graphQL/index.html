@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTL</title>
+  </head>
+  <body>
+    <h1>Tagged Template Literal Funkcije</h1>
+    <script>
+      function ttlFunkcija(strings, ...interpolations) {
+        console.log(strings);
+        console.log(interpolations);
+      }
+
+      const br1 = 11;
+      const br2 = 22;
+
+      ttlFunkcija`abc${br1}de${br2}fg`;
+    </script>
+  </body>
+</html>

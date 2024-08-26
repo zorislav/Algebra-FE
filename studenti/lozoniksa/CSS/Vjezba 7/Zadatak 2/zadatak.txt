@@ -1,0 +1,34 @@
+Vjezba 7 - Display - Zadatak 2
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Display"
+
+4. U dokumentu kreirati slijedece elemente:
+	<img src="images/blossom.jpg" alt="Blossom">
+	<img src="images/blur-clean.jpg" alt="Rain">
+	<img src="images/photo.jpg" alt="Photo">
+
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+	body 
+  		font-family: Tahoma, sans-serif;
+  		font-size: 16px;
+  		color: #333;
+	img 
+  		border: 2px solid #999;
+  		display: block;
+  		padding: 20px;
+  		margin: 1em auto; 
+  		width: 25%;
+
+
+
+6. Ukljuciti datoteku style.css u index.html

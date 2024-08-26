@@ -1,0 +1,79 @@
+Vjezba 10 - Transformacije - Primjer
+
+1. Kreirati html5 dokument osnovne strukture imena index.html
+
+2. U dokumentu postaviti meta podatke
+	- charset
+	- viewport
+	- http-equiv
+
+3. Postaviti naslov dokumenta "Flexbox-layout"
+
+4. U dokumentu kreirati slijedece elemente sa proizvoljnim tekstom:
+    
+<body>
+    <h1>Transformacije</h1>
+
+    <div class="translate"></div>
+    <div class="rotate"></div>
+    <div class="scale"></div>
+    <div class="skew"></div>
+    <div class="multiple"></div>
+</body>
+
+
+5. Kreirati datoteku style.css sa slijedećim pravilima
+
+* 
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+body 
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #333;
+
+h1 
+  text-align: center;
+
+
+/* box */
+
+div 
+  background-color: #f93;
+  border: 1px solid #333;
+  width: 300px;
+  height: 150px;
+  margin: 4em auto;
+
+
+/* transformacije */
+
+.translate 
+  -webkit-transform: translate(150px, -20px);
+  transform: translate(150px, -20px);
+
+
+.rotate 
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+
+
+.scale 
+  -webkit-transform: scale(0.5, 0.3);
+  transform: scale(0.5, 0.3);
+
+
+.skew 
+  -webkit-transform: skew(20deg, 15deg);
+  transform: skew(20deg, 15deg);
+
+
+.multiple 
+  -webkit-transform: rotate(30deg) scale(0.5, 0.3) skew(20deg, 15deg);
+  transform: rotate(30deg) scale(0.5, 0.3) skew(20deg, 15deg);
+
+
+
+6. Ukljuciti datoteku style.css u index.html

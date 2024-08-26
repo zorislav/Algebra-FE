@@ -1,0 +1,19 @@
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+$breakpoints: ("small": 480px, "medium": 768px, "large": 1024px, "x-large": 1200px);
+
+@mixin mq($width, $type:min) {
+    @if map-has-key($breakpoints, $width) {
+        $width: map-get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+    }
+    @media (#{$type}-width: $width) {
+        @content;
+    }
+}

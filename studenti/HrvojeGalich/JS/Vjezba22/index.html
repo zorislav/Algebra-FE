@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vjezba 22 - ES6.1</title>
+  </head>
+  <body>
+    <script>
+      const x = ["Ivan", "Marija", "David"];
+      console.log(x);
+      console.log(...x);
+
+      function ispisImena(prvi, drugi, treci) {
+        console.log(prvi);
+      }
+      ispisImena(...x);
+
+      function ispisImena2(...args) {
+        console.log(args[0]);
+      }
+
+      ispisImena2("Ivan", "Marija");
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
