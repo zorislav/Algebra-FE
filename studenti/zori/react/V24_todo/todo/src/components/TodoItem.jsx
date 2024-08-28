@@ -3,16 +3,39 @@ import ListGroup from "react-bootstrap/esm/ListGroup";
 import Form from "react-bootstrap/Form";
 
 class TodoItem extends React.Component {
+  handleToggleTodoClick() {
+    const { todo, toggleTodo } = this.props;
+
+    toggleTodo(todo.id);
+  }
+
+  handleRemoveTodo() {
+    const { todo, removeTodo } = this.props;
+
+    removeTodo(todo.id);
+  }
+
   render() {
     const { todo } = this.props;
+    const textClass = todo.completed
+      ? "todo-item_text todo-item_competed"
+      : "todo-item_text";
 
     return (
       <ListGroup.Item className="todo-item">
-        <span className="todo-item_item">
+        <span
+          className="todo-item_item"
+          onClick={this.handleToggleTodoClick.bind(this)}
+        >
           <Form.Check checked={todo.completed}></Form.Check>
-          <span className="todo-item_text">{todo.text}</span>
+          <span className={textClass}>{todo.text}</span>
         </span>
-        <span>X</span>
+        <span
+          className="todo-item_delete-button"
+          onClick={this.handleRemoveTodo.bind(this)}
+        >
+          X
+        </span>
       </ListGroup.Item>
     );
   }

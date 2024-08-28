@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import "./App.css";
+
+import { UserForm, GithubUser, GithubRepos } from "./components";
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  function getData(userName) {
+    // dohvat podataka
+
+    console.log(userName);
+    setUser(userName);
+  }
+
+  if (!user) {
+    return (
+      <div className="app">
+        <UserForm setUser={getData} />
+      </div>
+    );
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <GithubUser />
+      <GithubRepos />
     </div>
   );
 }
