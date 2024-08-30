@@ -1,38 +1,63 @@
-.App {
+.app {
   text-align: center;
+  width: 650px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding-top: 100px;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  font-size: 62px;
+  font-weight: bold;
+  opacity: 0.8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-container {
+  background-color: white;
+  width: 650px;
+  margin: 48px auto 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 1px rgba(130, 100, 120, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-item_item {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item_text {
+  margin-left: 20px;
+}
+
+.todo-item_delete-button {
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.todo-item_competed {
+  text-decoration: line-through;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #ced4de;
+}
+
+.btn-clear-all {
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0 48px;
+  position: absolute;
+  right: 20px;
 }
