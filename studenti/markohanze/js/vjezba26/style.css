@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    text-align: center;
+    font-family: "scandia-web", sans-serif;
+    font-size: 12pt;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #262626;
+
+}
+.button-group {
+    /*font-size: 0;*/
+}
+
+.button-group button {
+    font-size: 1.2em;
+    font-weight: 400;
+    border: 1px solid #4D4D4D;
+    padding: 10px 24px;
+    background-color: #4D4D4D;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-group button:not(:last-child) {
+    border-right: none;
+}
+
+.button-group button:disabled {
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+.button-group button:not(:disabled) {
+    cursor: pointer;
+}
+
+.button-group button:not(:disabled):hover {
+    background-color: #000000;
+}
+
+#section-todo {
+    border: 1px solid #4D4D4D;
+    border-radius: 5px;
+    /*box-shadow: 2px 2px 4px #000;*/
+    width: 30%;
+    margin: 50px auto 0px auto;
+}
+
+#input-add {
+    width: 20%;
+    font-size: 1.2em;
+    font-weight: 400;
+    border: 1px solid #4D4D4D;
+    padding: 10px 24px;
+    background-color: #4D4D4D;
+    color: #fff;
+    cursor: pointer;
+}
+#input-add:hover {
+    background-color: #000000;
+}
+
+#section-input {
+    display: flex;
+}
+
+#input-text {
+    width: 80%;
+    text-align: left;
+    border: 1px solid #4D4D4D;
+}
+
+#input-text:focus {
+    outline: none;
+}
+
+#section-clear-completed {
+    width: 30%;
+    margin: auto;
+}
+
+#button-clear-completed {
+    border: 0;
+    margin-top: 15px;
+    float: right;
+}
+#button-clear-completed:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#section-todo ul {
+    padding-left: 0;
+}
+
+.ul-todo li {
+    list-style-type: none;
+    font-weight: bold;
+    color: rgb(68, 69, 68);
+}
+
+.li-container {
+ display: flex;
+ justify-content: space-between;
+}
+
+.li-container-int input {
+    margin: 20px;
+}
+
+.removeButton {
+    color: rgb(68, 69, 68);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+    
+}

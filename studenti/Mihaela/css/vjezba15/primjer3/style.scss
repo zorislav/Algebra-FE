@@ -1,0 +1,25 @@
+$color1:#eee;
+$color2:#333;
+$color3:#800;
+$font1:tahoma, sans-serif;
+$font2:courier,monospace;
+
+body{
+    background-color: $color1;
+    color: $color2;;
+    font-family: $font1;
+
+}
+.borders{
+    border: 2px solid $color1;
+}
+
+%spaces{
+    padding: 2em;
+    margin: 2em;
+}
+
+heder,footer, article{
+    @extend .borders;
+    @extend %spaces;
+}

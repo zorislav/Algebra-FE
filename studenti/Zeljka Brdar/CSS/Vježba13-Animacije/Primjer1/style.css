@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+h1{
+    text-align: center;
+}
+div{
+    width: 150px;
+    height: 150px;
+    background-color: #f93;
+    border: 1px solid #333;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 145px;
+    margin: 0 auto 2em 0;
+    font-size: 2em;
+    position: relative;
+}
+
+@keyframes animacija1 {
+ 0%{
+    left: 0;
+
+ }
+ 100%{
+    left: 1000px;
+    background-color: yellow;
+ }
+}
+
+div:first-of-type{
+    animation: animacija1 2s linear;
+}
+
+@keyframes animacija2 {
+    0%{
+       left: 0;
+       transform: rotate(0deg);
+    }
+    50%{
+        left: 1000px;
+        transform: rotate(180deg);
+    }
+    100%{
+       left: 0;
+       transform: rotate(0deg);
+    }
+}
+
+div:nth-of-type(2){
+    animation: animacija2 2s ease-in-out;
+}
+
+@keyframes animacija3 {
+    0%{
+       left: 0;
+       transform: rotate(0deg);
+    }
+    50%{
+        left: 1000px;
+        transform: rotate(360deg);
+    }
+    100%{
+       left: 0;
+       transform: rotate(0deg);
+    }
+}
+
+div:nth-of-type(3){
+    animation: animacija3 2s ease-in-out 2s;
+}
+
+@keyframes animacija4 {
+    0%{
+       left: 0;
+
+    }
+    50%{
+        left: 80%;
+
+    }
+    100%{
+       left: 0;
+
+    }
+}
+
+div:nth-of-type(4){
+    animation: animacija4 2s ease-in-out 2s infinite;
+}
+
+@keyframes animacija5 {
+    0%{
+        left: 0;
+ 
+     }
+     50%{
+         left: 80%;
+ 
+     }
+     100%{
+        left: 0;
+ 
+     }
+
+}
+
+div:nth-of-type(5){
+    animation: animacija5 2s ease-in-out 2s 3 alternate;
+}
+
+@keyframes animacija6 {
+    0%{
+        background-color: red;
+        left: 0;
+     }
+
+     100%{
+        left: 80%;
+        background-color: green;
+ 
+     }
+
+}
+
+div:nth-of-type(6){
+    animation: animacija6 2s ease-in-out 2s backwards;
+}
+
+@keyframes animacija7 {
+    0%{
+        left: 0;
+ 
+     }
+     50%{
+         left: 80%;
+ 
+     }
+     100%{
+        left: 0;
+ 
+     }
+
+}
+
+div:nth-of-type(7){
+    animation: animacija7 10s ease-in-out infinite;
+}
+div:nth-of-type(7):hover{
+    animation-play-state: paused;
+}
