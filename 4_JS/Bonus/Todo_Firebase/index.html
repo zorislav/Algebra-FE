@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My tasks</h1>
+      <div>
+        <div class="button-group">
+          <button id="button-all" disabled>All</button>
+          <button id="button-active">Active</button>
+          <button id="button-completed">Completed</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="section-todo">
+        <div id="section-input">
+          <input type="text" id="input-text" placeholder="Add todo" autofocus />
+          <input type="submit" value="Add" id="input-add" />
+        </div>
+        <ul class="ul-todo"></ul>
+      </div>
+      <div id="bottom-toolbar">
+        <div id="bottom-buttons">
+          <button id="load" class="firebase-button">Load</button>
+          <button id="save" class="firebase-button">Save</button>
+        </div>
+        <div id="section-clear-completed">
+          <button id="button-clear-completed">Clear completed</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

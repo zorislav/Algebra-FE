@@ -1,0 +1,19 @@
+{
+  "name": "get-type-test",
+  "version": "1.0.0",
+  "description": "Console.logs the value type",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "console.log",
+    "data",
+    "type"
+  ],
+  "author": "Magdalena Maglicic",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

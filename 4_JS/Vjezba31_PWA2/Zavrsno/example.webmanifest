@@ -1,0 +1,26 @@
+{
+    "name": "Example Progressive Web App",
+    "short_name": "example",
+    "description": "Progressive Web App",
+    "icons": [
+        {
+            "src": "background.png",
+            "sizes": "1x2000",
+            "type": "image/png"
+        },
+        {
+            "src": "bar.png",
+            "sizes": "755x74",
+            "type": "image/png"
+        },
+        {
+            "src": "header.png",
+            "sizes": "753x185",
+            "type": "image/png"
+        },
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}
