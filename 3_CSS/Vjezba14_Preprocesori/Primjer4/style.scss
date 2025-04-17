@@ -1,0 +1,81 @@
+// variables
+$color1: #eee;
+$color2: #333;
+$color3: #800;
+$font1: Tahoma, sans-serif;
+$font2: Courier, monospace;
+
+// mixins - argumenti sa više vrijednosti
+@mixin margin-mix($margin...) {
+  margin: $margin;
+}
+
+// mixins - argumenti sa zadanim vrijednostima
+@mixin border-radius($r: 20px) {
+  border-radius: $r;
+}
+// mixins - Passing Content
+// 1
+@mixin has-content {
+  section {
+    @content;
+  }
+}
+// 2
+@mixin odlomci($color5) {
+  p {
+    color: $color5;
+    @content;
+  }
+}
+
+body {
+  background-color: $color1;
+  color: $color2;
+  font-family: $font1;
+}
+// 2
+@include odlomci(#fff) {
+  background-color: $color3;
+  padding: 1em;
+}
+
+header,
+footer,
+section,
+article {
+  border: 2px solid $color2;
+  padding: 1em;
+}
+
+header {
+  @include margin-mix(20px);
+}
+
+section {
+  @include margin-mix(2em auto);
+  width: 80%;
+  article {
+    // mixins - argumenti sa više vrijednosti
+    @include margin-mix(1em);
+    // mixins - neobavezni argumenti
+    @include border-radius();
+    &:last-child {
+      // mixins - argumenti sa više vrijednosti
+      @include margin-mix(0);
+      // mixins - neobavezni argumenti
+      @include border-radius(0 30px);
+    }
+  }
+}
+// 1
+@include has-content {
+  .odlomak {
+    border: 8px dotted $color1;
+  }
+}
+
+footer {
+  // mixins - argumenti sa više vrijednosti
+  @include margin-mix(1em 0 2em 5em);
+}

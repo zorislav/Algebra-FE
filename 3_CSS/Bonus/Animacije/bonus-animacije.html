@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonus - Animacije</title>
+    <style>
+      div {
+        background-color: yellow;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        animation-name: animacija1;
+        animation-duration: 5s;
+        animation-delay: 3s;
+        animation-timing-function: linear;
+        animation-direction: normal; /* normal, reverse, alternate */
+        animation-fill-mode: none; /* none, forwards, backwards, both */
+      }
+      @keyframes animacija1 {
+        0% {
+          left: 0;
+          top: 0;
+        }
+        25% {
+          left: 500px;
+          top: 0;
+        }
+        50% {
+          left: 500px;
+          top: 500px;
+        }
+        75% {
+          left: 0;
+          top: 500px;
+        }
+        100% {
+          left: 0;
+          top: 0;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

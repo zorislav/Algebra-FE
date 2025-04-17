@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100vh;
+}
+.flex-container > *,
+section {
+  padding: 10px;
+}
+
+header,
+footer {
+  background: #999;
+  flex: 0 100%;
+  height: 10vh;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 100%;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+section {
+  background: #eee;
+  flex: 0 100%;
+  height: 24%;
+}
+
+/* Svi uređaji širine 480px i veći  */
+@media (min-width: 480px) {
+
+ section {
+    height: 24%;
+  }
+  
+  section:not(:first-child, :last-child){
+    height: 48%;
+    flex: 0 49%;
+  }
+
+}
+
+/* Svi uređaji širine 768px i veći  */
+@media (min-width: 768px) {
+
+  section {
+    flex: 0 49%;
+    height: 49%;
+  }
+}
+
+/* Svi uređaji širine 1024px i veći */
+@media (min-width: 1024px) {
+  
+  section, section:not(:first-child, :last-child){
+    flex: 0 24%;
+    height: 100%;
+  }
+}
