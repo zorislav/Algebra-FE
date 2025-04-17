@@ -1,1 +1,0 @@
-1. Pratite demo tutorial na https://developers.google.com/web/tools/chrome-devtools/network/ 
