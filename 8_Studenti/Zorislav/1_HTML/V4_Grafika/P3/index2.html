@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas2</title>
+  </head>
+  <body>
+    <h1>Canvas</h1>
+    <h2>Linija</h2>
+    <canvas
+      id="myCanvas1"
+      width="600"
+      height="200"
+      style="border: 1px solid blue"
+    ></canvas>
+    <script>
+      var canvasEl = document.getElementById("myCanvas1");
+      var ctx = canvasEl.getContext("2d");
+      ctx.beginPath();
+      ctx.moveTo(30, 180);
+      ctx.lineTo(460, 30);
+      ctx.lineWidth = 8;
+      ctx.strokeStyle = "#F00";
+      ctx.stroke();
+    </script>
+    <h2>Kvadrat</h2>
+    <canvas
+      id="myCanvas2"
+      width="600"
+      height="200"
+      style="border: 1px solid blue"
+    ></canvas>
+    <script>
+      var canvasEl = document.getElementById("myCanvas2");
+      var ctx = canvasEl.getContext("2d");
+      ctx.beginPath();
+      ctx.rect(20, 20, 150, 150);
+      ctx.fillStyle = "#F00";
+      ctx.fill();
+      ctx.strokeStyle = "green";
+      ctx.lineWidth = 5;
+      ctx.stroke();
+    </script>
+    <h2>Krug</h2>
+    <canvas
+      id="myCanvas3"
+      width="600"
+      height="200"
+      style="border: 1px solid blue"
+    ></canvas>
+    <script>
+      var canvasEl = document.getElementById("myCanvas3");
+      var ctx = canvasEl.getContext("2d");
+
+      var centerX = canvasEl.width / 2;
+      var centerY = canvasEl.height / 2;
+      var radius = 80;
+
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius, 0, 1.5 * Math.PI);
+      ctx.fillStyle = "#F00";
+      ctx.fill();
+      ctx.strokeStyle = "green";
+      ctx.lineWidth = 5;
+      ctx.stroke();
+    </script>
+    <h2>Proizvoljni oblik</h2>
+    <canvas
+      id="myCanvas4"
+      width="600"
+      height="200"
+      style="border: 1px solid blue"
+    ></canvas>
+    <script>
+      var canvasEl = document.getElementById("myCanvas4");
+      var ctx = canvasEl.getContext("2d");
+      ctx.beginPath();
+      ctx.moveTo(170, 80);
+      ctx.bezierCurveTo(130, 100, 130, 150, 230, 150);
+      ctx.bezierCurveTo(250, 180, 320, 180, 340, 150);
+      ctx.bezierCurveTo(420, 150, 420, 120, 390, 100);
+      ctx.bezierCurveTo(430, 40, 370, 30, 340, 50);
+      ctx.bezierCurveTo(320, 5, 250, 20, 250, 50);
+      ctx.bezierCurveTo(200, 5, 150, 20, 170, 80);
+      ctx.strokeStyle = "green";
+      ctx.lineWidth = 5;
+      ctx.stroke();
+    </script>
+  </body>
+</html>
