@@ -3,8 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Algebra - vjezba." />
-    <title>HTML_1</title>
+    <meta name="author" content="Leonard" />
+    <meta name="description" content="Exercise 2. Working with text." />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Working with text.</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Opcija 1</a></li>
+          <li><a href="">Opcija 2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Ovo je moj komentar -->
+    <h1 title="Heading 1">Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p lang="hr">This is the content<br />of the first document.</p>
+    <p hidden>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, id!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem,
+      in? Possimus numquam eos vel sed!
+    </p>
+    <pre>
+        Lorem ipsum
+        dolor sit amet consectetur adipisicing elit.
+        Fuga delectus quos quis, mollitia tempore
+        odit ipsa maiores soluta et, quia dicta 
+        suscipit rem fugiat voluptatibus. Veniam
+        aliquam fugiat at repellendus.
+    </pre>
+    <h2>Primjer 5</h2>
+    <p>
+      Lorem ipsum <em>Emphasized text</em> dolor, sit <b>Bold text</b> amet
+      consectetur adipisicing elit. Veritatis alias sequi laborum
+      <i>Italics text</i> provident <strong>Strong text</strong> voluptates ab.
+    </p>
+    <p><mark>Marked text.</mark></p>
+    <p><small>Small text.</small></p>
+    <p><del>Deleted text.</del></p>
+    <p><ins>Underlined text.</ins></p>
+    <p>Text <sub>Under</sub> other text.</p>
+    <p>Text <sup>Over</sup> other text.</p>
+  </body>
+  <h2>Vježba 3 - liste u HTML-u</h2>
+  <h3>Redne liste</h3>
+  <ol type="I">
+    <li>Italy</li>
+    <li>France</li>
+    <li>Spain</li>
+    <li>Portugal</li>
+    <li>Greece</li>
+    <li>Malta</li>
+  </ol>
+  <ol type="i">
+    <li>Italy</li>
+    <li>France</li>
+    <li>Spain</li>
+    <li>Portugal</li>
+    <li>Greece</li>
+    <li>Malta</li>
+  </ol>
+  <ol type="1">
+    <li>Italy</li>
+    <li>France</li>
+    <li>Spain</li>
+    <li>Portugal</li>
+    <li>Greece</li>
+    <li>Malta</li>
+  </ol>
+  <ol type="A" reversed>
+    <li>Italy</li>
+    <li>France</li>
+    <li>Spain</li>
+    <li>Portugal</li>
+    <li>Greece</li>
+    <li>Malta</li>
+  </ol>
+  <ol type="a" start="2">
+    <li>Italy</li>
+    <li>France</li>
+    <li type="1">Spain</li>
+    <li>Portugal</li>
+    <li>Greece</li>
+    <li>Malta</li>
+  </ol>
+  <h3>Neuredjena lista</h3>
+  <ul>
+    <li>Italy</li>
+    <li>France</li>
+    <li>Spain</li>
+    <li>Portugal</li>
+    <li>Greece</li>
+    <li>Malta</li>
+  </ul>
+  <h3>Opisne liste</h3>
+  <dl>
+    <dt>London</dt>
+    <dd>Capital of England</dd>
+    <dt>Paris</dt>
+    <dd>Capital of France</dd>
+    <dt>Madrid</dt>
+    <dd>Capital of Spain</dd>
+    <dt>Roma</dt>
+    <dd>Capital of Italy</dd>
+  </dl>
+  <h3>Ugnjezdene liste</h3>
+  <ul>
+    <li>Africa</li>
+    <li>Asia</li>
+    <li>
+      Europe
+      <ol>
+        <li>France</li>
+        <li>
+          Spain
+          <ol>
+            <li>Madrid</li>
+            <li>Barcelona</li>
+            <li>Bilbao</li>
+          </ol>
+        </li>
+        <li>Italy</li>
+      </ol>
+    </li>
+    <li>Australia</li>
+  </ul>
+  <h2>Multimedia</h2>
+  <img
+    src="../../../../2_HTML/Vjezba4_Grafika/Primjer1_img/london.jpg"
+    alt="London"
+    height="430px"
+    width="760px"
+    title="London"
+  />
+  <img
+    src="../../../../2_HTML/Vjezba4_Grafika/Primjer1_img/na-ulici.jpg"
+    alt="Na ulici"
+    height="430px"
+    width="760px"
+    title="Na ulici"
+  />
+  <img
+    src="../../../../2_HTML/Vjezba4_Grafika/Primjer1_img/html-css.svg"
+    alt="HTML CSS"
+    height="430px"
+    width="760px"
+    title="HTML CSS"
+  />
+  <h3>Primjer 2</h3>
+  <svg width="400px" height="200px">
+    <rect
+      x="100"
+      y="50"
+      width="200px"
+      height="100px"
+      stroke="black"
+      fill="salmon"
+      stroke-width="2px"
+    />
+  </svg>
+  <hr />
+  <svg width="400px" height="200px">
+    <circle
+      cx="200"
+      cy="100"
+      r="85"
+      stroke="black"
+      fill="salmon"
+      stroke-width="2px"
+    />
+  </svg>
+  <hr />
+  <svg width="400px" height="200px">
+    <ellipse
+      cx="200"
+      cy="100"
+      rx="185"
+      ry="85"
+      stroke="black"
+      fill="salmon"
+      stroke-width="2px"
+    />
+  </svg>
+  <hr />
+  <svg width="400px" height="200px">
+    <line x1="400" y1="100" x2="0" y2="0" stroke="black" stroke-width="2px" />
+  </svg>
+  <hr />
+  <svg width="400px" height="200px">
+    <polygon
+      points="200, 20, 380, 180, 20, 180"
+      stroke="black"
+      stroke-width="2px"
+      fill="salmon"
+    />
+  </svg>
+  <hr />
+  <svg width="400px" height="200px">
+    <polyline
+      points="20, 20, 60, 20, 60, 40, 100, 40, 100, 60, 140, 60, 140, 80"
+      stroke="black"
+      stroke-width="2px"
+      fill="salmon"
+    />
+  </svg>
+  <hr />
+  <svg width="400px" height="200px">
+    <text x="0" y="30" fill="black">My text</text>
+    <line x1="0" y1="38" x2="160" y2="38" stroke="black" stroke-width="2px" />
+  </svg>
+  <h2>Primjer 3 - Working with canvas</h2>
+  <canvas
+    id="myCanvas1"
+    width="600px"
+    height="200px"
+    style="border: 2px solid black"
+  ></canvas>
+  <canvas
+    id="myCanvas2"
+    width="600px"
+    height="200px"
+    style="border: 2px solid black"
+  ></canvas>
+  <canvas
+    id="myCanvas3"
+    width="600px"
+    height="200px"
+    style="border: 2px solid black"
+  ></canvas>
+  <canvas
+    id="myCanvas4"
+    width="600px"
+    height="200px"
+    style="border: 2px solid black"
+  ></canvas>
+  <canvas
+    id="myCanvas5"
+    width="600px"
+    height="200px"
+    style="border: 2px solid black"
+  ></canvas>
+  <script>
+    // canvas1
+    let canvasEl = document.getElementById(`myCanvas1`);
+    let ctx = canvasEl.getContext(`2d`);
+    ctx.fillStyle = `salmon`;
+    ctx.fillRect(10, 10, 100, 100);
+
+    // canvas2
+    let canvasEl2 = document.getElementById(`myCanvas2`);
+    let ctx2 = canvasEl2.getContext(`2d`);
+    ctx2.beginPath();
+    ctx2.moveTo(30, 180);
+    ctx2.lineTo(460, 30);
+    ctx2.lineWidth = 8;
+    ctx2.strokeStyle = `black`;
+    ctx2.stroke();
+
+    // canvas3
+    let canvasEl3 = document.getElementById(`myCanvas3`);
+    let ctx3 = canvasEl3.getContext(`2d`);
+    ctx3.beginPath();
+    ctx3.rect(20, 20, 150, 150);
+    ctx3.strokeStyle = `black`;
+    ctx3.fill();
+    ctx3.stroke();
+
+    // canvas 4
+    let canvasEl4 = document.getElementById(`myCanvas3`);
+    let ctx4 = canvasEl4.getContext(`2d`);
+    let centerX = canvasEl4 / 2;
+    let centerY = canvasEl4 / 2;
+    let radius = 80;
+
+    ctx4.beginPath();
+    ctx4.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+    ctx4.fillStyle = `black`;
+    ctx4.lineWidth = 5;
+    ctx4.fill();
+    ctx4.stroke();
+
+    // canvas 4
+    let canvasEl5 = document.getElementById(`myCanvas5`);
+    let ctx5 = canvasEl5.getContext(`2d`);
+
+    ctx5.beginPath();
+    ctx5.moveTo(170, 80);
+    ctx5.bezierCurveTo(130, 100, 130, 150, 230, 150);
+    ctx5.bezierCurveTo(250, 180, 320, 180, 340, 150);
+    ctx5.bezierCurveTo(420, 150, 420, 120, 390, 100);
+    ctx5.bezierCurveTo(430, 40, 370, 30, 340, 50);
+    ctx5.bezierCurveTo(320, 5, 250, 20, 250, 50);
+    ctx5.bezierCurveTo(200, 5, 250, 20, 250, 50);
+    ctx5.fillStyle = `salmon`;
+    ctx5.lineWidth = 5;
+    ctx5.fill();
+    ctx5.stroke();
+  </script>
 </html>
