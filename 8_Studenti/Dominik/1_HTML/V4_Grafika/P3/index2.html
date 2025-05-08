@@ -70,5 +70,58 @@
     ctx.lineWidth = "5";
     ctx.stroke();
   </script>
+  <h2>Tekst</h2>
+  <canvas id="myCanvas5" width="600" height="200" style="border: 1px solid blue"></canvas>
+  <script>
+    var canvasE1 = document.getElementById("myCanvas5");
+    var ctx = canvasE1.getContext("2d");
+
+   ctx.font = "italic bold 60px 'Courier New'"
+
+    ctx.fillStyle = "#F60";
+    ctx.fillText("Pozdrav svima!", 50, 100);
+  </script>
+
+  <!-- <h2>Gradijent</h2>
+  <canvas id="myCanvas6" width="600" height="200" style="border: 1px solid blue"></canvas>
+  <script>
+    var canvasE1 = document.getElementById("myCanvas6");
+    var ctx = canvasE1.getContext("2d");
+
+    var grad = ctx.createLinearGradient(0, 0, 400, 0);
+    grad.addColorStop(0, "#F00");
+    grad.addColorStop(0,5, "#0F0");
+    grad.addColorStop(1, "#FF0");
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, 400, 200);
+  </script> -->
+  <h2>Gradijenti</h2>
+    <canvas id="myCanvas6" width="400" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas6");
+        var ctx = c.getContext("2d");
+
+        var grd = ctx.createLinearGradient(0, 0, 400, 0);
+        grd.addColorStop(0, "#f00")
+        grd.addColorStop(0.5, "#0f0");
+        grd.addColorStop(1, "#FF0");
+
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, 400, 200);
+    </script>
+
+<canvas id="myCanvas7" width="400" height="200"></canvas>
+<script>
+    var c=document.getElementById("myCanvas7");
+    var ctx=c.getContext("2d");
+
+    var grd=ctx.createRadialGradient(200,100,50,200,100,150);
+    grd.addColorStop(0,"#f00")
+    grd.addColorStop(0.5,"#0f0");
+    grd.addColorStop(1, "#FF0");
+
+    ctx.fillStyle=grd;
+    ctx.fillRect(0,0,400,200);
+</script>
 </body>
 </html>
