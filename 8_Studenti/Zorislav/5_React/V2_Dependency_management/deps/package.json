@@ -10,6 +10,8 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-scripts": "5.0.1",
+    "unique-string": "^3.0.0",
+    "unique-string-generator": "^1.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

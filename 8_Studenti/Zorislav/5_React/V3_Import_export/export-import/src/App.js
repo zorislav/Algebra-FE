@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import Person from "./person.js";
+import Osoba from "./person.js";
+import {suma} from "./util.js";
+import {broj1, broj2} from "./util.js";
+import {suma as zbroj} from "./util.js";
+import * as brojevi from "./util.js";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>{Person.name}</p>
+      <p>{Osoba.name}</p>
+      <p>{suma(5,2)}</p>
+      <p>{suma(broj1,broj2)}</p>
+      <p>{zbroj(10,40)}</p>
+      <p>{suma(brojevi.broj1, brojevi.broj2)}</p>
     </div>
   );
 }
