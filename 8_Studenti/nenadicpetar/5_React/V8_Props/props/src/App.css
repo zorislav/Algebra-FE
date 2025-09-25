@@ -36,19 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-#par1 {
-  position: absolute;
-  top: 30%;
-  width: 100%;
-  text-align: center;
-  font-size: 30px;
-}
-
-#par2 {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  font-size: 30px;
-}
