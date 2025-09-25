@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+
+function ConditionalRendering(){
+
+  const broj = 2;
+  const isLoading = true;
+
+  const tekst = broj === 1 ? <p>Broj je jedan</p> : <p>Broj nije jedan</p>;
+  const lS = <p>Loading spinner...</p>;
+
+  return (
+    <>
+      <h2>Number?</h2>
+      {tekst}
+      {isLoading && lS}
+    </>
+  )
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello World!</h1>
+      <ConditionalRendering  />
+
     </div>
   );
 }

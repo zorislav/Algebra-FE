@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const name = "Ivan";
+
+  const user = {
+    firstName: "Luka",
+    lastName: "Horvat"
+  };
+
+  const userOutput = `${user.firstName} ${user.lastName}`;
+  
+  // return (
+  //   <div className="App">
+  //     <p>Hello World!</p>
+  //     <p>Moje ime je: {name}</p>
+  //     <p>Moje ime je: {user.firstName} a prezime je: {user.lastName}</p>
+  //     <p>Moje ime i prezime je: {userOutput}</p>
+  //   </div>
+  // );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <p>Hello World!</p>
+      <p>Moje ime je: {name}</p>
+      <p>Moje ime je: {user.firstName} a prezime je: {user.lastName}</p>
+      <p>Moje ime i prezime je: {userOutput}</p>
+    </>
   );
 }
 
