@@ -1,5 +1,8 @@
 import { dummyNalozi } from "./data.js";
 
+const API_URL =
+  "https://mojprojekt-44b0a-default-rtdb.europe-west1.firebasedatabase.app/digirn.json";
+
 export function toggleNav(hamburgerEl, asideEl) {
   let asideDisplay = window.getComputedStyle(asideEl).display;
 
@@ -13,18 +16,60 @@ export function toggleNav(hamburgerEl, asideEl) {
   hamburgerEl.classList.toggle("change");
 }
 
-export function ucitajFirebase() {
+export async function ucitajFirebase() {
   try {
-    // Dihvat podataka
+    // Dohvat podataka
 
-    return dummyNalozi;
+    const tmpNalozi = [];
+
+    const response = await fetch(API_URL);
+    const data = await response.json();
+
+    for (let key in data) {
+      tmpNalozi.push(data[key]);
+    }
+
+    console.log(tmpNalozi[0]);
+
+    return tmpNalozi[0];
   } catch (error) {
     alert(error);
   }
 }
 
-export function zapisiFirebase() {
+export async function zapisiFirebase(nalozi) {
+  // Obriši trenutne naloge
+
+  await obrisiFirebase();
+
+  // Zapiši naloge
+
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      body: JSON.stringify(nalozi),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await response.json();
+
+    for (let key in data) {
+      tmpNalozi.push(data[key]);
+    }
+  } catch (error) {
+    alert(error);
+  }
+
   console.log("Nalozi zapisani!");
 }
 
-function obrisiFirebase() {}
+async function obrisiFirebase() {
+  try {
+    await fetch(API_URL, {
+      method: "DELETE",
+    });
+  } catch (error) {
+    alert(error);
+  }
+}

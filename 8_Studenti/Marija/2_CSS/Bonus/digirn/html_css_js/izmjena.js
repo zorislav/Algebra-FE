@@ -10,19 +10,19 @@ function main() {
 
   let okButtonEl = document.getElementById("ok");
   let cancelButtonEl = document.getElementById("cancel");
-  // let brojNalogaEl = document.getElementById("brojNaloga");
-  // let brojNarudzbeEl = document.getElementById("brojNarudzbe");
-  // let datumNalogaEl = document.getElementById("datumNaloga");
-  // let naruciteljEl = document.getElementById("narucitelj");
-  // let izvrsiteljEl = document.getElementById("izvrsitelj");
-  // let mjestoTroskaEl = document.getElementById("mjestoTroska");
-  // let nositeljTroskaEl = document.getElementById("nositeljTroska");
-  // let datumPocetkaEl = document.getElementById("datumPocetka");
-  // let vrijemePocetkaEl = document.getElementById("vrijemePocetka");
-  // let datumZavrsetkaEl = document.getElementById("datumZavrsetka");
-  // let vrijemeZavrsetkaEl = document.getElementById("vrijemeZavrsetka");
-  // let naslovEl = document.getElementById("naslov");
-  // let opisEl = document.getElementById("opis");
+  let brojNalogaEl = document.getElementById("broj_naloga");
+  let brojNarudzbeEl = document.getElementById("narudzbenica");
+  let datumNalogaEl = document.getElementById("datum_naloga");
+  let naruciteljEl = document.getElementById("narucitelj");
+  let izvrsiteljEl = document.getElementById("izvrsitelj");
+  let mjestoTroskaEl = document.getElementById("mjesto_troska");
+  let nositeljTroskaEl = document.getElementById("nositelj_troska");
+  let datumPocetkaEl = document.getElementById("datum_pocetka");
+  let vrijemePocetkaEl = document.getElementById("vrijeme_pocetka");
+  let datumZavrsetkaEl = document.getElementById("datum_zavrsetka");
+  let vrijemeZavrsetkaEl = document.getElementById("vrijeme_zavrsetka");
+  let naslovEl = document.getElementById("naslov");
+  let opisEl = document.getElementById("opis");
 
   okButtonEl.addEventListener("click", handleOkClick);
   cancelButtonEl.addEventListener("click", () =>
@@ -33,29 +33,42 @@ function main() {
   const odabraniNalog = nalozi.find((nalog) => nalog.id === odabraniNalogId);
 
   // Popuni elemente odabranim nalogom
-  // brojNalogaEl.innerText = odabraniNalog.brojNaloga;
-  // brojNarudzbeEl.innerText = odabraniNalog.brojNarudzbe;
-  // datumNalogaEl.innerText = odabraniNalog.datumNaloga;
-  // naruciteljEl.innerText = odabraniNalog.narucitelj;
-  // izvrsiteljEl.innerText = odabraniNalog.izvrsitelj;
-  // mjestoTroskaEl.innerText = odabraniNalog.mjestoTroska;
-  // nositeljTroskaEl.innerText = odabraniNalog.nositeljTroska;
-  // datumPocetkaEl.innerText = odabraniNalog.datumPocetka;
-  // vrijemePocetkaEl.innerText = odabraniNalog.vrijemePocetka;
-  // datumZavrsetkaEl.innerText = odabraniNalog.datumZavrsetka;
-  // vrijemeZavrsetkaEl.innerText = odabraniNalog.vrijemeZavrsetka;
-  // naslovEl.innerText = odabraniNalog.naslov;
-  // opisEl.innerText = odabraniNalog.opis;
+  brojNalogaEl.value = odabraniNalog.brojNaloga;
+  brojNarudzbeEl.value = odabraniNalog.brojNarudzbe;
+  datumNalogaEl.value = odabraniNalog.datumNaloga;
+  naruciteljEl.value = odabraniNalog.narucitelj;
+  izvrsiteljEl.value = odabraniNalog.izvrsitelj;
+  mjestoTroskaEl.value = odabraniNalog.mjestoTroska;
+  nositeljTroskaEl.value = odabraniNalog.nositeljTroska;
+  datumPocetkaEl.value = odabraniNalog.datumPocetka;
+  vrijemePocetkaEl.value = odabraniNalog.vrijemePocetka;
+  datumZavrsetkaEl.value = odabraniNalog.datumZavrsetka;
+  vrijemeZavrsetkaEl.value = odabraniNalog.vrijemeZavrsetka;
+  naslovEl.value = odabraniNalog.naslov;
+  opisEl.value = odabraniNalog.opis;
 
   // Poziva se pri odabiru brisanja naloga
   function handleOkClick() {
-    // const answer = confirm("Obriši nalog?");
-    // if(answer){
-    //   const nalogIndex = nalozi.indexOf(odabraniNalog);
-    //   nalozi.splice(nalogIndex,1);
-    //   localStorage.setItem("tmpNalozi", JSON.stringify(nalozi));
-    //   window.open("lista.html", "_self");
-    // }
+    const answer = confirm("Spremi izmjene?");
+    if (answer) {
+      // Popuni nalog novim vrijednostima
+      odabraniNalog.brojNaloga = brojNalogaEl;
+      odabraniNalog.brojNarudzbe = brojNarudzbeEl.value;
+      odabraniNalog.datumNaloga = datumNalogaEl.value;
+      odabraniNalog.narucitelj = naruciteljEl.value;
+      odabraniNalog.izvrsitelj = izvrsiteljEl.value;
+      odabraniNalog.mjestoTroska = mjestoTroskaEl.value;
+      odabraniNalog.nositeljTroska = nositeljTroskaEl.value;
+      odabraniNalog.datumPocetka = datumPocetkaEl.value;
+      odabraniNalog.vrijemePocetka = vrijemePocetkaEl.value;
+      odabraniNalog.datumZavrsetka = datumZavrsetkaEl.value;
+      odabraniNalog.vrijemeZavrsetka = vrijemeZavrsetkaEl.value;
+      odabraniNalog.naslov = naslovEl.value;
+      odabraniNalog.opis = opisEl.value;
+
+      localStorage.setItem("tmpNalozi", JSON.stringify(nalozi));
+      window.open("lista.html", "_self");
+    }
   }
 
   function handleCancelClick(id) {
