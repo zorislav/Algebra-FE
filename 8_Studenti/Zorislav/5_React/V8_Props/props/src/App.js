@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React from 'react';
+
+import { users } from './data/dummyData';
+import { UserFunction, UserClass, UserChildren } from './user';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// const users = [
+//   {
+//     name: 'Ivan',
+//     years: 30
+//   },
+//   {
+//     name: 'Marko',
+//     years: 25
+//   },
+//   {
+//     name: 'Ana',
+//     years: 25
+//   }
+// ];
+
+
+
+class App extends React.Component {
+
+  render(){
+    return (
+      <div className="App">
+        <h1>React aplikacija</h1>
+        <p>Ovo zaista radi</p>
+        <UserFunction ime={users[0].name} years={users[0].years} />
+        <UserClass ime={users[1].name} years={users[1].years} />
+        <UserChildren ime={users[2].name} years={users[2].yeras}>I hobi mi je skijanje.</UserChildren>
+      </div>
+    );
+  }
 }
 
 export default App;
