@@ -5,7 +5,8 @@ class ClassComponent1 extends React.Component {
   render() {
     return (
       <p className="user-card-classcomp">
-        Ime: {this.props.ime}, Godine : {this.props.godine}
+        <p>Ime: {this.props.ime}</p>
+        <p>Godine : {this.props.godine}</p>
       </p>
     );
   }

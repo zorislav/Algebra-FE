@@ -57,3 +57,21 @@ h1 {
   text-align: center;
   color: #333;
 }
+
+/* Stil za gumb */
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #0077cc;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05); /* blagi “pop” efekt */
+}

@@ -3,7 +3,8 @@ import "./style.css";
 function FunctionComponent1(props) {
   return (
     <p className="user-card-comp1">
-      Ime: {props.ime}, Godine: {props.godine}
+      <p>Ime: {props.ime}</p>
+      <p>Godine: {props.godine}</p>
     </p>
   );
 }
