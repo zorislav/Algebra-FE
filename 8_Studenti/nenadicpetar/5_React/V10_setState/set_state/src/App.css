@@ -37,18 +37,40 @@
   }
 }
 
-#par1 {
-  position: absolute;
-  top: 30%;
-  width: 100%;
-  text-align: center;
-  font-size: 30px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f9fc;
 }
 
-#par2 {
-  position: absolute;
-  top: 40%;
-  width: 100%;
+.app-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
   text-align: center;
-  font-size: 30px;
+  color: #333;
+}
+
+/* Stil za gumb */
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #0077cc;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
 }

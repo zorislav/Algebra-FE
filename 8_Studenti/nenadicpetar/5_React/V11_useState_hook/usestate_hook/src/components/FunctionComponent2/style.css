@@ -1,0 +1,22 @@
+.user-container {
+  border: 1px solid gray;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #f0f0f0;
+}
+
+.children-text {
+  margin-top: 8px;
+  font-style: italic;
+  color: #006622;
+}
+
+.user-card-comp2 {
+  border: 1px solid #009933;
+  background: #e6ffe6;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #004d1a;
+}
