@@ -1,0 +1,248 @@
+@keyframes flash {
+  0%,
+  to {
+    background-color: #fff3cd;
+  }
+  50% {
+    background-color: inherit;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  width: 250px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+  border-color: #07c;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+button,
+button#resetButton {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 0;
+  background-color: #07c;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button#resetButton:hover,
+button:hover,
+form button:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+button#resetButton {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #dc3545;
+}
+
+button#resetButton:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 500px) {
+  form {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  input[type="text"] {
+    width: 80%;
+  }
+  button#resetButton,
+  form button {
+    width: 50%;
+  }
+}
+
+.user-card:nth-child(odd) {
+  background-color: #cce5ff;
+}
+
+.user-card:nth-child(even) {
+  background-color: #d4edda;
+}
+
+.user-card input {
+  display: block;
+  margin: 10px auto 0;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 70%;
+}
+
+.user-card button:hover {
+  background-color: #218838;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 500px) {
+  form {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  form input[type="text"] {
+    width: 80%;
+  }
+  .user-card button,
+  form button {
+    width: 50%;
+  }
+}
+
+.flash {
+  animation: flash 0.5s ease-in-out;
+  background-color: #fff3cd;
+}
+
+.tooltip.show .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  padding: 8px 12px;
+  width: 150px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.user-card button,
+form button {
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #07c;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.user-card {
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.5s;
+  background-color: #f8f9fa;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.user-card.added {
+  background-color: #fff3cd !important;
+}
+
+.user-card.name-changed {
+  background-color: #cce5ff !important;
+}
+
+.user-card.age-changed {
+  background-color: #d4edda !important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 140px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip-text.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.user-card button {
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: #28a745;
+}
+
+@media (max-width: 500px) {
+  form {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  form input[type="text"] {
+    width: 80%;
+  }
+  .user-card button,
+  form button {
+    width: 50%;
+  }
+}

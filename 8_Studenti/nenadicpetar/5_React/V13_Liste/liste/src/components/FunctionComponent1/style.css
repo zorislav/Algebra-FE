@@ -1,0 +1,22 @@
+.user-text {
+  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-card-comp1 {
+  border: 1px solid #0077cc;
+  background: #e6f3ff;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #004a80;
+}
+
+/* Animacija kada se godine promijene */
+.animate {
+  color: #ff6600;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
