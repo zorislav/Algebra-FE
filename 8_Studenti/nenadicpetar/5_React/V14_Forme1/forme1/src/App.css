@@ -1,0 +1,169 @@
+.app-container {
+  max-width: 500px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Forma */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 60%;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+/* Gumbi */
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Ispis teksta */
+p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.flash {
+  animation: flash 0.5s ease-in-out;
+}
+
+@keyframes flash {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: inherit;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Forma u horizontalnom rasporedu */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* razmak između inputa i gumba */
+  margin-bottom: 20px;
+}
+
+/* Input */
+input[type="text"] {
+  padding: 8px 12px;
+  width: 250px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+/* Gumb potvrde */
+form button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #28a745; /* zelena boja */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Gumb za Početno stanje */
+button#resetButton {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #dc3545; /* crvena boja */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button#resetButton:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Responsivni raspored forme */
+@media (max-width: 500px) {
+  form {
+    flex-direction: column; /* input i gumb jedan ispod drugog */
+    gap: 10px;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    width: 80%; /* širi input na manjim ekranima */
+  }
+
+  form button {
+    width: 50%; /* gumb zauzima manje, proporcionalno */
+  }
+
+  button#resetButton {
+    width: 50%; /* reset gumb također proporcionalan */
+  }
+}

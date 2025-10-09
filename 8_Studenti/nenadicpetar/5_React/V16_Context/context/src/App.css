@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+div {
+  border-radius: 12px;
+  padding: 12px;
+  margin: 10px;
+}
+
+/* Svaka komponenta drugačije obojena */
+h2 {
+  margin-top: 0;
+}
+
+.App {
+  border: 3px solid #007bff;
+  background-color: #e6f0ff;
+}
+
+.Component1 {
+  border: 2px solid #28a745;
+  background-color: #e9fbe9;
+}
+
+.Component2 {
+  border: 2px solid #ffc107;
+  background-color: #fff9e6;
+}
+
+.Component3 {
+  border: 2px solid #17a2b8;
+  background-color: #e6f9fc;
+}
+
+.Component4 {
+  border: 2px solid #6f42c1;
+  background-color: #f3e8ff;
+}
+
+.ClassComponent {
+  border: 2px solid #dc3545;
+  background-color: #ffe6e9;
+}
