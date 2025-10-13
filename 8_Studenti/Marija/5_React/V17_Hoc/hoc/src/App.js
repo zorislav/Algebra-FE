@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+function Button(props) {
+  return <button {...props}></button>;
+}
+
+function withColor(Element) {
+  return function ({ boja, ...otherProps }) {
+    return <Element {...otherProps} style={{ backgroundColor: boja }} />;
+  };
+}
+
+const ColoredButton = withColor(Button);
+
+const clickHandler = () => {
+  alert("Kliknuo!");
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={styles.h1stil}>Hello</h1>
+      <ColoredButton onClick={clickHandler} boja="red">
+        Bok, ja sam crveni
+      </ColoredButton>
+      <ColoredButton boja="yellow">Bok, ja sam crveni</ColoredButton>
     </div>
   );
 }
 
 export default App;
+
+const styles = {
+  h1stil: {
+    color: "blue",
+    backgroundColor: "lightGray",
+  },
+};
