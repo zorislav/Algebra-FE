@@ -8,7 +8,7 @@ import { getDatabase } from "firebase/database";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC0gbyui1-NlPztxQkFc523fmYSCjcBV54",
+  apiKey: "", // unijeti API key
   authDomain: "reakt-baza.firebaseapp.com",
   projectId: "reakt-baza",
   storageBucket: "reakt-baza.firebasestorage.app",
