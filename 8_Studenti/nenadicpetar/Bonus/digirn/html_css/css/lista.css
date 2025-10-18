@@ -1,0 +1,25 @@
+/* table */
+table {
+  margin: auto;
+}
+
+table td,
+table th {
+  text-align: left;
+  padding-right: 0.5rem;
+}
+
+table td {
+  cursor: pointer;
+}
+
+table tbody tr:hover {
+  background-color: var(--inversePrimary);
+}
+
+/* Sirina ekrana manje od 899px */
+@media (max-width: 899px) {
+  .table-col-hide {
+    display: none;
+  }
+}

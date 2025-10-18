@@ -1,0 +1,26 @@
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.section {
+  margin: 10rem auto 1rem;
+  padding: 1rem;
+  width: 90%;
+  text-align: center;
+  color: var(--onSurface);
+  background-color: var(--surfaceVariant);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+}
+
+/* Sakrij mobilni meni ako je ekran 900px ili vise */
+@media (min-width: 900px) {
+  .aside {
+    display: none !important;
+  }
+}

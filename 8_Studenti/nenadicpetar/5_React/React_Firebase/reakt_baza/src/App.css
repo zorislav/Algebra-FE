@@ -1,0 +1,179 @@
+/* Reset i osnovni stilovi */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigacija */
+nav {
+  background-color: #1976d2;
+  padding: 10px 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container za forme */
+.auth-container {
+  background-color: white;
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
+/* Inputi i gumbi */
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-container button {
+  width: 100%;
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-container button:hover {
+  background-color: #135ba1;
+}
+
+p {
+  color: #333;
+}
+
+/* Responsivni dizajn */
+@media (max-width: 768px) {
+  /* Navigacija */
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Forme */
+  .auth-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .auth-container input,
+  .auth-container button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Još manji ekrani (mobiteli) */
+  .auth-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+}
+
+/* Navigacija */
+nav {
+  background-color: #1976d2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Hamburger button */
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+
+/* Linkovi */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  display: flex;
+  gap: 15px;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries za hamburger */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    max-height: 0;
+    opacity: 0;
+    margin-top: 10px;
+  }
+
+  .nav-links.open {
+    max-height: 500px; /* dovoljno da stanu svi linkovi */
+    opacity: 1;
+  }
+
+  .nav-links a {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.2s;
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}

@@ -1,0 +1,59 @@
+section {
+  text-align: start;
+}
+
+section h1 {
+  text-align: center;
+}
+
+textarea {
+  display: block;
+  font: inherit;
+}
+
+input,
+textarea {
+  padding: 4px;
+  border: 1.5px solid var(--primary);
+  border-radius: 2px;
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--onPrimary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  outline: none;
+}
+
+button:hover {
+  color: var(--inversePrimary);
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  border: 2px solid var(--outline);
+}
+
+.container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container p {
+  display: inline-block;
+}
+
+.button-container {
+  text-align: end;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
