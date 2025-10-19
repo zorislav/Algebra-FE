@@ -4,7 +4,7 @@ Jednostavna React aplikacija za pregled GitHub korisnika i njihovih repozitorija
 
 🚀 Opis projekta
 
-Aplikacija omogućuje unos GitHub korisničkog imena, dohvat podataka putem GitHub REST API-ja i prikaz osnovnih informacija o korisniku, kao i popis njegovih javnih repozitorija.
+Aplikacija omogućuje unos GitHub korisničkog imena, dohvat podataka putem GitHub REST API-ja i prikaz osnovnih informacija o korisniku, kao i popis javnih repozitorija.
 
 Korisnik može:
 
@@ -12,7 +12,7 @@ Pretražiti bilo kojeg GitHub korisnika
 
 Pregledati profilnu sliku, ime, lokaciju, biografiju i broj repozitorija
 
-Vidjeti listu repozitorija s opisima
+Vidjeti popis repozitorija s opisima
 
 Filtrirati repozitorije po nazivu
 
@@ -79,7 +79,7 @@ Poziva onSearch() i onReset() iz App-a
 
 Funkcijska komponenta
 
-Prikazuje korisnika, bio, broj repo-a, followerse i link na GitHub
+Prikazuje korisnika, njegov bio, broj repozitorija, pratitelje i link na GitHub
 
 🔹 RepoList.jsx
 
@@ -122,5 +122,5 @@ Dinamički prikaz repozitorija pomoću .map()
 
 Projekt izrađen u edukativne svrhe u sklopu ReactJS kolegija.
 
-👨‍💻 Autor: [Upiši svoje ime ovdje]
+👨‍💻 Autor: Petar Nenadić
 📅 Godina: 2025
