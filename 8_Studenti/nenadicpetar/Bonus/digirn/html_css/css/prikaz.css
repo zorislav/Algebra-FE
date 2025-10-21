@@ -1,0 +1,15 @@
+/* section */
+section {
+  text-align: start;
+}
+
+section h1 {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

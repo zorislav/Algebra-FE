@@ -1,0 +1,64 @@
+/* Osnovni izgled aplikacije */
+.App {
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 40px;
+  color: #333;
+}
+
+/* Naslov */
+.App h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
+}
+
+/* Dugmad za + i - */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Brojač */
+span {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 20px;
+  min-width: 60px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Reset gumb */
+div > button {
+  background-color: #dc3545;
+}
+
+div > button:hover {
+  background-color: #a71d2a;
+}
+
+/* Paragrafi */
+p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}

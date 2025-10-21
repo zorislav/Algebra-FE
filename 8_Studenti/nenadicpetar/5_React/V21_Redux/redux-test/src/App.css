@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  margin-top: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  height: 100vh;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.4s ease;
+  color: #000000;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:nth-child(2) {
+  background-color: #e67e22;
+}
+
+button:nth-child(2):hover {
+  background-color: #d35400;
+}
+
+button:nth-child(3) {
+  background-color: #e74c3c;
+}
+
+button:nth-child(3):hover {
+  background-color: #c0392b;
+}
+
+.counter {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.counter.bump {
+  transform: scale(1.2);
+}
+
+.App.dark {
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-btn {
+  margin-top: 20px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background-color: #0056b3;
+}
+
+.light {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.dark {
+  background-color: #222;
+  color: white;
+  transition: all 0.3s ease;
+}

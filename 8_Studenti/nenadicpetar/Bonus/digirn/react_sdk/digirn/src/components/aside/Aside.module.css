@@ -1,0 +1,39 @@
+.aside {
+  opacity: 0;
+  background-color: var(--primary);
+  opacity: 0.8;
+  padding: 1rem;
+  position: absolute;
+  top: 112.5px;
+  right: 0;
+}
+
+.aside.open {
+  display: block;
+  opacity: 1;
+}
+
+.aside ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+.aside li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.aside a {
+  color: var(--onPrimary);
+  text-decoration: none;
+}
+
+.aside a:hover {
+  color: var(--inversePrimary);
+}
+
+@media (max-width: 899px) {
+  .ul {
+    display: none;
+  }
+}
