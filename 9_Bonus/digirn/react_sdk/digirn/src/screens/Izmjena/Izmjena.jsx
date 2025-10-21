@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import { useNavigate, useParams } from 'react-router';
 
+import { HeaderContext } from '../../context/HeaderProvider';
 import { firebaseGetOne, firebaseUpdate } from "../../shared/functions";
 
-import Header from "../../components/header/Header";
 import styles from "./Izmjena.module.css";
 
 export default function Izmjena(){
+
+    const headerCtx = use(HeaderContext);
 
   const { id }= useParams();
 
@@ -61,33 +63,36 @@ export default function Izmjena(){
     }
   }
 
-    useEffect (()=> {
-      
-      const getNalog = async (id) => {
-        const nalog = await firebaseGetOne(id);
-  
-        setBrojNaloga(nalog.brojNaloga);
-        setBrojNarudzbe(nalog.brojNarudzbe);
-        setDatumNaloga(nalog.datumNaloga);
-        setDatumPocetka(nalog.datumPocetka);
-        setVrijemePocetka(nalog.vrijemePocetka);
-        setDatumZavrsetka(nalog.datumZavrsetka);
-        setVrijemeZavrsetka(nalog.vrijemeZavrsetka);
-        setNarucitelj(nalog.narucitelj);
-        setIzvrsitelj(nalog.izvrsitelj);
-        setMjestoTroska(nalog.mjestoTroska);
-        setNositeljTroska(nalog.nositeljTroska);
-        setNaslov(nalog.naslov);
-        setOpis(nalog.opis);
-      }
-  
-      getNalog(id);
-  
-    }, []);
+  useEffect(()=>{
+    headerCtx.createMenu([]);
+  }, []);
+
+  useEffect (()=> {
+    
+    const getNalog = async (id) => {
+      const nalog = await firebaseGetOne(id);
+
+      setBrojNaloga(nalog.brojNaloga);
+      setBrojNarudzbe(nalog.brojNarudzbe);
+      setDatumNaloga(nalog.datumNaloga);
+      setDatumPocetka(nalog.datumPocetka);
+      setVrijemePocetka(nalog.vrijemePocetka);
+      setDatumZavrsetka(nalog.datumZavrsetka);
+      setVrijemeZavrsetka(nalog.vrijemeZavrsetka);
+      setNarucitelj(nalog.narucitelj);
+      setIzvrsitelj(nalog.izvrsitelj);
+      setMjestoTroska(nalog.mjestoTroska);
+      setNositeljTroska(nalog.nositeljTroska);
+      setNaslov(nalog.naslov);
+      setOpis(nalog.opis);
+    }
+
+    getNalog(id);
+
+  }, []);
   
   return (
     <>
-      <Header menus={[]} />
       <section className={styles["section"]}>
         <h1>Izmjena Naloga</h1>
         <form onSubmit={handleSubmit}>

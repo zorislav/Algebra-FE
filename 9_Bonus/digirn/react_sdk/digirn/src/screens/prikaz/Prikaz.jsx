@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 
 import { firebaseGetOne } from "../../shared/functions";
 import { HamburgermenuContext } from "../../context/HamburgermenuProvider";
-import Header from "../../components/header/Header";
+import { HeaderContext } from '../../context/HeaderProvider';
 import Aside from "../../components/aside/Aside";
 import styles from "./Prikaz.module.css";
 
@@ -26,6 +26,7 @@ export default function Prikaz(){
   });
 
   const hamburgerCtx = use(HamburgermenuContext);
+  const headerCtx = use(HeaderContext);
   const { id }= useParams();
 
     const menuLista = [
@@ -35,6 +36,10 @@ export default function Prikaz(){
     {label: "Brisanje naloga", path: "/nalozi", id: id}
   ];
   
+  useEffect(()=>{
+    headerCtx.createMenu(menuLista);
+  }, []);
+
   useEffect (()=> {
     
     const getNalog = async (id) => {
@@ -64,7 +69,6 @@ export default function Prikaz(){
 
   return (
     <>
-      <Header menus={menuLista} />
       <section className={styles["section"]}>
         { hamburgerCtx.hamburger.hamburgerOpen && <Aside menus={menuLista} />}
         <h1>Prikaz Naloga</h1>

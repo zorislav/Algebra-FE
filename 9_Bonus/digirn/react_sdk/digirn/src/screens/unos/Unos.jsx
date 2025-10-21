@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect, use } from "react";
 import { useNavigate } from 'react-router';
 
+import { HeaderContext } from '../../context/HeaderProvider';
 import { firebaseAdd } from "../../shared/functions";
 
-import Header from "../../components/header/Header";
 import styles from "./Unos.module.css";
 
 export default function Unos(){
@@ -23,6 +23,7 @@ export default function Unos(){
   const [opis, setOpis] = useState("");
 
   const navigate = useNavigate();
+  const headerCtx = use(HeaderContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -59,9 +60,12 @@ export default function Unos(){
     }
   }
 
+  useEffect(()=>{
+    headerCtx.createMenu([]);
+  }, []);
+
   return (
     <>
-      <Header menus={[]} />
       <section className={styles["section"]}>
         <h1>Unos Naloga</h1>
         <form onSubmit={handleSubmit}>

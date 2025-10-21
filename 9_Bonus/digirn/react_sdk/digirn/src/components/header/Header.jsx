@@ -1,10 +1,16 @@
+import { use } from 'react';
 import { Link } from "react-router";
 import styles from "./Header.module.css";
 import logo from "../../assets/digirn.png";
 import Hamburger from "../../components/hamburger/Hamburger";
 import { firebaseDelete } from "../../shared/functions";
+import { HeaderContext } from '../../context/HeaderProvider';
 
 export default function Header({menus}){
+
+  const headerCtx = use(HeaderContext);
+
+  console.log(headerCtx);
 
   const linkClickHandler = (label, id) =>{
     if(label === "Brisanje naloga"){
@@ -23,7 +29,7 @@ export default function Header({menus}){
       </div>
       <nav className={styles["nav"]}>
         <ul className={styles["ul"]}>
-          { menus.map((menu, index) => 
+          { headerCtx.menuLista.map((menu, index) => 
             <li key={index} className={styles["li"]}>
               <Link className={styles["link"]} to={menu.path} onClick={()=>{linkClickHandler(menu.label, menu.id)}}>
                 {menu.label}
@@ -31,7 +37,7 @@ export default function Header({menus}){
             </li>)
           }
         </ul>
-        { menus.length !== 0 && <Hamburger />}
+        { headerCtx.menuLista.length !== 0 && <Hamburger />}
       </nav>
     </div>
   );
