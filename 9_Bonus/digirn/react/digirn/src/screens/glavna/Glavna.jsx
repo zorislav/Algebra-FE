@@ -20,7 +20,7 @@ export default function Glavna(){
         <p>
           DIGIRN je aplikacija za praćenje radnih naloga - DigitalniRadniNalozi
         </p>
-        <p>Verzija 3 - REACT</p>
+        <p>Verzija 4 - REACT</p>
       </section>
     </>
   );

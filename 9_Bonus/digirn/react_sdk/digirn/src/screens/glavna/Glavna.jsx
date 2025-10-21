@@ -24,7 +24,7 @@ export default function Glavna(){
         <p>
           DIGIRN je aplikacija za praćenje radnih naloga - DigitalniRadniNalozi
         </p>
-        <p>Verzija 3 - REACT - Firebase SDK</p>
+        <p>Verzija 5 - REACT - Firebase SDK</p>
       </section>
     </>
   );
