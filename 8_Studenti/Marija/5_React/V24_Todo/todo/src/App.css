@@ -2,9 +2,9 @@
   text-align: center;
   margin: 0 auto;
   width: 650px;
-  background-color: #f5f5f5;
   padding-top: 50px;
   font-family: "Courier New", Courier, monospace;
+  position: relative;
 }
 
 .header {
@@ -19,4 +19,39 @@
   margin: 48px auto 24px;
   border-radius: 8px;
   box-shadow: 0 0 8px 1px rgba(130, 100, 120, 1);
+}
+
+.todo-item {
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  justify-content: space-between;
+}
+
+.todo-item_item {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.todo-item_text {
+  margin-left: 20px;
+}
+
+.todo-item_completed {
+  text-decoration: line-through;
+}
+
+.todo-item_delete-button {
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.btn-clear-all {
+  position: absolute;
+  right: 29px;
+  margin: 0 48px;
+  font-size: 12px;
+  cursor: pointer;
 }
