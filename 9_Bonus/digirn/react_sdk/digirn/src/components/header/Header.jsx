@@ -10,8 +10,6 @@ export default function Header({menus}){
 
   const headerCtx = use(HeaderContext);
 
-  console.log(headerCtx);
-
   const linkClickHandler = (label, id) =>{
     if(label === "Brisanje naloga"){
       const answer = window.confirm("Obriši nalog?");
