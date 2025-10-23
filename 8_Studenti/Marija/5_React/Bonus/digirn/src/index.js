@@ -1,13 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import HeaderProvider from "./context/HeaderProvider";
+import HamburgermenuProvider from "./context/HamburgermenuProvider";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <HeaderProvider>
+      <HamburgermenuProvider>
+        <App />
+      </HamburgermenuProvider>
+    </HeaderProvider>
   </React.StrictMode>
 );
 

@@ -1,0 +1,33 @@
+.hamburgericon {
+  display: none;
+  margin-right: 1rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 5px;
+  background-color: var(--onPrimary);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media (max-width: 899px) {
+  .hamburgericon {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
