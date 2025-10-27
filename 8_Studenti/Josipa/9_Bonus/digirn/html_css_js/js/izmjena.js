@@ -32,6 +32,8 @@ function main() {
   // U nizu naloga pronmadji odabrani
   const odabraniNalog = nalozi.find((nalog) => nalog.id === odabraniNalogId);
 
+  console.log(odabraniNalog);
+
   // Popuni elemente odabranim nalogom
   brojNalogaEl.value = odabraniNalog.brojNaloga;
   brojNarudzbeEl.value = odabraniNalog.brojNarudzbe;

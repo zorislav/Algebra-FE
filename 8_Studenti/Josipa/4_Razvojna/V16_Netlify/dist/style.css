@@ -1,0 +1,4 @@
+@import "./bootstrap.min.css";
+.striped {
+  background-color: #90ee90;
+}
