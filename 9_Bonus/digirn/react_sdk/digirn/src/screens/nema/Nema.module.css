@@ -13,12 +13,3 @@ h1 {
   border: 2px solid var(--primary);
   border-radius: 4px;
 }
-
-
-
-/* Sakrij mobilni meni ako je ekran 900px ili vise */
-@media (min-width: 900px) {
-  .aside {
-    display: none !important;
-  }
-}

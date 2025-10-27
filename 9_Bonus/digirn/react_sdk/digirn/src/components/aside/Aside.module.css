@@ -38,3 +38,9 @@
   }
 
 }
+
+@media (min-width: 900px) {
+  .aside {
+    display: none !important;
+  }
+}
