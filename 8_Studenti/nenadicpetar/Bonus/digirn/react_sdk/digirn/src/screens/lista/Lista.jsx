@@ -4,14 +4,15 @@ import { useNavigate } from "react-router";
 import { ref, onValue } from "firebase/database";
 
 import styles from "./Lista.module.css";
-import Header from "../../components/header/Header";
 import Aside from "../../components/aside/Aside";
 import { HamburgermenuContext } from "../../context/HamburgermenuProvider";
+import { HeaderContext } from "../../context/HeaderProvider";
 import database from "../../data/firebase";
 
 export default function Lista() {
   const navigate = useNavigate();
   const hamburgerCtx = use(HamburgermenuContext);
+  const headerCtx = use(HeaderContext);
   const [fireNalozi, setFireNalozi] = useState({});
   const [nemaNaloga, setNemaNaloga] = useState(true);
 
@@ -23,6 +24,10 @@ export default function Lista() {
   const odabranNalog = (id) => {
     navigate(`/nalog/${id}`);
   };
+
+  useEffect(() => {
+    headerCtx.createMenu(menuLista);
+  }, []);
 
   useEffect(() => {
     const dbRef = ref(database, `digirn2/`);
@@ -39,7 +44,6 @@ export default function Lista() {
 
   return (
     <>
-      <Header menus={menuLista} />
       <section className={styles["section"]}>
         {hamburgerCtx.hamburger.hamburgerOpen && <Aside menus={menuLista} />}
         <h1>Lista Radnih Naloga</h1>

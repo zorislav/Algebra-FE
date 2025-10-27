@@ -6,6 +6,7 @@ import { HamburgermenuContext } from "./context/HamburgermenuProvider";
 import "./App.css";
 
 import Glavna from "./screens/glavna/Glavna";
+import Header from "./components/header/Header";
 import Lista from "./screens/lista/Lista";
 import Prikaz from "./screens/prikaz/Prikaz";
 import Unos from "./screens/unos/Unos";
@@ -29,14 +30,19 @@ function App() {
   return (
     <div className="App" onClick={handleOutsideClick}>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Glavna />} />
-          <Route path="/nalozi" element={<Lista />} />
-          <Route path="/nalog/:id" element={<Prikaz />} />
-          <Route path="/nalog/:id/izmjena" element={<Izmjena />} />
-          <Route path="/unos" element={<Unos />} />
-          <Route path="*" element={<Nema />} />
-        </Routes>
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Glavna />} />
+            <Route path="/nalozi" element={<Lista />} />
+            <Route path="/nalog/:id" element={<Prikaz />} />
+            <Route path="/nalog/:id/izmjena" element={<Izmjena />} />
+            <Route path="/unos" element={<Unos />} />
+            <Route path="*" element={<Nema />} />
+          </Routes>
+        </main>
       </BrowserRouter>
     </div>
   );

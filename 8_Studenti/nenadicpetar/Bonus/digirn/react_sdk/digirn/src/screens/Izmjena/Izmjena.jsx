@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import { useNavigate, useParams } from "react-router";
 
+import { HeaderContext } from "../../context/HeaderProvider";
 import { firebaseGetOne, firebaseUpdate } from "../../shared/functions";
 
-import Header from "../../components/header/Header";
 import styles from "./Izmjena.module.css";
 
 export default function Izmjena() {
+  const headerCtx = use(HeaderContext);
+
   const { id } = useParams();
 
   const [brojNaloga, setBrojNaloga] = useState("");
@@ -59,6 +61,10 @@ export default function Izmjena() {
   };
 
   useEffect(() => {
+    headerCtx.createMenu([]);
+  }, []);
+
+  useEffect(() => {
     const getNalog = async (id) => {
       const nalog = await firebaseGetOne(id);
 
@@ -82,7 +88,6 @@ export default function Izmjena() {
 
   return (
     <>
-      <Header menus={[]} />
       <section className={styles["section"]}>
         <h1>Izmjena Naloga</h1>
         <form onSubmit={handleSubmit}>
