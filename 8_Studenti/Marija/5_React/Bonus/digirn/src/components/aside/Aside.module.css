@@ -15,6 +15,7 @@
 
 .aside ul {
   list-style-type: none;
+  text-align: left;
 }
 
 .aside li {
@@ -29,4 +30,10 @@
 
 .aside a:hover {
   color: var(--inversePrimary);
+}
+
+@media (min-width: 900px) {
+  .aside {
+    display: none;
+  }
 }
